@@ -9,7 +9,7 @@ MedStock is a Data Warehousing & Data Mining (DWM) project. This repository curr
 pharmacy operational data (sales, purchases, batches, inventory movements) that a later warehouse / mining
 pipeline (star schema, OLAP, association rules, anomaly detection, expiry-risk analysis) will consume.
 
-The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. The analytics and OLAP layer on the warehouse is described in section 14. Not included yet (comes later): data mining, ML, API, frontend, dashboards.
+The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. The analytics and OLAP layer on the warehouse is described in section 14. The data-mining layer is described in section 15. Not included yet (comes later): ML forecasting, API, frontend, dashboards.
 
 ## 2. Scope (final dataset, v1.0)
 
@@ -237,3 +237,23 @@ Code and run instructions: [analytics/README.md](analytics/README.md). Formulas,
 python -m analytics.run          # creates the views, runs all queries and the reconciliation checks (about 3.5 minutes)
 ```
 Results are written to `analytics/reports/` (`run_summary.json` and one CSV per query). Inventory is semi-additive: current stock is read on one date and trends use month-end stock.
+
+## 15. Data Mining
+
+Mining on top of the warehouse, in `data_mining/` (SQL does the aggregation, Python does the algorithms with `mlxtend` and `scikit-learn`). Design: [docs/data_mining_design.md](docs/data_mining_design.md).
+Generated results: [data_mining/reports/mining_summary.md](data_mining/reports/mining_summary.md). Module guide: [data_mining/README.md](data_mining/README.md).
+
+* **Association Rule Mining:** Apriori on transaction baskets (one transaction = the set of medicines it contains). A rule `A -> B` means *transactions containing A were more likely to also contain B*: co-occurrence, not causation.
+  Reports: `frequent_itemsets.csv`, `association_rules.csv` (support, support count, confidence, lift, leverage, conviction), `association_summary.json`.
+* **Medicine Clustering:** K-Means on standardised, log-transformed behaviour features (demand, revenue, inventory, stockouts, expiry, purchasing) for the 500 medicines, with K chosen from inertia / silhouette /
+  Calinski-Harabasz / Davies-Bouldin, and a PCA projection. Reports: `medicine_clusters.csv`, `cluster_summary.csv`, `cluster_evaluation.csv`, `cluster_projection.csv`.
+* **Anomaly Detection:** robust statistics (median / MAD z-scores on variance-stabilised demand, stockout runs, purchase-lot checks) plus Isolation Forest, using only causal (no-future) features.
+  Reports: `anomalies.csv`, `anomaly_summary.json`.
+* **Post-hoc Ground Truth Evaluation:** only after detection is written, the hidden synthetic ground truth is read to score the anomaly detectors (precision, recall, F1, per type).
+  It is never a model input. Reports: `anomaly_evaluation.json`, `anomaly_evaluation_by_type.csv`.
+
+```bash
+pip install -r requirements.txt        # adds scikit-learn, scipy, mlxtend
+python -m data_mining.run              # about 5 minutes, deterministic (random_state 42), validates its own output
+```
+Other outputs: `run_summary.json`, `validation_results.json`, `mining_summary.md`. Data-leakage controls and interpretation rules are in the module README.
