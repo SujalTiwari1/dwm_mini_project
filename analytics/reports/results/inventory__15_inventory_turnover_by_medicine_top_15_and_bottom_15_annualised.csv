@@ -1,0 +1,31 @@
+group_label,medicine_name,category_name,cost_of_goods_sold,average_inventory_value,turnover_annualised
+TOP,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,2744180.35,28197.68,48.693
+TOP,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,5080072.50,54925.69,46.277
+TOP,Paracetamol Suspension 250mg/5ml (CureLine Healthcare),Antipyretics,191434.83,2147.95,44.593
+TOP,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,3861624.12,43469.00,44.449
+TOP,Mefenamic Acid 500mg (Kavach Healthcare),Antipyretics,409955.24,4623.90,44.360
+TOP,Metformin 500mg,Antidiabetic,299351.44,3408.16,43.947
+TOP,Paracetamol 650mg,Antipyretics,312927.68,3800.07,41.202
+TOP,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,3035575.60,37319.46,40.698
+TOP,Amlodipine 10mg (Stellar Formulations),Cardiovascular,1047036.06,13191.94,39.712
+TOP,Amoxicillin + Clavulanic Acid 375mg,Antibiotics,1871838.43,23833.80,39.295
+TOP,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),Antipyretics,355609.47,4540.31,39.188
+TOP,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,2706570.24,34686.49,39.041
+TOP,Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories),Antibiotics,1608531.50,21352.71,37.692
+TOP,Metformin 850mg,Antidiabetic,815319.49,10909.19,37.394
+TOP,Salbutamol Inhaler 100mcg (Stellar Formulations),Respiratory,1293507.03,17498.23,36.986
+BOTTOM,Glimepiride 3mg (TrueLife Remedies),Antidiabetic,41099.93,9952.29,2.066
+BOTTOM,Montelukast 5mg (CarePlus Laboratories),Respiratory,31035.07,7607.92,2.041
+BOTTOM,Amlodipine 5mg (VitaCure Remedies),Cardiovascular,6515.18,1617.95,2.015
+BOTTOM,Telmisartan 40mg (CureLine Healthcare),Cardiovascular,27755.75,6952.59,1.997
+BOTTOM,Salbutamol Inhaler 200mcg (CarePlus Laboratories),Respiratory,23421.50,6063.54,1.933
+BOTTOM,Mefenamic Acid 500mg (LifeSpring Pharma),Antipyretics,8091.84,2125.36,1.905
+BOTTOM,Hydrocortisone Cream 1% (Summit Lifesciences),Dermatological,7579.59,1998.97,1.897
+BOTTOM,Gliclazide 40mg (NovaMed Laboratories),Antidiabetic,12253.41,3293.58,1.861
+BOTTOM,Cetirizine 5mg (CureLine Healthcare),Antihistamines,3109.21,839.37,1.853
+BOTTOM,Paracetamol 250mg,Analgesics,4982.14,1387.18,1.797
+BOTTOM,Naproxen 500mg (NovaMed Laboratories),Analgesics,14537.07,4080.11,1.783
+BOTTOM,Aspirin 75mg (LifeSpring Pharma),Cardiovascular,1458.18,416.50,1.752
+BOTTOM,Fexofenadine 120mg,Antihistamines,28168.37,8226.79,1.713
+BOTTOM,Levocetirizine 2.5mg (Stellar Formulations),Antihistamines,10145.97,3033.89,1.673
+BOTTOM,Clotrimazole Cream 2% (Stellar Formulations),Dermatological,10666.34,3191.99,1.672

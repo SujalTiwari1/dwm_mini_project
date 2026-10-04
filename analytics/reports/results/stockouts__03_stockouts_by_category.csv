@@ -1,0 +1,11 @@
+category_name,stockout_days,stockout_rate_pct,stockout_events,share_of_all_stockout_days_pct
+Cardiovascular,3842,1.096,1320,21.01
+Antidiabetic,2716,1.111,937,14.85
+Antipyretics,2152,1.902,799,11.77
+Antihistamines,1904,1.087,650,10.41
+Antibiotics,1693,1.008,595,9.26
+Analgesics,1628,1.014,507,8.90
+Gastrointestinal,1391,0.669,460,7.61
+Vitamins,1372,0.917,451,7.50
+Respiratory,980,0.655,330,5.36
+Dermatological,612,0.578,229,3.35

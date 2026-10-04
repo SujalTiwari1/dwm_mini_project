@@ -1,0 +1,11 @@
+rank,medicine_name,category_name,units,revenue,transaction_count,avg_daily_units
+1,Telmisartan 40mg,Cardiovascular,36582,4429712.78,18327,50.112
+2,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,31895,3482747.35,15970,43.692
+3,Amlodipine 10mg (Stellar Formulations),Cardiovascular,31777,1404160.49,15936,43.530
+4,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,31486,11397510.79,15591,43.132
+5,Metformin 850mg,Antidiabetic,28611,1064768.60,14309,39.193
+6,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,27834,6572301.30,13983,38.129
+7,Amlodipine 5mg,Cardiovascular,26907,956725.73,13409,36.859
+8,Losartan 25mg (CarePlus Laboratories),Cardiovascular,26886,2728878.99,13477,36.830
+9,Metformin 500mg (Stellar Formulations),Antidiabetic,24803,821132.47,12385,33.977
+10,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,24046,5081251.27,12011,32.940

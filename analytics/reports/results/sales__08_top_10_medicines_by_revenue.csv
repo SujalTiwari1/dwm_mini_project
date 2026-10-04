@@ -1,0 +1,11 @@
+rank,medicine_name,category_name,units,revenue,transaction_count,revenue_share_pct
+1,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,31486,11397510.79,15591,7.159
+2,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,27834,6572301.30,13983,4.128
+3,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,24046,5081251.27,12011,3.192
+4,Telmisartan 40mg,Cardiovascular,36582,4429712.78,18327,2.782
+5,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,23871,3949570.79,11887,2.481
+6,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,23698,3525156.51,18218,2.214
+7,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,31895,3482747.35,15970,2.188
+8,Sitagliptin 50mg (BlueCrest Pharma),Antidiabetic,7454,3395589.78,3769,2.133
+9,Losartan 25mg (CarePlus Laboratories),Cardiovascular,26886,2728878.99,13477,1.714
+10,Amoxicillin + Clavulanic Acid 375mg,Antibiotics,10190,2479509.18,7773,1.557

@@ -1,0 +1,21 @@
+branch_name,medicine_name,category_name,stock_units,stock_value_at_cost,avg_daily_demand_30d,days_of_inventory
+MedStock Harbour,Sitagliptin 100mg,Antidiabetic,32,9123.84,0.2667,120.0
+MedStock Central,Sitagliptin 50mg (Summit Lifesciences),Antidiabetic,22,6855.44,0.1000,220.0
+MedStock Central,Sitagliptin 50mg (Crestview Pharma),Antidiabetic,17,6629.42,0.0333,510.0
+MedStock Harbour,Sitagliptin 50mg (Stellar Formulations),Antidiabetic,18,6411.48,0.0667,270.0
+MedStock Harbour,Rosuvastatin 20mg (Summit Lifesciences),Cardiovascular,32,6371.94,0.0667,480.0
+MedStock North,Sitagliptin 50mg (HealthAxis Pharma),Antidiabetic,18,5684.07,0.0333,540.0
+MedStock West,Sitagliptin 50mg (HealthAxis Pharma),Antidiabetic,17,5422.47,0.0667,255.0
+MedStock West,Sitagliptin 50mg (Summit Lifesciences),Antidiabetic,17,5368.09,0.0667,255.0
+MedStock North,Budesonide Inhaler 200mcg (VitaCure Remedies),Respiratory,25,5050.28,0.1000,250.0
+MedStock East,Sitagliptin 50mg (TrueLife Remedies),Antidiabetic,13,4547.74,0.0333,390.0
+MedStock North,Rosuvastatin 10mg (NovaMed Laboratories),Cardiovascular,34,4444.92,0.0667,510.0
+MedStock Central,Rosuvastatin 5mg,Cardiovascular,29,4310.23,0.1667,174.0
+MedStock West,Sitagliptin 50mg (TrueLife Remedies),Antidiabetic,11,4029.56,0.0000,
+MedStock Central,Glimepiride 1mg (Summit Lifesciences),Antidiabetic,31,3964.44,0.1333,232.5
+MedStock North,Sitagliptin 100mg (BlueCrest Pharma),Antidiabetic,15,3756.06,0.1000,150.0
+MedStock West,Glimepiride 3mg (NovaMed Laboratories),Antidiabetic,24,3731.27,0.1333,180.0
+MedStock Harbour,Budesonide Inhaler 200mcg (VitaCure Remedies),Respiratory,18,3601.45,0.1667,108.0
+MedStock East,Glimepiride 3mg (Stellar Formulations),Antidiabetic,25,3579.29,0.1000,250.0
+MedStock Central,Salbutamol Inhaler 100mcg (VitaCure Remedies),Respiratory,27,3508.29,0.1667,162.0
+MedStock North,Telmisartan 40mg (CureLine Healthcare),Cardiovascular,36,3454.93,0.1000,360.0

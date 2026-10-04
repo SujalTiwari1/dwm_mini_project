@@ -1,6 +1,6 @@
 -- MedStock: sample OLAP queries over the star schema (schema "warehouse").
 -- They demonstrate slice / dice / roll-up / drill-down with ROLLUP and GROUPING SETS. Not the full analytics layer.
--- Run in psql:  psql -h localhost -d medstock -f sql/olap_examples.sql
+-- Run in psql:  psql -h localhost -p 5433 -U medstock -d medstock -f sql/olap_examples.sql
 -- (Statements are separated by semicolons: keep semicolons out of comments and strings.)
 
 -- ============================================================================
@@ -68,6 +68,25 @@ JOIN warehouse.dim_medicine m ON m.medicine_key = s.medicine_key
 JOIN warehouse.dim_category c ON c.category_key = m.category_key
 GROUP BY d.year, c.category_name
 ORDER BY d.year, revenue DESC;
+
+-- 2a-i. Revenue by category (all years)
+SELECT c.category_name, COUNT(DISTINCT m.medicine_key) AS medicines, SUM(s.quantity) AS units, SUM(s.total_amount) AS revenue,
+       ROUND(100.0 * SUM(s.total_amount) / SUM(SUM(s.total_amount)) OVER (), 1) AS revenue_share_pct
+FROM warehouse.fact_sales s
+JOIN warehouse.dim_medicine m ON m.medicine_key = s.medicine_key
+JOIN warehouse.dim_category c ON c.category_key = m.category_key
+GROUP BY c.category_name
+ORDER BY revenue DESC;
+
+-- 2a-ii. Top 10 medicines by revenue (with category and share of total)
+SELECT m.medicine_name, c.category_name, SUM(s.quantity) AS units, SUM(s.total_amount) AS revenue,
+       ROUND(100.0 * SUM(s.total_amount) / SUM(SUM(s.total_amount)) OVER (), 2) AS revenue_share_pct
+FROM warehouse.fact_sales s
+JOIN warehouse.dim_medicine m ON m.medicine_key = s.medicine_key
+JOIN warehouse.dim_category c ON c.category_key = m.category_key
+GROUP BY m.medicine_name, c.category_name
+ORDER BY revenue DESC
+LIMIT 10;
 
 -- 2b. Drill down into one cell (2026, Respiratory): medicines, with ROLLUP subtotal rows
 SELECT COALESCE(c.category_name, 'ALL') AS category, COALESCE(m.medicine_name, 'subtotal') AS medicine,

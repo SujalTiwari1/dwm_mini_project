@@ -1,0 +1,6 @@
+days_to_expiry_bucket,batch_lots,units,cost_value,projected_unsold_units,value_at_risk
+1: 1-30 days,75,891,79518.75,142,9250.61
+2: 31-90 days,154,1401,124712.48,54,5388.38
+3: 91-180 days,305,2913,250136.57,82,8571.04
+4: 181-365 days,322,1911,129420.61,30,1899.92
+5: over 365 days,4644,38357,3059157.79,0,0.00

@@ -1,0 +1,151 @@
+branch_name,category_name,rank_in_category,medicine_name,units,revenue
+MedStock Central,Analgesics,1,Naproxen 500mg (CarePlus Laboratories),5004,433402.08
+MedStock Central,Analgesics,2,Naproxen 250mg (CureLine Healthcare),1552,119891.76
+MedStock Central,Analgesics,3,Paracetamol 500mg,3298,81232.34
+MedStock Central,Antibiotics,1,Azithromycin 250mg (LifeSpring Pharma),5129,763603.97
+MedStock Central,Antibiotics,2,Amoxicillin + Clavulanic Acid 375mg,2274,553027.69
+MedStock Central,Antibiotics,3,Azithromycin 250mg (BlueCrest Pharma),3925,505941.58
+MedStock Central,Antidiabetic,1,Sitagliptin 100mg (HealthAxis Pharma),6874,2486612.41
+MedStock Central,Antidiabetic,2,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),5425,898125.37
+MedStock Central,Antidiabetic,3,Sitagliptin 50mg (BlueCrest Pharma),1663,757087.52
+MedStock Central,Antihistamines,1,Montelukast + Levocetirizine 10mg/5mg,1287,249454.11
+MedStock Central,Antihistamines,2,Fexofenadine 180mg,653,143538.49
+MedStock Central,Antihistamines,3,Fexofenadine 120mg (BlueCrest Pharma),697,138125.13
+MedStock Central,Antipyretics,1,Mefenamic Acid 500mg,3639,188542.96
+MedStock Central,Antipyretics,2,Mefenamic Acid 500mg (Kavach Healthcare),2254,121841.18
+MedStock Central,Antipyretics,3,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),2028,108500.28
+MedStock Central,Cardiovascular,1,Rosuvastatin 20mg (VitaCure Remedies),6245,1474796.68
+MedStock Central,Cardiovascular,2,Rosuvastatin 5mg (NovaMed Laboratories),5378,1137054.84
+MedStock Central,Cardiovascular,3,Telmisartan 40mg,7920,958190.80
+MedStock Central,Dermatological,1,Clotrimazole Cream 1%,755,63100.90
+MedStock Central,Dermatological,2,Mupirocin Ointment 2% (CarePlus Laboratories),362,47183.07
+MedStock Central,Dermatological,3,Hydrocortisone Cream 1% (CureLine Healthcare),577,38747.90
+MedStock Central,Gastrointestinal,1,Ondansetron 8mg (LifeSpring Pharma),4726,315095.24
+MedStock Central,Gastrointestinal,2,Pantoprazole 40mg,3018,231952.77
+MedStock Central,Gastrointestinal,3,Omeprazole 20mg,4503,231314.51
+MedStock Central,Respiratory,1,Salbutamol Inhaler 100mcg (Stellar Formulations),2664,415280.58
+MedStock Central,Respiratory,2,Ambroxol + Levosalbutamol Syrup 100ml,1794,209026.34
+MedStock Central,Respiratory,3,Montelukast 10mg,1032,193280.06
+MedStock Central,Vitamins,1,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),2354,190564.81
+MedStock Central,Vitamins,2,Multivitamin B-complex+C (Summit Lifesciences),4219,186332.86
+MedStock Central,Vitamins,3,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),1181,133277.96
+MedStock East,Analgesics,1,Naproxen 500mg (CarePlus Laboratories),3932,340837.18
+MedStock East,Analgesics,2,Naproxen 250mg (CureLine Healthcare),1253,96770.19
+MedStock East,Analgesics,3,Paracetamol 500mg,2411,59437.66
+MedStock East,Antibiotics,1,Azithromycin 250mg (LifeSpring Pharma),3755,559764.63
+MedStock East,Antibiotics,2,Amoxicillin + Clavulanic Acid 375mg,1654,402651.84
+MedStock East,Antibiotics,3,Azithromycin 250mg (BlueCrest Pharma),3108,399661.42
+MedStock East,Antidiabetic,1,Sitagliptin 100mg (HealthAxis Pharma),5042,1826948.46
+MedStock East,Antidiabetic,2,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),3967,656582.79
+MedStock East,Antidiabetic,3,Sitagliptin 50mg (BlueCrest Pharma),1243,566170.27
+MedStock East,Antihistamines,1,Montelukast + Levocetirizine 10mg/5mg,893,172818.86
+MedStock East,Antihistamines,2,Fexofenadine 120mg (BlueCrest Pharma),564,111902.53
+MedStock East,Antihistamines,3,Fexofenadine 180mg,505,110732.18
+MedStock East,Antipyretics,1,Mefenamic Acid 500mg,2753,142571.11
+MedStock East,Antipyretics,2,Mefenamic Acid 500mg (Kavach Healthcare),1715,92637.49
+MedStock East,Antipyretics,3,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),1455,77536.23
+MedStock East,Cardiovascular,1,Rosuvastatin 20mg (VitaCure Remedies),4627,1092607.56
+MedStock East,Cardiovascular,2,Rosuvastatin 5mg (NovaMed Laboratories),3997,845626.71
+MedStock East,Cardiovascular,3,Telmisartan 40mg,6177,748124.51
+MedStock East,Dermatological,1,Clotrimazole Cream 1%,558,46503.47
+MedStock East,Dermatological,2,Mupirocin Ointment 2% (CarePlus Laboratories),293,38360.99
+MedStock East,Dermatological,3,Hydrocortisone Cream 1% (CureLine Healthcare),468,31414.47
+MedStock East,Gastrointestinal,1,Ondansetron 8mg (LifeSpring Pharma),4082,271993.84
+MedStock East,Gastrointestinal,2,Pantoprazole 40mg,2733,209742.10
+MedStock East,Gastrointestinal,3,Omeprazole 20mg,4076,209500.41
+MedStock East,Respiratory,1,Salbutamol Inhaler 100mcg (Stellar Formulations),1727,269214.39
+MedStock East,Respiratory,2,Ambroxol + Levosalbutamol Syrup 100ml,1287,149901.60
+MedStock East,Respiratory,3,Montelukast 10mg,644,120421.98
+MedStock East,Vitamins,1,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),1874,151652.65
+MedStock East,Vitamins,2,Multivitamin B-complex+C (Summit Lifesciences),3412,150626.21
+MedStock East,Vitamins,3,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),864,97292.52
+MedStock Harbour,Analgesics,1,Naproxen 500mg (CarePlus Laboratories),5117,442867.61
+MedStock Harbour,Analgesics,2,Naproxen 250mg (CureLine Healthcare),1501,116149.25
+MedStock Harbour,Analgesics,3,Paracetamol 500mg,3298,81303.33
+MedStock Harbour,Antibiotics,1,Azithromycin 250mg (LifeSpring Pharma),5733,851897.44
+MedStock Harbour,Antibiotics,2,Amoxicillin + Clavulanic Acid 375mg,2511,611867.82
+MedStock Harbour,Antibiotics,3,Azithromycin 250mg (BlueCrest Pharma),4450,573005.78
+MedStock Harbour,Antidiabetic,1,Sitagliptin 100mg (HealthAxis Pharma),7120,2577844.50
+MedStock Harbour,Antidiabetic,2,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),5114,845024.44
+MedStock Harbour,Antidiabetic,3,Sitagliptin 50mg (BlueCrest Pharma),1583,722370.02
+MedStock Harbour,Antihistamines,1,Montelukast + Levocetirizine 10mg/5mg,1163,225547.09
+MedStock Harbour,Antihistamines,2,Fexofenadine 120mg (BlueCrest Pharma),765,151345.97
+MedStock Harbour,Antihistamines,3,Fexofenadine 180mg,676,148497.59
+MedStock Harbour,Antipyretics,1,Mefenamic Acid 500mg,3684,190858.25
+MedStock Harbour,Antipyretics,2,Mefenamic Acid 500mg (Kavach Healthcare),2242,120777.31
+MedStock Harbour,Antipyretics,3,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),1869,99665.71
+MedStock Harbour,Cardiovascular,1,Rosuvastatin 20mg (VitaCure Remedies),5966,1409213.39
+MedStock Harbour,Cardiovascular,2,Rosuvastatin 5mg (NovaMed Laboratories),5264,1111566.66
+MedStock Harbour,Cardiovascular,3,Telmisartan 40mg,8186,991077.69
+MedStock Harbour,Dermatological,1,Clotrimazole Cream 1%,731,60850.77
+MedStock Harbour,Dermatological,2,Mupirocin Ointment 2% (CarePlus Laboratories),349,45380.09
+MedStock Harbour,Dermatological,3,Hydrocortisone Cream 1% (CureLine Healthcare),610,40864.42
+MedStock Harbour,Gastrointestinal,1,Ondansetron 8mg (LifeSpring Pharma),5297,353422.97
+MedStock Harbour,Gastrointestinal,2,Omeprazole 20mg,5142,264032.38
+MedStock Harbour,Gastrointestinal,3,Pantoprazole 40mg,3375,259372.13
+MedStock Harbour,Respiratory,1,Salbutamol Inhaler 100mcg (Stellar Formulations),2352,366469.54
+MedStock Harbour,Respiratory,2,Ambroxol + Levosalbutamol Syrup 100ml,1617,188779.08
+MedStock Harbour,Respiratory,3,Montelukast 10mg,909,169723.07
+MedStock Harbour,Vitamins,1,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),2540,205340.49
+MedStock Harbour,Vitamins,2,Multivitamin B-complex+C (Summit Lifesciences),4142,183071.73
+MedStock Harbour,Vitamins,3,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),1031,115956.63
+MedStock North,Analgesics,1,Naproxen 500mg (CarePlus Laboratories),5269,456784.46
+MedStock North,Analgesics,2,Naproxen 250mg (CureLine Healthcare),1733,133835.73
+MedStock North,Analgesics,3,Paracetamol 500mg,3346,82432.86
+MedStock North,Antibiotics,1,Azithromycin 250mg (LifeSpring Pharma),5183,770312.01
+MedStock North,Antibiotics,2,Amoxicillin + Clavulanic Acid 375mg,2139,520044.95
+MedStock North,Antibiotics,3,Azithromycin 250mg (BlueCrest Pharma),3869,498069.48
+MedStock North,Antidiabetic,1,Sitagliptin 100mg (HealthAxis Pharma),6712,2428500.07
+MedStock North,Antidiabetic,2,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),5022,831166.23
+MedStock North,Antidiabetic,3,Sitagliptin 50mg (BlueCrest Pharma),1590,724845.70
+MedStock North,Antihistamines,1,Montelukast + Levocetirizine 10mg/5mg,1189,230015.11
+MedStock North,Antihistamines,2,Fexofenadine 120mg (BlueCrest Pharma),763,151111.65
+MedStock North,Antihistamines,3,Fexofenadine 180mg,613,134041.59
+MedStock North,Antipyretics,1,Mefenamic Acid 500mg,3547,183766.85
+MedStock North,Antipyretics,2,Mefenamic Acid 500mg (Kavach Healthcare),2225,120068.00
+MedStock North,Antipyretics,3,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),1949,103768.67
+MedStock North,Cardiovascular,1,Rosuvastatin 20mg (VitaCure Remedies),5988,1414333.54
+MedStock North,Cardiovascular,2,Rosuvastatin 5mg (NovaMed Laboratories),5021,1060618.27
+MedStock North,Cardiovascular,3,Telmisartan 40mg,7791,944676.14
+MedStock North,Dermatological,1,Clotrimazole Cream 1%,693,57744.48
+MedStock North,Dermatological,2,Ketoconazole Shampoo 2%,191,39767.07
+MedStock North,Dermatological,3,Calamine Lotion 100ml (Stellar Formulations),541,38508.40
+MedStock North,Gastrointestinal,1,Ondansetron 8mg (LifeSpring Pharma),4685,312492.95
+MedStock North,Gastrointestinal,2,Pantoprazole 40mg,3168,243507.79
+MedStock North,Gastrointestinal,3,Omeprazole 20mg,4415,226951.30
+MedStock North,Respiratory,1,Salbutamol Inhaler 100mcg (Stellar Formulations),2321,361094.60
+MedStock North,Respiratory,2,Ambroxol + Levosalbutamol Syrup 100ml,1551,180585.87
+MedStock North,Respiratory,3,Montelukast 10mg,841,157290.97
+MedStock North,Vitamins,1,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),2454,198777.23
+MedStock North,Vitamins,2,Multivitamin B-complex+C (Summit Lifesciences),4088,180329.48
+MedStock North,Vitamins,3,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),1049,117992.17
+MedStock West,Analgesics,1,Naproxen 500mg (CarePlus Laboratories),3709,321541.80
+MedStock West,Analgesics,2,Naproxen 250mg (CureLine Healthcare),1204,93112.98
+MedStock West,Analgesics,3,Paracetamol 500mg,2410,59421.73
+MedStock West,Antibiotics,1,Azithromycin 250mg (LifeSpring Pharma),3898,579578.46
+MedStock West,Antibiotics,2,Amoxicillin + Clavulanic Acid 375mg,1612,391916.88
+MedStock West,Antibiotics,3,Azithromycin 250mg (BlueCrest Pharma),2971,382901.24
+MedStock West,Antidiabetic,1,Sitagliptin 100mg (HealthAxis Pharma),5738,2077605.35
+MedStock West,Antidiabetic,2,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),4343,718671.96
+MedStock West,Antidiabetic,3,Sitagliptin 50mg (BlueCrest Pharma),1375,625116.27
+MedStock West,Antihistamines,1,Montelukast + Levocetirizine 10mg/5mg,846,163437.04
+MedStock West,Antihistamines,2,Fexofenadine 120mg (BlueCrest Pharma),577,114416.61
+MedStock West,Antihistamines,3,Fexofenadine 180mg,496,108618.25
+MedStock West,Antipyretics,1,Mefenamic Acid 500mg,2674,138586.95
+MedStock West,Antipyretics,2,Mefenamic Acid 500mg (Kavach Healthcare),1651,89118.96
+MedStock West,Antipyretics,3,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),1436,76679.35
+MedStock West,Cardiovascular,1,Rosuvastatin 20mg (VitaCure Remedies),5008,1181350.13
+MedStock West,Cardiovascular,2,Rosuvastatin 5mg (NovaMed Laboratories),4386,926384.79
+MedStock West,Cardiovascular,3,Telmisartan 40mg,6508,787643.64
+MedStock West,Dermatological,1,Clotrimazole Cream 1%,519,43374.07
+MedStock West,Dermatological,2,Mupirocin Ointment 2% (CarePlus Laboratories),275,35618.33
+MedStock West,Dermatological,3,Ketoconazole Shampoo 2%,162,33491.21
+MedStock West,Gastrointestinal,1,Ondansetron 8mg (LifeSpring Pharma),3650,243169.77
+MedStock West,Gastrointestinal,2,Omeprazole 20mg,3553,182501.05
+MedStock West,Gastrointestinal,3,Pantoprazole 40mg,2333,179303.29
+MedStock West,Respiratory,1,Salbutamol Inhaler 100mcg (Stellar Formulations),1717,267707.99
+MedStock West,Respiratory,2,Ambroxol + Levosalbutamol Syrup 100ml,1191,138680.91
+MedStock West,Respiratory,3,Montelukast 10mg,642,119991.73
+MedStock West,Vitamins,1,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),1945,157167.37
+MedStock West,Vitamins,2,Multivitamin B-complex+C (Summit Lifesciences),3258,143859.25
+MedStock West,Vitamins,3,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),892,100247.58

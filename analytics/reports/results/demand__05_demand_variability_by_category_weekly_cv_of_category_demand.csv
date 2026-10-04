@@ -1,0 +1,11 @@
+category_name,avg_weekly_units,stddev_weekly_units,weekly_cv,stability_rank
+Cardiovascular,4638,179.8,0.0388,1
+Antidiabetic,2763,113.8,0.0412,2
+Analgesics,1124,80.9,0.0720,3
+Vitamins,1105,90.4,0.0818,4
+Antibiotics,1235,110.5,0.0895,5
+Gastrointestinal,1573,144.6,0.0919,6
+Dermatological,246,26.5,0.1076,7
+Antipyretics,873,109.5,0.1254,8
+Antihistamines,1057,150.7,0.1426,9
+Respiratory,558,89.3,0.1599,10

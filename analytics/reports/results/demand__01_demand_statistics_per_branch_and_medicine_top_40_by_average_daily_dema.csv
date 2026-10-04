@@ -1,0 +1,41 @@
+branch_name,medicine_name,category_name,total_units,avg_daily_demand,avg_weekly_demand,avg_monthly_demand,sales_days,zero_sales_days,stddev_daily_demand,coefficient_of_variation,weekly_coefficient_of_variation,variability_class
+MedStock Harbour,Telmisartan 40mg,Cardiovascular,8186,11.2137,78.496,341.32,723,7,5.5586,0.496,0.176,STABLE
+MedStock Central,Telmisartan 40mg,Cardiovascular,7920,10.8493,75.945,330.23,722,8,5.2961,0.488,0.192,STABLE
+MedStock North,Telmisartan 40mg,Cardiovascular,7791,10.6726,74.708,324.85,723,7,5.1930,0.487,0.172,STABLE
+MedStock Harbour,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,7120,9.7534,68.274,296.87,726,4,4.9673,0.509,0.160,STABLE
+MedStock Harbour,Amlodipine 10mg (Stellar Formulations),Cardiovascular,7054,9.6630,67.641,294.12,719,11,4.9816,0.516,0.204,STABLE
+MedStock Central,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,6977,9.5575,66.903,290.91,700,30,5.5640,0.582,0.267,STABLE
+MedStock Harbour,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,6902,9.4548,66.184,287.78,706,24,5.2214,0.552,0.252,STABLE
+MedStock Central,Amlodipine 10mg (Stellar Formulations),Cardiovascular,6892,9.4411,66.088,287.36,718,12,4.9718,0.527,0.192,STABLE
+MedStock Central,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,6874,9.4164,65.915,286.61,719,11,5.2498,0.558,0.205,STABLE
+MedStock North,Amlodipine 10mg (Stellar Formulations),Cardiovascular,6836,9.3644,65.551,285.03,716,14,5.0353,0.538,0.199,STABLE
+MedStock North,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,6835,9.3630,65.541,284.99,685,45,5.5406,0.592,0.308,STABLE
+MedStock North,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,6712,9.1945,64.362,279.86,719,11,4.8040,0.522,0.168,STABLE
+MedStock West,Telmisartan 40mg,Cardiovascular,6508,8.9151,62.405,271.35,720,10,4.7051,0.528,0.196,STABLE
+MedStock North,Metformin 850mg,Antidiabetic,6425,8.8014,61.610,267.89,709,21,4.8633,0.553,0.213,STABLE
+MedStock Central,Metformin 850mg,Antidiabetic,6350,8.6986,60.890,264.76,705,25,4.8779,0.561,0.224,STABLE
+MedStock Central,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,6245,8.5548,59.884,260.39,717,13,4.6215,0.540,0.183,STABLE
+MedStock East,Telmisartan 40mg,Cardiovascular,6177,8.4616,59.232,257.55,712,18,4.8341,0.571,0.233,STABLE
+MedStock Harbour,Metformin 850mg,Antidiabetic,6142,8.4137,58.896,256.09,709,21,5.1498,0.612,0.229,STABLE
+MedStock North,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,5988,8.2027,57.419,249.67,711,19,4.5118,0.550,0.209,STABLE
+MedStock Harbour,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,5966,8.1726,57.208,248.75,700,30,4.7152,0.577,0.240,STABLE
+MedStock Harbour,Losartan 25mg (CarePlus Laboratories),Cardiovascular,5899,8.0808,56.566,245.96,709,21,4.8336,0.598,0.227,STABLE
+MedStock Central,Losartan 25mg (CarePlus Laboratories),Cardiovascular,5868,8.0384,56.268,244.67,706,24,4.9201,0.612,0.213,STABLE
+MedStock Central,Amlodipine 5mg,Cardiovascular,5763,7.8945,55.262,240.29,704,26,4.7057,0.596,0.240,STABLE
+MedStock Harbour,Amlodipine 5mg,Cardiovascular,5762,7.8932,55.252,240.25,685,45,4.8841,0.619,0.284,STABLE
+MedStock West,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,5753,7.8808,55.166,239.87,683,47,4.9592,0.629,0.281,STABLE
+MedStock North,Amlodipine 5mg,Cardiovascular,5743,7.8671,55.070,239.46,692,38,4.9514,0.629,0.255,STABLE
+MedStock West,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,5738,7.8603,55.022,239.25,712,18,4.6271,0.589,0.242,STABLE
+MedStock Harbour,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,5733,7.8534,54.974,239.04,716,14,4.0354,0.514,0.233,STABLE
+MedStock North,Losartan 25mg (CarePlus Laboratories),Cardiovascular,5691,7.7959,54.571,237.29,701,29,4.6756,0.600,0.243,STABLE
+MedStock West,Amlodipine 10mg (Stellar Formulations),Cardiovascular,5632,7.7151,54.005,234.83,700,30,4.4928,0.582,0.247,STABLE
+MedStock Harbour,Metformin 500mg (Stellar Formulations),Antidiabetic,5448,7.4630,52.241,227.16,704,26,4.2783,0.573,0.239,STABLE
+MedStock North,Metformin 500mg (Stellar Formulations),Antidiabetic,5438,7.4493,52.145,226.74,700,30,4.8166,0.647,0.249,STABLE
+MedStock East,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,5428,7.4356,52.049,226.32,680,50,4.8256,0.649,0.297,STABLE
+MedStock Central,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,5425,7.4315,52.021,226.20,700,30,4.4928,0.605,0.229,STABLE
+MedStock Central,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,5378,7.3671,51.570,224.24,700,30,4.4441,0.603,0.242,STABLE
+MedStock East,Amlodipine 10mg (Stellar Formulations),Cardiovascular,5363,7.3466,51.426,223.61,695,35,4.6988,0.640,0.263,STABLE
+MedStock Harbour,Ondansetron 8mg (LifeSpring Pharma),Gastrointestinal,5297,7.2562,50.793,220.86,722,8,3.7892,0.522,0.223,STABLE
+MedStock North,Naproxen 500mg (CarePlus Laboratories),Analgesics,5269,7.2178,50.525,219.69,709,21,3.8462,0.533,0.258,STABLE
+MedStock Harbour,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,5264,7.2110,50.477,219.48,684,46,4.6713,0.648,0.286,STABLE
+MedStock Central,Metformin 500mg (Stellar Formulations),Antidiabetic,5227,7.1603,50.122,217.94,708,22,4.2284,0.591,0.250,STABLE

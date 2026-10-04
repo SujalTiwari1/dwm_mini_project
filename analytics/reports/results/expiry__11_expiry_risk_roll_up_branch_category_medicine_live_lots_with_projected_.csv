@@ -1,0 +1,41 @@
+branch,category,medicine,lots,expiry_risk_units,expiry_risk_value
+MedStock Central,Analgesics,Ibuprofen 200mg (VitaCure Remedies),1,6,184.70
+MedStock Central,Analgesics,Diclofenac 50mg (Aarogya Formulations),1,2,58.70
+MedStock Central,Analgesics,subtotal,2,8,243.40
+MedStock Central,Antibiotics,Cefixime 100mg,1,7,667.87
+MedStock Central,Antibiotics,subtotal,1,7,667.87
+MedStock Central,Antidiabetic,Gliclazide 40mg (NovaMed Laboratories),1,10,565.55
+MedStock Central,Antidiabetic,Glimepiride 3mg,1,1,172.53
+MedStock Central,Antidiabetic,Metformin 1000mg,1,4,99.94
+MedStock Central,Antidiabetic,subtotal,3,15,838.02
+MedStock Central,Antihistamines,Cetirizine 5mg (Stellar Formulations),1,3,57.19
+MedStock Central,Antihistamines,Cetirizine 5mg (Summit Lifesciences),1,1,14.10
+MedStock Central,Antihistamines,subtotal,2,4,71.29
+MedStock Central,Antipyretics,Paracetamol Suspension 125mg/5ml (VitaCure Remedies),1,5,261.57
+MedStock Central,Antipyretics,Mefenamic Acid 500mg (HealthAxis Pharma),1,4,123.80
+MedStock Central,Antipyretics,Mefenamic Acid 500mg (TrueLife Remedies),1,2,84.50
+MedStock Central,Antipyretics,Paracetamol Suspension 250mg/5ml (BlueCrest Pharma),1,1,22.30
+MedStock Central,Antipyretics,subtotal,4,12,492.17
+MedStock Central,Cardiovascular,Rosuvastatin 20mg (Summit Lifesciences),1,7,1407.91
+MedStock Central,Cardiovascular,subtotal,1,7,1407.91
+MedStock Central,Gastrointestinal,Ondansetron 8mg,1,1,71.88
+MedStock Central,Gastrointestinal,subtotal,1,1,71.88
+MedStock Central,Respiratory,Salbutamol Inhaler 100mcg (TrueLife Remedies),2,5,554.85
+MedStock Central,Respiratory,subtotal,2,5,554.85
+MedStock Central,all categories,subtotal,16,59,4347.39
+MedStock East,Analgesics,Ibuprofen 200mg (VitaCure Remedies),1,1,19.86
+MedStock East,Analgesics,Aceclofenac + Paracetamol 100mg/325mg (LifeSpring Pharma),1,0,6.69
+MedStock East,Analgesics,subtotal,2,1,26.55
+MedStock East,Antibiotics,Cefixime 200mg (CureLine Healthcare),1,3,244.69
+MedStock East,Antibiotics,subtotal,1,3,244.69
+MedStock East,Antidiabetic,Glimepiride 3mg,1,1,238.61
+MedStock East,Antidiabetic,Gliclazide 40mg (Stellar Formulations),1,4,234.52
+MedStock East,Antidiabetic,Gliclazide 40mg (NovaMed Laboratories),1,1,65.26
+MedStock East,Antidiabetic,subtotal,3,7,538.39
+MedStock East,Antihistamines,Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),1,4,486.74
+MedStock East,Antihistamines,Cetirizine 5mg (Summit Lifesciences),1,6,132.26
+MedStock East,Antihistamines,Cetirizine 10mg (Stellar Formulations),1,1,7.90
+MedStock East,Antihistamines,Chlorpheniramine 4mg (CarePlus Laboratories),1,1,5.89
+MedStock East,Antihistamines,subtotal,4,12,632.79
+MedStock East,Antipyretics,Mefenamic Acid 500mg (TrueLife Remedies),1,7,268.71
+MedStock East,Antipyretics,Mefenamic Acid 500mg (HealthAxis Pharma),1,4,130.43

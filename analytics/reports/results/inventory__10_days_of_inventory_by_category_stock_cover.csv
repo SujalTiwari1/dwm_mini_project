@@ -1,0 +1,11 @@
+category_name,stock_units,daily_demand_30d,days_of_inventory
+Dermatological,1458,34.00,42.9
+Respiratory,2835,91.40,31.0
+Antihistamines,3640,152.20,23.9
+Gastrointestinal,4796,208.80,23.0
+Analgesics,3790,174.27,21.7
+Vitamins,3720,173.33,21.5
+Antibiotics,3082,157.73,19.5
+Antipyretics,2097,112.90,18.6
+Cardiovascular,12642,710.57,17.8
+Antidiabetic,7413,416.37,17.8

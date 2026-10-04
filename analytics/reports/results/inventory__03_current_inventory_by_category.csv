@@ -1,0 +1,11 @@
+category_name,stock_units,stock_value_at_cost,medicines_stocked,value_share_pct
+Antidiabetic,7413,1037146.95,67,28.47
+Cardiovascular,12642,959088.66,96,26.33
+Respiratory,2835,362291.04,41,9.95
+Antibiotics,3082,314381.99,46,8.63
+Antihistamines,3640,217148.82,48,5.96
+Gastrointestinal,4796,203112.59,57,5.58
+Vitamins,3720,199360.97,41,5.47
+Analgesics,3790,149325.12,44,4.10
+Dermatological,1458,126675.35,29,3.48
+Antipyretics,2097,74414.71,31,2.04

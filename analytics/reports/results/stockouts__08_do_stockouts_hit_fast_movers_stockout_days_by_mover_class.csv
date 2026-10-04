@@ -1,0 +1,4 @@
+mover_class,medicines,stockout_days,share_of_stockout_days_pct,stockout_rate_pct
+FAST,100,7023,38.40,1.924
+MEDIUM,150,7517,41.10,1.373
+SLOW,250,3750,20.50,0.411

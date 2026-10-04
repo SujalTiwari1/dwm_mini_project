@@ -1,0 +1,31 @@
+branch_name,medicine_name,category_name,stock_units,avg_daily_demand_30d,days_of_inventory,stock_status
+MedStock North,Amlodipine 10mg (Stellar Formulations),Cardiovascular,27,10.6667,2.5,LOW STOCK
+MedStock Harbour,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,39,10.4667,3.7,LOW STOCK
+MedStock East,Amlodipine 10mg (Stellar Formulations),Cardiovascular,38,9.3333,4.1,LOW STOCK
+MedStock Harbour,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,12,9.2000,1.3,LOW STOCK
+MedStock West,Amlodipine 5mg,Cardiovascular,58,8.9667,6.5,LOW STOCK
+MedStock North,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,44,8.6667,5.1,LOW STOCK
+MedStock Harbour,Metformin 850mg,Antidiabetic,49,7.9667,6.2,LOW STOCK
+MedStock Harbour,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,34,7.7667,4.4,LOW STOCK
+MedStock West,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,54,7.7333,7.0,LOW STOCK
+MedStock West,Metformin 500mg (Stellar Formulations),Antidiabetic,29,7.5000,3.9,LOW STOCK
+MedStock Harbour,Cetirizine 5mg (TrueLife Remedies),Antihistamines,27,7.3333,3.7,LOW STOCK
+MedStock Harbour,Aspirin 75mg (BlueCrest Pharma),Cardiovascular,29,7.1000,4.1,LOW STOCK
+MedStock North,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,19,6.9000,2.8,LOW STOCK
+MedStock Harbour,Multivitamin B-complex+C (Summit Lifesciences),Vitamins,32,6.8333,4.7,LOW STOCK
+MedStock Harbour,ORS Powder 21.8g (HealthAxis Pharma),Gastrointestinal,17,6.7000,2.5,LOW STOCK
+MedStock East,Losartan 25mg (CarePlus Laboratories),Cardiovascular,41,6.6667,6.2,LOW STOCK
+MedStock Central,Cetirizine 5mg (TrueLife Remedies),Antihistamines,44,6.6000,6.7,LOW STOCK
+MedStock Central,ORS Powder 21.8g (HealthAxis Pharma),Gastrointestinal,29,6.5667,4.4,LOW STOCK
+MedStock East,Metformin 850mg,Antidiabetic,40,6.2000,6.5,LOW STOCK
+MedStock North,Cetirizine 5mg (TrueLife Remedies),Antihistamines,33,6.2000,5.3,LOW STOCK
+MedStock Central,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,24,5.9333,4.0,LOW STOCK
+MedStock East,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,20,5.5667,3.6,LOW STOCK
+MedStock Central,Paracetamol 500mg,Analgesics,15,5.4000,2.8,LOW STOCK
+MedStock East,Omeprazole 20mg,Gastrointestinal,25,4.9333,5.1,LOW STOCK
+MedStock Central,Cetirizine 10mg,Antihistamines,22,4.7333,4.6,LOW STOCK
+MedStock Central,Mefenamic Acid 500mg,Antipyretics,30,4.7333,6.3,LOW STOCK
+MedStock North,Gliclazide 40mg (Summit Lifesciences),Antidiabetic,8,4.7333,1.7,LOW STOCK
+MedStock North,Vitamin C Chewable 1000mg (ApexLife Pharma),Vitamins,19,4.7333,4.0,LOW STOCK
+MedStock West,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,24,4.5667,5.3,LOW STOCK
+MedStock East,ORS Powder 21.8g (HealthAxis Pharma),Gastrointestinal,25,4.5333,5.5,LOW STOCK

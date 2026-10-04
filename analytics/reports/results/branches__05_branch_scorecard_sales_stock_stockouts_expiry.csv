@@ -1,0 +1,6 @@
+branch_name,revenue,units,stock_units,stock_value,out_of_stock_items,low_stock_items,overstock_items,stockout_days,stockout_rate_pct,expired_value,expiry_value_at_risk
+MedStock Harbour,35396534.54,351715,9986,786534.29,2,30,120,3431,0.94,66951.14,7033.20
+MedStock Central,35269640.20,348281,10054,829887.71,2,28,120,3445,0.94,53296.92,4347.39
+MedStock North,34101419.01,340651,9638,753603.33,4,29,111,3410,0.93,58260.86,3176.99
+MedStock West,27682152.09,273126,7752,638685.00,3,29,122,3966,1.09,51964.62,5342.83
+MedStock East,26755446.87,268580,8043,634235.87,8,32,134,4038,1.11,58448.32,5209.54

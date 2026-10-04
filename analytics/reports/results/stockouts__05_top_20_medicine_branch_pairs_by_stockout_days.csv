@@ -1,0 +1,21 @@
+medicine_name,branch_name,category_name,stockout_days,stockout_rate_pct
+Metformin 500mg,MedStock Central,Antidiabetic,81,11.096
+Metformin 500mg,MedStock West,Antidiabetic,75,10.274
+Metformin 500mg,MedStock East,Antidiabetic,74,10.137
+Metformin 500mg,MedStock Harbour,Antidiabetic,70,9.589
+Metformin 500mg,MedStock North,Antidiabetic,68,9.315
+Cetirizine 10mg,MedStock North,Antihistamines,63,8.630
+Mefenamic Acid 500mg (NovaMed Laboratories),MedStock North,Antipyretics,60,8.219
+Paracetamol 650mg,MedStock Central,Antipyretics,58,7.945
+Mefenamic Acid 500mg (NovaMed Laboratories),MedStock West,Antipyretics,56,7.671
+Metformin 1000mg (HealthAxis Pharma),MedStock North,Antidiabetic,55,7.534
+Paracetamol 650mg,MedStock West,Antipyretics,55,7.534
+Telmisartan 40mg (Aarogya Formulations),MedStock East,Cardiovascular,55,7.534
+Telmisartan 40mg (Aarogya Formulations),MedStock North,Cardiovascular,55,7.534
+Calcium + Vitamin D3 500mg/250IU,MedStock West,Vitamins,54,7.397
+Salbutamol Inhaler 100mcg (ApexLife Pharma),MedStock East,Respiratory,54,7.397
+Telmisartan 40mg (Aarogya Formulations),MedStock West,Cardiovascular,54,7.397
+Mefenamic Acid 500mg,MedStock Harbour,Antipyretics,53,7.260
+Mefenamic Acid 500mg (Kavach Healthcare),MedStock North,Antipyretics,52,7.123
+Salbutamol Inhaler 100mcg (ApexLife Pharma),MedStock Central,Respiratory,50,6.849
+Mefenamic Acid 500mg (Kavach Healthcare),MedStock West,Antipyretics,47,6.438

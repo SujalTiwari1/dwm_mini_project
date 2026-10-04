@@ -1,0 +1,11 @@
+medicine_name,category_name,units,avg_daily_units,transaction_count,revenue
+Clotrimazole Cream 2% (Stellar Formulations),Dermatological,154,0.211,139,14440.89
+Hydrocortisone Cream 1% (Summit Lifesciences),Dermatological,154,0.211,145,9584.23
+Salbutamol Inhaler 200mcg (CarePlus Laboratories),Respiratory,155,0.212,135,31104.31
+Cetirizine 5mg (CureLine Healthcare),Antihistamines,162,0.222,119,4103.56
+Salbutamol Inhaler 100mcg (Aarogya Formulations),Respiratory,178,0.244,159,30366.67
+Montelukast 5mg (CarePlus Laboratories),Respiratory,182,0.249,158,41376.74
+Levocetirizine 2.5mg (Stellar Formulations),Antihistamines,185,0.253,143,13038.00
+Fexofenadine 120mg,Antihistamines,198,0.271,157,37555.57
+Naproxen 500mg (NovaMed Laboratories),Analgesics,199,0.273,149,18819.96
+Mefenamic Acid 500mg (LifeSpring Pharma),Antipyretics,203,0.278,161,10696.55

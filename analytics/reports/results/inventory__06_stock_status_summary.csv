@@ -1,0 +1,5 @@
+stock_status,branch_medicine_pairs,stock_units,stock_value_at_cost,pair_share_pct,value_share_pct
+OUT OF STOCK,19,0,0.00,0.76,0.00
+LOW STOCK,148,1581,111478.55,5.92,3.06
+NORMAL,1726,34924,2813077.22,69.04,77.22
+OVERSTOCK,607,8968,718390.43,24.28,19.72

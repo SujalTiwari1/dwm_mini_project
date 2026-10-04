@@ -1,0 +1,28 @@
+# MedStock: local PostgreSQL for the data warehouse (PostgreSQL only; nothing else is containerised).
+#   docker compose up -d      start (data persists in the named volume across stop/restart/down)
+#   docker compose down       stop and remove the container, KEEP the data
+#   docker compose down -v    stop and DELETE the data volume (the ETL can rebuild the warehouse in about a minute)
+# Application connection settings live in .env (DATABASE_URL), not here.
+name: medstock
+
+services:
+  postgres:
+    image: postgres:18
+    container_name: ${MEDSTOCK_PG_CONTAINER:-medstock-postgres}
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: medstock
+      POSTGRES_USER: medstock
+      POSTGRES_PASSWORD: medstock          # local development only
+    ports:
+      - "${MEDSTOCK_PG_PORT:-5433}:5432"   # host 5433 -> container 5432
+    volumes:
+      - medstock_pgdata:/var/lib/postgresql   # PostgreSQL 18 images keep PGDATA under this path
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medstock -d medstock"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+volumes:
+  medstock_pgdata:

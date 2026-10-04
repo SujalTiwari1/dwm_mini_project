@@ -1,0 +1,21 @@
+rank,medicine_name,category_name,stockout_days,branches_affected,stockout_rate_pct
+1,Metformin 500mg,Antidiabetic,368,5,10.082
+2,Paracetamol 650mg,Antipyretics,244,5,6.685
+3,Mefenamic Acid 500mg (NovaMed Laboratories),Antipyretics,238,5,6.521
+4,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,230,5,6.301
+5,Mefenamic Acid 500mg (Kavach Healthcare),Antipyretics,219,5,6.000
+6,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,191,5,5.233
+6,Mefenamic Acid 500mg,Antipyretics,191,5,5.233
+8,Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories),Antibiotics,189,5,5.178
+9,Cetirizine 10mg,Antihistamines,186,5,5.096
+10,Salbutamol Inhaler 100mcg (ApexLife Pharma),Respiratory,183,5,5.014
+11,Diclofenac 50mg,Analgesics,176,5,4.822
+12,Paracetamol Suspension 250mg/5ml (CureLine Healthcare),Antipyretics,172,5,4.712
+13,Cetirizine 5mg (CarePlus Laboratories),Antihistamines,155,5,4.247
+13,Paracetamol Suspension 250mg/5ml (CarePlus Laboratories),Antipyretics,155,5,4.247
+15,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),Antipyretics,151,5,4.137
+16,Calcium + Vitamin D3 500mg/250IU,Vitamins,143,5,3.918
+16,Paracetamol Suspension 125mg/5ml (NovaMed Laboratories),Antipyretics,143,5,3.918
+18,Aspirin 150mg (CarePlus Laboratories),Cardiovascular,137,5,3.753
+19,Cetirizine 10mg (CureLine Healthcare),Antihistamines,136,5,3.726
+20,Calamine Lotion 100ml (Stellar Formulations),Dermatological,132,5,3.616

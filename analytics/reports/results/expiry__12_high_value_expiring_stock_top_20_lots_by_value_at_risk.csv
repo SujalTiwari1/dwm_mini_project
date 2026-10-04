@@ -1,0 +1,21 @@
+medicine_name,batch_id,branch_name,quantity,expiry_date,days_to_expiry,cost_value,daily_demand_90d,projected_unsold_units,value_at_risk,risk_class
+Sitagliptin 100mg (CarePlus Laboratories),BAT034721,MedStock West,20,2027-01-12,12,5566.80,1.2444,5.1,1410.26,CRITICAL
+Rosuvastatin 20mg (Summit Lifesciences),BAT035455,MedStock Central,7,2027-03-20,79,1407.91,0.0000,7.0,1407.91,HIGH
+Montelukast 10mg (Summit Lifesciences),BAT033080,MedStock East,9,2027-02-01,32,1334.52,0.0667,6.9,1018.19,HIGH
+Salbutamol Inhaler 200mcg (CarePlus Laboratories),BAT034975,MedStock Harbour,7,2027-06-05,156,956.13,0.0111,7.0,956.13,MEDIUM
+Glimepiride 3mg,BAT034344,MedStock West,8,2027-01-14,14,1321.52,0.1889,5.4,884.68,CRITICAL
+Salbutamol Inhaler 100mcg (TrueLife Remedies),BAT035000,MedStock North,10,2027-05-08,128,1093.50,0.0222,7.2,782.46,MEDIUM
+Mupirocin Ointment 2% (NovaMed Laboratories),BAT034945,MedStock North,7,2027-05-05,125,768.53,0.0444,7.0,768.53,MEDIUM
+Mupirocin Ointment 2% (NovaMed Laboratories),BAT034945,MedStock Harbour,7,2027-05-05,125,768.53,0.0778,7.0,768.53,MEDIUM
+Rosuvastatin 20mg (Summit Lifesciences),BAT035455,MedStock East,9,2027-03-20,79,1810.17,0.0667,3.7,750.89,HIGH
+Salbutamol Inhaler 200mcg (CarePlus Laboratories),BAT034975,MedStock West,5,2027-06-05,156,682.95,0.0111,5.0,682.95,MEDIUM
+Cefixime 100mg,BAT029966,MedStock Central,8,2027-01-30,30,801.44,0.0444,6.7,667.87,CRITICAL
+Gliclazide 40mg (NovaMed Laboratories),BAT032533,MedStock Central,11,2027-01-18,18,598.18,0.0333,10.4,565.55,CRITICAL
+Fusidic Acid Cream 2% (VitaCure Remedies),BAT013727,MedStock East,5,2027-08-09,221,536.40,0.0222,5.0,536.40,MEDIUM
+Mupirocin Ointment 2% (NovaMed Laboratories),BAT025454,MedStock Harbour,7,2027-04-26,116,700.63,0.0778,5.0,498.23,MEDIUM
+Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),BAT034502,MedStock East,6,2027-01-06,6,684.48,0.2889,4.3,486.74,CRITICAL
+Gliclazide 40mg (Stellar Formulations),BAT032166,MedStock West,8,2027-01-01,1,474.32,0.1111,7.9,467.73,CRITICAL
+Cefixime 200mg (Stellar Formulations),BAT026544,MedStock Harbour,9,2027-11-02,306,697.59,0.0111,5.6,434.06,MEDIUM
+Fusidic Acid Cream 2% (VitaCure Remedies),BAT033573,MedStock Harbour,7,2027-06-02,153,813.47,0.0222,3.6,418.36,MEDIUM
+Dextromethorphan Syrup 100ml (TrueLife Remedies),BAT033515,MedStock Harbour,8,2027-01-19,19,604.96,0.1444,5.3,397.43,CRITICAL
+Clotrimazole Cream 2% (Stellar Formulations),BAT023703,MedStock Harbour,7,2027-06-11,162,465.43,0.0444,5.8,385.64,MEDIUM

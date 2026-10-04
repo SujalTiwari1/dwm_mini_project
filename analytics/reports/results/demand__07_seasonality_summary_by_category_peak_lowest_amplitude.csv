@@ -1,0 +1,11 @@
+category_name,peak_month,peak_index,lowest_month,lowest_index,seasonality_amplitude,seasonality_rank
+Respiratory,1,1.216,7,0.792,0.212,1
+Antihistamines,3,1.201,9,0.803,0.199,2
+Antipyretics,8,1.196,1,0.829,0.183,3
+Dermatological,8,1.113,1,0.830,0.142,4
+Antibiotics,7,1.125,1,0.883,0.121,5
+Gastrointestinal,7,1.126,1,0.886,0.120,6
+Vitamins,2,1.102,6,0.916,0.093,7
+Analgesics,2,1.101,8,0.924,0.089,8
+Cardiovascular,12,1.046,7,0.963,0.041,9
+Antidiabetic,12,1.036,4,0.974,0.031,10

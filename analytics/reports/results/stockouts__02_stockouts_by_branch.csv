@@ -1,0 +1,6 @@
+branch_name,stockout_days,stockout_rate_pct,stockout_events,share_of_all_stockout_days_pct
+MedStock East,4038,1.106,1393,22.08
+MedStock West,3966,1.087,1339,21.68
+MedStock Central,3445,0.944,1209,18.84
+MedStock Harbour,3431,0.940,1167,18.76
+MedStock North,3410,0.934,1170,18.64

@@ -1,0 +1,4 @@
+mover_class,medicines,units,revenue,unit_share_pct,revenue_share_pct,min_daily_units,max_daily_units
+FAST,100,1105500,109664650.44,69.86,68.88,5.392,50.112
+MEDIUM,150,335562,34872177.61,21.21,21.90,1.390,5.377
+SLOW,250,141291,14668364.66,8.93,9.21,0.211,1.385

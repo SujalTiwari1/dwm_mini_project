@@ -1,0 +1,6 @@
+rank,branch_name,area,revenue,units,transactions,avg_transaction_value,avg_units_per_transaction,active_medicines,revenue_share_pct,unit_share_pct
+1,MedStock Harbour,Dadar,35396534.54,351715,137134,258.12,2.565,500,22.23,22.23
+2,MedStock Central,Andheri,35269640.20,348281,134993,261.27,2.580,500,22.15,22.01
+3,MedStock North,Borivali,34101419.01,340651,132137,258.08,2.578,500,21.42,21.53
+4,MedStock West,Bandra,27682152.09,273126,104686,264.43,2.609,500,17.39,17.26
+5,MedStock East,Chembur,26755446.87,268580,104077,257.07,2.581,500,16.81,16.97

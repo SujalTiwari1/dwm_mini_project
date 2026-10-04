@@ -1,0 +1,11 @@
+group_label,medicine_name,category_name,avg_weekly_units,weekly_cv
+MOST VARIABLE,Telmisartan 80mg,Cardiovascular,9.8,0.630
+MOST VARIABLE,Sitagliptin 50mg (Summit Lifesciences),Antidiabetic,7.2,0.593
+MOST VARIABLE,Metoprolol 25mg (HealthAxis Pharma),Cardiovascular,7.9,0.592
+MOST VARIABLE,Metoprolol 25mg (LifeSpring Pharma),Cardiovascular,8.4,0.582
+MOST VARIABLE,Aspirin 150mg (Summit Lifesciences),Cardiovascular,7.5,0.580
+MOST STABLE,Metformin 500mg (Stellar Formulations),Antidiabetic,237.8,0.108
+MOST STABLE,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,266.1,0.103
+MOST STABLE,Amlodipine 10mg (Stellar Formulations),Cardiovascular,304.7,0.092
+MOST STABLE,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,301.5,0.089
+MOST STABLE,Telmisartan 40mg,Cardiovascular,350.9,0.080

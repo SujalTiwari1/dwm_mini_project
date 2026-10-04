@@ -1,0 +1,31 @@
+spend_rank,supplier_name,city,total_purchase_value,total_purchase_quantity,medicines_supplied,categories_supplied,average_purchase_price,spend_share_pct
+1,Navkar Pharma Agency,Mumbai,15606440.09,147314,44,4,105.94,12.45
+2,Western Drugs & Surgicals,Mumbai,10655220.35,64799,37,4,164.43,8.50
+3,Siddhivinayak Drug Agency,Mumbai,8175822.18,88750,48,4,92.12,6.52
+4,Pioneer Healthcare Distributors,Mumbai,7726089.33,106415,47,4,72.60,6.16
+5,Sahyadri Pharma Distributors,Pune,7517686.09,97031,39,3,77.48,6.00
+6,Neelkanth Pharma Link,Mumbai,7100867.94,80066,41,4,88.69,5.66
+7,Kalyan Medical Stores,Kalyan,6894340.45,52517,45,4,131.28,5.50
+8,Arihant Pharma Traders,Mumbai,5730659.83,67876,52,3,84.43,4.57
+9,Bombay Medi Supply,Mumbai,5084767.29,100294,38,4,50.70,4.06
+10,Konkan Healthcare Traders,Thane,4809365.06,72396,43,4,66.43,3.84
+11,Sai Pharma Distributors,Mumbai,4565732.40,57047,30,3,80.03,3.64
+12,Dadar Wholesale Drugs,Mumbai,4427744.49,111208,50,4,39.81,3.53
+13,Om Sai Medicorp,Vasai,4187390.36,55838,50,4,74.99,3.34
+14,Ulhasnagar Drug Centre,Ulhasnagar,4155549.21,73570,42,4,56.48,3.31
+15,Jai Hind Medical Agencies,Thane,3225555.91,21225,23,3,151.97,2.57
+16,Vashi Pharma Hub,Navi Mumbai,3055377.32,26655,26,4,114.63,2.44
+17,Bhiwandi Drug Depot,Bhiwandi,2614199.04,28652,30,4,91.24,2.08
+18,Vasai Virar Medico,Vasai,2461744.78,28655,39,4,85.91,1.96
+19,Mira Road Drug House,Mira Bhayandar,2428070.47,57752,34,4,42.04,1.94
+20,Goregaon Medi Wholesale,Mumbai,2030082.62,40104,27,4,50.62,1.62
+21,Malad Healthcare Supply,Mumbai,1692716.80,38058,29,3,44.48,1.35
+22,Deccan Drug House,Pune,1654131.29,32519,28,3,50.87,1.32
+23,Thane Medico Traders,Thane,1649653.80,25191,28,4,65.49,1.32
+24,Apex Pharma Wholesale,Mumbai,1637166.24,37729,33,4,43.39,1.31
+25,Panvel Pharma Supplies,Navi Mumbai,1549406.77,25196,31,4,61.49,1.24
+26,Shree Ganesh Medico,Mumbai,1381636.84,26879,20,4,51.40,1.10
+27,Lifeline Medico Distributors,Mumbai,951867.32,26088,32,4,36.49,0.76
+28,Maharashtra Pharma Link,Mumbai,936224.21,16268,22,3,57.55,0.75
+29,Mahalaxmi Pharma Agencies,Navi Mumbai,820934.82,13224,19,3,62.08,0.65
+30,Chembur Pharma Depot,Mumbai,662017.55,12109,19,3,54.67,0.53

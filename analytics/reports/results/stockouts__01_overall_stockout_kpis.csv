@@ -1,0 +1,2 @@
+total_stockout_days,branch_medicine_days,stockout_rate_pct,stockout_events,medicines_affected,branches_affected,branch_medicine_pairs_affected
+18290,1825000,1.002,6278,478,5,1689

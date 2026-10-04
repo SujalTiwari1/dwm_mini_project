@@ -1,6 +1,6 @@
 -- MedStock warehouse validation queries.
 -- Every statement returns rows (check_name, actual, expected, status) with status PASS / FAIL / INFO.
--- Run in psql:  psql -h localhost -d medstock -f sql/validation.sql
+-- Run in psql:  psql -h localhost -p 5433 -U medstock -d medstock -f sql/validation.sql
 -- The ETL (etl.validation.warehouse_checks) runs this same file and fails on any FAIL.
 -- (Statements are separated by semicolons: keep semicolons out of comments and strings.)
 

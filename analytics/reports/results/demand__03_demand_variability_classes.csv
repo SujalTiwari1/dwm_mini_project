@@ -1,0 +1,4 @@
+variability_class,branch_medicine_pairs,avg_daily_demand,avg_weekly_cv,units,unit_share_pct
+STABLE,467,3.120,0.371,1063568,67.2
+MODERATELY VARIABLE,872,0.614,0.719,390538,24.7
+HIGHLY VARIABLE,1161,0.151,1.424,128247,8.1

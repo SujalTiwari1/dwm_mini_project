@@ -1,0 +1,21 @@
+medicine_name,branch_name,days_to_expiry,units_on_hand,daily_demand_90d,expected_sales_before_expiry,projected_unsold_units,risk_class
+Gliclazide 40mg (Stellar Formulations),MedStock West,1,8,0.1111,0.1,7.9,CRITICAL
+Gliclazide 40mg (Stellar Formulations),MedStock East,1,4,0.0444,0.0,4.0,CRITICAL
+Mefenamic Acid 250mg (LifeSpring Pharma),MedStock Harbour,4,8,0.4000,1.6,6.4,CRITICAL
+Paracetamol Suspension 125mg/5ml (VitaCure Remedies),MedStock Central,4,6,0.1444,0.6,5.4,CRITICAL
+Paracetamol Suspension 125mg/5ml (VitaCure Remedies),MedStock Harbour,4,2,0.3444,1.4,0.6,CRITICAL
+Mefenamic Acid 250mg (LifeSpring Pharma),MedStock West,4,1,0.1889,0.8,0.2,CRITICAL
+Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),MedStock East,6,6,0.2889,1.7,4.3,CRITICAL
+Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),MedStock Harbour,6,1,0.3111,1.9,0.0,MEDIUM
+ORS Powder 21.8g (HealthAxis Pharma),MedStock Central,7,14,6.7889,47.5,0.0,MEDIUM
+Dextromethorphan Syrup 100ml,MedStock West,9,14,1.0000,9.0,5.0,CRITICAL
+Cetirizine 5mg (Stellar Formulations),MedStock Central,10,9,0.5778,5.8,3.2,CRITICAL
+Ibuprofen 200mg (VitaCure Remedies),MedStock West,12,9,0.1667,2.0,7.0,CRITICAL
+Ibuprofen 200mg (VitaCure Remedies),MedStock Central,12,9,0.2333,2.8,6.2,CRITICAL
+Sitagliptin 100mg (CarePlus Laboratories),MedStock West,12,20,1.2444,14.9,5.1,CRITICAL
+Mefenamic Acid 500mg (HealthAxis Pharma),MedStock East,12,7,0.2556,3.1,3.9,CRITICAL
+Mefenamic Acid 500mg (HealthAxis Pharma),MedStock Central,12,6,0.1889,2.3,3.7,CRITICAL
+Ibuprofen 200mg (VitaCure Remedies),MedStock North,12,3,0.1000,1.2,1.8,CRITICAL
+Mefenamic Acid 500mg (HealthAxis Pharma),MedStock Harbour,12,4,0.2333,2.8,1.2,CRITICAL
+Mefenamic Acid 500mg (HealthAxis Pharma),MedStock North,12,4,0.2556,3.1,0.9,CRITICAL
+Mefenamic Acid 500mg (HealthAxis Pharma),MedStock West,12,3,0.1778,2.1,0.9,CRITICAL

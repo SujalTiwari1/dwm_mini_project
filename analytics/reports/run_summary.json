@@ -1,0 +1,961 @@
+{
+ "queries": 91,
+ "query_failures": 0,
+ "validation_checks": 37,
+ "validation_failures": 0,
+ "seconds": 222.4,
+ "queries_detail": [
+  {
+   "file": "sales",
+   "n": 1,
+   "name": "Overall sales KPIs",
+   "rows": 1,
+   "seconds": 0.39,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 2,
+   "name": "Daily sales trend",
+   "rows": 730,
+   "seconds": 0.63,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 3,
+   "name": "Weekly sales trend (ISO weeks)",
+   "rows": 105,
+   "seconds": 1.36,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 4,
+   "name": "Monthly sales trend",
+   "rows": 24,
+   "seconds": 3.04,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 5,
+   "name": "Quarterly sales trend",
+   "rows": 8,
+   "seconds": 0.13,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 6,
+   "name": "Yearly sales trend",
+   "rows": 2,
+   "seconds": 2.86,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 7,
+   "name": "Year-over-year growth by month",
+   "rows": 24,
+   "seconds": 0.16,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 8,
+   "name": "Top 10 medicines by revenue",
+   "rows": 10,
+   "seconds": 3.09,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 9,
+   "name": "Top 10 medicines by units",
+   "rows": 10,
+   "seconds": 3.04,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 10,
+   "name": "Top 10 medicines by transaction frequency",
+   "rows": 10,
+   "seconds": 3.57,
+   "status": "OK"
+  },
+  {
+   "file": "sales",
+   "n": 11,
+   "name": "Category analytics",
+   "rows": 10,
+   "seconds": 4.05,
+   "status": "OK"
+  },
+  {
+   "file": "branches",
+   "n": 1,
+   "name": "Branch performance",
+   "rows": 5,
+   "seconds": 3.04,
+   "status": "OK"
+  },
+  {
+   "file": "branches",
+   "n": 2,
+   "name": "Branch x category revenue matrix (long form)",
+   "rows": 50,
+   "seconds": 0.14,
+   "status": "OK"
+  },
+  {
+   "file": "branches",
+   "n": 3,
+   "name": "Branch > Category roll-up with subtotals",
+   "rows": 56,
+   "seconds": 0.76,
+   "status": "OK"
+  },
+  {
+   "file": "branches",
+   "n": 4,
+   "name": "Top 3 medicines per category in each branch (Branch > Category > Medicine)",
+   "rows": 150,
+   "seconds": 0.26,
+   "status": "OK"
+  },
+  {
+   "file": "branches",
+   "n": 5,
+   "name": "Branch scorecard (sales, stock, stockouts, expiry)",
+   "rows": 5,
+   "seconds": 2.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 1,
+   "name": "Current inventory KPIs",
+   "rows": 1,
+   "seconds": 0.01,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 2,
+   "name": "Current inventory by branch",
+   "rows": 5,
+   "seconds": 0.01,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 3,
+   "name": "Current inventory by category",
+   "rows": 10,
+   "seconds": 0.01,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 4,
+   "name": "Current inventory by medicine (top 20 by value, all branches)",
+   "rows": 20,
+   "seconds": 0.01,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 5,
+   "name": "Current inventory by branch > category > medicine (roll-up, top rows)",
+   "rows": 25,
+   "seconds": 0.1,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 6,
+   "name": "Stock status summary",
+   "rows": 4,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 7,
+   "name": "Stock status by branch",
+   "rows": 5,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 8,
+   "name": "Out-of-stock and low-stock items needing replenishment (top 30 by demand)",
+   "rows": 30,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 9,
+   "name": "Overstock with the most capital tied up (top 20)",
+   "rows": 20,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 10,
+   "name": "Days of inventory by category (stock cover)",
+   "rows": 10,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 11,
+   "name": "Month-end inventory (semi-additive: last day of each month)",
+   "rows": 24,
+   "seconds": 0.08,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 12,
+   "name": "Inventory turnover overall",
+   "rows": 1,
+   "seconds": 0.3,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 13,
+   "name": "Inventory turnover by category",
+   "rows": 10,
+   "seconds": 0.39,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 14,
+   "name": "Inventory turnover by branch",
+   "rows": 5,
+   "seconds": 0.39,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 15,
+   "name": "Inventory turnover by medicine (top 15 and bottom 15, annualised)",
+   "rows": 30,
+   "seconds": 2.2,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 16,
+   "name": "Fast, medium and slow movers (summary)",
+   "rows": 3,
+   "seconds": 3.17,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 17,
+   "name": "Top 10 fast-moving medicines",
+   "rows": 10,
+   "seconds": 3.18,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 18,
+   "name": "Top 10 slow-moving medicines (lowest units sold)",
+   "rows": 10,
+   "seconds": 3.1,
+   "status": "OK"
+  },
+  {
+   "file": "inventory",
+   "n": 19,
+   "name": "Slow movers tying up the most stock value",
+   "rows": 15,
+   "seconds": 3.08,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 1,
+   "name": "Expiry KPIs (expired, near-expiry, expiry risk)",
+   "rows": 1,
+   "seconds": 0.36,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 2,
+   "name": "Expiry risk class summary (live and expired lots)",
+   "rows": 5,
+   "seconds": 0.4,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 3,
+   "name": "Expired inventory by category",
+   "rows": 10,
+   "seconds": 0.33,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 4,
+   "name": "Expired inventory by branch",
+   "rows": 5,
+   "seconds": 0.45,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 5,
+   "name": "Expired inventory by month of expiry",
+   "rows": 24,
+   "seconds": 0.37,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 6,
+   "name": "Top 15 medicines by expired value",
+   "rows": 15,
+   "seconds": 0.41,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 7,
+   "name": "Live stock by days-to-expiry bucket (aging)",
+   "rows": 5,
+   "seconds": 0.42,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 8,
+   "name": "Near-expiry stock (within 90 days) by category",
+   "rows": 10,
+   "seconds": 0.32,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 9,
+   "name": "Expiry-risk value by category (live lots)",
+   "rows": 10,
+   "seconds": 0.35,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 10,
+   "name": "Expiry-risk value by branch (live lots)",
+   "rows": 5,
+   "seconds": 0.41,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 11,
+   "name": "Expiry risk roll-up Branch > Category > Medicine (live lots with projected loss)",
+   "rows": 40,
+   "seconds": 0.32,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 12,
+   "name": "High-value expiring stock (top 20 lots by value at risk)",
+   "rows": 20,
+   "seconds": 0.37,
+   "status": "OK"
+  },
+  {
+   "file": "expiry",
+   "n": 13,
+   "name": "Illustration of demand-aware risk (same days to expiry, different demand)",
+   "rows": 20,
+   "seconds": 0.3,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 1,
+   "name": "Purchase KPIs",
+   "rows": 1,
+   "seconds": 0.02,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 2,
+   "name": "Purchases by month",
+   "rows": 24,
+   "seconds": 0.02,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 3,
+   "name": "Supplier analytics (ranked by spend)",
+   "rows": 30,
+   "seconds": 0.1,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 4,
+   "name": "Supplier concentration (share of spend by top N suppliers)",
+   "rows": 1,
+   "seconds": 0.02,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 5,
+   "name": "Purchases by category",
+   "rows": 10,
+   "seconds": 0.04,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 6,
+   "name": "Purchases by medicine (top 20 by cost)",
+   "rows": 20,
+   "seconds": 0.11,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 7,
+   "name": "Purchase price changes by medicine (first vs latest purchase, 15 percent flag)",
+   "rows": 30,
+   "seconds": 0.18,
+   "status": "OK"
+  },
+  {
+   "file": "purchases",
+   "n": 8,
+   "name": "Purchase price change summary",
+   "rows": 1,
+   "seconds": 0.12,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 1,
+   "name": "Demand statistics per branch and medicine (top 40 by average daily demand)",
+   "rows": 40,
+   "seconds": 1.51,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 2,
+   "name": "Demand overview (all branch-medicine pairs)",
+   "rows": 1,
+   "seconds": 1.33,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 3,
+   "name": "Demand variability classes",
+   "rows": 3,
+   "seconds": 1.43,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 4,
+   "name": "Most variable and most stable medicines (weekly CV, volume of at least 7 units per week)",
+   "rows": 10,
+   "seconds": 3.32,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 5,
+   "name": "Demand variability by category (weekly CV of category demand)",
+   "rows": 10,
+   "seconds": 2.63,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 6,
+   "name": "Seasonality index by category and month of year (pivot)",
+   "rows": 10,
+   "seconds": 1.09,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 7,
+   "name": "Seasonality summary by category (peak, lowest, amplitude)",
+   "rows": 10,
+   "seconds": 1.15,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 8,
+   "name": "Weekday vs weekend",
+   "rows": 2,
+   "seconds": 0.48,
+   "status": "OK"
+  },
+  {
+   "file": "demand",
+   "n": 9,
+   "name": "Revenue and units by day of week",
+   "rows": 7,
+   "seconds": 0.95,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 1,
+   "name": "Overall stockout KPIs",
+   "rows": 1,
+   "seconds": 2.17,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 2,
+   "name": "Stockouts by branch",
+   "rows": 5,
+   "seconds": 2.35,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 3,
+   "name": "Stockouts by category",
+   "rows": 10,
+   "seconds": 2.24,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 4,
+   "name": "Top 20 medicines by stockout days (all branches)",
+   "rows": 20,
+   "seconds": 1.23,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 5,
+   "name": "Top 20 medicine-branch pairs by stockout days",
+   "rows": 20,
+   "seconds": 1.06,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 6,
+   "name": "Stockout concentration (share of all stockout days in the top 10 and top 20 medicines)",
+   "rows": 1,
+   "seconds": 1.12,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 7,
+   "name": "Stockout days by month",
+   "rows": 24,
+   "seconds": 0.17,
+   "status": "OK"
+  },
+  {
+   "file": "stockouts",
+   "n": 8,
+   "name": "Do stockouts hit fast movers? (stockout days by mover class)",
+   "rows": 3,
+   "seconds": 4.59,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 1,
+   "name": "Roll-up Day > Month > Quarter > Year with subtotal rows",
+   "rows": 765,
+   "seconds": 7.67,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 2,
+   "name": "Roll-up Category > Medicine with category subtotals (top categories)",
+   "rows": 30,
+   "seconds": 0.12,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 3,
+   "name": "Drill-down time 1 of 4: Year",
+   "rows": 2,
+   "seconds": 3.05,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 4,
+   "name": "Drill-down time 2 of 4: Quarters of 2026",
+   "rows": 4,
+   "seconds": 0.33,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 5,
+   "name": "Drill-down time 3 of 4: Months of 2026 Q2",
+   "rows": 3,
+   "seconds": 0.08,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 6,
+   "name": "Drill-down time 4 of 4: Days of May 2026",
+   "rows": 31,
+   "seconds": 0.03,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 7,
+   "name": "Drill-down product 1 of 2: Categories",
+   "rows": 10,
+   "seconds": 4.37,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 8,
+   "name": "Drill-down product 2 of 2: Medicines of the Respiratory category",
+   "rows": 15,
+   "seconds": 0.08,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 9,
+   "name": "Drill-down geography 1 of 3: Branches",
+   "rows": 5,
+   "seconds": 3.72,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 10,
+   "name": "Drill-down geography 2 of 3: Categories within branch BR001",
+   "rows": 10,
+   "seconds": 0.11,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 11,
+   "name": "Drill-down geography 3 of 3: Medicines of Respiratory within branch BR001",
+   "rows": 10,
+   "seconds": 0.05,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 12,
+   "name": "Slice: 2026 sales only (by category)",
+   "rows": 10,
+   "seconds": 2.24,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 13,
+   "name": "Dice: 2026 + Respiratory + BR001/BR002 (by branch)",
+   "rows": 2,
+   "seconds": 0.09,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 14,
+   "name": "Dice: 2026 + Respiratory + BR001/BR002 (by quarter and branch)",
+   "rows": 8,
+   "seconds": 0.08,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 15,
+   "name": "Pivot: revenue by branch (rows) and year (columns)",
+   "rows": 5,
+   "seconds": 0.18,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 16,
+   "name": "Pivot: revenue by category (rows) and branch (columns)",
+   "rows": 10,
+   "seconds": 0.23,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 17,
+   "name": "Pivot: monthly revenue (rows) by year (columns)",
+   "rows": 12,
+   "seconds": 0.13,
+   "status": "OK"
+  },
+  {
+   "file": "olap",
+   "n": 18,
+   "name": "Cube: revenue by branch x category x year-slice 2026 (all subtotal combinations)",
+   "rows": 24,
+   "seconds": 0.23,
+   "status": "OK"
+  }
+ ],
+ "validation": [
+  {
+   "check": "sales: view monthly revenue = fact_sales revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: view monthly units = fact_sales units",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: view monthly transactions = distinct transactions",
+   "actual": "613027",
+   "expected": "613027",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: yearly revenue = monthly revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: weekly (ISO) revenue = total revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: medicine performance revenue = fact_sales revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "sales: medicine performance units = fact_sales units",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  },
+  {
+   "check": "category totals = overall revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "branch totals = overall revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "branch totals = overall units",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  },
+  {
+   "check": "branch totals = overall transactions",
+   "actual": "613027",
+   "expected": "613027",
+   "status": "PASS"
+  },
+  {
+   "check": "branch revenue shares add to 100",
+   "actual": "100.00",
+   "expected": "100",
+   "status": "PASS"
+  },
+  {
+   "check": "mover classes partition all medicines",
+   "actual": "500",
+   "expected": "500",
+   "status": "PASS"
+  },
+  {
+   "check": "inventory: current units = fact_inventory on the latest date",
+   "actual": "45473",
+   "expected": "45473",
+   "status": "PASS"
+  },
+  {
+   "check": "inventory: current units = purchases - sales - expired",
+   "actual": "45473",
+   "expected": "45473",
+   "status": "PASS"
+  },
+  {
+   "check": "inventory: stock status covers every branch-medicine pair",
+   "actual": "2500",
+   "expected": "2500",
+   "status": "PASS"
+  },
+  {
+   "check": "inventory: month-end units for the last month = current units",
+   "actual": "45473",
+   "expected": "45473",
+   "status": "PASS"
+  },
+  {
+   "check": "inventory: COGS = purchase cost - closing value - expired value (batch-cost identity)",
+   "actual": "121456592.79",
+   "expected": "121456592.79",
+   "status": "PASS"
+  },
+  {
+   "check": "stockouts: view stockout days = fact_inventory zero-stock days",
+   "actual": "18290",
+   "expected": "18290",
+   "status": "PASS"
+  },
+  {
+   "check": "stockouts: by-branch days = total",
+   "actual": "18290",
+   "expected": "18290",
+   "status": "PASS"
+  },
+  {
+   "check": "stockouts: by-category days = total",
+   "actual": "18290",
+   "expected": "18290",
+   "status": "PASS"
+  },
+  {
+   "check": "stockouts: out-of-stock items now = zero-stock rows on the latest date",
+   "actual": "19",
+   "expected": "19",
+   "status": "PASS"
+  },
+  {
+   "check": "expiry: expired units = fact_inventory expired_quantity",
+   "actual": "3599",
+   "expected": "3599",
+   "status": "PASS"
+  },
+  {
+   "check": "expiry: live-lot units = current inventory units",
+   "actual": "45473",
+   "expected": "45473",
+   "status": "PASS"
+  },
+  {
+   "check": "expiry: live-lot cost value = current inventory value",
+   "actual": "3642946.20",
+   "expected": "3642946.20",
+   "status": "PASS"
+  },
+  {
+   "check": "expiry: risk classes cover every lot",
+   "actual": "6329",
+   "expected": "6329",
+   "status": "PASS"
+  },
+  {
+   "check": "expiry: projected unsold never exceeds remaining units",
+   "actual": "0",
+   "expected": "0",
+   "status": "PASS"
+  },
+  {
+   "check": "purchases: supplier totals = fact_purchase cost",
+   "actual": "125388460.85",
+   "expected": "125388460.85",
+   "status": "PASS"
+  },
+  {
+   "check": "purchases: category totals = fact_purchase cost",
+   "actual": "125388460.85",
+   "expected": "125388460.85",
+   "status": "PASS"
+  },
+  {
+   "check": "purchases: monthly totals = fact_purchase cost",
+   "actual": "125388460.85",
+   "expected": "125388460.85",
+   "status": "PASS"
+  },
+  {
+   "check": "demand: v_demand_stats units = fact_sales units",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  },
+  {
+   "check": "demand: sales days + zero days = calendar days for every pair",
+   "actual": "0",
+   "expected": "0",
+   "status": "PASS"
+  },
+  {
+   "check": "demand: variability classes cover every pair",
+   "actual": "2500",
+   "expected": "2500",
+   "status": "PASS"
+  },
+  {
+   "check": "seasonality: category-month units = fact_sales units",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  },
+  {
+   "check": "demand: weekday + weekend revenue = total revenue",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "reference: total revenue (warehouse validation reported 159205192.71)",
+   "actual": "159205192.71",
+   "expected": "159205192.71",
+   "status": "PASS"
+  },
+  {
+   "check": "reference: total units (warehouse validation reported 1582353)",
+   "actual": "1582353",
+   "expected": "1582353",
+   "status": "PASS"
+  }
+ ]
+}

@@ -19,8 +19,9 @@ etl/
 ## Run
 
 ```bash
-export DATABASE_URL="postgresql+psycopg://user:password@localhost:5432/medstock"   # or put it in .env
-python -m etl.pipeline            # full rebuild + validation (about 2 minutes)
+docker compose up -d                # PostgreSQL in Docker: localhost:5433, database medstock (see README)
+export DATABASE_URL="postgresql+psycopg://user:password@localhost:5433/medstock"   # or put it in .env
+python -m etl.pipeline            # full rebuild + validation (about 40 seconds on Docker)
 python -m etl.validation.warehouse_checks   # validation only
 ```
 

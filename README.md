@@ -9,7 +9,7 @@ MedStock is a Data Warehousing & Data Mining (DWM) project. This repository curr
 pharmacy operational data (sales, purchases, batches, inventory movements) that a later warehouse / mining
 pipeline (star schema, OLAP, association rules, anomaly detection, expiry-risk analysis) will consume.
 
-The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. Not included yet (comes later): API, frontend, mining, ML, dashboards.
+The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. The analytics and OLAP layer on the warehouse is described in section 14. Not included yet (comes later): data mining, ML, API, frontend, dashboards.
 
 ## 2. Scope (final dataset, v1.0)
 
@@ -176,24 +176,40 @@ The frozen raw CSVs are loaded into a star schema in the `warehouse` schema of a
 
 ### Prerequisites
 * Python 3.11+ with `pip install -r requirements.txt` (pandas, numpy, SQLAlchemy 2, psycopg 3, python-dotenv)
-* PostgreSQL 14+ (developed on 18) and a database you can create tables in
+* Docker (for PostgreSQL 18). A native PostgreSQL 14+ also works if you point `DATABASE_URL` at it.
+
+### PostgreSQL runs through Docker
+| Setting | Value |
+|---|---|
+| Image / container | `postgres:18` / `medstock-postgres` |
+| Host / port | `localhost` / **5433** (mapped to 5432 inside the container) |
+| Database | `medstock` |
+| Schema | `warehouse` (nothing is created in `public`) |
+| Credentials | set in `docker-compose.yml` for local development, and referenced by the application only through `DATABASE_URL` |
+
+```bash
+docker compose up -d        # start PostgreSQL (waits until healthy with: docker compose up -d --wait)
+docker compose down         # stop and remove the container, KEEP the data (named volume medstock_pgdata)
+docker compose down -v      # also DELETE the data volume (the ETL can rebuild the warehouse)
+```
+`docker-compose.yml` is for PostgreSQL only. If you started a container named `medstock-postgres` by hand, remove it first (`docker rm -f medstock-postgres`) before using compose, because the names and port collide.
 
 ### Environment variable
-`DATABASE_URL` (SQLAlchemy URL; plain `postgresql://...` also accepted). Never hard-code credentials.
-Copy `.env.example` to `.env` (git-ignored) and edit it:
+`DATABASE_URL` (SQLAlchemy URL; plain `postgresql://...` also accepted). Never hard-code credentials in code or docs.
+Copy `.env.example` to `.env` (git-ignored) and fill in the user and password you configured:
 
 ```text
-DATABASE_URL=postgresql+psycopg://user:password@localhost:5432/medstock
+DATABASE_URL=postgresql+psycopg://USER:PASSWORD@localhost:5433/medstock
 ```
 
 ### Setup and run
 ```bash
-createdb medstock                      # or: psql -c "CREATE DATABASE medstock"
+docker compose up -d --wait
 pip install -r requirements.txt
-cp .env.example .env                   # then set DATABASE_URL
-python -m etl.pipeline                 # extract, transform, load, reconstruct inventory, validate (~2 min)
+cp .env.example .env                   # then set DATABASE_URL (user, password, port 5433)
+python -m etl.pipeline                 # extract, transform, load, reconstruct inventory, validate (~40 s)
 ```
-The ETL is idempotent: each run creates the schema if needed, truncates all warehouse tables and reloads them in one transaction. Nothing is created in the `public` schema.
+The ETL is idempotent: each run creates the schema if needed, truncates all warehouse tables and reloads them in one transaction. Verified on Docker: a second run gives identical row counts, measures and table contents.
 
 ### Warehouse tables (schema `warehouse`)
 | Dimensions | Facts |
@@ -207,6 +223,17 @@ It is semi-additive: sum across branches/medicines, never across time.
 The pipeline runs 75 checks and exits non-zero on any failure (results in `data/metadata/warehouse_validation.json`). To re-run them:
 ```bash
 python -m etl.validation.warehouse_checks
-psql -d medstock -f sql/validation.sql        # SQL-only checks (PASS / FAIL / INFO rows)
-psql -d medstock -f sql/olap_examples.sql     # sample OLAP queries (roll-up, drill-down, semi-additive inventory, expiry risk)
+psql -h localhost -p 5433 -U medstock -d medstock -f sql/validation.sql    # SQL-only checks (PASS / FAIL / INFO rows)
+psql -h localhost -p 5433 -U medstock -d medstock -f sql/olap_examples.sql  # sample OLAP queries (roll-up, drill-down, semi-additive inventory, expiry risk)
 ```
+
+## 14. Analytics + OLAP layer
+
+SQL analytics on the warehouse (7 views in the `warehouse` schema, 8 query files, 37 reconciliation checks): sales KPIs and trends, year-over-year growth, category/branch/medicine performance,
+inventory (current stock, stock status, turnover, days of inventory, fast/slow movers), expiry risk, purchases and suppliers, stockouts, demand variability, seasonality, and OLAP roll-up, drill-down, slice, dice and pivot.
+Code and run instructions: [analytics/README.md](analytics/README.md). Formulas, thresholds and methodology: [docs/analytics_design.md](docs/analytics_design.md).
+
+```bash
+python -m analytics.run          # creates the views, runs all queries and the reconciliation checks (about 3.5 minutes)
+```
+Results are written to `analytics/reports/` (`run_summary.json` and one CSV per query). Inventory is semi-additive: current stock is read on one date and trends use month-end stock.
