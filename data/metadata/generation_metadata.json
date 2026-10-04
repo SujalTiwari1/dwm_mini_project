@@ -1,0 +1,2660 @@
+{
+  "generator_version": "1.0",
+  "frozen_on": "2026-10-04",
+  "notice": "Synthetic data for the MedStock academic DWM project. Not real pharmacy transactions.",
+  "random_seed": 42,
+  "date_range": [
+    "2025-01-01",
+    "2026-12-31"
+  ],
+  "demand_scale": 0.22,
+  "currency": "INR",
+  "counts": {
+    "medicines": 500,
+    "branches": 5,
+    "suppliers": 30,
+    "categories": 10,
+    "batches": 35477,
+    "purchases": 80363,
+    "sales_lines": 1022346,
+    "transactions": 613027
+  },
+  "anomaly_events": 150,
+  "association_rules": {
+    "configured": [
+      {
+        "antecedent_id": "MED013",
+        "consequent_id": "MED014",
+        "added_probability": 0.4
+      },
+      {
+        "antecedent_id": "MED011",
+        "consequent_id": "MED012",
+        "added_probability": 0.4
+      },
+      {
+        "antecedent_id": "MED004",
+        "consequent_id": "MED005",
+        "added_probability": 0.45
+      },
+      {
+        "antecedent_id": "MED002",
+        "consequent_id": "MED009",
+        "added_probability": 0.4
+      },
+      {
+        "antecedent_id": "MED007",
+        "consequent_id": "MED015",
+        "added_probability": 0.25
+      },
+      {
+        "antecedent_id": "MED015",
+        "consequent_id": "MED017",
+        "added_probability": 0.3
+      },
+      {
+        "antecedent_id": "MED033",
+        "consequent_id": "MED034",
+        "added_probability": 0.35
+      },
+      {
+        "antecedent_id": "MED019",
+        "consequent_id": "MED020",
+        "added_probability": 0.3
+      }
+    ],
+    "probabilistic": true,
+    "add_on_probability_range": [
+      0.25,
+      0.45
+    ]
+  },
+  "config": {
+    "dataset": {
+      "num_medicines": 500,
+      "num_branches": 5,
+      "num_suppliers": 30,
+      "start_date": "2025-01-01",
+      "end_date": "2026-12-31",
+      "random_seed": 42,
+      "branch_city": "Mumbai",
+      "demand_scale": 0.22,
+      "dataset_version": "1.0",
+      "frozen_on": "2026-10-04"
+    },
+    "demand_profiles": {
+      "HIGH": {
+        "base_lines": [
+          5.0,
+          24.0
+        ],
+        "skew": [
+          1.0,
+          2.2
+        ],
+        "variability": [
+          0.1,
+          0.2
+        ],
+        "target_cover_days": 21,
+        "reorder_point_days": 7,
+        "moq_units": 60,
+        "mix": 0.1
+      },
+      "MEDIUM": {
+        "base_lines": [
+          1.2,
+          4.5
+        ],
+        "skew": [
+          1.0,
+          1.8
+        ],
+        "variability": [
+          0.22,
+          0.35
+        ],
+        "target_cover_days": 30,
+        "reorder_point_days": 10,
+        "moq_units": 60,
+        "mix": 0.3
+      },
+      "LOW": {
+        "base_lines": [
+          0.15,
+          1.0
+        ],
+        "skew": [
+          1.0,
+          1.5
+        ],
+        "variability": [
+          0.4,
+          0.6
+        ],
+        "target_cover_days": 40,
+        "reorder_point_days": 14,
+        "moq_units": 150,
+        "mix": 0.6
+      }
+    },
+    "category_config": {
+      "CAT001": {
+        "season_amp": 0.08,
+        "season_peak_doy": 15,
+        "qty_lambda": 0.35,
+        "variability_scale": 1.0
+      },
+      "CAT002": {
+        "season_amp": 0.12,
+        "season_peak_doy": 200,
+        "qty_lambda": 0.3,
+        "variability_scale": 1.0
+      },
+      "CAT003": {
+        "season_amp": 0.15,
+        "season_peak_doy": 200,
+        "qty_lambda": 0.3,
+        "variability_scale": 1.0
+      },
+      "CAT004": {
+        "season_amp": 0.18,
+        "season_peak_doy": 70,
+        "qty_lambda": 0.3,
+        "variability_scale": 1.1
+      },
+      "CAT005": {
+        "season_amp": 0.12,
+        "season_peak_doy": 205,
+        "qty_lambda": 0.35,
+        "variability_scale": 1.0
+      },
+      "CAT006": {
+        "season_amp": 0.03,
+        "season_peak_doy": 15,
+        "qty_lambda": 1.0,
+        "variability_scale": 0.6
+      },
+      "CAT007": {
+        "season_amp": 0.02,
+        "season_peak_doy": 15,
+        "qty_lambda": 1.0,
+        "variability_scale": 0.6
+      },
+      "CAT008": {
+        "season_amp": 0.25,
+        "season_peak_doy": 20,
+        "qty_lambda": 0.15,
+        "variability_scale": 1.1
+      },
+      "CAT009": {
+        "season_amp": 0.1,
+        "season_peak_doy": 15,
+        "qty_lambda": 0.5,
+        "variability_scale": 1.0
+      },
+      "CAT010": {
+        "season_amp": 0.12,
+        "season_peak_doy": 200,
+        "qty_lambda": 0.1,
+        "variability_scale": 1.0
+      }
+    },
+    "branch_profiles": [
+      {
+        "multiplier": 1.2,
+        "category_affinity": {
+          "CAT008": 1.15
+        }
+      },
+      {
+        "multiplier": 0.9,
+        "category_affinity": {
+          "CAT006": 1.12,
+          "CAT007": 1.12
+        }
+      }
+    ],
+    "trend": {
+      "mix": {
+        "stable": 0.6,
+        "increasing": 0.2,
+        "decreasing": 0.2
+      },
+      "annual_rate": {
+        "stable": [
+          -0.02,
+          0.02
+        ],
+        "increasing": [
+          0.05,
+          0.18
+        ],
+        "decreasing": [
+          -0.18,
+          -0.05
+        ]
+      }
+    },
+    "basket_size_probs": {
+      "1": 0.58,
+      "2": 0.27,
+      "3": 0.1,
+      "4": 0.05
+    },
+    "sales": {
+      "discount_prob": 0.12,
+      "discount_pcts": [
+        0.05,
+        0.1,
+        0.15
+      ],
+      "monthly_price_jitter": 0.03
+    },
+    "purchase": {
+      "purchase_price_ratio": [
+        0.68,
+        0.85
+      ],
+      "supplier_factor": [
+        0.97,
+        1.03
+      ],
+      "suppliers_per_medicine": [
+        1,
+        3
+      ],
+      "primary_supplier_share": 0.6,
+      "near_dated_lot_prob": 0.08,
+      "discount_supplier_share": 0.3,
+      "discount_supplier_near_dated_prob": 0.45,
+      "discount_supplier_price_factor": 0.95,
+      "near_dated_remaining_days": [
+        20,
+        200
+      ],
+      "manufacture_lag_days": [
+        14,
+        240
+      ],
+      "min_remaining_days": 90,
+      "supplier_lead_days": [
+        2,
+        5
+      ],
+      "lead_noise_days": [
+        -1,
+        1
+      ],
+      "delay_prob": 0.05,
+      "delay_days": [
+        4,
+        10
+      ],
+      "policy_jitter": [
+        0.8,
+        1.3
+      ],
+      "min_reorder_point_units": 3,
+      "scale_moq_with_demand": true,
+      "min_moq_units": 6
+    },
+    "anomaly": {
+      "rate_per_medicine_year": 0.15,
+      "min_events": 5,
+      "type_weights": {
+        "spike": 0.25,
+        "drop": 0.2,
+        "branch_surge": 0.2,
+        "bulk_purchase": 0.15,
+        "supply_disruption": 0.2
+      },
+      "spike": {
+        "duration": [
+          4,
+          10
+        ],
+        "multiplier": [
+          2.5,
+          4.0
+        ]
+      },
+      "drop": {
+        "duration": [
+          7,
+          15
+        ],
+        "multiplier": [
+          0.15,
+          0.45
+        ]
+      },
+      "branch_surge": {
+        "duration": [
+          10,
+          21
+        ],
+        "multiplier": [
+          1.8,
+          2.6
+        ]
+      },
+      "bulk_purchase": {
+        "multiplier": [
+          3.0,
+          5.0
+        ]
+      },
+      "supply_disruption": {
+        "duration": [
+          10,
+          20
+        ],
+        "extra_lead_days": [
+          8,
+          15
+        ]
+      },
+      "min_expected_deviation_lines": 25,
+      "max_duration": 30,
+      "max_spike_multiplier": 8.0
+    }
+  },
+  "summary": {
+    "medicines": 500,
+    "branches": 5,
+    "suppliers": 30,
+    "categories": 10,
+    "batches": 35477,
+    "purchases": 80363,
+    "sales_lines": 1022346,
+    "transactions": 613027,
+    "date_range": [
+      "2025-01-01",
+      "2026-12-31"
+    ],
+    "sales_date_range": [
+      "2025-01-01",
+      "2026-12-31"
+    ],
+    "days": 730,
+    "total_revenue": 159205192.71,
+    "total_purchase_value": 125388460.85,
+    "unfilled_demand_lines": 16449,
+    "short_filled_lines": 1944,
+    "validation_checks": 51,
+    "validation_failed_checks": 0,
+    "validation_violating_rows": 0,
+    "validation_warnings": 1
+  },
+  "validation": [
+    {
+      "check": "categories: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "medicines: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "branches: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "suppliers: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "batches: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "purchases: primary key unique",
+      "violations": 0
+    },
+    {
+      "check": "sales: no duplicate (transaction, medicine, batch) lines",
+      "violations": 0
+    },
+    {
+      "check": "no null values in any table",
+      "violations": 0
+    },
+    {
+      "check": "FK medicines.category_id -> categories",
+      "violations": 0
+    },
+    {
+      "check": "FK batches.medicine_id -> medicines",
+      "violations": 0
+    },
+    {
+      "check": "FK batches.supplier_id -> suppliers",
+      "violations": 0
+    },
+    {
+      "check": "FK purchases.branch_id",
+      "violations": 0
+    },
+    {
+      "check": "FK purchases.supplier_id",
+      "violations": 0
+    },
+    {
+      "check": "FK purchases.medicine_id",
+      "violations": 0
+    },
+    {
+      "check": "FK purchases.batch_id",
+      "violations": 0
+    },
+    {
+      "check": "FK sales.branch_id",
+      "violations": 0
+    },
+    {
+      "check": "FK sales.medicine_id",
+      "violations": 0
+    },
+    {
+      "check": "FK sales.batch_id",
+      "violations": 0
+    },
+    {
+      "check": "medicines.base_price > 0",
+      "violations": 0
+    },
+    {
+      "check": "medicines.demand_profile in HIGH/MEDIUM/LOW",
+      "violations": 0
+    },
+    {
+      "check": "batches.initial_quantity > 0",
+      "violations": 0
+    },
+    {
+      "check": "batches.purchase_price > 0",
+      "violations": 0
+    },
+    {
+      "check": "purchases.quantity > 0",
+      "violations": 0
+    },
+    {
+      "check": "purchases.unit_purchase_price > 0",
+      "violations": 0
+    },
+    {
+      "check": "sales.quantity > 0",
+      "violations": 0
+    },
+    {
+      "check": "sales.unit_selling_price > 0",
+      "violations": 0
+    },
+    {
+      "check": "sales.discount >= 0",
+      "violations": 0
+    },
+    {
+      "check": "sales.total_amount > 0",
+      "violations": 0
+    },
+    {
+      "check": "purchases.total_cost = quantity x unit_purchase_price",
+      "violations": 0
+    },
+    {
+      "check": "sales.total_amount = quantity x unit_selling_price - discount",
+      "violations": 0
+    },
+    {
+      "check": "purchases.medicine_id matches batch",
+      "violations": 0
+    },
+    {
+      "check": "purchases.supplier_id matches batch",
+      "violations": 0
+    },
+    {
+      "check": "purchases.unit_purchase_price = batch.purchase_price",
+      "violations": 0
+    },
+    {
+      "check": "sales.medicine_id matches batch",
+      "violations": 0
+    },
+    {
+      "check": "every batch has at least one purchase",
+      "violations": 0
+    },
+    {
+      "check": "batch.initial_quantity = sum of its purchases",
+      "violations": 0
+    },
+    {
+      "check": "all purchases of a batch share one date",
+      "violations": 0
+    },
+    {
+      "check": "purchase supplier is an approved supplier of the medicine",
+      "violations": 0
+    },
+    {
+      "check": "manufacture_date < purchase_date",
+      "violations": 0
+    },
+    {
+      "check": "purchase_date < expiry_date",
+      "violations": 0
+    },
+    {
+      "check": "shelf life between 6 and 36 months",
+      "violations": 0
+    },
+    {
+      "check": "sales never after batch expiry (sale_date < expiry_date)",
+      "violations": 0
+    },
+    {
+      "check": "purchase/sale dates within configured period",
+      "violations": 0
+    },
+    {
+      "check": "unit_purchase_price < unit_selling_price on every sold batch",
+      "violations": 0
+    },
+    {
+      "check": "purchase price <= 90% of medicine base price",
+      "violations": 0
+    },
+    {
+      "check": "each transaction has a single date",
+      "violations": 0
+    },
+    {
+      "check": "each transaction has a single branch",
+      "violations": 0
+    },
+    {
+      "check": "inventory never negative (replay of purchases/sales per branch+batch)",
+      "violations": 0
+    },
+    {
+      "check": "every sale draws from a batch received at that branch earlier or same day",
+      "violations": 0
+    },
+    {
+      "check": "reconciliation: purchases - sales = on hand + expired write-offs",
+      "violations": 0
+    },
+    {
+      "check": "CSV-reconstructed closing stock and expired quantity equal the generator ledger",
+      "violations": 0
+    }
+  ],
+  "warnings": [
+    "ANOM143 (branch_surge) is barely visible: ratio 1.18"
+  ],
+  "quality_report_file": "data/metadata/quality_report.json",
+  "supplier_medicine_map": {
+    "MED001": [
+      "SUP021",
+      "SUP030",
+      "SUP001"
+    ],
+    "MED002": [
+      "SUP008"
+    ],
+    "MED003": [
+      "SUP016",
+      "SUP021",
+      "SUP006"
+    ],
+    "MED004": [
+      "SUP026",
+      "SUP016",
+      "SUP011"
+    ],
+    "MED005": [
+      "SUP027"
+    ],
+    "MED006": [
+      "SUP017",
+      "SUP007",
+      "SUP022"
+    ],
+    "MED007": [
+      "SUP022",
+      "SUP017",
+      "SUP030"
+    ],
+    "MED008": [
+      "SUP009",
+      "SUP006"
+    ],
+    "MED009": [
+      "SUP003",
+      "SUP018"
+    ],
+    "MED010": [
+      "SUP001",
+      "SUP025"
+    ],
+    "MED011": [
+      "SUP019",
+      "SUP008"
+    ],
+    "MED012": [
+      "SUP006",
+      "SUP023",
+      "SUP003"
+    ],
+    "MED013": [
+      "SUP024"
+    ],
+    "MED014": [
+      "SUP029"
+    ],
+    "MED015": [
+      "SUP004",
+      "SUP029",
+      "SUP014"
+    ],
+    "MED016": [
+      "SUP009",
+      "SUP024"
+    ],
+    "MED017": [
+      "SUP027",
+      "SUP015",
+      "SUP024"
+    ],
+    "MED018": [
+      "SUP010",
+      "SUP025"
+    ],
+    "MED019": [
+      "SUP017",
+      "SUP027"
+    ],
+    "MED020": [
+      "SUP030",
+      "SUP009",
+      "SUP002"
+    ],
+    "MED021": [
+      "SUP008"
+    ],
+    "MED022": [
+      "SUP030",
+      "SUP023"
+    ],
+    "MED023": [
+      "SUP013",
+      "SUP016",
+      "SUP030"
+    ],
+    "MED024": [
+      "SUP006",
+      "SUP016"
+    ],
+    "MED025": [
+      "SUP019",
+      "SUP011"
+    ],
+    "MED026": [
+      "SUP021"
+    ],
+    "MED027": [
+      "SUP019"
+    ],
+    "MED028": [
+      "SUP022"
+    ],
+    "MED029": [
+      "SUP024"
+    ],
+    "MED030": [
+      "SUP022"
+    ],
+    "MED031": [
+      "SUP027",
+      "SUP004",
+      "SUP010"
+    ],
+    "MED032": [
+      "SUP014"
+    ],
+    "MED033": [
+      "SUP013"
+    ],
+    "MED034": [
+      "SUP003",
+      "SUP004",
+      "SUP008"
+    ],
+    "MED035": [
+      "SUP025",
+      "SUP018",
+      "SUP023"
+    ],
+    "MED036": [
+      "SUP003"
+    ],
+    "MED037": [
+      "SUP013"
+    ],
+    "MED038": [
+      "SUP018",
+      "SUP028",
+      "SUP013"
+    ],
+    "MED039": [
+      "SUP003",
+      "SUP006"
+    ],
+    "MED040": [
+      "SUP013",
+      "SUP028"
+    ],
+    "MED041": [
+      "SUP028",
+      "SUP003"
+    ],
+    "MED042": [
+      "SUP007",
+      "SUP013",
+      "SUP015"
+    ],
+    "MED043": [
+      "SUP009",
+      "SUP002",
+      "SUP015"
+    ],
+    "MED044": [
+      "SUP029"
+    ],
+    "MED045": [
+      "SUP020",
+      "SUP018",
+      "SUP019"
+    ],
+    "MED046": [
+      "SUP014",
+      "SUP024"
+    ],
+    "MED047": [
+      "SUP022",
+      "SUP024",
+      "SUP012"
+    ],
+    "MED048": [
+      "SUP004",
+      "SUP009",
+      "SUP014"
+    ],
+    "MED049": [
+      "SUP010"
+    ],
+    "MED050": [
+      "SUP024",
+      "SUP015"
+    ],
+    "MED051": [
+      "SUP021",
+      "SUP024"
+    ],
+    "MED052": [
+      "SUP017",
+      "SUP016"
+    ],
+    "MED053": [
+      "SUP005",
+      "SUP002",
+      "SUP010"
+    ],
+    "MED054": [
+      "SUP021",
+      "SUP008",
+      "SUP005"
+    ],
+    "MED055": [
+      "SUP027",
+      "SUP020",
+      "SUP002"
+    ],
+    "MED056": [
+      "SUP011",
+      "SUP017",
+      "SUP026"
+    ],
+    "MED057": [
+      "SUP006",
+      "SUP011",
+      "SUP008"
+    ],
+    "MED058": [
+      "SUP013",
+      "SUP021"
+    ],
+    "MED059": [
+      "SUP030",
+      "SUP017"
+    ],
+    "MED060": [
+      "SUP001",
+      "SUP030",
+      "SUP008"
+    ],
+    "MED061": [
+      "SUP021",
+      "SUP016",
+      "SUP001"
+    ],
+    "MED062": [
+      "SUP006"
+    ],
+    "MED063": [
+      "SUP017",
+      "SUP026",
+      "SUP003"
+    ],
+    "MED064": [
+      "SUP011",
+      "SUP013",
+      "SUP008"
+    ],
+    "MED065": [
+      "SUP003",
+      "SUP006"
+    ],
+    "MED066": [
+      "SUP017",
+      "SUP006",
+      "SUP011"
+    ],
+    "MED067": [
+      "SUP001"
+    ],
+    "MED068": [
+      "SUP021",
+      "SUP008"
+    ],
+    "MED069": [
+      "SUP008",
+      "SUP026"
+    ],
+    "MED070": [
+      "SUP016",
+      "SUP013",
+      "SUP026"
+    ],
+    "MED071": [
+      "SUP023",
+      "SUP013",
+      "SUP021"
+    ],
+    "MED072": [
+      "SUP001",
+      "SUP003"
+    ],
+    "MED073": [
+      "SUP023",
+      "SUP021",
+      "SUP001"
+    ],
+    "MED074": [
+      "SUP017"
+    ],
+    "MED075": [
+      "SUP008",
+      "SUP026",
+      "SUP001"
+    ],
+    "MED076": [
+      "SUP008",
+      "SUP021"
+    ],
+    "MED077": [
+      "SUP030",
+      "SUP021",
+      "SUP017"
+    ],
+    "MED078": [
+      "SUP016",
+      "SUP013"
+    ],
+    "MED079": [
+      "SUP008",
+      "SUP026"
+    ],
+    "MED080": [
+      "SUP017",
+      "SUP026",
+      "SUP030"
+    ],
+    "MED081": [
+      "SUP011",
+      "SUP013"
+    ],
+    "MED082": [
+      "SUP016",
+      "SUP006"
+    ],
+    "MED083": [
+      "SUP003"
+    ],
+    "MED084": [
+      "SUP013",
+      "SUP016"
+    ],
+    "MED085": [
+      "SUP016",
+      "SUP008"
+    ],
+    "MED086": [
+      "SUP008",
+      "SUP001"
+    ],
+    "MED087": [
+      "SUP021",
+      "SUP006"
+    ],
+    "MED088": [
+      "SUP016",
+      "SUP030"
+    ],
+    "MED089": [
+      "SUP006"
+    ],
+    "MED090": [
+      "SUP016",
+      "SUP021",
+      "SUP023"
+    ],
+    "MED091": [
+      "SUP021"
+    ],
+    "MED092": [
+      "SUP030",
+      "SUP016"
+    ],
+    "MED093": [
+      "SUP016"
+    ],
+    "MED094": [
+      "SUP026"
+    ],
+    "MED095": [
+      "SUP014",
+      "SUP019",
+      "SUP026"
+    ],
+    "MED096": [
+      "SUP019"
+    ],
+    "MED097": [
+      "SUP026",
+      "SUP016",
+      "SUP011"
+    ],
+    "MED098": [
+      "SUP016",
+      "SUP001",
+      "SUP006"
+    ],
+    "MED099": [
+      "SUP006"
+    ],
+    "MED100": [
+      "SUP014",
+      "SUP006"
+    ],
+    "MED101": [
+      "SUP021",
+      "SUP016",
+      "SUP006"
+    ],
+    "MED102": [
+      "SUP011",
+      "SUP006",
+      "SUP014"
+    ],
+    "MED103": [
+      "SUP006",
+      "SUP016"
+    ],
+    "MED104": [
+      "SUP016",
+      "SUP014",
+      "SUP006"
+    ],
+    "MED105": [
+      "SUP014"
+    ],
+    "MED106": [
+      "SUP011",
+      "SUP006",
+      "SUP001"
+    ],
+    "MED107": [
+      "SUP001",
+      "SUP019",
+      "SUP026"
+    ],
+    "MED108": [
+      "SUP021",
+      "SUP014"
+    ],
+    "MED109": [
+      "SUP001",
+      "SUP016",
+      "SUP011"
+    ],
+    "MED110": [
+      "SUP014",
+      "SUP026"
+    ],
+    "MED111": [
+      "SUP026",
+      "SUP014"
+    ],
+    "MED112": [
+      "SUP021"
+    ],
+    "MED113": [
+      "SUP001",
+      "SUP021"
+    ],
+    "MED114": [
+      "SUP006",
+      "SUP011"
+    ],
+    "MED115": [
+      "SUP019",
+      "SUP001"
+    ],
+    "MED116": [
+      "SUP021",
+      "SUP001",
+      "SUP014"
+    ],
+    "MED117": [
+      "SUP001",
+      "SUP019"
+    ],
+    "MED118": [
+      "SUP014"
+    ],
+    "MED119": [
+      "SUP011"
+    ],
+    "MED120": [
+      "SUP006",
+      "SUP011",
+      "SUP001"
+    ],
+    "MED121": [
+      "SUP001",
+      "SUP014"
+    ],
+    "MED122": [
+      "SUP006",
+      "SUP019",
+      "SUP026"
+    ],
+    "MED123": [
+      "SUP011",
+      "SUP016"
+    ],
+    "MED124": [
+      "SUP014"
+    ],
+    "MED125": [
+      "SUP016",
+      "SUP001",
+      "SUP026"
+    ],
+    "MED126": [
+      "SUP006",
+      "SUP014",
+      "SUP016"
+    ],
+    "MED127": [
+      "SUP006"
+    ],
+    "MED128": [
+      "SUP019",
+      "SUP014"
+    ],
+    "MED129": [
+      "SUP001"
+    ],
+    "MED130": [
+      "SUP021",
+      "SUP014",
+      "SUP011"
+    ],
+    "MED131": [
+      "SUP011",
+      "SUP001"
+    ],
+    "MED132": [
+      "SUP016",
+      "SUP019"
+    ],
+    "MED133": [
+      "SUP026"
+    ],
+    "MED134": [
+      "SUP011",
+      "SUP019",
+      "SUP021"
+    ],
+    "MED135": [
+      "SUP007",
+      "SUP027"
+    ],
+    "MED136": [
+      "SUP017",
+      "SUP022",
+      "SUP027"
+    ],
+    "MED137": [
+      "SUP002",
+      "SUP022",
+      "SUP017"
+    ],
+    "MED138": [
+      "SUP002"
+    ],
+    "MED139": [
+      "SUP027",
+      "SUP012",
+      "SUP007"
+    ],
+    "MED140": [
+      "SUP022"
+    ],
+    "MED141": [
+      "SUP024"
+    ],
+    "MED142": [
+      "SUP007",
+      "SUP027",
+      "SUP017"
+    ],
+    "MED143": [
+      "SUP022"
+    ],
+    "MED144": [
+      "SUP022",
+      "SUP002",
+      "SUP007"
+    ],
+    "MED145": [
+      "SUP024"
+    ],
+    "MED146": [
+      "SUP024"
+    ],
+    "MED147": [
+      "SUP007",
+      "SUP002",
+      "SUP027"
+    ],
+    "MED148": [
+      "SUP027"
+    ],
+    "MED149": [
+      "SUP026",
+      "SUP024"
+    ],
+    "MED150": [
+      "SUP012",
+      "SUP024"
+    ],
+    "MED151": [
+      "SUP007",
+      "SUP017",
+      "SUP022"
+    ],
+    "MED152": [
+      "SUP012",
+      "SUP022",
+      "SUP017"
+    ],
+    "MED153": [
+      "SUP022"
+    ],
+    "MED154": [
+      "SUP017",
+      "SUP024"
+    ],
+    "MED155": [
+      "SUP017"
+    ],
+    "MED156": [
+      "SUP012",
+      "SUP002",
+      "SUP027"
+    ],
+    "MED157": [
+      "SUP024",
+      "SUP017",
+      "SUP027"
+    ],
+    "MED158": [
+      "SUP022"
+    ],
+    "MED159": [
+      "SUP024",
+      "SUP022"
+    ],
+    "MED160": [
+      "SUP027",
+      "SUP022",
+      "SUP017"
+    ],
+    "MED161": [
+      "SUP026",
+      "SUP017"
+    ],
+    "MED162": [
+      "SUP027",
+      "SUP030",
+      "SUP017"
+    ],
+    "MED163": [
+      "SUP027",
+      "SUP010"
+    ],
+    "MED164": [
+      "SUP020",
+      "SUP017"
+    ],
+    "MED165": [
+      "SUP027",
+      "SUP006",
+      "SUP004"
+    ],
+    "MED166": [
+      "SUP012",
+      "SUP016",
+      "SUP027"
+    ],
+    "MED167": [
+      "SUP007"
+    ],
+    "MED168": [
+      "SUP004"
+    ],
+    "MED169": [
+      "SUP004",
+      "SUP014",
+      "SUP007"
+    ],
+    "MED170": [
+      "SUP027",
+      "SUP002",
+      "SUP016"
+    ],
+    "MED171": [
+      "SUP009",
+      "SUP017"
+    ],
+    "MED172": [
+      "SUP022",
+      "SUP012",
+      "SUP004"
+    ],
+    "MED173": [
+      "SUP002",
+      "SUP012",
+      "SUP009"
+    ],
+    "MED174": [
+      "SUP009"
+    ],
+    "MED175": [
+      "SUP009",
+      "SUP020",
+      "SUP014"
+    ],
+    "MED176": [
+      "SUP030",
+      "SUP017",
+      "SUP020"
+    ],
+    "MED177": [
+      "SUP030",
+      "SUP014",
+      "SUP027"
+    ],
+    "MED178": [
+      "SUP022"
+    ],
+    "MED179": [
+      "SUP012",
+      "SUP004",
+      "SUP027"
+    ],
+    "MED180": [
+      "SUP007",
+      "SUP022",
+      "SUP010"
+    ],
+    "MED181": [
+      "SUP030",
+      "SUP009",
+      "SUP010"
+    ],
+    "MED182": [
+      "SUP014",
+      "SUP012"
+    ],
+    "MED183": [
+      "SUP006",
+      "SUP030"
+    ],
+    "MED184": [
+      "SUP010",
+      "SUP006",
+      "SUP002"
+    ],
+    "MED185": [
+      "SUP016",
+      "SUP014",
+      "SUP020"
+    ],
+    "MED186": [
+      "SUP027",
+      "SUP016"
+    ],
+    "MED187": [
+      "SUP020",
+      "SUP004"
+    ],
+    "MED188": [
+      "SUP020",
+      "SUP004"
+    ],
+    "MED189": [
+      "SUP012",
+      "SUP004"
+    ],
+    "MED190": [
+      "SUP012",
+      "SUP010",
+      "SUP009"
+    ],
+    "MED191": [
+      "SUP004",
+      "SUP002",
+      "SUP006"
+    ],
+    "MED192": [
+      "SUP007",
+      "SUP006",
+      "SUP017"
+    ],
+    "MED193": [
+      "SUP010",
+      "SUP016",
+      "SUP012"
+    ],
+    "MED194": [
+      "SUP007",
+      "SUP012",
+      "SUP020"
+    ],
+    "MED195": [
+      "SUP030",
+      "SUP006"
+    ],
+    "MED196": [
+      "SUP027",
+      "SUP006",
+      "SUP017"
+    ],
+    "MED197": [
+      "SUP027",
+      "SUP012",
+      "SUP030"
+    ],
+    "MED198": [
+      "SUP007"
+    ],
+    "MED199": [
+      "SUP022"
+    ],
+    "MED200": [
+      "SUP022"
+    ],
+    "MED201": [
+      "SUP010"
+    ],
+    "MED202": [
+      "SUP007",
+      "SUP004",
+      "SUP010"
+    ],
+    "MED203": [
+      "SUP012",
+      "SUP002"
+    ],
+    "MED204": [
+      "SUP020",
+      "SUP017",
+      "SUP010"
+    ],
+    "MED205": [
+      "SUP018",
+      "SUP004",
+      "SUP005"
+    ],
+    "MED206": [
+      "SUP028"
+    ],
+    "MED207": [
+      "SUP001"
+    ],
+    "MED208": [
+      "SUP023",
+      "SUP018",
+      "SUP013"
+    ],
+    "MED209": [
+      "SUP018",
+      "SUP028",
+      "SUP003"
+    ],
+    "MED210": [
+      "SUP013"
+    ],
+    "MED211": [
+      "SUP028",
+      "SUP003"
+    ],
+    "MED212": [
+      "SUP018",
+      "SUP013"
+    ],
+    "MED213": [
+      "SUP003",
+      "SUP018",
+      "SUP023"
+    ],
+    "MED214": [
+      "SUP023",
+      "SUP001",
+      "SUP025"
+    ],
+    "MED215": [
+      "SUP013",
+      "SUP028"
+    ],
+    "MED216": [
+      "SUP013",
+      "SUP003",
+      "SUP025"
+    ],
+    "MED217": [
+      "SUP004",
+      "SUP023",
+      "SUP018"
+    ],
+    "MED218": [
+      "SUP008",
+      "SUP018",
+      "SUP023"
+    ],
+    "MED219": [
+      "SUP013",
+      "SUP001",
+      "SUP028"
+    ],
+    "MED220": [
+      "SUP018",
+      "SUP028"
+    ],
+    "MED221": [
+      "SUP018",
+      "SUP013"
+    ],
+    "MED222": [
+      "SUP013",
+      "SUP001"
+    ],
+    "MED223": [
+      "SUP025",
+      "SUP023",
+      "SUP008"
+    ],
+    "MED224": [
+      "SUP008"
+    ],
+    "MED225": [
+      "SUP025",
+      "SUP008"
+    ],
+    "MED226": [
+      "SUP013"
+    ],
+    "MED227": [
+      "SUP005",
+      "SUP028"
+    ],
+    "MED228": [
+      "SUP001"
+    ],
+    "MED229": [
+      "SUP025",
+      "SUP004",
+      "SUP013"
+    ],
+    "MED230": [
+      "SUP004",
+      "SUP023"
+    ],
+    "MED231": [
+      "SUP008"
+    ],
+    "MED232": [
+      "SUP008"
+    ],
+    "MED233": [
+      "SUP028"
+    ],
+    "MED234": [
+      "SUP003",
+      "SUP018"
+    ],
+    "MED235": [
+      "SUP001"
+    ],
+    "MED236": [
+      "SUP023",
+      "SUP003",
+      "SUP005"
+    ],
+    "MED237": [
+      "SUP018"
+    ],
+    "MED238": [
+      "SUP025"
+    ],
+    "MED239": [
+      "SUP008"
+    ],
+    "MED240": [
+      "SUP008"
+    ],
+    "MED241": [
+      "SUP003"
+    ],
+    "MED242": [
+      "SUP013",
+      "SUP018",
+      "SUP025"
+    ],
+    "MED243": [
+      "SUP005",
+      "SUP003"
+    ],
+    "MED244": [
+      "SUP025"
+    ],
+    "MED245": [
+      "SUP028",
+      "SUP018"
+    ],
+    "MED246": [
+      "SUP018",
+      "SUP001",
+      "SUP008"
+    ],
+    "MED247": [
+      "SUP003",
+      "SUP001",
+      "SUP025"
+    ],
+    "MED248": [
+      "SUP008",
+      "SUP013"
+    ],
+    "MED249": [
+      "SUP028",
+      "SUP005"
+    ],
+    "MED250": [
+      "SUP018",
+      "SUP025",
+      "SUP013"
+    ],
+    "MED251": [
+      "SUP028",
+      "SUP023"
+    ],
+    "MED252": [
+      "SUP005",
+      "SUP004"
+    ],
+    "MED253": [
+      "SUP008",
+      "SUP018",
+      "SUP005"
+    ],
+    "MED254": [
+      "SUP018",
+      "SUP003"
+    ],
+    "MED255": [
+      "SUP003",
+      "SUP025"
+    ],
+    "MED256": [
+      "SUP015"
+    ],
+    "MED257": [
+      "SUP006",
+      "SUP019"
+    ],
+    "MED258": [
+      "SUP018",
+      "SUP006"
+    ],
+    "MED259": [
+      "SUP019"
+    ],
+    "MED260": [
+      "SUP013",
+      "SUP008"
+    ],
+    "MED261": [
+      "SUP007",
+      "SUP023"
+    ],
+    "MED262": [
+      "SUP018",
+      "SUP007"
+    ],
+    "MED263": [
+      "SUP007",
+      "SUP015",
+      "SUP013"
+    ],
+    "MED264": [
+      "SUP007"
+    ],
+    "MED265": [
+      "SUP023"
+    ],
+    "MED266": [
+      "SUP028",
+      "SUP003",
+      "SUP008"
+    ],
+    "MED267": [
+      "SUP007",
+      "SUP008",
+      "SUP006"
+    ],
+    "MED268": [
+      "SUP023",
+      "SUP028"
+    ],
+    "MED269": [
+      "SUP008",
+      "SUP019",
+      "SUP023"
+    ],
+    "MED270": [
+      "SUP015",
+      "SUP019"
+    ],
+    "MED271": [
+      "SUP007",
+      "SUP015",
+      "SUP013"
+    ],
+    "MED272": [
+      "SUP015"
+    ],
+    "MED273": [
+      "SUP008",
+      "SUP013",
+      "SUP028"
+    ],
+    "MED274": [
+      "SUP006",
+      "SUP008",
+      "SUP015"
+    ],
+    "MED275": [
+      "SUP003"
+    ],
+    "MED276": [
+      "SUP006",
+      "SUP023",
+      "SUP028"
+    ],
+    "MED277": [
+      "SUP013",
+      "SUP019",
+      "SUP028"
+    ],
+    "MED278": [
+      "SUP007",
+      "SUP006",
+      "SUP018"
+    ],
+    "MED279": [
+      "SUP006",
+      "SUP023"
+    ],
+    "MED280": [
+      "SUP015"
+    ],
+    "MED281": [
+      "SUP019",
+      "SUP008",
+      "SUP028"
+    ],
+    "MED282": [
+      "SUP019",
+      "SUP007"
+    ],
+    "MED283": [
+      "SUP028",
+      "SUP008"
+    ],
+    "MED284": [
+      "SUP023",
+      "SUP008",
+      "SUP019"
+    ],
+    "MED285": [
+      "SUP003",
+      "SUP013"
+    ],
+    "MED286": [
+      "SUP015",
+      "SUP013",
+      "SUP018"
+    ],
+    "MED287": [
+      "SUP028",
+      "SUP013",
+      "SUP003"
+    ],
+    "MED288": [
+      "SUP028",
+      "SUP018",
+      "SUP023"
+    ],
+    "MED289": [
+      "SUP008"
+    ],
+    "MED290": [
+      "SUP003",
+      "SUP006"
+    ],
+    "MED291": [
+      "SUP003"
+    ],
+    "MED292": [
+      "SUP023",
+      "SUP008"
+    ],
+    "MED293": [
+      "SUP023"
+    ],
+    "MED294": [
+      "SUP006",
+      "SUP023",
+      "SUP019"
+    ],
+    "MED295": [
+      "SUP023"
+    ],
+    "MED296": [
+      "SUP006"
+    ],
+    "MED297": [
+      "SUP008",
+      "SUP013"
+    ],
+    "MED298": [
+      "SUP019",
+      "SUP015"
+    ],
+    "MED299": [
+      "SUP007"
+    ],
+    "MED300": [
+      "SUP019"
+    ],
+    "MED301": [
+      "SUP023",
+      "SUP007"
+    ],
+    "MED302": [
+      "SUP013",
+      "SUP003",
+      "SUP019"
+    ],
+    "MED303": [
+      "SUP008",
+      "SUP003"
+    ],
+    "MED304": [
+      "SUP013",
+      "SUP028",
+      "SUP003"
+    ],
+    "MED305": [
+      "SUP008",
+      "SUP015"
+    ],
+    "MED306": [
+      "SUP019",
+      "SUP006"
+    ],
+    "MED307": [
+      "SUP003",
+      "SUP018"
+    ],
+    "MED308": [
+      "SUP003",
+      "SUP015",
+      "SUP013"
+    ],
+    "MED309": [
+      "SUP018",
+      "SUP023"
+    ],
+    "MED310": [
+      "SUP008"
+    ],
+    "MED311": [
+      "SUP028",
+      "SUP018",
+      "SUP006"
+    ],
+    "MED312": [
+      "SUP018"
+    ],
+    "MED313": [
+      "SUP028",
+      "SUP008",
+      "SUP006"
+    ],
+    "MED314": [
+      "SUP015",
+      "SUP008"
+    ],
+    "MED315": [
+      "SUP007",
+      "SUP023"
+    ],
+    "MED316": [
+      "SUP023",
+      "SUP019"
+    ],
+    "MED317": [
+      "SUP018",
+      "SUP013"
+    ],
+    "MED318": [
+      "SUP019"
+    ],
+    "MED319": [
+      "SUP015"
+    ],
+    "MED320": [
+      "SUP018",
+      "SUP023",
+      "SUP015"
+    ],
+    "MED321": [
+      "SUP023",
+      "SUP015"
+    ],
+    "MED322": [
+      "SUP023"
+    ],
+    "MED323": [
+      "SUP008"
+    ],
+    "MED324": [
+      "SUP023"
+    ],
+    "MED325": [
+      "SUP013"
+    ],
+    "MED326": [
+      "SUP015",
+      "SUP019"
+    ],
+    "MED327": [
+      "SUP028",
+      "SUP013",
+      "SUP018"
+    ],
+    "MED328": [
+      "SUP007",
+      "SUP015"
+    ],
+    "MED329": [
+      "SUP023"
+    ],
+    "MED330": [
+      "SUP015",
+      "SUP008"
+    ],
+    "MED331": [
+      "SUP019"
+    ],
+    "MED332": [
+      "SUP007",
+      "SUP023"
+    ],
+    "MED333": [
+      "SUP008",
+      "SUP003",
+      "SUP006"
+    ],
+    "MED334": [
+      "SUP023"
+    ],
+    "MED335": [
+      "SUP006",
+      "SUP018",
+      "SUP019"
+    ],
+    "MED336": [
+      "SUP018",
+      "SUP015"
+    ],
+    "MED337": [
+      "SUP018",
+      "SUP019"
+    ],
+    "MED338": [
+      "SUP015"
+    ],
+    "MED339": [
+      "SUP013",
+      "SUP003",
+      "SUP006"
+    ],
+    "MED340": [
+      "SUP018",
+      "SUP006"
+    ],
+    "MED341": [
+      "SUP006"
+    ],
+    "MED342": [
+      "SUP015",
+      "SUP013"
+    ],
+    "MED343": [
+      "SUP023"
+    ],
+    "MED344": [
+      "SUP015"
+    ],
+    "MED345": [
+      "SUP013",
+      "SUP020",
+      "SUP018"
+    ],
+    "MED346": [
+      "SUP025",
+      "SUP010",
+      "SUP018"
+    ],
+    "MED347": [
+      "SUP018",
+      "SUP010"
+    ],
+    "MED348": [
+      "SUP025",
+      "SUP019"
+    ],
+    "MED349": [
+      "SUP020",
+      "SUP004",
+      "SUP024"
+    ],
+    "MED350": [
+      "SUP010",
+      "SUP009",
+      "SUP025"
+    ],
+    "MED351": [
+      "SUP003",
+      "SUP028",
+      "SUP018"
+    ],
+    "MED352": [
+      "SUP004"
+    ],
+    "MED353": [
+      "SUP014",
+      "SUP025",
+      "SUP018"
+    ],
+    "MED354": [
+      "SUP003"
+    ],
+    "MED355": [
+      "SUP007",
+      "SUP004"
+    ],
+    "MED356": [
+      "SUP025"
+    ],
+    "MED357": [
+      "SUP009",
+      "SUP002",
+      "SUP018"
+    ],
+    "MED358": [
+      "SUP028"
+    ],
+    "MED359": [
+      "SUP010",
+      "SUP013",
+      "SUP029"
+    ],
+    "MED360": [
+      "SUP024",
+      "SUP004"
+    ],
+    "MED361": [
+      "SUP013"
+    ],
+    "MED362": [
+      "SUP014"
+    ],
+    "MED363": [
+      "SUP010"
+    ],
+    "MED364": [
+      "SUP025",
+      "SUP028",
+      "SUP018"
+    ],
+    "MED365": [
+      "SUP015"
+    ],
+    "MED366": [
+      "SUP014"
+    ],
+    "MED367": [
+      "SUP028",
+      "SUP007"
+    ],
+    "MED368": [
+      "SUP028",
+      "SUP024",
+      "SUP002"
+    ],
+    "MED369": [
+      "SUP004",
+      "SUP014",
+      "SUP028"
+    ],
+    "MED370": [
+      "SUP024",
+      "SUP003"
+    ],
+    "MED371": [
+      "SUP002",
+      "SUP015"
+    ],
+    "MED372": [
+      "SUP002",
+      "SUP020",
+      "SUP019"
+    ],
+    "MED373": [
+      "SUP025",
+      "SUP028"
+    ],
+    "MED374": [
+      "SUP025",
+      "SUP009"
+    ],
+    "MED375": [
+      "SUP018",
+      "SUP025",
+      "SUP029"
+    ],
+    "MED376": [
+      "SUP004",
+      "SUP014",
+      "SUP003"
+    ],
+    "MED377": [
+      "SUP029",
+      "SUP007",
+      "SUP020"
+    ],
+    "MED378": [
+      "SUP025",
+      "SUP020",
+      "SUP013"
+    ],
+    "MED379": [
+      "SUP029",
+      "SUP007"
+    ],
+    "MED380": [
+      "SUP018"
+    ],
+    "MED381": [
+      "SUP028",
+      "SUP024",
+      "SUP014"
+    ],
+    "MED382": [
+      "SUP009",
+      "SUP010",
+      "SUP025"
+    ],
+    "MED383": [
+      "SUP024"
+    ],
+    "MED384": [
+      "SUP009",
+      "SUP007",
+      "SUP004"
+    ],
+    "MED385": [
+      "SUP007",
+      "SUP028",
+      "SUP020"
+    ],
+    "MED386": [
+      "SUP020",
+      "SUP018"
+    ],
+    "MED387": [
+      "SUP010",
+      "SUP004",
+      "SUP028"
+    ],
+    "MED388": [
+      "SUP002"
+    ],
+    "MED389": [
+      "SUP014",
+      "SUP007"
+    ],
+    "MED390": [
+      "SUP028",
+      "SUP015",
+      "SUP007"
+    ],
+    "MED391": [
+      "SUP024",
+      "SUP004",
+      "SUP003"
+    ],
+    "MED392": [
+      "SUP018"
+    ],
+    "MED393": [
+      "SUP007"
+    ],
+    "MED394": [
+      "SUP003"
+    ],
+    "MED395": [
+      "SUP004",
+      "SUP025",
+      "SUP018"
+    ],
+    "MED396": [
+      "SUP004",
+      "SUP015"
+    ],
+    "MED397": [
+      "SUP015",
+      "SUP003"
+    ],
+    "MED398": [
+      "SUP028",
+      "SUP003",
+      "SUP029"
+    ],
+    "MED399": [
+      "SUP004",
+      "SUP029",
+      "SUP015"
+    ],
+    "MED400": [
+      "SUP018"
+    ],
+    "MED401": [
+      "SUP018"
+    ],
+    "MED402": [
+      "SUP009",
+      "SUP014",
+      "SUP029"
+    ],
+    "MED403": [
+      "SUP003",
+      "SUP002"
+    ],
+    "MED404": [
+      "SUP020",
+      "SUP029",
+      "SUP007"
+    ],
+    "MED405": [
+      "SUP018"
+    ],
+    "MED406": [
+      "SUP024"
+    ],
+    "MED407": [
+      "SUP004",
+      "SUP014",
+      "SUP029"
+    ],
+    "MED408": [
+      "SUP019",
+      "SUP014"
+    ],
+    "MED409": [
+      "SUP014",
+      "SUP022"
+    ],
+    "MED410": [
+      "SUP014",
+      "SUP029"
+    ],
+    "MED411": [
+      "SUP024",
+      "SUP019",
+      "SUP012"
+    ],
+    "MED412": [
+      "SUP009",
+      "SUP024",
+      "SUP012"
+    ],
+    "MED413": [
+      "SUP014"
+    ],
+    "MED414": [
+      "SUP019"
+    ],
+    "MED415": [
+      "SUP024",
+      "SUP009",
+      "SUP019"
+    ],
+    "MED416": [
+      "SUP019",
+      "SUP024"
+    ],
+    "MED417": [
+      "SUP009",
+      "SUP004",
+      "SUP024"
+    ],
+    "MED418": [
+      "SUP022",
+      "SUP024"
+    ],
+    "MED419": [
+      "SUP024",
+      "SUP029",
+      "SUP014"
+    ],
+    "MED420": [
+      "SUP029"
+    ],
+    "MED421": [
+      "SUP019",
+      "SUP004",
+      "SUP009"
+    ],
+    "MED422": [
+      "SUP029",
+      "SUP019"
+    ],
+    "MED423": [
+      "SUP029"
+    ],
+    "MED424": [
+      "SUP024",
+      "SUP022"
+    ],
+    "MED425": [
+      "SUP014",
+      "SUP024",
+      "SUP009"
+    ],
+    "MED426": [
+      "SUP012"
+    ],
+    "MED427": [
+      "SUP014",
+      "SUP029",
+      "SUP019"
+    ],
+    "MED428": [
+      "SUP024",
+      "SUP022",
+      "SUP014"
+    ],
+    "MED429": [
+      "SUP014",
+      "SUP009",
+      "SUP019"
+    ],
+    "MED430": [
+      "SUP022"
+    ],
+    "MED431": [
+      "SUP014",
+      "SUP022"
+    ],
+    "MED432": [
+      "SUP019",
+      "SUP014",
+      "SUP004"
+    ],
+    "MED433": [
+      "SUP019",
+      "SUP022",
+      "SUP012"
+    ],
+    "MED434": [
+      "SUP004"
+    ],
+    "MED435": [
+      "SUP019",
+      "SUP024"
+    ],
+    "MED436": [
+      "SUP019"
+    ],
+    "MED437": [
+      "SUP004"
+    ],
+    "MED438": [
+      "SUP012",
+      "SUP029"
+    ],
+    "MED439": [
+      "SUP029",
+      "SUP014"
+    ],
+    "MED440": [
+      "SUP012"
+    ],
+    "MED441": [
+      "SUP024",
+      "SUP019",
+      "SUP022"
+    ],
+    "MED442": [
+      "SUP025",
+      "SUP020",
+      "SUP021"
+    ],
+    "MED443": [
+      "SUP024"
+    ],
+    "MED444": [
+      "SUP010"
+    ],
+    "MED445": [
+      "SUP015",
+      "SUP005",
+      "SUP021"
+    ],
+    "MED446": [
+      "SUP025",
+      "SUP015"
+    ],
+    "MED447": [
+      "SUP011",
+      "SUP005",
+      "SUP015"
+    ],
+    "MED448": [
+      "SUP020"
+    ],
+    "MED449": [
+      "SUP024",
+      "SUP027"
+    ],
+    "MED450": [
+      "SUP010",
+      "SUP030",
+      "SUP025"
+    ],
+    "MED451": [
+      "SUP015",
+      "SUP020"
+    ],
+    "MED452": [
+      "SUP021",
+      "SUP024",
+      "SUP030"
+    ],
+    "MED453": [
+      "SUP005",
+      "SUP015",
+      "SUP020"
+    ],
+    "MED454": [
+      "SUP030",
+      "SUP015",
+      "SUP027"
+    ],
+    "MED455": [
+      "SUP011",
+      "SUP030",
+      "SUP010"
+    ],
+    "MED456": [
+      "SUP025"
+    ],
+    "MED457": [
+      "SUP020"
+    ],
+    "MED458": [
+      "SUP030",
+      "SUP010",
+      "SUP020"
+    ],
+    "MED459": [
+      "SUP015",
+      "SUP011"
+    ],
+    "MED460": [
+      "SUP015"
+    ],
+    "MED461": [
+      "SUP011"
+    ],
+    "MED462": [
+      "SUP030"
+    ],
+    "MED463": [
+      "SUP010",
+      "SUP011"
+    ],
+    "MED464": [
+      "SUP005",
+      "SUP024"
+    ],
+    "MED465": [
+      "SUP030",
+      "SUP027",
+      "SUP011"
+    ],
+    "MED466": [
+      "SUP030",
+      "SUP020",
+      "SUP027"
+    ],
+    "MED467": [
+      "SUP030",
+      "SUP025"
+    ],
+    "MED468": [
+      "SUP030",
+      "SUP024",
+      "SUP010"
+    ],
+    "MED469": [
+      "SUP030",
+      "SUP024"
+    ],
+    "MED470": [
+      "SUP015"
+    ],
+    "MED471": [
+      "SUP027"
+    ],
+    "MED472": [
+      "SUP011",
+      "SUP027",
+      "SUP015"
+    ],
+    "MED473": [
+      "SUP021"
+    ],
+    "MED474": [
+      "SUP005"
+    ],
+    "MED475": [
+      "SUP020",
+      "SUP011",
+      "SUP025"
+    ],
+    "MED476": [
+      "SUP030",
+      "SUP027",
+      "SUP011"
+    ],
+    "MED477": [
+      "SUP011",
+      "SUP025"
+    ],
+    "MED478": [
+      "SUP030",
+      "SUP020",
+      "SUP029"
+    ],
+    "MED479": [
+      "SUP027",
+      "SUP009"
+    ],
+    "MED480": [
+      "SUP020"
+    ],
+    "MED481": [
+      "SUP005",
+      "SUP028",
+      "SUP008"
+    ],
+    "MED482": [
+      "SUP010",
+      "SUP021",
+      "SUP009"
+    ],
+    "MED483": [
+      "SUP017",
+      "SUP025"
+    ],
+    "MED484": [
+      "SUP025"
+    ],
+    "MED485": [
+      "SUP029"
+    ],
+    "MED486": [
+      "SUP020",
+      "SUP005"
+    ],
+    "MED487": [
+      "SUP008"
+    ],
+    "MED488": [
+      "SUP008",
+      "SUP028"
+    ],
+    "MED489": [
+      "SUP025"
+    ],
+    "MED490": [
+      "SUP017",
+      "SUP027"
+    ],
+    "MED491": [
+      "SUP010"
+    ],
+    "MED492": [
+      "SUP009",
+      "SUP028",
+      "SUP005"
+    ],
+    "MED493": [
+      "SUP025",
+      "SUP020",
+      "SUP015"
+    ],
+    "MED494": [
+      "SUP015"
+    ],
+    "MED495": [
+      "SUP009",
+      "SUP030",
+      "SUP027"
+    ],
+    "MED496": [
+      "SUP005"
+    ],
+    "MED497": [
+      "SUP025",
+      "SUP030"
+    ],
+    "MED498": [
+      "SUP008",
+      "SUP020",
+      "SUP029"
+    ],
+    "MED499": [
+      "SUP017",
+      "SUP025",
+      "SUP005"
+    ],
+    "MED500": [
+      "SUP017",
+      "SUP028"
+    ]
+  },
+  "files": [
+    "data/raw/categories.csv",
+    "data/raw/medicines.csv",
+    "data/raw/branches.csv",
+    "data/raw/suppliers.csv",
+    "data/raw/batches.csv",
+    "data/raw/purchases.csv",
+    "data/raw/sales.csv"
+  ]
+}

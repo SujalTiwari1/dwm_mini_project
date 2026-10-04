@@ -1,0 +1,571 @@
+{
+  "rows_loaded": {
+    "dim_date": 730,
+    "dim_category": 10,
+    "dim_medicine": 500,
+    "dim_branch": 5,
+    "dim_supplier": 30,
+    "dim_batch": 35477,
+    "fact_sales": 1022346,
+    "fact_purchase": 80363,
+    "fact_inventory": 1825000
+  },
+  "etl_seconds": 38.8,
+  "step_seconds": {
+    "extract (7 CSVs)": 2.9,
+    "transform dimensions + facts": 0.7,
+    "reconstruct inventory": 0.8,
+    "create schema + truncate": 0.2,
+    "load dimensions": 0.7,
+    "load facts (COPY)": 12.1,
+    "restore FKs + rebuild indexes": 3.3,
+    "analyze": 0.4,
+    "validate warehouse": 16.8
+  },
+  "inventory_totals": {
+    "purchased": 1631425,
+    "sold": 1582353,
+    "expired": 3599,
+    "closing_final_day": 45473,
+    "rows": 1825000,
+    "expired_batches": 437,
+    "expired_value_cents": 28892186
+  },
+  "raw_md5": {
+    "categories": "f33e5e4b9abf37fefb5f019c7127601f",
+    "medicines": "e0827bbb27c254f39a1338504412426f",
+    "branches": "e178cb09d34e6c413f7893bd0396a864",
+    "suppliers": "b5a72f2b2d3b575f79eca5158001cd4a",
+    "batches": "ad5a33302bf4fc90a8f6fc3fb48c152f",
+    "purchases": "d2c5642c6247ea997a29d5ff0597c6b4",
+    "sales": "5306216bb5f13e3ea8ce3647f28fd481"
+  },
+  "validation_errors": 0,
+  "checks": [
+    {
+      "source": "sql",
+      "check": "01 sales rows",
+      "actual": "1022346",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "02 sales quantity",
+      "actual": "1582353",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "03 sales revenue (INR)",
+      "actual": "159205192.71",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "04 purchase rows",
+      "actual": "80363",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "05 purchase quantity",
+      "actual": "1631425",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "06 purchase cost (INR)",
+      "actual": "125388460.85",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "07 closing inventory, last day (units)",
+      "actual": "45473",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "08 inventory reconciliation errors",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "08b opening <> previous closing",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "09 negative inventory rows",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "10 sales on/after batch expiry",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "10b purchases on/after batch expiry or before manufacture",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan dim_medicine.category_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan dim_batch.supplier_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan dim_batch.medicine_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_purchase.branch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_purchase.supplier_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_purchase.medicine_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_purchase.date_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_purchase.batch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_sales.branch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_sales.medicine_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_sales.date_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_inventory.medicine_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_sales.batch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_inventory.date_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_inventory.branch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate branch_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate category_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate supplier_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate medicine_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate batch_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate purchase_id",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "12 duplicate sales grain (transaction, medicine, batch)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "13 date coverage: fact dates outside dim_date or gaps",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "13b calendar span",
+      "actual": "2025-01-01 to 2026-12-31",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "14 branch coverage (branches with sales / branches)",
+      "actual": "5 / 5",
+      "expected": "all",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "15 medicine coverage (medicines with sales / medicines)",
+      "actual": "500 / 500",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "16 supplier coverage (suppliers with purchases / suppliers)",
+      "actual": "30 / 30",
+      "expected": "all",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "17 batch consistency mismatches (purchase supplier)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "17 batch consistency mismatches (purchase medicine)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "17 batch consistency mismatches (purchase price)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "17 batch consistency mismatches (batch initial_quantity vs purchases)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "17 batch consistency mismatches (sales medicine)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "18 inventory flows vs facts: total mismatch (units)",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "18b inventory flows vs facts: cell mismatches",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "19 inventory rows vs dates x branches x medicines",
+      "actual": "1825000",
+      "expected": "1825000",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "20 stockout days (closing = 0)",
+      "actual": "18290",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "sql",
+      "check": "20b expired units written off",
+      "actual": "3599",
+      "expected": "info",
+      "status": "INFO"
+    },
+    {
+      "source": "raw",
+      "check": "dim_category rows = raw categories",
+      "expected": "10",
+      "actual": "10",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_medicine rows = raw medicines",
+      "expected": "500",
+      "actual": "500",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_branch rows = raw branches",
+      "expected": "5",
+      "actual": "5",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_supplier rows = raw suppliers",
+      "expected": "30",
+      "actual": "30",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_batch rows = raw batches",
+      "expected": "35477",
+      "actual": "35477",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_date rows = calendar days of the data",
+      "expected": "730",
+      "actual": "730",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_date first date",
+      "expected": "2025-01-01",
+      "actual": "2025-01-01",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "dim_date last date",
+      "expected": "2026-12-31",
+      "actual": "2026-12-31",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_sales rows = raw sales rows",
+      "expected": "1022346",
+      "actual": "1022346",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_sales distinct transactions",
+      "expected": "613027",
+      "actual": "613027",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_sales SUM(quantity)",
+      "expected": "1582353",
+      "actual": "1582353",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_sales SUM(total_amount)",
+      "expected": "159205192.71",
+      "actual": "159205192.71",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_sales SUM(discount)",
+      "expected": "1914337.78",
+      "actual": "1914337.78",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_purchase rows = raw purchases rows",
+      "expected": "80363",
+      "actual": "80363",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_purchase SUM(quantity)",
+      "expected": "1631425",
+      "actual": "1631425",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_purchase SUM(total_cost)",
+      "expected": "125388460.85",
+      "actual": "125388460.85",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_inventory rows = days x branches x medicines",
+      "expected": "1825000",
+      "actual": "1825000",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_inventory SUM(purchased_quantity)",
+      "expected": "1631425",
+      "actual": "1631425",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_inventory SUM(sold_quantity)",
+      "expected": "1582353",
+      "actual": "1582353",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "fact_inventory SUM(expired_quantity)",
+      "expected": "3599",
+      "actual": "3599",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "closing inventory (last day) = purchased - sold - expired",
+      "expected": "45473",
+      "actual": "45473",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "closing inventory matches generator ledger",
+      "expected": "45473",
+      "actual": "45473",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "expired units match generator ledger",
+      "expected": "3599",
+      "actual": "3599",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "stockout branch-medicine-days match generator quality report",
+      "expected": "18290",
+      "actual": "18290",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "no generator metadata columns in the warehouse",
+      "expected": "[]",
+      "actual": "[]",
+      "status": "PASS"
+    },
+    {
+      "source": "raw",
+      "check": "frozen raw CSVs unchanged by the ETL (MD5 before = after)",
+      "expected": "identical",
+      "actual": "identical",
+      "status": "PASS"
+    }
+  ]
+}

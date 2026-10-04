@@ -1,0 +1,501 @@
+medicine_id,medicine_name,category_id,manufacturer,dosage_form,strength,base_price,demand_profile
+MED001,Paracetamol 500mg,CAT001,MedNova Labs,Tablet,500mg,25.00,HIGH
+MED002,Diclofenac 50mg,CAT001,PharmaCore India,Tablet,50mg,42.00,MEDIUM
+MED003,Amoxicillin 500mg,CAT002,HealthAxis Pharma,Capsule,500mg,92.00,MEDIUM
+MED004,Azithromycin 500mg,CAT002,NovaMed Laboratories,Tablet,500mg,119.50,MEDIUM
+MED005,Paracetamol 650mg,CAT003,CureLine Healthcare,Tablet,650mg,30.00,HIGH
+MED006,Paracetamol Suspension 250mg/5ml,CAT003,MedNova Labs,Suspension,250mg/5ml,48.00,LOW
+MED007,Cetirizine 10mg,CAT004,HealthAxis Pharma,Tablet,10mg,22.00,HIGH
+MED008,Fexofenadine 120mg,CAT004,MediSphere,Tablet,120mg,190.00,LOW
+MED009,Pantoprazole 40mg,CAT005,ApexLife Pharma,Tablet,40mg,78.00,HIGH
+MED010,Ondansetron 4mg,CAT005,HealthAxis Pharma,Tablet,4mg,56.00,LOW
+MED011,Amlodipine 5mg,CAT006,CureLine Healthcare,Tablet,5mg,36.00,HIGH
+MED012,Atorvastatin 10mg,CAT006,VitaCure Remedies,Tablet,10mg,98.00,MEDIUM
+MED013,Metformin 500mg,CAT007,Zenith BioPharma,Tablet,500mg,32.00,HIGH
+MED014,Glimepiride 2mg,CAT007,MediSphere,Tablet,2mg,142.00,MEDIUM
+MED015,Ambroxol + Levosalbutamol Syrup 100ml,CAT008,LifeSpring Pharma,Syrup,100ml,118.00,MEDIUM
+MED016,Salbutamol Inhaler 100mcg,CAT008,HealthAxis Pharma,Inhaler,100mcg,165.00,LOW
+MED017,Vitamin C Chewable 500mg,CAT009,CarePlus Laboratories,Tablet,500mg,28.00,MEDIUM
+MED018,Vitamin D3 60000IU,CAT009,Aarogya Formulations,Capsule,60000IU,140.00,LOW
+MED019,Clotrimazole Cream 1%,CAT010,LifeSpring Pharma,Cream,1%,85.00,MEDIUM
+MED020,Mupirocin Ointment 2%,CAT010,MedNova Labs,Ointment,2%,135.00,LOW
+MED021,Ibuprofen 400mg,CAT001,CarePlus Laboratories,Tablet,400mg,34.00,MEDIUM
+MED022,Aceclofenac + Paracetamol 100mg/325mg,CAT001,Aarogya Formulations,Tablet,100mg/325mg,68.00,MEDIUM
+MED023,Naproxen 250mg,CAT001,ApexLife Pharma,Tablet,250mg,74.00,LOW
+MED024,Cefixime 200mg,CAT002,BlueCrest Pharma,Tablet,200mg,110.00,MEDIUM
+MED025,Ciprofloxacin 500mg,CAT002,HealthAxis Pharma,Tablet,500mg,58.00,MEDIUM
+MED026,Doxycycline 100mg,CAT002,TrueLife Remedies,Capsule,100mg,72.00,LOW
+MED027,Amoxicillin + Clavulanic Acid 625mg,CAT002,MedNova Labs,Tablet,625mg,204.00,MEDIUM
+MED028,Mefenamic Acid 250mg,CAT003,Kavach Healthcare,Tablet,250mg,45.00,LOW
+MED029,Paracetamol Drops 100mg/ml,CAT003,HealthAxis Pharma,Drops,100mg/ml,38.00,LOW
+MED030,Levocetirizine 5mg,CAT004,ApexLife Pharma,Tablet,5mg,62.00,MEDIUM
+MED031,Montelukast + Levocetirizine 10mg/5mg,CAT004,BlueCrest Pharma,Tablet,10mg/5mg,195.00,MEDIUM
+MED032,Chlorpheniramine 4mg,CAT004,Meridian Pharma Works,Tablet,4mg,12.00,LOW
+MED033,Omeprazole 20mg,CAT005,Summit Lifesciences,Capsule,20mg,52.00,HIGH
+MED034,Domperidone 10mg,CAT005,Aarogya Formulations,Tablet,10mg,48.00,MEDIUM
+MED035,ORS Powder 21.8g,CAT005,HydraCare Labs,Powder,21.8g,21.00,MEDIUM
+MED036,Loperamide 2mg,CAT005,HealthAxis Pharma,Capsule,2mg,29.00,LOW
+MED037,Telmisartan 40mg,CAT006,LifeSpring Pharma,Tablet,40mg,122.00,HIGH
+MED038,Losartan 50mg,CAT006,Stellar Formulations,Tablet,50mg,84.00,MEDIUM
+MED039,Metoprolol 50mg,CAT006,Everwell Pharma,Tablet,50mg,68.00,MEDIUM
+MED040,Rosuvastatin 10mg,CAT006,ApexLife Pharma,Tablet,10mg,165.00,MEDIUM
+MED041,Clopidogrel 75mg,CAT006,Summit Lifesciences,Tablet,75mg,96.00,LOW
+MED042,Aspirin 75mg,CAT006,Helix Pharma,Tablet,75mg,8.00,MEDIUM
+MED043,Glimepiride + Metformin 2mg/500mg,CAT007,Zenith BioPharma,Tablet,2mg/500mg,150.00,HIGH
+MED044,Sitagliptin 100mg,CAT007,Crestview Pharma,Tablet,100mg,380.00,LOW
+MED045,Gliclazide 80mg,CAT007,Lumina Pharma,Tablet,80mg,75.00,LOW
+MED046,Montelukast 10mg,CAT008,HealthAxis Pharma,Tablet,10mg,190.00,MEDIUM
+MED047,Budesonide Inhaler 200mcg,CAT008,HealthAxis Pharma,Inhaler,200mcg,270.00,LOW
+MED048,Dextromethorphan Syrup 100ml,CAT008,Carewell Pharmaceuticals,Syrup,100ml,96.00,MEDIUM
+MED049,Multivitamin B-complex+C,CAT009,Carewell Pharmaceuticals,Capsule,B-complex+C,45.00,MEDIUM
+MED050,Calcium + Vitamin D3 500mg/250IU,CAT009,Stellar Formulations,Tablet,500mg/250IU,118.00,MEDIUM
+MED051,Iron + Folic Acid 100mg/500mcg,CAT009,Vedant Remedies,Tablet,100mg/500mcg,82.00,LOW
+MED052,Hydrocortisone Cream 1%,CAT010,MedNova Labs,Cream,1%,62.00,LOW
+MED053,Fusidic Acid Cream 2%,CAT010,Summit Lifesciences,Cream,2%,155.00,LOW
+MED054,Calamine Lotion 100ml,CAT010,Harbor Lifesciences,Lotion,100ml,70.00,LOW
+MED055,Ketoconazole Shampoo 2%,CAT010,HealthAxis Pharma,Shampoo,2%,210.00,LOW
+MED056,Aceclofenac + Paracetamol 100mg/325mg (HealthAxis Pharma),CAT001,HealthAxis Pharma,Tablet,100mg/325mg,74.64,LOW
+MED057,Aceclofenac + Paracetamol 100mg/325mg (LifeSpring Pharma),CAT001,LifeSpring Pharma,Tablet,100mg/325mg,62.27,LOW
+MED058,Aceclofenac + Paracetamol 100mg/325mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,100mg/325mg,74.25,MEDIUM
+MED059,Diclofenac 50mg (Aarogya Formulations),CAT001,Aarogya Formulations,Tablet,50mg,38.18,LOW
+MED060,Diclofenac 50mg (CarePlus Laboratories),CAT001,CarePlus Laboratories,Tablet,50mg,45.72,MEDIUM
+MED061,Diclofenac 50mg (Stellar Formulations),CAT001,Stellar Formulations,Tablet,50mg,39.97,LOW
+MED062,Diclofenac 50mg (TrueLife Remedies),CAT001,TrueLife Remedies,Tablet,50mg,43.87,LOW
+MED063,Diclofenac 50mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,50mg,38.86,MEDIUM
+MED064,Diclofenac 100mg,CAT001,ApexLife Pharma,Tablet,100mg,44.74,MEDIUM
+MED065,Diclofenac 100mg (CureLine Healthcare),CAT001,CureLine Healthcare,Tablet,100mg,50.30,LOW
+MED066,Diclofenac 100mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,100mg,52.81,LOW
+MED067,Ibuprofen 400mg (Aarogya Formulations),CAT001,Aarogya Formulations,Tablet,400mg,34.09,LOW
+MED068,Ibuprofen 400mg (CureLine Healthcare),CAT001,CureLine Healthcare,Tablet,400mg,31.33,LOW
+MED069,Ibuprofen 400mg (HealthAxis Pharma),CAT001,HealthAxis Pharma,Tablet,400mg,31.65,MEDIUM
+MED070,Ibuprofen 400mg (NovaMed Laboratories),CAT001,NovaMed Laboratories,Tablet,400mg,35.69,MEDIUM
+MED071,Ibuprofen 400mg (Stellar Formulations),CAT001,Stellar Formulations,Tablet,400mg,31.05,LOW
+MED072,Ibuprofen 400mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,400mg,32.30,LOW
+MED073,Ibuprofen 200mg,CAT001,BlueCrest Pharma,Tablet,200mg,38.71,MEDIUM
+MED074,Ibuprofen 200mg (LifeSpring Pharma),CAT001,LifeSpring Pharma,Tablet,200mg,40.07,LOW
+MED075,Ibuprofen 200mg (Summit Lifesciences),CAT001,Summit Lifesciences,Tablet,200mg,38.19,MEDIUM
+MED076,Ibuprofen 200mg (TrueLife Remedies),CAT001,TrueLife Remedies,Tablet,200mg,38.43,MEDIUM
+MED077,Ibuprofen 200mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,200mg,43.67,LOW
+MED078,Ibuprofen 600mg,CAT001,ApexLife Pharma,Tablet,600mg,46.92,MEDIUM
+MED079,Ibuprofen 600mg (BlueCrest Pharma),CAT001,BlueCrest Pharma,Tablet,600mg,46.94,MEDIUM
+MED080,Ibuprofen 600mg (HealthAxis Pharma),CAT001,HealthAxis Pharma,Tablet,600mg,50.71,LOW
+MED081,Ibuprofen 600mg (NovaMed Laboratories),CAT001,NovaMed Laboratories,Tablet,600mg,44.90,MEDIUM
+MED082,Naproxen 250mg (CureLine Healthcare),CAT001,CureLine Healthcare,Tablet,250mg,78.45,HIGH
+MED083,Naproxen 250mg (HealthAxis Pharma),CAT001,HealthAxis Pharma,Tablet,250mg,71.27,MEDIUM
+MED084,Naproxen 250mg (VitaCure Remedies),CAT001,VitaCure Remedies,Tablet,250mg,71.16,MEDIUM
+MED085,Naproxen 500mg,CAT001,BlueCrest Pharma,Tablet,500mg,82.77,LOW
+MED086,Naproxen 500mg (CarePlus Laboratories),CAT001,CarePlus Laboratories,Tablet,500mg,88.00,HIGH
+MED087,Naproxen 500mg (LifeSpring Pharma),CAT001,LifeSpring Pharma,Tablet,500mg,90.13,LOW
+MED088,Naproxen 500mg (NovaMed Laboratories),CAT001,NovaMed Laboratories,Tablet,500mg,95.28,LOW
+MED089,Paracetamol 500mg (Aarogya Formulations),CAT001,Aarogya Formulations,Tablet,500mg,22.57,LOW
+MED090,Paracetamol 500mg (CarePlus Laboratories),CAT001,CarePlus Laboratories,Tablet,500mg,26.63,MEDIUM
+MED091,Paracetamol 500mg (HealthAxis Pharma),CAT001,HealthAxis Pharma,Tablet,500mg,26.35,HIGH
+MED092,Paracetamol 500mg (LifeSpring Pharma),CAT001,LifeSpring Pharma,Tablet,500mg,25.74,LOW
+MED093,Paracetamol 250mg,CAT001,ApexLife Pharma,Tablet,250mg,30.82,LOW
+MED094,Paracetamol 250mg (Stellar Formulations),CAT001,Stellar Formulations,Tablet,250mg,27.17,LOW
+MED095,Amoxicillin 250mg,CAT002,BlueCrest Pharma,Capsule,250mg,99.41,MEDIUM
+MED096,Amoxicillin 250mg (CureLine Healthcare),CAT002,CureLine Healthcare,Capsule,250mg,117.13,MEDIUM
+MED097,Amoxicillin 250mg (LifeSpring Pharma),CAT002,LifeSpring Pharma,Capsule,250mg,118.82,MEDIUM
+MED098,Amoxicillin 250mg (NovaMed Laboratories),CAT002,NovaMed Laboratories,Capsule,250mg,119.36,MEDIUM
+MED099,Amoxicillin 250mg (Stellar Formulations),CAT002,Stellar Formulations,Capsule,250mg,103.06,LOW
+MED100,Amoxicillin 250mg (TrueLife Remedies),CAT002,TrueLife Remedies,Capsule,250mg,114.95,LOW
+MED101,Amoxicillin + Clavulanic Acid 625mg (CureLine Healthcare),CAT002,CureLine Healthcare,Tablet,625mg,222.72,LOW
+MED102,Amoxicillin + Clavulanic Acid 625mg (HealthAxis Pharma),CAT002,HealthAxis Pharma,Tablet,625mg,221.03,LOW
+MED103,Amoxicillin + Clavulanic Acid 625mg (Stellar Formulations),CAT002,Stellar Formulations,Tablet,625mg,185.26,LOW
+MED104,Amoxicillin + Clavulanic Acid 375mg,CAT002,HealthAxis Pharma,Tablet,375mg,247.09,HIGH
+MED105,Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories),CAT002,NovaMed Laboratories,Tablet,375mg,229.89,HIGH
+MED106,Amoxicillin + Clavulanic Acid 375mg (Summit Lifesciences),CAT002,Summit Lifesciences,Tablet,375mg,233.62,MEDIUM
+MED107,Amoxicillin + Clavulanic Acid 375mg (TrueLife Remedies),CAT002,TrueLife Remedies,Tablet,375mg,230.63,MEDIUM
+MED108,Azithromycin 500mg (Aarogya Formulations),CAT002,Aarogya Formulations,Tablet,500mg,125.84,MEDIUM
+MED109,Azithromycin 500mg (ApexLife Pharma),CAT002,ApexLife Pharma,Tablet,500mg,126.08,MEDIUM
+MED110,Azithromycin 500mg (VitaCure Remedies),CAT002,VitaCure Remedies,Tablet,500mg,108.54,LOW
+MED111,Azithromycin 250mg,CAT002,Aarogya Formulations,Tablet,250mg,144.49,LOW
+MED112,Azithromycin 250mg (ApexLife Pharma),CAT002,ApexLife Pharma,Tablet,250mg,136.89,LOW
+MED113,Azithromycin 250mg (BlueCrest Pharma),CAT002,BlueCrest Pharma,Tablet,250mg,129.86,HIGH
+MED114,Azithromycin 250mg (CarePlus Laboratories),CAT002,CarePlus Laboratories,Tablet,250mg,139.92,LOW
+MED115,Azithromycin 250mg (CureLine Healthcare),CAT002,CureLine Healthcare,Tablet,250mg,154.12,LOW
+MED116,Azithromycin 250mg (HealthAxis Pharma),CAT002,HealthAxis Pharma,Tablet,250mg,138.20,MEDIUM
+MED117,Azithromycin 250mg (LifeSpring Pharma),CAT002,LifeSpring Pharma,Tablet,250mg,151.29,HIGH
+MED118,Azithromycin 250mg (NovaMed Laboratories),CAT002,NovaMed Laboratories,Tablet,250mg,141.30,LOW
+MED119,Azithromycin 250mg (TrueLife Remedies),CAT002,TrueLife Remedies,Tablet,250mg,134.47,LOW
+MED120,Cefixime 200mg (ApexLife Pharma),CAT002,ApexLife Pharma,Tablet,200mg,116.25,LOW
+MED121,Cefixime 200mg (CureLine Healthcare),CAT002,CureLine Healthcare,Tablet,200mg,117.72,LOW
+MED122,Cefixime 200mg (NovaMed Laboratories),CAT002,NovaMed Laboratories,Tablet,200mg,110.18,MEDIUM
+MED123,Cefixime 200mg (Stellar Formulations),CAT002,Stellar Formulations,Tablet,200mg,102.05,LOW
+MED124,Cefixime 100mg,CAT002,CureLine Healthcare,Tablet,100mg,125.70,LOW
+MED125,Cefixime 100mg (HealthAxis Pharma),CAT002,HealthAxis Pharma,Tablet,100mg,119.75,LOW
+MED126,Cefixime 100mg (NovaMed Laboratories),CAT002,NovaMed Laboratories,Tablet,100mg,123.13,LOW
+MED127,Cefixime 100mg (VitaCure Remedies),CAT002,VitaCure Remedies,Tablet,100mg,138.35,HIGH
+MED128,Ciprofloxacin 500mg (BlueCrest Pharma),CAT002,BlueCrest Pharma,Tablet,500mg,62.39,LOW
+MED129,Ciprofloxacin 250mg,CAT002,HealthAxis Pharma,Tablet,250mg,74.85,LOW
+MED130,Ciprofloxacin 250mg (LifeSpring Pharma),CAT002,LifeSpring Pharma,Tablet,250mg,67.32,MEDIUM
+MED131,Doxycycline 100mg (Aarogya Formulations),CAT002,Aarogya Formulations,Capsule,100mg,73.21,MEDIUM
+MED132,Doxycycline 100mg (ApexLife Pharma),CAT002,ApexLife Pharma,Capsule,100mg,75.57,LOW
+MED133,Doxycycline 100mg (HealthAxis Pharma),CAT002,HealthAxis Pharma,Capsule,100mg,71.30,LOW
+MED134,Doxycycline 100mg (Summit Lifesciences),CAT002,Summit Lifesciences,Capsule,100mg,67.94,MEDIUM
+MED135,Mefenamic Acid 250mg (ApexLife Pharma),CAT003,ApexLife Pharma,Tablet,250mg,46.50,MEDIUM
+MED136,Mefenamic Acid 250mg (HealthAxis Pharma),CAT003,HealthAxis Pharma,Tablet,250mg,42.61,LOW
+MED137,Mefenamic Acid 250mg (LifeSpring Pharma),CAT003,LifeSpring Pharma,Tablet,250mg,44.08,LOW
+MED138,Mefenamic Acid 250mg (NovaMed Laboratories),CAT003,NovaMed Laboratories,Tablet,250mg,42.66,MEDIUM
+MED139,Mefenamic Acid 500mg,CAT003,ApexLife Pharma,Tablet,500mg,52.70,HIGH
+MED140,Mefenamic Acid 500mg (CureLine Healthcare),CAT003,CureLine Healthcare,Tablet,500mg,50.73,MEDIUM
+MED141,Mefenamic Acid 500mg (HealthAxis Pharma),CAT003,HealthAxis Pharma,Tablet,500mg,48.56,LOW
+MED142,Mefenamic Acid 500mg (Kavach Healthcare),CAT003,Kavach Healthcare,Tablet,500mg,54.73,HIGH
+MED143,Mefenamic Acid 500mg (LifeSpring Pharma),CAT003,LifeSpring Pharma,Tablet,500mg,53.30,LOW
+MED144,Mefenamic Acid 500mg (NovaMed Laboratories),CAT003,NovaMed Laboratories,Tablet,500mg,48.87,HIGH
+MED145,Mefenamic Acid 500mg (Stellar Formulations),CAT003,Stellar Formulations,Tablet,500mg,54.56,LOW
+MED146,Mefenamic Acid 500mg (Summit Lifesciences),CAT003,Summit Lifesciences,Tablet,500mg,57.20,LOW
+MED147,Mefenamic Acid 500mg (TrueLife Remedies),CAT003,TrueLife Remedies,Tablet,500mg,50.30,LOW
+MED148,Mefenamic Acid 500mg (VitaCure Remedies),CAT003,VitaCure Remedies,Tablet,500mg,57.76,LOW
+MED149,Paracetamol 650mg (Aarogya Formulations),CAT003,Aarogya Formulations,Tablet,650mg,28.53,LOW
+MED150,Paracetamol 650mg (CarePlus Laboratories),CAT003,CarePlus Laboratories,Tablet,650mg,27.18,LOW
+MED151,Paracetamol Drops 100mg/ml (Aarogya Formulations),CAT003,Aarogya Formulations,Drops,100mg/ml,36.63,MEDIUM
+MED152,Paracetamol Suspension 250mg/5ml (Aarogya Formulations),CAT003,Aarogya Formulations,Suspension,250mg/5ml,47.14,MEDIUM
+MED153,Paracetamol Suspension 250mg/5ml (BlueCrest Pharma),CAT003,BlueCrest Pharma,Suspension,250mg/5ml,51.82,LOW
+MED154,Paracetamol Suspension 250mg/5ml (CarePlus Laboratories),CAT003,CarePlus Laboratories,Suspension,250mg/5ml,47.72,MEDIUM
+MED155,Paracetamol Suspension 250mg/5ml (CureLine Healthcare),CAT003,CureLine Healthcare,Suspension,250mg/5ml,45.84,HIGH
+MED156,Paracetamol Suspension 250mg/5ml (TrueLife Remedies),CAT003,TrueLife Remedies,Suspension,250mg/5ml,50.58,LOW
+MED157,Paracetamol Suspension 125mg/5ml,CAT003,BlueCrest Pharma,Suspension,125mg/5ml,59.91,LOW
+MED158,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),CAT003,LifeSpring Pharma,Suspension,125mg/5ml,53.96,HIGH
+MED159,Paracetamol Suspension 125mg/5ml (NovaMed Laboratories),CAT003,NovaMed Laboratories,Suspension,125mg/5ml,61.82,MEDIUM
+MED160,Paracetamol Suspension 125mg/5ml (TrueLife Remedies),CAT003,TrueLife Remedies,Suspension,125mg/5ml,54.00,LOW
+MED161,Paracetamol Suspension 125mg/5ml (VitaCure Remedies),CAT003,VitaCure Remedies,Suspension,125mg/5ml,61.14,LOW
+MED162,Cetirizine 10mg (ApexLife Pharma),CAT004,ApexLife Pharma,Tablet,10mg,21.74,MEDIUM
+MED163,Cetirizine 10mg (CureLine Healthcare),CAT004,CureLine Healthcare,Tablet,10mg,23.70,HIGH
+MED164,Cetirizine 10mg (LifeSpring Pharma),CAT004,LifeSpring Pharma,Tablet,10mg,21.52,LOW
+MED165,Cetirizine 10mg (Stellar Formulations),CAT004,Stellar Formulations,Tablet,10mg,22.95,MEDIUM
+MED166,Cetirizine 10mg (Summit Lifesciences),CAT004,Summit Lifesciences,Tablet,10mg,21.05,LOW
+MED167,Cetirizine 10mg (TrueLife Remedies),CAT004,TrueLife Remedies,Tablet,10mg,22.05,MEDIUM
+MED168,Cetirizine 5mg,CAT004,ApexLife Pharma,Tablet,5mg,23.67,LOW
+MED169,Cetirizine 5mg (CarePlus Laboratories),CAT004,CarePlus Laboratories,Tablet,5mg,24.67,HIGH
+MED170,Cetirizine 5mg (CureLine Healthcare),CAT004,CureLine Healthcare,Tablet,5mg,25.76,LOW
+MED171,Cetirizine 5mg (Stellar Formulations),CAT004,Stellar Formulations,Tablet,5mg,23.50,MEDIUM
+MED172,Cetirizine 5mg (Summit Lifesciences),CAT004,Summit Lifesciences,Tablet,5mg,25.99,LOW
+MED173,Cetirizine 5mg (TrueLife Remedies),CAT004,TrueLife Remedies,Tablet,5mg,23.57,HIGH
+MED174,Cetirizine 5mg (VitaCure Remedies),CAT004,VitaCure Remedies,Tablet,5mg,27.45,LOW
+MED175,Chlorpheniramine 4mg (ApexLife Pharma),CAT004,ApexLife Pharma,Tablet,4mg,10.97,LOW
+MED176,Chlorpheniramine 4mg (BlueCrest Pharma),CAT004,BlueCrest Pharma,Tablet,4mg,10.93,LOW
+MED177,Chlorpheniramine 4mg (CarePlus Laboratories),CAT004,CarePlus Laboratories,Tablet,4mg,11.47,LOW
+MED178,Chlorpheniramine 4mg (HealthAxis Pharma),CAT004,HealthAxis Pharma,Tablet,4mg,10.84,LOW
+MED179,Chlorpheniramine 4mg (LifeSpring Pharma),CAT004,LifeSpring Pharma,Tablet,4mg,12.16,LOW
+MED180,Chlorpheniramine 4mg (VitaCure Remedies),CAT004,VitaCure Remedies,Tablet,4mg,12.90,LOW
+MED181,Fexofenadine 120mg (ApexLife Pharma),CAT004,ApexLife Pharma,Tablet,120mg,192.24,LOW
+MED182,Fexofenadine 120mg (BlueCrest Pharma),CAT004,BlueCrest Pharma,Tablet,120mg,200.40,MEDIUM
+MED183,Fexofenadine 120mg (CureLine Healthcare),CAT004,CureLine Healthcare,Tablet,120mg,198.23,LOW
+MED184,Fexofenadine 120mg (LifeSpring Pharma),CAT004,LifeSpring Pharma,Tablet,120mg,173.18,LOW
+MED185,Fexofenadine 120mg (TrueLife Remedies),CAT004,TrueLife Remedies,Tablet,120mg,179.51,LOW
+MED186,Fexofenadine 180mg,CAT004,Aarogya Formulations,Tablet,180mg,222.29,MEDIUM
+MED187,Fexofenadine 180mg (CureLine Healthcare),CAT004,CureLine Healthcare,Tablet,180mg,203.66,LOW
+MED188,Fexofenadine 180mg (HealthAxis Pharma),CAT004,HealthAxis Pharma,Tablet,180mg,209.68,LOW
+MED189,Fexofenadine 180mg (TrueLife Remedies),CAT004,TrueLife Remedies,Tablet,180mg,245.82,LOW
+MED190,Levocetirizine 5mg (Aarogya Formulations),CAT004,Aarogya Formulations,Tablet,5mg,66.29,LOW
+MED191,Levocetirizine 5mg (BlueCrest Pharma),CAT004,BlueCrest Pharma,Tablet,5mg,56.64,MEDIUM
+MED192,Levocetirizine 5mg (CureLine Healthcare),CAT004,CureLine Healthcare,Tablet,5mg,64.25,LOW
+MED193,Levocetirizine 5mg (LifeSpring Pharma),CAT004,LifeSpring Pharma,Tablet,5mg,67.65,LOW
+MED194,Levocetirizine 5mg (NovaMed Laboratories),CAT004,NovaMed Laboratories,Tablet,5mg,57.52,MEDIUM
+MED195,Levocetirizine 5mg (VitaCure Remedies),CAT004,VitaCure Remedies,Tablet,5mg,56.60,LOW
+MED196,Levocetirizine 2.5mg,CAT004,BlueCrest Pharma,Tablet,2.5mg,79.33,LOW
+MED197,Levocetirizine 2.5mg (LifeSpring Pharma),CAT004,LifeSpring Pharma,Tablet,2.5mg,72.75,MEDIUM
+MED198,Levocetirizine 2.5mg (Stellar Formulations),CAT004,Stellar Formulations,Tablet,2.5mg,71.33,LOW
+MED199,Montelukast + Levocetirizine 10mg/5mg (Aarogya Formulations),CAT004,Aarogya Formulations,Tablet,10mg/5mg,187.28,LOW
+MED200,Montelukast + Levocetirizine 10mg/5mg (HealthAxis Pharma),CAT004,HealthAxis Pharma,Tablet,10mg/5mg,176.18,MEDIUM
+MED201,Montelukast + Levocetirizine 10mg/5mg (NovaMed Laboratories),CAT004,NovaMed Laboratories,Tablet,10mg/5mg,198.17,LOW
+MED202,Montelukast + Levocetirizine 10mg/5mg (Stellar Formulations),CAT004,Stellar Formulations,Tablet,10mg/5mg,189.75,MEDIUM
+MED203,Montelukast + Levocetirizine 10mg/5mg (TrueLife Remedies),CAT004,TrueLife Remedies,Tablet,10mg/5mg,189.11,LOW
+MED204,Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),CAT004,VitaCure Remedies,Tablet,10mg/5mg,176.79,LOW
+MED205,Domperidone 10mg (BlueCrest Pharma),CAT005,BlueCrest Pharma,Tablet,10mg,51.02,MEDIUM
+MED206,Domperidone 10mg (CarePlus Laboratories),CAT005,CarePlus Laboratories,Tablet,10mg,49.92,MEDIUM
+MED207,Domperidone 10mg (CureLine Healthcare),CAT005,CureLine Healthcare,Tablet,10mg,50.75,LOW
+MED208,Domperidone 10mg (HealthAxis Pharma),CAT005,HealthAxis Pharma,Tablet,10mg,49.90,LOW
+MED209,Domperidone 10mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Tablet,10mg,45.78,LOW
+MED210,Domperidone 10mg (NovaMed Laboratories),CAT005,NovaMed Laboratories,Tablet,10mg,43.32,MEDIUM
+MED211,Loperamide 2mg (Aarogya Formulations),CAT005,Aarogya Formulations,Capsule,2mg,30.49,LOW
+MED212,Loperamide 2mg (BlueCrest Pharma),CAT005,BlueCrest Pharma,Capsule,2mg,27.59,LOW
+MED213,Loperamide 2mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Capsule,2mg,26.17,LOW
+MED214,Omeprazole 20mg (Aarogya Formulations),CAT005,Aarogya Formulations,Capsule,20mg,48.32,LOW
+MED215,Omeprazole 20mg (CarePlus Laboratories),CAT005,CarePlus Laboratories,Capsule,20mg,51.33,MEDIUM
+MED216,Omeprazole 20mg (CureLine Healthcare),CAT005,CureLine Healthcare,Capsule,20mg,53.71,LOW
+MED217,Omeprazole 20mg (HealthAxis Pharma),CAT005,HealthAxis Pharma,Capsule,20mg,50.65,LOW
+MED218,Omeprazole 20mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Capsule,20mg,54.98,LOW
+MED219,Omeprazole 20mg (TrueLife Remedies),CAT005,TrueLife Remedies,Capsule,20mg,47.19,MEDIUM
+MED220,Omeprazole 20mg (VitaCure Remedies),CAT005,VitaCure Remedies,Capsule,20mg,52.72,LOW
+MED221,Omeprazole 40mg,CAT005,Aarogya Formulations,Capsule,40mg,55.77,LOW
+MED222,Omeprazole 40mg (ApexLife Pharma),CAT005,ApexLife Pharma,Capsule,40mg,56.89,MEDIUM
+MED223,Omeprazole 40mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Capsule,40mg,58.91,MEDIUM
+MED224,Omeprazole 40mg (Summit Lifesciences),CAT005,Summit Lifesciences,Capsule,40mg,59.25,MEDIUM
+MED225,Omeprazole 40mg (TrueLife Remedies),CAT005,TrueLife Remedies,Capsule,40mg,58.23,LOW
+MED226,Ondansetron 4mg (Aarogya Formulations),CAT005,Aarogya Formulations,Tablet,4mg,60.26,MEDIUM
+MED227,Ondansetron 4mg (BlueCrest Pharma),CAT005,BlueCrest Pharma,Tablet,4mg,52.51,LOW
+MED228,Ondansetron 4mg (CarePlus Laboratories),CAT005,CarePlus Laboratories,Tablet,4mg,52.84,LOW
+MED229,Ondansetron 4mg (CureLine Healthcare),CAT005,CureLine Healthcare,Tablet,4mg,56.21,LOW
+MED230,Ondansetron 4mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Tablet,4mg,57.09,LOW
+MED231,Ondansetron 4mg (NovaMed Laboratories),CAT005,NovaMed Laboratories,Tablet,4mg,60.50,MEDIUM
+MED232,Ondansetron 4mg (Stellar Formulations),CAT005,Stellar Formulations,Tablet,4mg,59.52,LOW
+MED233,Ondansetron 4mg (Summit Lifesciences),CAT005,Summit Lifesciences,Tablet,4mg,54.56,LOW
+MED234,Ondansetron 4mg (VitaCure Remedies),CAT005,VitaCure Remedies,Tablet,4mg,56.28,MEDIUM
+MED235,Ondansetron 8mg,CAT005,CarePlus Laboratories,Tablet,8mg,67.81,LOW
+MED236,Ondansetron 8mg (LifeSpring Pharma),CAT005,LifeSpring Pharma,Tablet,8mg,67.55,HIGH
+MED237,Ondansetron 8mg (TrueLife Remedies),CAT005,TrueLife Remedies,Tablet,8mg,60.15,LOW
+MED238,Ondansetron 8mg (VitaCure Remedies),CAT005,VitaCure Remedies,Tablet,8mg,60.04,LOW
+MED239,ORS Powder 21.8g (HealthAxis Pharma),CAT005,HealthAxis Pharma,Powder,21.8g,19.05,HIGH
+MED240,ORS Powder 21.8g (LifeSpring Pharma),CAT005,LifeSpring Pharma,Powder,21.8g,19.41,LOW
+MED241,ORS Powder 21.8g (Stellar Formulations),CAT005,Stellar Formulations,Powder,21.8g,22.63,MEDIUM
+MED242,ORS Powder 21.8g (Summit Lifesciences),CAT005,Summit Lifesciences,Powder,21.8g,19.39,LOW
+MED243,ORS Powder 21.8g (TrueLife Remedies),CAT005,TrueLife Remedies,Powder,21.8g,20.60,LOW
+MED244,ORS Powder 21.8g (VitaCure Remedies),CAT005,VitaCure Remedies,Powder,21.8g,22.93,LOW
+MED245,Pantoprazole 40mg (BlueCrest Pharma),CAT005,BlueCrest Pharma,Tablet,40mg,82.98,MEDIUM
+MED246,Pantoprazole 40mg (CarePlus Laboratories),CAT005,CarePlus Laboratories,Tablet,40mg,79.44,LOW
+MED247,Pantoprazole 40mg (NovaMed Laboratories),CAT005,NovaMed Laboratories,Tablet,40mg,72.78,MEDIUM
+MED248,Pantoprazole 40mg (TrueLife Remedies),CAT005,TrueLife Remedies,Tablet,40mg,78.09,LOW
+MED249,Pantoprazole 20mg,CAT005,Aarogya Formulations,Tablet,20mg,84.53,MEDIUM
+MED250,Pantoprazole 20mg (ApexLife Pharma),CAT005,ApexLife Pharma,Tablet,20mg,90.68,MEDIUM
+MED251,Pantoprazole 20mg (BlueCrest Pharma),CAT005,BlueCrest Pharma,Tablet,20mg,86.17,LOW
+MED252,Pantoprazole 20mg (CarePlus Laboratories),CAT005,CarePlus Laboratories,Tablet,20mg,92.79,LOW
+MED253,Pantoprazole 20mg (Stellar Formulations),CAT005,Stellar Formulations,Tablet,20mg,96.42,LOW
+MED254,Pantoprazole 20mg (Summit Lifesciences),CAT005,Summit Lifesciences,Tablet,20mg,96.43,LOW
+MED255,Pantoprazole 20mg (VitaCure Remedies),CAT005,VitaCure Remedies,Tablet,20mg,91.76,LOW
+MED256,Amlodipine 5mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,5mg,35.77,MEDIUM
+MED257,Amlodipine 5mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,5mg,37.52,MEDIUM
+MED258,Amlodipine 5mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,5mg,34.93,LOW
+MED259,Amlodipine 5mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,5mg,32.54,LOW
+MED260,Amlodipine 5mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,5mg,37.10,LOW
+MED261,Amlodipine 2.5mg,CAT006,CureLine Healthcare,Tablet,2.5mg,45.91,LOW
+MED262,Amlodipine 2.5mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,2.5mg,43.92,LOW
+MED263,Amlodipine 2.5mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,2.5mg,43.19,LOW
+MED264,Amlodipine 2.5mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,2.5mg,40.20,MEDIUM
+MED265,Amlodipine 2.5mg (TrueLife Remedies),CAT006,TrueLife Remedies,Tablet,2.5mg,46.64,HIGH
+MED266,Amlodipine 2.5mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,2.5mg,41.06,LOW
+MED267,Amlodipine 10mg,CAT006,HealthAxis Pharma,Tablet,10mg,53.61,LOW
+MED268,Amlodipine 10mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,10mg,47.64,LOW
+MED269,Amlodipine 10mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,10mg,44.75,HIGH
+MED270,Aspirin 75mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,75mg,8.02,MEDIUM
+MED271,Aspirin 75mg (ApexLife Pharma),CAT006,ApexLife Pharma,Tablet,75mg,8.01,LOW
+MED272,Aspirin 75mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,75mg,8.50,HIGH
+MED273,Aspirin 75mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,75mg,7.31,MEDIUM
+MED274,Aspirin 75mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,75mg,8.45,LOW
+MED275,Aspirin 75mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,75mg,7.21,LOW
+MED276,Aspirin 75mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,75mg,8.25,MEDIUM
+MED277,Aspirin 150mg,CAT006,Aarogya Formulations,Tablet,150mg,9.54,LOW
+MED278,Aspirin 150mg (CarePlus Laboratories),CAT006,CarePlus Laboratories,Tablet,150mg,8.57,MEDIUM
+MED279,Aspirin 150mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,150mg,10.30,LOW
+MED280,Aspirin 150mg (TrueLife Remedies),CAT006,TrueLife Remedies,Tablet,150mg,9.48,MEDIUM
+MED281,Atorvastatin 10mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,10mg,89.23,LOW
+MED282,Atorvastatin 10mg (ApexLife Pharma),CAT006,ApexLife Pharma,Tablet,10mg,107.04,LOW
+MED283,Atorvastatin 10mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,10mg,101.60,MEDIUM
+MED284,Atorvastatin 10mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,10mg,104.92,MEDIUM
+MED285,Atorvastatin 20mg,CAT006,ApexLife Pharma,Tablet,20mg,124.71,MEDIUM
+MED286,Atorvastatin 20mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,20mg,115.57,MEDIUM
+MED287,Atorvastatin 20mg (CarePlus Laboratories),CAT006,CarePlus Laboratories,Tablet,20mg,104.81,LOW
+MED288,Atorvastatin 40mg,CAT006,BlueCrest Pharma,Tablet,40mg,123.63,MEDIUM
+MED289,Atorvastatin 40mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,40mg,139.54,LOW
+MED290,Atorvastatin 40mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,40mg,137.45,LOW
+MED291,Atorvastatin 40mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,40mg,132.56,LOW
+MED292,Clopidogrel 75mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,75mg,96.07,MEDIUM
+MED293,Clopidogrel 75mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,75mg,102.30,LOW
+MED294,Clopidogrel 75mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,75mg,96.32,LOW
+MED295,Clopidogrel 75mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,75mg,104.19,LOW
+MED296,Clopidogrel 75mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,75mg,98.99,LOW
+MED297,Losartan 50mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,50mg,92.39,LOW
+MED298,Losartan 50mg (CarePlus Laboratories),CAT006,CarePlus Laboratories,Tablet,50mg,83.48,LOW
+MED299,Losartan 50mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,50mg,88.85,HIGH
+MED300,Losartan 25mg,CAT006,ApexLife Pharma,Tablet,25mg,97.67,LOW
+MED301,Losartan 25mg (CarePlus Laboratories),CAT006,CarePlus Laboratories,Tablet,25mg,102.11,HIGH
+MED302,Losartan 25mg (HealthAxis Pharma),CAT006,HealthAxis Pharma,Tablet,25mg,96.25,MEDIUM
+MED303,Losartan 25mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,25mg,99.61,LOW
+MED304,Losartan 25mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,25mg,102.62,LOW
+MED305,Losartan 25mg (TrueLife Remedies),CAT006,TrueLife Remedies,Tablet,25mg,103.17,MEDIUM
+MED306,Metoprolol 50mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,50mg,69.34,MEDIUM
+MED307,Metoprolol 50mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,50mg,64.67,HIGH
+MED308,Metoprolol 50mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,50mg,66.98,LOW
+MED309,Metoprolol 50mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,50mg,67.93,LOW
+MED310,Metoprolol 25mg,CAT006,BlueCrest Pharma,Tablet,25mg,72.55,MEDIUM
+MED311,Metoprolol 25mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,25mg,87.23,MEDIUM
+MED312,Metoprolol 25mg (HealthAxis Pharma),CAT006,HealthAxis Pharma,Tablet,25mg,74.53,LOW
+MED313,Metoprolol 25mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,25mg,72.86,LOW
+MED314,Rosuvastatin 10mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,10mg,163.96,MEDIUM
+MED315,Rosuvastatin 10mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,10mg,169.42,LOW
+MED316,Rosuvastatin 10mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,10mg,164.78,MEDIUM
+MED317,Rosuvastatin 5mg,CAT006,ApexLife Pharma,Tablet,5mg,191.72,LOW
+MED318,Rosuvastatin 5mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,5mg,203.62,LOW
+MED319,Rosuvastatin 5mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,5mg,213.48,HIGH
+MED320,Rosuvastatin 5mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,5mg,181.49,MEDIUM
+MED321,Rosuvastatin 5mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,5mg,189.06,LOW
+MED322,Rosuvastatin 20mg,CAT006,ApexLife Pharma,Tablet,20mg,234.30,MEDIUM
+MED323,Rosuvastatin 20mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,20mg,232.02,LOW
+MED324,Rosuvastatin 20mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,20mg,208.00,MEDIUM
+MED325,Rosuvastatin 20mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,20mg,245.43,LOW
+MED326,Rosuvastatin 20mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,20mg,240.05,HIGH
+MED327,Telmisartan 40mg (Aarogya Formulations),CAT006,Aarogya Formulations,Tablet,40mg,110.61,HIGH
+MED328,Telmisartan 40mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,40mg,125.61,LOW
+MED329,Telmisartan 40mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,40mg,124.37,HIGH
+MED330,Telmisartan 40mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,40mg,113.46,LOW
+MED331,Telmisartan 40mg (VitaCure Remedies),CAT006,VitaCure Remedies,Tablet,40mg,111.46,LOW
+MED332,Telmisartan 20mg,CAT006,BlueCrest Pharma,Tablet,20mg,157.73,MEDIUM
+MED333,Telmisartan 20mg (HealthAxis Pharma),CAT006,HealthAxis Pharma,Tablet,20mg,153.14,LOW
+MED334,Telmisartan 20mg (LifeSpring Pharma),CAT006,LifeSpring Pharma,Tablet,20mg,150.87,LOW
+MED335,Telmisartan 20mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,20mg,143.39,LOW
+MED336,Telmisartan 80mg,CAT006,Aarogya Formulations,Tablet,80mg,163.17,LOW
+MED337,Telmisartan 80mg (ApexLife Pharma),CAT006,ApexLife Pharma,Tablet,80mg,174.17,LOW
+MED338,Telmisartan 80mg (BlueCrest Pharma),CAT006,BlueCrest Pharma,Tablet,80mg,152.25,MEDIUM
+MED339,Telmisartan 80mg (CureLine Healthcare),CAT006,CureLine Healthcare,Tablet,80mg,159.42,LOW
+MED340,Telmisartan 80mg (NovaMed Laboratories),CAT006,NovaMed Laboratories,Tablet,80mg,174.58,LOW
+MED341,Telmisartan 80mg (Stellar Formulations),CAT006,Stellar Formulations,Tablet,80mg,182.05,MEDIUM
+MED342,Telmisartan 80mg (Summit Lifesciences),CAT006,Summit Lifesciences,Tablet,80mg,163.24,MEDIUM
+MED343,Telmisartan 80mg (TrueLife Remedies),CAT006,TrueLife Remedies,Tablet,80mg,179.17,MEDIUM
+MED344,Gliclazide 80mg (Aarogya Formulations),CAT007,Aarogya Formulations,Tablet,80mg,68.32,MEDIUM
+MED345,Gliclazide 80mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,80mg,68.61,LOW
+MED346,Gliclazide 80mg (CarePlus Laboratories),CAT007,CarePlus Laboratories,Tablet,80mg,70.53,MEDIUM
+MED347,Gliclazide 80mg (LifeSpring Pharma),CAT007,LifeSpring Pharma,Tablet,80mg,69.48,LOW
+MED348,Gliclazide 80mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,80mg,72.12,LOW
+MED349,Gliclazide 40mg,CAT007,Aarogya Formulations,Tablet,40mg,92.70,MEDIUM
+MED350,Gliclazide 40mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,40mg,85.95,LOW
+MED351,Gliclazide 40mg (Lumina Pharma),CAT007,Lumina Pharma,Tablet,40mg,89.03,MEDIUM
+MED352,Gliclazide 40mg (NovaMed Laboratories),CAT007,NovaMed Laboratories,Tablet,40mg,82.33,LOW
+MED353,Gliclazide 40mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,40mg,82.30,LOW
+MED354,Gliclazide 40mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,40mg,89.80,HIGH
+MED355,Glimepiride 2mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,2mg,136.70,LOW
+MED356,Glimepiride 2mg (CarePlus Laboratories),CAT007,CarePlus Laboratories,Tablet,2mg,150.87,MEDIUM
+MED357,Glimepiride 2mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,2mg,142.02,MEDIUM
+MED358,Glimepiride 2mg (VitaCure Remedies),CAT007,VitaCure Remedies,Tablet,2mg,142.40,MEDIUM
+MED359,Glimepiride 1mg,CAT007,Aarogya Formulations,Tablet,1mg,157.15,LOW
+MED360,Glimepiride 1mg (CarePlus Laboratories),CAT007,CarePlus Laboratories,Tablet,1mg,177.69,MEDIUM
+MED361,Glimepiride 1mg (CureLine Healthcare),CAT007,CureLine Healthcare,Tablet,1mg,161.05,MEDIUM
+MED362,Glimepiride 1mg (HealthAxis Pharma),CAT007,HealthAxis Pharma,Tablet,1mg,177.67,MEDIUM
+MED363,Glimepiride 1mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,1mg,162.87,LOW
+MED364,Glimepiride 1mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,1mg,170.76,MEDIUM
+MED365,Glimepiride 3mg,CAT007,Aarogya Formulations,Tablet,3mg,197.30,LOW
+MED366,Glimepiride 3mg (ApexLife Pharma),CAT007,ApexLife Pharma,Tablet,3mg,210.08,MEDIUM
+MED367,Glimepiride 3mg (CureLine Healthcare),CAT007,CureLine Healthcare,Tablet,3mg,201.33,LOW
+MED368,Glimepiride 3mg (NovaMed Laboratories),CAT007,NovaMed Laboratories,Tablet,3mg,203.60,LOW
+MED369,Glimepiride 3mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,3mg,191.46,LOW
+MED370,Glimepiride 3mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,3mg,173.82,LOW
+MED371,Glimepiride 3mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,3mg,201.80,LOW
+MED372,Glimepiride 3mg (VitaCure Remedies),CAT007,VitaCure Remedies,Tablet,3mg,193.00,LOW
+MED373,Glimepiride + Metformin 2mg/500mg (Aarogya Formulations),CAT007,Aarogya Formulations,Tablet,2mg/500mg,154.38,LOW
+MED374,Glimepiride + Metformin 2mg/500mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,2mg/500mg,136.42,MEDIUM
+MED375,Glimepiride + Metformin 2mg/500mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,2mg/500mg,149.35,LOW
+MED376,Glimepiride + Metformin 1mg/500mg,CAT007,Aarogya Formulations,Tablet,1mg/500mg,177.62,LOW
+MED377,Glimepiride + Metformin 1mg/500mg (CarePlus Laboratories),CAT007,CarePlus Laboratories,Tablet,1mg/500mg,166.09,LOW
+MED378,Glimepiride + Metformin 1mg/500mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,1mg/500mg,189.06,LOW
+MED379,Glimepiride + Metformin 1mg/500mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,1mg/500mg,181.58,LOW
+MED380,Glimepiride + Metformin 1mg/500mg (VitaCure Remedies),CAT007,VitaCure Remedies,Tablet,1mg/500mg,178.07,MEDIUM
+MED381,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),CAT007,Zenith BioPharma,Tablet,1mg/500mg,167.09,HIGH
+MED382,Metformin 500mg (CureLine Healthcare),CAT007,CureLine Healthcare,Tablet,500mg,31.96,LOW
+MED383,Metformin 500mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,500mg,33.55,HIGH
+MED384,Metformin 500mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,500mg,31.03,LOW
+MED385,Metformin 850mg,CAT007,BlueCrest Pharma,Tablet,850mg,37.38,HIGH
+MED386,Metformin 850mg (CureLine Healthcare),CAT007,CureLine Healthcare,Tablet,850mg,38.90,MEDIUM
+MED387,Metformin 850mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,850mg,37.96,LOW
+MED388,Metformin 850mg (VitaCure Remedies),CAT007,VitaCure Remedies,Tablet,850mg,39.49,LOW
+MED389,Metformin 1000mg,CAT007,ApexLife Pharma,Tablet,1000mg,39.61,LOW
+MED390,Metformin 1000mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,1000mg,47.16,LOW
+MED391,Metformin 1000mg (HealthAxis Pharma),CAT007,HealthAxis Pharma,Tablet,1000mg,40.39,MEDIUM
+MED392,Metformin 1000mg (LifeSpring Pharma),CAT007,LifeSpring Pharma,Tablet,1000mg,46.84,HIGH
+MED393,Metformin 1000mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,1000mg,45.03,LOW
+MED394,Sitagliptin 100mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,100mg,350.12,LOW
+MED395,Sitagliptin 100mg (CarePlus Laboratories),CAT007,CarePlus Laboratories,Tablet,100mg,394.17,MEDIUM
+MED396,Sitagliptin 100mg (HealthAxis Pharma),CAT007,HealthAxis Pharma,Tablet,100mg,364.72,HIGH
+MED397,Sitagliptin 50mg,CAT007,Aarogya Formulations,Tablet,50mg,481.85,MEDIUM
+MED398,Sitagliptin 50mg (ApexLife Pharma),CAT007,ApexLife Pharma,Tablet,50mg,441.48,LOW
+MED399,Sitagliptin 50mg (BlueCrest Pharma),CAT007,BlueCrest Pharma,Tablet,50mg,459.90,MEDIUM
+MED400,Sitagliptin 50mg (Crestview Pharma),CAT007,Crestview Pharma,Tablet,50mg,467.32,LOW
+MED401,Sitagliptin 50mg (HealthAxis Pharma),CAT007,HealthAxis Pharma,Tablet,50mg,409.88,LOW
+MED402,Sitagliptin 50mg (NovaMed Laboratories),CAT007,NovaMed Laboratories,Tablet,50mg,461.95,MEDIUM
+MED403,Sitagliptin 50mg (Stellar Formulations),CAT007,Stellar Formulations,Tablet,50mg,474.23,LOW
+MED404,Sitagliptin 50mg (Summit Lifesciences),CAT007,Summit Lifesciences,Tablet,50mg,424.14,LOW
+MED405,Sitagliptin 50mg (TrueLife Remedies),CAT007,TrueLife Remedies,Tablet,50mg,455.75,LOW
+MED406,Ambroxol + Levosalbutamol Syrup 100ml (Aarogya Formulations),CAT008,Aarogya Formulations,Syrup,100ml,109.07,LOW
+MED407,Ambroxol + Levosalbutamol Syrup 100ml (NovaMed Laboratories),CAT008,NovaMed Laboratories,Syrup,100ml,129.51,MEDIUM
+MED408,Ambroxol + Levosalbutamol Syrup 100ml (Summit Lifesciences),CAT008,Summit Lifesciences,Syrup,100ml,120.40,LOW
+MED409,Ambroxol + Levosalbutamol Syrup 100ml (VitaCure Remedies),CAT008,VitaCure Remedies,Syrup,100ml,107.76,LOW
+MED410,Ambroxol + Levosalbutamol Syrup 60ml,CAT008,LifeSpring Pharma,Syrup,60ml,141.99,LOW
+MED411,Ambroxol + Levosalbutamol Syrup 60ml (NovaMed Laboratories),CAT008,NovaMed Laboratories,Syrup,60ml,136.87,MEDIUM
+MED412,Budesonide Inhaler 200mcg (ApexLife Pharma),CAT008,ApexLife Pharma,Inhaler,200mcg,272.86,LOW
+MED413,Budesonide Inhaler 200mcg (BlueCrest Pharma),CAT008,BlueCrest Pharma,Inhaler,200mcg,292.94,LOW
+MED414,Budesonide Inhaler 200mcg (VitaCure Remedies),CAT008,VitaCure Remedies,Inhaler,200mcg,250.66,LOW
+MED415,Budesonide Inhaler 100mcg,CAT008,TrueLife Remedies,Inhaler,100mcg,346.75,MEDIUM
+MED416,Dextromethorphan Syrup 100ml (HealthAxis Pharma),CAT008,HealthAxis Pharma,Syrup,100ml,96.32,MEDIUM
+MED417,Dextromethorphan Syrup 100ml (LifeSpring Pharma),CAT008,LifeSpring Pharma,Syrup,100ml,99.75,LOW
+MED418,Dextromethorphan Syrup 100ml (Summit Lifesciences),CAT008,Summit Lifesciences,Syrup,100ml,102.65,LOW
+MED419,Dextromethorphan Syrup 100ml (TrueLife Remedies),CAT008,TrueLife Remedies,Syrup,100ml,100.37,LOW
+MED420,Montelukast 10mg (CureLine Healthcare),CAT008,CureLine Healthcare,Tablet,10mg,204.93,MEDIUM
+MED421,Montelukast 10mg (LifeSpring Pharma),CAT008,LifeSpring Pharma,Tablet,10mg,191.30,LOW
+MED422,Montelukast 10mg (NovaMed Laboratories),CAT008,NovaMed Laboratories,Tablet,10mg,173.24,LOW
+MED423,Montelukast 10mg (Summit Lifesciences),CAT008,Summit Lifesciences,Tablet,10mg,192.25,LOW
+MED424,Montelukast 10mg (TrueLife Remedies),CAT008,TrueLife Remedies,Tablet,10mg,192.25,LOW
+MED425,Montelukast 5mg,CAT008,Aarogya Formulations,Tablet,5mg,227.98,LOW
+MED426,Montelukast 5mg (CarePlus Laboratories),CAT008,CarePlus Laboratories,Tablet,5mg,229.68,LOW
+MED427,Montelukast 5mg (NovaMed Laboratories),CAT008,NovaMed Laboratories,Tablet,5mg,210.76,LOW
+MED428,Montelukast 5mg (Summit Lifesciences),CAT008,Summit Lifesciences,Tablet,5mg,203.70,LOW
+MED429,Montelukast 5mg (TrueLife Remedies),CAT008,TrueLife Remedies,Tablet,5mg,231.72,MEDIUM
+MED430,Salbutamol Inhaler 100mcg (Aarogya Formulations),CAT008,Aarogya Formulations,Inhaler,100mcg,171.22,LOW
+MED431,Salbutamol Inhaler 100mcg (ApexLife Pharma),CAT008,ApexLife Pharma,Inhaler,100mcg,167.02,MEDIUM
+MED432,Salbutamol Inhaler 100mcg (Stellar Formulations),CAT008,Stellar Formulations,Inhaler,100mcg,159.41,HIGH
+MED433,Salbutamol Inhaler 100mcg (Summit Lifesciences),CAT008,Summit Lifesciences,Inhaler,100mcg,174.15,LOW
+MED434,Salbutamol Inhaler 100mcg (TrueLife Remedies),CAT008,TrueLife Remedies,Inhaler,100mcg,150.87,LOW
+MED435,Salbutamol Inhaler 100mcg (VitaCure Remedies),CAT008,VitaCure Remedies,Inhaler,100mcg,168.44,LOW
+MED436,Salbutamol Inhaler 200mcg,CAT008,Aarogya Formulations,Inhaler,200mcg,211.17,MEDIUM
+MED437,Salbutamol Inhaler 200mcg (BlueCrest Pharma),CAT008,BlueCrest Pharma,Inhaler,200mcg,188.31,LOW
+MED438,Salbutamol Inhaler 200mcg (CarePlus Laboratories),CAT008,CarePlus Laboratories,Inhaler,200mcg,203.02,LOW
+MED439,Salbutamol Inhaler 200mcg (HealthAxis Pharma),CAT008,HealthAxis Pharma,Inhaler,200mcg,187.79,LOW
+MED440,Salbutamol Inhaler 200mcg (Stellar Formulations),CAT008,Stellar Formulations,Inhaler,200mcg,178.33,LOW
+MED441,Salbutamol Inhaler 200mcg (Summit Lifesciences),CAT008,Summit Lifesciences,Inhaler,200mcg,191.34,LOW
+MED442,Calcium + Vitamin D3 500mg/250IU (Aarogya Formulations),CAT009,Aarogya Formulations,Tablet,500mg/250IU,129.64,LOW
+MED443,Calcium + Vitamin D3 500mg/250IU (ApexLife Pharma),CAT009,ApexLife Pharma,Tablet,500mg/250IU,129.25,MEDIUM
+MED444,Calcium + Vitamin D3 500mg/250IU (CureLine Healthcare),CAT009,CureLine Healthcare,Tablet,500mg/250IU,121.99,MEDIUM
+MED445,Calcium + Vitamin D3 500mg/250IU (HealthAxis Pharma),CAT009,HealthAxis Pharma,Tablet,500mg/250IU,119.62,MEDIUM
+MED446,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),CAT009,LifeSpring Pharma,Tablet,500mg/250IU,113.82,MEDIUM
+MED447,Calcium + Vitamin D3 500mg/250IU (Summit Lifesciences),CAT009,Summit Lifesciences,Tablet,500mg/250IU,107.11,MEDIUM
+MED448,Calcium + Vitamin D3 500mg/250IU (TrueLife Remedies),CAT009,TrueLife Remedies,Tablet,500mg/250IU,110.77,MEDIUM
+MED449,Iron + Folic Acid 100mg/500mcg (BlueCrest Pharma),CAT009,BlueCrest Pharma,Tablet,100mg/500mcg,83.68,LOW
+MED450,Iron + Folic Acid 100mg/500mcg (CarePlus Laboratories),CAT009,CarePlus Laboratories,Tablet,100mg/500mcg,87.46,LOW
+MED451,Iron + Folic Acid 100mg/500mcg (CureLine Healthcare),CAT009,CureLine Healthcare,Tablet,100mg/500mcg,77.47,LOW
+MED452,Iron + Folic Acid 100mg/500mcg (HealthAxis Pharma),CAT009,HealthAxis Pharma,Tablet,100mg/500mcg,83.00,LOW
+MED453,Iron + Folic Acid 100mg/500mcg (LifeSpring Pharma),CAT009,LifeSpring Pharma,Tablet,100mg/500mcg,88.17,LOW
+MED454,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),CAT009,Stellar Formulations,Tablet,100mg/500mcg,82.06,HIGH
+MED455,Iron + Folic Acid 100mg/500mcg (Summit Lifesciences),CAT009,Summit Lifesciences,Tablet,100mg/500mcg,82.96,LOW
+MED456,Iron + Folic Acid 100mg/500mcg (VitaCure Remedies),CAT009,VitaCure Remedies,Tablet,100mg/500mcg,87.22,LOW
+MED457,Multivitamin B-complex+C (BlueCrest Pharma),CAT009,BlueCrest Pharma,Capsule,B-complex+C,44.03,LOW
+MED458,Multivitamin B-complex+C (HealthAxis Pharma),CAT009,HealthAxis Pharma,Capsule,B-complex+C,41.39,LOW
+MED459,Multivitamin B-complex+C (Summit Lifesciences),CAT009,Summit Lifesciences,Capsule,B-complex+C,44.86,HIGH
+MED460,Multivitamin B-complex+C (TrueLife Remedies),CAT009,TrueLife Remedies,Capsule,B-complex+C,48.31,MEDIUM
+MED461,Vitamin C Chewable 500mg (Aarogya Formulations),CAT009,Aarogya Formulations,Tablet,500mg,29.26,MEDIUM
+MED462,Vitamin C Chewable 500mg (ApexLife Pharma),CAT009,ApexLife Pharma,Tablet,500mg,26.57,MEDIUM
+MED463,Vitamin C Chewable 500mg (HealthAxis Pharma),CAT009,HealthAxis Pharma,Tablet,500mg,25.85,MEDIUM
+MED464,Vitamin C Chewable 500mg (TrueLife Remedies),CAT009,TrueLife Remedies,Tablet,500mg,25.90,LOW
+MED465,Vitamin C Chewable 1000mg,CAT009,Aarogya Formulations,Tablet,1000mg,36.19,MEDIUM
+MED466,Vitamin C Chewable 1000mg (ApexLife Pharma),CAT009,ApexLife Pharma,Tablet,1000mg,32.19,HIGH
+MED467,Vitamin C Chewable 1000mg (BlueCrest Pharma),CAT009,BlueCrest Pharma,Tablet,1000mg,34.06,LOW
+MED468,Vitamin C Chewable 1000mg (CarePlus Laboratories),CAT009,CarePlus Laboratories,Tablet,1000mg,29.99,MEDIUM
+MED469,Vitamin C Chewable 1000mg (CureLine Healthcare),CAT009,CureLine Healthcare,Tablet,1000mg,34.73,LOW
+MED470,Vitamin C Chewable 1000mg (NovaMed Laboratories),CAT009,NovaMed Laboratories,Tablet,1000mg,35.29,MEDIUM
+MED471,Vitamin C Chewable 1000mg (Summit Lifesciences),CAT009,Summit Lifesciences,Tablet,1000mg,31.84,LOW
+MED472,Vitamin C Chewable 1000mg (TrueLife Remedies),CAT009,TrueLife Remedies,Tablet,1000mg,34.88,LOW
+MED473,Vitamin C Chewable 1000mg (VitaCure Remedies),CAT009,VitaCure Remedies,Tablet,1000mg,31.84,MEDIUM
+MED474,Vitamin D3 60000IU (TrueLife Remedies),CAT009,TrueLife Remedies,Capsule,60000IU,138.78,LOW
+MED475,Vitamin D3 60000IU (VitaCure Remedies),CAT009,VitaCure Remedies,Capsule,60000IU,127.83,LOW
+MED476,Vitamin D3 1000IU,CAT009,BlueCrest Pharma,Capsule,1000IU,160.24,MEDIUM
+MED477,Vitamin D3 1000IU (Summit Lifesciences),CAT009,Summit Lifesciences,Capsule,1000IU,179.91,LOW
+MED478,Calamine Lotion 100ml (CureLine Healthcare),CAT010,CureLine Healthcare,Lotion,100ml,74.89,LOW
+MED479,Calamine Lotion 100ml (LifeSpring Pharma),CAT010,LifeSpring Pharma,Lotion,100ml,71.24,LOW
+MED480,Calamine Lotion 100ml (Stellar Formulations),CAT010,Stellar Formulations,Lotion,100ml,71.75,MEDIUM
+MED481,Calamine Lotion 100ml (TrueLife Remedies),CAT010,TrueLife Remedies,Lotion,100ml,76.30,LOW
+MED482,Clotrimazole Cream 1% (ApexLife Pharma),CAT010,ApexLife Pharma,Cream,1%,89.72,LOW
+MED483,Clotrimazole Cream 1% (CureLine Healthcare),CAT010,CureLine Healthcare,Cream,1%,77.95,MEDIUM
+MED484,Clotrimazole Cream 2%,CAT010,ApexLife Pharma,Cream,2%,98.51,MEDIUM
+MED485,Clotrimazole Cream 2% (Stellar Formulations),CAT010,Stellar Formulations,Cream,2%,94.45,LOW
+MED486,Clotrimazole Cream 2% (TrueLife Remedies),CAT010,TrueLife Remedies,Cream,2%,90.95,LOW
+MED487,Fusidic Acid Cream 2% (ApexLife Pharma),CAT010,ApexLife Pharma,Cream,2%,154.24,LOW
+MED488,Fusidic Acid Cream 2% (BlueCrest Pharma),CAT010,BlueCrest Pharma,Cream,2%,149.20,LOW
+MED489,Fusidic Acid Cream 2% (VitaCure Remedies),CAT010,VitaCure Remedies,Cream,2%,146.60,LOW
+MED490,Hydrocortisone Cream 1% (CarePlus Laboratories),CAT010,CarePlus Laboratories,Cream,1%,61.48,MEDIUM
+MED491,Hydrocortisone Cream 1% (CureLine Healthcare),CAT010,CureLine Healthcare,Cream,1%,68.06,MEDIUM
+MED492,Hydrocortisone Cream 1% (Summit Lifesciences),CAT010,Summit Lifesciences,Cream,1%,62.23,LOW
+MED493,Ketoconazole Shampoo 2% (Aarogya Formulations),CAT010,Aarogya Formulations,Shampoo,2%,198.13,LOW
+MED494,Ketoconazole Shampoo 2% (LifeSpring Pharma),CAT010,LifeSpring Pharma,Shampoo,2%,213.57,LOW
+MED495,Ketoconazole Shampoo 2% (VitaCure Remedies),CAT010,VitaCure Remedies,Shampoo,2%,213.39,LOW
+MED496,Mupirocin Ointment 2% (ApexLife Pharma),CAT010,ApexLife Pharma,Ointment,2%,132.56,LOW
+MED497,Mupirocin Ointment 2% (CarePlus Laboratories),CAT010,CarePlus Laboratories,Ointment,2%,131.58,MEDIUM
+MED498,Mupirocin Ointment 2% (NovaMed Laboratories),CAT010,NovaMed Laboratories,Ointment,2%,141.22,LOW
+MED499,Mupirocin Ointment 2% (Summit Lifesciences),CAT010,Summit Lifesciences,Ointment,2%,122.15,LOW
+MED500,Mupirocin Ointment 2% (VitaCure Remedies),CAT010,VitaCure Remedies,Ointment,2%,127.11,LOW

@@ -1,0 +1,1484 @@
+{
+  "generator_version": "1.0",
+  "notice": "Evaluation-only summary of the generated dataset. Not an input to analytics.",
+  "validation": {
+    "checks": 51,
+    "failed_checks": 0,
+    "violating_rows": 0,
+    "results": [
+      {
+        "check": "categories: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "medicines: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "branches: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "suppliers: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "batches: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "purchases: primary key unique",
+        "violations": 0
+      },
+      {
+        "check": "sales: no duplicate (transaction, medicine, batch) lines",
+        "violations": 0
+      },
+      {
+        "check": "no null values in any table",
+        "violations": 0
+      },
+      {
+        "check": "FK medicines.category_id -> categories",
+        "violations": 0
+      },
+      {
+        "check": "FK batches.medicine_id -> medicines",
+        "violations": 0
+      },
+      {
+        "check": "FK batches.supplier_id -> suppliers",
+        "violations": 0
+      },
+      {
+        "check": "FK purchases.branch_id",
+        "violations": 0
+      },
+      {
+        "check": "FK purchases.supplier_id",
+        "violations": 0
+      },
+      {
+        "check": "FK purchases.medicine_id",
+        "violations": 0
+      },
+      {
+        "check": "FK purchases.batch_id",
+        "violations": 0
+      },
+      {
+        "check": "FK sales.branch_id",
+        "violations": 0
+      },
+      {
+        "check": "FK sales.medicine_id",
+        "violations": 0
+      },
+      {
+        "check": "FK sales.batch_id",
+        "violations": 0
+      },
+      {
+        "check": "medicines.base_price > 0",
+        "violations": 0
+      },
+      {
+        "check": "medicines.demand_profile in HIGH/MEDIUM/LOW",
+        "violations": 0
+      },
+      {
+        "check": "batches.initial_quantity > 0",
+        "violations": 0
+      },
+      {
+        "check": "batches.purchase_price > 0",
+        "violations": 0
+      },
+      {
+        "check": "purchases.quantity > 0",
+        "violations": 0
+      },
+      {
+        "check": "purchases.unit_purchase_price > 0",
+        "violations": 0
+      },
+      {
+        "check": "sales.quantity > 0",
+        "violations": 0
+      },
+      {
+        "check": "sales.unit_selling_price > 0",
+        "violations": 0
+      },
+      {
+        "check": "sales.discount >= 0",
+        "violations": 0
+      },
+      {
+        "check": "sales.total_amount > 0",
+        "violations": 0
+      },
+      {
+        "check": "purchases.total_cost = quantity x unit_purchase_price",
+        "violations": 0
+      },
+      {
+        "check": "sales.total_amount = quantity x unit_selling_price - discount",
+        "violations": 0
+      },
+      {
+        "check": "purchases.medicine_id matches batch",
+        "violations": 0
+      },
+      {
+        "check": "purchases.supplier_id matches batch",
+        "violations": 0
+      },
+      {
+        "check": "purchases.unit_purchase_price = batch.purchase_price",
+        "violations": 0
+      },
+      {
+        "check": "sales.medicine_id matches batch",
+        "violations": 0
+      },
+      {
+        "check": "every batch has at least one purchase",
+        "violations": 0
+      },
+      {
+        "check": "batch.initial_quantity = sum of its purchases",
+        "violations": 0
+      },
+      {
+        "check": "all purchases of a batch share one date",
+        "violations": 0
+      },
+      {
+        "check": "purchase supplier is an approved supplier of the medicine",
+        "violations": 0
+      },
+      {
+        "check": "manufacture_date < purchase_date",
+        "violations": 0
+      },
+      {
+        "check": "purchase_date < expiry_date",
+        "violations": 0
+      },
+      {
+        "check": "shelf life between 6 and 36 months",
+        "violations": 0
+      },
+      {
+        "check": "sales never after batch expiry (sale_date < expiry_date)",
+        "violations": 0
+      },
+      {
+        "check": "purchase/sale dates within configured period",
+        "violations": 0
+      },
+      {
+        "check": "unit_purchase_price < unit_selling_price on every sold batch",
+        "violations": 0
+      },
+      {
+        "check": "purchase price <= 90% of medicine base price",
+        "violations": 0
+      },
+      {
+        "check": "each transaction has a single date",
+        "violations": 0
+      },
+      {
+        "check": "each transaction has a single branch",
+        "violations": 0
+      },
+      {
+        "check": "inventory never negative (replay of purchases/sales per branch+batch)",
+        "violations": 0
+      },
+      {
+        "check": "every sale draws from a batch received at that branch earlier or same day",
+        "violations": 0
+      },
+      {
+        "check": "reconciliation: purchases - sales = on hand + expired write-offs",
+        "violations": 0
+      },
+      {
+        "check": "CSV-reconstructed closing stock and expired quantity equal the generator ledger",
+        "violations": 0
+      }
+    ]
+  },
+  "warnings": [
+    "ANOM143 (branch_surge) is barely visible: ratio 1.18"
+  ],
+  "basic": {
+    "medicines": 500,
+    "branches": 5,
+    "suppliers": 30,
+    "categories": 10,
+    "batches": 35477,
+    "purchases": 80363,
+    "sales_lines": 1022346,
+    "transactions": 613027,
+    "date_range": [
+      "2025-01-01",
+      "2026-12-31"
+    ],
+    "sales_date_range": [
+      "2025-01-01",
+      "2026-12-31"
+    ],
+    "days": 730
+  },
+  "sales": {
+    "total_quantity": 1582353,
+    "total_revenue": 159205192.71,
+    "avg_daily_units": 2167.6,
+    "avg_daily_revenue": 218089.31,
+    "avg_lines_per_transaction": 1.668,
+    "avg_transaction_value": 259.7,
+    "median_transaction_value": 171.38,
+    "sales_lines_per_month": {
+      "2025-01": 42176,
+      "2025-02": 39263,
+      "2025-03": 43836,
+      "2025-04": 42075,
+      "2025-05": 43174,
+      "2025-06": 41685,
+      "2025-07": 43049,
+      "2025-08": 43078,
+      "2025-09": 41228,
+      "2025-10": 42515,
+      "2025-11": 41165,
+      "2025-12": 42913,
+      "2026-01": 43994,
+      "2026-02": 39923,
+      "2026-03": 43793,
+      "2026-04": 42733,
+      "2026-05": 44377,
+      "2026-06": 42028,
+      "2026-07": 43373,
+      "2026-08": 43699,
+      "2026-09": 42283,
+      "2026-10": 43337,
+      "2026-11": 42358,
+      "2026-12": 44291
+    },
+    "transactions_per_month": {
+      "2025-01": 25680,
+      "2025-02": 23449,
+      "2025-03": 26144,
+      "2025-04": 25201,
+      "2025-05": 26118,
+      "2025-06": 24921,
+      "2025-07": 25791,
+      "2025-08": 25856,
+      "2025-09": 24699,
+      "2025-10": 25613,
+      "2025-11": 24748,
+      "2025-12": 25651,
+      "2026-01": 26242,
+      "2026-02": 24101,
+      "2026-03": 26009,
+      "2026-04": 25569,
+      "2026-05": 26611,
+      "2026-06": 25272,
+      "2026-07": 26065,
+      "2026-08": 26241,
+      "2026-09": 25335,
+      "2026-10": 26061,
+      "2026-11": 25252,
+      "2026-12": 26398
+    },
+    "top5_medicines": [
+      [
+        "Telmisartan 40mg",
+        36582
+      ],
+      [
+        "Telmisartan 40mg (Aarogya Formulations)",
+        31895
+      ],
+      [
+        "Amlodipine 10mg (Stellar Formulations)",
+        31777
+      ],
+      [
+        "Sitagliptin 100mg (HealthAxis Pharma)",
+        31486
+      ],
+      [
+        "Metformin 850mg",
+        28611
+      ]
+    ],
+    "bottom5_medicines": [
+      [
+        "Hydrocortisone Cream 1% (Summit Lifesciences)",
+        154
+      ],
+      [
+        "Clotrimazole Cream 2% (Stellar Formulations)",
+        154
+      ],
+      [
+        "Salbutamol Inhaler 200mcg (CarePlus Laboratories)",
+        155
+      ],
+      [
+        "Cetirizine 5mg (CureLine Healthcare)",
+        162
+      ],
+      [
+        "Salbutamol Inhaler 100mcg (Aarogya Formulations)",
+        178
+      ]
+    ]
+  },
+  "inventory": {
+    "total_remaining_stock": 45473,
+    "stockout_events": 6278,
+    "stockout_branch_medicine_days": 18290,
+    "stockout_day_pct": 1.0,
+    "low_stock_day_pct": 1.24,
+    "medicines_with_stockout": 478,
+    "medicines_with_10plus_stockout_days": 376,
+    "branches_with_stockout": 5,
+    "stockouts_by_branch": {
+      "BR001": {
+        "events": 1209,
+        "days": 3445,
+        "pct_of_medicine_days": 0.94,
+        "avg_units_on_hand_per_medicine": 19.3
+      },
+      "BR002": {
+        "events": 1339,
+        "days": 3966,
+        "pct_of_medicine_days": 1.09,
+        "avg_units_on_hand_per_medicine": 15.7
+      },
+      "BR003": {
+        "events": 1170,
+        "days": 3410,
+        "pct_of_medicine_days": 0.93,
+        "avg_units_on_hand_per_medicine": 19.0
+      },
+      "BR004": {
+        "events": 1393,
+        "days": 4038,
+        "pct_of_medicine_days": 1.11,
+        "avg_units_on_hand_per_medicine": 15.4
+      },
+      "BR005": {
+        "events": 1167,
+        "days": 3431,
+        "pct_of_medicine_days": 0.94,
+        "avg_units_on_hand_per_medicine": 19.7
+      }
+    },
+    "stockouts_by_category": {
+      "Analgesics": {
+        "events": 507,
+        "days": 1628,
+        "pct_of_branch_medicine_days": 1.01
+      },
+      "Antibiotics": {
+        "events": 595,
+        "days": 1693,
+        "pct_of_branch_medicine_days": 1.01
+      },
+      "Antipyretics": {
+        "events": 799,
+        "days": 2152,
+        "pct_of_branch_medicine_days": 1.9
+      },
+      "Antihistamines": {
+        "events": 650,
+        "days": 1904,
+        "pct_of_branch_medicine_days": 1.09
+      },
+      "Gastrointestinal": {
+        "events": 460,
+        "days": 1391,
+        "pct_of_branch_medicine_days": 0.67
+      },
+      "Cardiovascular": {
+        "events": 1320,
+        "days": 3842,
+        "pct_of_branch_medicine_days": 1.1
+      },
+      "Antidiabetic": {
+        "events": 937,
+        "days": 2716,
+        "pct_of_branch_medicine_days": 1.11
+      },
+      "Respiratory": {
+        "events": 330,
+        "days": 980,
+        "pct_of_branch_medicine_days": 0.65
+      },
+      "Vitamins": {
+        "events": 451,
+        "days": 1372,
+        "pct_of_branch_medicine_days": 0.92
+      },
+      "Dermatological": {
+        "events": 229,
+        "days": 612,
+        "pct_of_branch_medicine_days": 0.58
+      }
+    },
+    "top_stockout_medicines": [
+      [
+        "Metformin 500mg",
+        368,
+        122
+      ],
+      [
+        "Paracetamol 650mg",
+        244,
+        118
+      ],
+      [
+        "Mefenamic Acid 500mg (NovaMed Laboratories)",
+        238,
+        79
+      ],
+      [
+        "Telmisartan 40mg (Aarogya Formulations)",
+        230,
+        97
+      ],
+      [
+        "Mefenamic Acid 500mg (Kavach Healthcare)",
+        219,
+        90
+      ],
+      [
+        "Mefenamic Acid 500mg",
+        191,
+        74
+      ],
+      [
+        "Glimepiride + Metformin 1mg/500mg (Zenith BioPharma)",
+        191,
+        85
+      ],
+      [
+        "Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories)",
+        189,
+        73
+      ],
+      [
+        "Cetirizine 10mg",
+        186,
+        64
+      ],
+      [
+        "Salbutamol Inhaler 100mcg (ApexLife Pharma)",
+        183,
+        56
+      ]
+    ],
+    "expired_batches": 437,
+    "expired_branch_lots": 829,
+    "expired_quantity": 3599,
+    "expired_value": 288921.86,
+    "expired_pct_of_purchased_units": 0.22,
+    "expired_pct_of_purchase_value": 0.23,
+    "medicines_with_expiry": 242,
+    "expired_by_category": {
+      "Analgesics": {
+        "remaining": 327,
+        "value": 11444.62
+      },
+      "Antibiotics": {
+        "remaining": 285,
+        "value": 24540.56
+      },
+      "Antipyretics": {
+        "remaining": 176,
+        "value": 6722.17
+      },
+      "Antihistamines": {
+        "remaining": 586,
+        "value": 37506.2
+      },
+      "Gastrointestinal": {
+        "remaining": 326,
+        "value": 13902.6
+      },
+      "Cardiovascular": {
+        "remaining": 495,
+        "value": 33307.83
+      },
+      "Antidiabetic": {
+        "remaining": 383,
+        "value": 60220.7
+      },
+      "Respiratory": {
+        "remaining": 518,
+        "value": 64410.06
+      },
+      "Vitamins": {
+        "remaining": 241,
+        "value": 12752.99
+      },
+      "Dermatological": {
+        "remaining": 262,
+        "value": 24114.13
+      }
+    },
+    "expired_by_branch": {
+      "BR001": {
+        "remaining": 671,
+        "value": 53296.92
+      },
+      "BR002": {
+        "remaining": 593,
+        "value": 51964.62
+      },
+      "BR003": {
+        "remaining": 754,
+        "value": 58260.86
+      },
+      "BR004": {
+        "remaining": 731,
+        "value": 58448.32
+      },
+      "BR005": {
+        "remaining": 850,
+        "value": 66951.14
+      }
+    },
+    "expired_by_medicine_top5": [
+      [
+        "Salbutamol Inhaler 100mcg (TrueLife Remedies)",
+        86
+      ],
+      [
+        "Montelukast 10mg (NovaMed Laboratories)",
+        70
+      ],
+      [
+        "Salbutamol Inhaler 200mcg (BlueCrest Pharma)",
+        64
+      ],
+      [
+        "Doxycycline 100mg (HealthAxis Pharma)",
+        64
+      ],
+      [
+        "Azithromycin 250mg",
+        53
+      ]
+    ],
+    "near_expiry_at_end_90d": {
+      "batches": 116,
+      "units": 2292,
+      "value": 204231.23
+    },
+    "expiry_risk_at_end": {
+      "batches": 39,
+      "units": 446,
+      "value": 38713.79,
+      "by_category": {
+        "Analgesics": {
+          "remaining": 41,
+          "value": 1368.63
+        },
+        "Antibiotics": {
+          "remaining": 32,
+          "value": 2965.66
+        },
+        "Antipyretics": {
+          "remaining": 75,
+          "value": 2756.37
+        },
+        "Antihistamines": {
+          "remaining": 51,
+          "value": 1428.87
+        },
+        "Gastrointestinal": {
+          "remaining": 4,
+          "value": 205.36
+        },
+        "Cardiovascular": {
+          "remaining": 31,
+          "value": 5215.27
+        },
+        "Antidiabetic": {
+          "remaining": 90,
+          "value": 11116.51
+        },
+        "Respiratory": {
+          "remaining": 81,
+          "value": 9390.7
+        },
+        "Vitamins": {
+          "remaining": 4,
+          "value": 415.04
+        },
+        "Dermatological": {
+          "remaining": 37,
+          "value": 3851.38
+        }
+      },
+      "by_branch": {
+        "BR001": {
+          "remaining": 100,
+          "value": 6094.64
+        },
+        "BR002": {
+          "remaining": 92,
+          "value": 11162.73
+        },
+        "BR003": {
+          "remaining": 51,
+          "value": 3841.06
+        },
+        "BR004": {
+          "remaining": 92,
+          "value": 7473.15
+        },
+        "BR005": {
+          "remaining": 111,
+          "value": 10142.21
+        }
+      },
+      "top5_batches_by_value": [
+        [
+          "BAT034721",
+          "Sitagliptin 100mg (CarePlus Laboratories)",
+          "BR002",
+          20,
+          5566.8,
+          12
+        ],
+        [
+          "BAT035455",
+          "Rosuvastatin 20mg (Summit Lifesciences)",
+          "BR004",
+          9,
+          1810.17,
+          79
+        ],
+        [
+          "BAT035391",
+          "Salbutamol Inhaler 200mcg (BlueCrest Pharma)",
+          "BR005",
+          12,
+          1522.32,
+          125
+        ],
+        [
+          "BAT035455",
+          "Rosuvastatin 20mg (Summit Lifesciences)",
+          "BR005",
+          7,
+          1407.91,
+          79
+        ],
+        [
+          "BAT035455",
+          "Rosuvastatin 20mg (Summit Lifesciences)",
+          "BR001",
+          7,
+          1407.91,
+          79
+        ]
+      ]
+    },
+    "inventory_equation": {
+      "opening": 0,
+      "purchases": 1631425,
+      "sales": 1582353,
+      "expired_writeoff": 3599,
+      "closing": 45473
+    }
+  },
+  "demand": {
+    "mean_daily_demand_units_per_medicine": 4.34,
+    "std_daily_demand_units": 8.15,
+    "highest_demand_medicine": [
+      "Telmisartan 40mg",
+      50.11
+    ],
+    "lowest_demand_medicine": [
+      "Clotrimazole Cream 2% (Stellar Formulations)",
+      0.211
+    ],
+    "units_per_medicine_quantiles": {
+      "p10": 331,
+      "p25": 549,
+      "p50": 1013,
+      "p75": 3288,
+      "p90": 7165,
+      "p99": 27841
+    },
+    "top10pct_medicines_share_of_units": 0.543,
+    "top20pct_medicines_share_of_units": 0.699,
+    "bottom50pct_medicines_share_of_units": 0.089,
+    "gini_of_units": 0.657,
+    "max_to_min_volume_ratio": 237.5,
+    "abc_by_revenue": {
+      "A(<=70%)": 79,
+      "B(<=90%)": 128,
+      "C(>90%)": 294
+    },
+    "by_demand_profile": {
+      "HIGH": {
+        "medicines": 47,
+        "share_of_units_pct": 51.9,
+        "mean_units_per_day": 23.92,
+        "min_units_per_day": 7.899,
+        "max_units_per_day": 50.11
+      },
+      "MEDIUM": {
+        "medicines": 165,
+        "share_of_units_pct": 36.2,
+        "mean_units_per_day": 4.76,
+        "min_units_per_day": 1.512,
+        "max_units_per_day": 22.1
+      },
+      "LOW": {
+        "medicines": 288,
+        "share_of_units_pct": 11.9,
+        "mean_units_per_day": 0.9,
+        "min_units_per_day": 0.211,
+        "max_units_per_day": 2.5
+      }
+    }
+  },
+  "categories": {
+    "Analgesics": {
+      "medicines": 44,
+      "sales_quantity": 117334,
+      "revenue": 6078940.93,
+      "avg_daily_units": 160.7,
+      "avg_daily_units_per_medicine": 3.65,
+      "seasonality_index_jan_to_dec": [
+        1.08,
+        1.1,
+        1.01,
+        0.99,
+        0.97,
+        0.96,
+        0.92,
+        0.92,
+        0.96,
+        0.99,
+        1.05,
+        1.04
+      ],
+      "seasonality_amplitude": 0.089,
+      "peak_month": 2
+    },
+    "Antibiotics": {
+      "medicines": 46,
+      "sales_quantity": 128529,
+      "revenue": 18614799.31,
+      "avg_daily_units": 176.1,
+      "avg_daily_units_per_medicine": 3.83,
+      "seasonality_index_jan_to_dec": [
+        0.88,
+        0.92,
+        0.95,
+        1.01,
+        1.05,
+        1.07,
+        1.13,
+        1.1,
+        1.07,
+        0.98,
+        0.94,
+        0.89
+      ],
+      "seasonality_amplitude": 0.121,
+      "peak_month": 7
+    },
+    "Antipyretics": {
+      "medicines": 31,
+      "sales_quantity": 90947,
+      "revenue": 4225535.02,
+      "avg_daily_units": 124.6,
+      "avg_daily_units_per_medicine": 4.02,
+      "seasonality_index_jan_to_dec": [
+        0.83,
+        0.84,
+        0.91,
+        0.99,
+        1.06,
+        1.13,
+        1.13,
+        1.2,
+        1.08,
+        1.0,
+        0.95,
+        0.89
+      ],
+      "seasonality_amplitude": 0.183,
+      "peak_month": 8
+    },
+    "Antihistamines": {
+      "medicines": 48,
+      "sales_quantity": 110307,
+      "revenue": 7057276.84,
+      "avg_daily_units": 151.1,
+      "avg_daily_units_per_medicine": 3.15,
+      "seasonality_index_jan_to_dec": [
+        1.12,
+        1.16,
+        1.2,
+        1.15,
+        1.09,
+        0.94,
+        0.91,
+        0.86,
+        0.8,
+        0.86,
+        0.9,
+        1.0
+      ],
+      "seasonality_amplitude": 0.199,
+      "peak_month": 3
+    },
+    "Gastrointestinal": {
+      "medicines": 57,
+      "sales_quantity": 163779,
+      "revenue": 8664590.71,
+      "avg_daily_units": 224.4,
+      "avg_daily_units_per_medicine": 3.94,
+      "seasonality_index_jan_to_dec": [
+        0.89,
+        0.89,
+        0.91,
+        1.01,
+        1.04,
+        1.08,
+        1.13,
+        1.11,
+        1.07,
+        1.02,
+        0.94,
+        0.93
+      ],
+      "seasonality_amplitude": 0.12,
+      "peak_month": 7
+    },
+    "Cardiovascular": {
+      "medicines": 96,
+      "sales_quantity": 483930,
+      "revenue": 49033572.55,
+      "avg_daily_units": 662.9,
+      "avg_daily_units_per_medicine": 6.91,
+      "seasonality_index_jan_to_dec": [
+        1.02,
+        1.01,
+        1.02,
+        1.0,
+        1.0,
+        0.98,
+        0.96,
+        0.96,
+        0.99,
+        0.99,
+        1.02,
+        1.05
+      ],
+      "seasonality_amplitude": 0.041,
+      "peak_month": 12
+    },
+    "Antidiabetic": {
+      "medicines": 67,
+      "sales_quantity": 288111,
+      "revenue": 46326537.02,
+      "avg_daily_units": 394.7,
+      "avg_daily_units_per_medicine": 5.89,
+      "seasonality_index_jan_to_dec": [
+        1.0,
+        1.01,
+        1.02,
+        0.97,
+        0.98,
+        0.99,
+        0.98,
+        0.98,
+        1.0,
+        1.01,
+        1.01,
+        1.04
+      ],
+      "seasonality_amplitude": 0.031,
+      "peak_month": 12
+    },
+    "Respiratory": {
+      "medicines": 41,
+      "sales_quantity": 58338,
+      "revenue": 9202185.38,
+      "avg_daily_units": 79.9,
+      "avg_daily_units_per_medicine": 1.95,
+      "seasonality_index_jan_to_dec": [
+        1.21,
+        1.2,
+        1.15,
+        1.03,
+        0.9,
+        0.85,
+        0.79,
+        0.82,
+        0.87,
+        0.96,
+        1.08,
+        1.14
+      ],
+      "seasonality_amplitude": 0.212,
+      "peak_month": 1
+    },
+    "Vitamins": {
+      "medicines": 41,
+      "sales_quantity": 115388,
+      "revenue": 7309310.81,
+      "avg_daily_units": 158.1,
+      "avg_daily_units_per_medicine": 3.86,
+      "seasonality_index_jan_to_dec": [
+        1.08,
+        1.1,
+        1.02,
+        0.99,
+        0.95,
+        0.92,
+        0.92,
+        0.92,
+        0.97,
+        1.01,
+        1.05,
+        1.08
+      ],
+      "seasonality_amplitude": 0.093,
+      "peak_month": 2
+    },
+    "Dermatological": {
+      "medicines": 29,
+      "sales_quantity": 25690,
+      "revenue": 2692444.14,
+      "avg_daily_units": 35.2,
+      "avg_daily_units_per_medicine": 1.21,
+      "seasonality_index_jan_to_dec": [
+        0.83,
+        0.93,
+        0.97,
+        0.98,
+        1.05,
+        1.05,
+        1.11,
+        1.11,
+        1.06,
+        1.04,
+        0.94,
+        0.92
+      ],
+      "seasonality_amplitude": 0.142,
+      "peak_month": 8
+    }
+  },
+  "seasonality_index_by_category": {
+    "Analgesics": [
+      1.08,
+      1.1,
+      1.01,
+      0.99,
+      0.97,
+      0.96,
+      0.92,
+      0.92,
+      0.96,
+      0.99,
+      1.05,
+      1.04
+    ],
+    "Antibiotics": [
+      0.88,
+      0.92,
+      0.95,
+      1.01,
+      1.05,
+      1.07,
+      1.13,
+      1.1,
+      1.07,
+      0.98,
+      0.94,
+      0.89
+    ],
+    "Antipyretics": [
+      0.83,
+      0.84,
+      0.91,
+      0.99,
+      1.06,
+      1.13,
+      1.13,
+      1.2,
+      1.08,
+      1.0,
+      0.95,
+      0.89
+    ],
+    "Antihistamines": [
+      1.12,
+      1.16,
+      1.2,
+      1.15,
+      1.09,
+      0.94,
+      0.91,
+      0.86,
+      0.8,
+      0.86,
+      0.9,
+      1.0
+    ],
+    "Gastrointestinal": [
+      0.89,
+      0.89,
+      0.91,
+      1.01,
+      1.04,
+      1.08,
+      1.13,
+      1.11,
+      1.07,
+      1.02,
+      0.94,
+      0.93
+    ],
+    "Cardiovascular": [
+      1.02,
+      1.01,
+      1.02,
+      1.0,
+      1.0,
+      0.98,
+      0.96,
+      0.96,
+      0.99,
+      0.99,
+      1.02,
+      1.05
+    ],
+    "Antidiabetic": [
+      1.0,
+      1.01,
+      1.02,
+      0.97,
+      0.98,
+      0.99,
+      0.98,
+      0.98,
+      1.0,
+      1.01,
+      1.01,
+      1.04
+    ],
+    "Respiratory": [
+      1.21,
+      1.2,
+      1.15,
+      1.03,
+      0.9,
+      0.85,
+      0.79,
+      0.82,
+      0.87,
+      0.96,
+      1.08,
+      1.14
+    ],
+    "Vitamins": [
+      1.08,
+      1.1,
+      1.02,
+      0.99,
+      0.95,
+      0.92,
+      0.92,
+      0.92,
+      0.97,
+      1.01,
+      1.05,
+      1.08
+    ],
+    "Dermatological": [
+      0.83,
+      0.93,
+      0.97,
+      0.98,
+      1.05,
+      1.05,
+      1.11,
+      1.11,
+      1.06,
+      1.04,
+      0.94,
+      0.92
+    ]
+  },
+  "branches": {
+    "revenue": {
+      "BR001": 35269640.2,
+      "BR002": 27682152.09,
+      "BR003": 34101419.01,
+      "BR004": 26755446.87,
+      "BR005": 35396534.54
+    },
+    "quantity": {
+      "BR001": 348281,
+      "BR002": 273126,
+      "BR003": 340651,
+      "BR004": 268580,
+      "BR005": 351715
+    },
+    "active_medicines": {
+      "BR001": 500,
+      "BR002": 500,
+      "BR003": 500,
+      "BR004": 500,
+      "BR005": 500
+    },
+    "transactions": {
+      "BR001": 134993,
+      "BR002": 104686,
+      "BR003": 132137,
+      "BR004": 104077,
+      "BR005": 137134
+    },
+    "category_share_index_vs_all_branches": {
+      "BR001": {
+        "Analgesics": 1.0,
+        "Antibiotics": 1.0,
+        "Antipyretics": 1.01,
+        "Antihistamines": 1.02,
+        "Gastrointestinal": 0.96,
+        "Cardiovascular": 0.99,
+        "Antidiabetic": 0.99,
+        "Respiratory": 1.13,
+        "Vitamins": 1.0,
+        "Dermatological": 0.99
+      },
+      "BR002": {
+        "Analgesics": 0.94,
+        "Antibiotics": 0.93,
+        "Antipyretics": 0.97,
+        "Antihistamines": 0.96,
+        "Gastrointestinal": 0.93,
+        "Cardiovascular": 1.05,
+        "Antidiabetic": 1.06,
+        "Respiratory": 0.93,
+        "Vitamins": 0.98,
+        "Dermatological": 0.97
+      },
+      "BR003": {
+        "Analgesics": 1.08,
+        "Antibiotics": 0.99,
+        "Antipyretics": 1.01,
+        "Antihistamines": 1.01,
+        "Gastrointestinal": 0.96,
+        "Cardiovascular": 0.99,
+        "Antidiabetic": 0.99,
+        "Respiratory": 0.99,
+        "Vitamins": 1.01,
+        "Dermatological": 1.01
+      },
+      "BR004": {
+        "Analgesics": 0.99,
+        "Antibiotics": 0.97,
+        "Antipyretics": 1.01,
+        "Antihistamines": 1.01,
+        "Gastrointestinal": 1.09,
+        "Cardiovascular": 0.99,
+        "Antidiabetic": 0.98,
+        "Respiratory": 0.98,
+        "Vitamins": 1.01,
+        "Dermatological": 1.02
+      },
+      "BR005": {
+        "Analgesics": 0.99,
+        "Antibiotics": 1.11,
+        "Antipyretics": 1.0,
+        "Antihistamines": 1.0,
+        "Gastrointestinal": 1.06,
+        "Cardiovascular": 0.97,
+        "Antidiabetic": 0.98,
+        "Respiratory": 0.97,
+        "Vitamins": 0.99,
+        "Dermatological": 1.01
+      }
+    }
+  },
+  "associations": {
+    "configured_rules": [
+      {
+        "rule": "Metformin 500mg -> Glimepiride 2mg",
+        "antecedent_id": "MED013",
+        "consequent_id": "MED014",
+        "added_probability": 0.4
+      },
+      {
+        "rule": "Amlodipine 5mg -> Atorvastatin 10mg",
+        "antecedent_id": "MED011",
+        "consequent_id": "MED012",
+        "added_probability": 0.4
+      },
+      {
+        "rule": "Azithromycin 500mg -> Paracetamol 650mg",
+        "antecedent_id": "MED004",
+        "consequent_id": "MED005",
+        "added_probability": 0.45
+      },
+      {
+        "rule": "Diclofenac 50mg -> Pantoprazole 40mg",
+        "antecedent_id": "MED002",
+        "consequent_id": "MED009",
+        "added_probability": 0.4
+      },
+      {
+        "rule": "Cetirizine 10mg -> Ambroxol + Levosalbutamol Syrup 100ml",
+        "antecedent_id": "MED007",
+        "consequent_id": "MED015",
+        "added_probability": 0.25
+      },
+      {
+        "rule": "Ambroxol + Levosalbutamol Syrup 100ml -> Vitamin C Chewable 500mg",
+        "antecedent_id": "MED015",
+        "consequent_id": "MED017",
+        "added_probability": 0.3
+      },
+      {
+        "rule": "Omeprazole 20mg -> Domperidone 10mg",
+        "antecedent_id": "MED033",
+        "consequent_id": "MED034",
+        "added_probability": 0.35
+      },
+      {
+        "rule": "Clotrimazole Cream 1% -> Mupirocin Ointment 2%",
+        "antecedent_id": "MED019",
+        "consequent_id": "MED020",
+        "added_probability": 0.3
+      }
+    ],
+    "note": "Mined pairs are listed in both directions: A->B and B->A share support and lift but differ in confidence. A reverse row is not a generation error; it is flagged reverse_of_planted_rule.",
+    "mined_strongest_pairs": [
+      {
+        "antecedent": "Clotrimazole Cream 1%",
+        "consequent": "Mupirocin Ointment 2%",
+        "support": 0.0014,
+        "confidence": 0.2964,
+        "lift": 168.72,
+        "direction": "Clotrimazole Cream 1% -> Mupirocin Ointment 2%",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Mupirocin Ointment 2%",
+        "consequent": "Clotrimazole Cream 1%",
+        "support": 0.0014,
+        "confidence": 0.8124,
+        "lift": 168.72,
+        "direction": "Mupirocin Ointment 2% -> Clotrimazole Cream 1%",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      },
+      {
+        "antecedent": "Metformin 500mg",
+        "consequent": "Glimepiride 2mg",
+        "support": 0.0042,
+        "confidence": 0.4083,
+        "lift": 54.02,
+        "direction": "Metformin 500mg -> Glimepiride 2mg",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Glimepiride 2mg",
+        "consequent": "Metformin 500mg",
+        "support": 0.0042,
+        "confidence": 0.5514,
+        "lift": 54.02,
+        "direction": "Glimepiride 2mg -> Metformin 500mg",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      },
+      {
+        "antecedent": "Amlodipine 5mg",
+        "consequent": "Atorvastatin 10mg",
+        "support": 0.0087,
+        "confidence": 0.3982,
+        "lift": 30.15,
+        "direction": "Amlodipine 5mg -> Atorvastatin 10mg",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Atorvastatin 10mg",
+        "consequent": "Amlodipine 5mg",
+        "support": 0.0087,
+        "confidence": 0.6596,
+        "lift": 30.15,
+        "direction": "Atorvastatin 10mg -> Amlodipine 5mg",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      },
+      {
+        "antecedent": "Omeprazole 20mg",
+        "consequent": "Domperidone 10mg",
+        "support": 0.0092,
+        "confidence": 0.3528,
+        "lift": 28.6,
+        "direction": "Omeprazole 20mg -> Domperidone 10mg",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Domperidone 10mg",
+        "consequent": "Omeprazole 20mg",
+        "support": 0.0092,
+        "confidence": 0.7473,
+        "lift": 28.6,
+        "direction": "Domperidone 10mg -> Omeprazole 20mg",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      },
+      {
+        "antecedent": "Ambroxol + Levosalbutamol Syrup 100ml",
+        "consequent": "Vitamin C Chewable 500mg",
+        "support": 0.0016,
+        "confidence": 0.1489,
+        "lift": 25.49,
+        "direction": "Ambroxol + Levosalbutamol Syrup 100ml -> Vitamin C Chewable 500mg",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Vitamin C Chewable 500mg",
+        "consequent": "Ambroxol + Levosalbutamol Syrup 100ml",
+        "support": 0.0016,
+        "confidence": 0.2684,
+        "lift": 25.49,
+        "direction": "Vitamin C Chewable 500mg -> Ambroxol + Levosalbutamol Syrup 100ml",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      },
+      {
+        "antecedent": "Cetirizine 10mg",
+        "consequent": "Ambroxol + Levosalbutamol Syrup 100ml",
+        "support": 0.005,
+        "confidence": 0.2509,
+        "lift": 23.83,
+        "direction": "Cetirizine 10mg -> Ambroxol + Levosalbutamol Syrup 100ml",
+        "planted_rule": true,
+        "reverse_of_planted_rule": false
+      },
+      {
+        "antecedent": "Ambroxol + Levosalbutamol Syrup 100ml",
+        "consequent": "Cetirizine 10mg",
+        "support": 0.005,
+        "confidence": 0.4706,
+        "lift": 23.83,
+        "direction": "Ambroxol + Levosalbutamol Syrup 100ml -> Cetirizine 10mg",
+        "planted_rule": false,
+        "reverse_of_planted_rule": true
+      }
+    ],
+    "planted_rule_check": [
+      {
+        "rule": "Metformin 500mg -> Glimepiride 2mg",
+        "support": 0.0042,
+        "P(B|A)": 0.4083,
+        "P(B|not A)": 0.0034,
+        "lift": 54.02
+      },
+      {
+        "rule": "Amlodipine 5mg -> Atorvastatin 10mg",
+        "support": 0.0087,
+        "P(B|A)": 0.3982,
+        "P(B|not A)": 0.0046,
+        "lift": 30.15
+      },
+      {
+        "rule": "Azithromycin 500mg -> Paracetamol 650mg",
+        "support": 0.0007,
+        "P(B|A)": 0.4406,
+        "P(B|not A)": 0.0177,
+        "lift": 24.0
+      },
+      {
+        "rule": "Diclofenac 50mg -> Pantoprazole 40mg",
+        "support": 0.0007,
+        "P(B|A)": 0.3826,
+        "P(B|not A)": 0.0171,
+        "lift": 21.46
+      },
+      {
+        "rule": "Cetirizine 10mg -> Ambroxol + Levosalbutamol Syrup 100ml",
+        "support": 0.005,
+        "P(B|A)": 0.2509,
+        "P(B|not A)": 0.0057,
+        "lift": 23.83
+      },
+      {
+        "rule": "Ambroxol + Levosalbutamol Syrup 100ml -> Vitamin C Chewable 500mg",
+        "support": 0.0016,
+        "P(B|A)": 0.1489,
+        "P(B|not A)": 0.0043,
+        "lift": 25.49
+      },
+      {
+        "rule": "Omeprazole 20mg -> Domperidone 10mg",
+        "support": 0.0092,
+        "P(B|A)": 0.3528,
+        "P(B|not A)": 0.0032,
+        "lift": 28.6
+      },
+      {
+        "rule": "Clotrimazole Cream 1% -> Mupirocin Ointment 2%",
+        "support": 0.0014,
+        "P(B|A)": 0.2964,
+        "P(B|not A)": 0.0003,
+        "lift": 168.72
+      }
+    ]
+  },
+  "anomalies": {
+    "total": 150,
+    "by_type": {
+      "spike": 38,
+      "supply_disruption": 30,
+      "drop": 30,
+      "branch_surge": 30,
+      "bulk_purchase": 22
+    },
+    "distinct_medicines": 115,
+    "events_per_medicine_year": 0.15,
+    "affected_branches": {
+      "ALL": 120,
+      "BR001": 8,
+      "BR004": 7,
+      "BR005": 7,
+      "BR003": 6,
+      "BR002": 2
+    },
+    "share_on_top20pct_volume_medicines": 0.493,
+    "demand_events": 98,
+    "visible_demand_events": 90,
+    "median_observed_ratio": {
+      "spike": 2.88,
+      "drop": 0.29,
+      "branch_surge": 2.43
+    }
+  }
+}
