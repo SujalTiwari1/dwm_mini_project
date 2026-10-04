@@ -1,0 +1,501 @@
+medicine_id,medicine_name,cluster_id,pc1,pc2
+MED001,Paracetamol 500mg,0,3.09096,2.06614
+MED002,Diclofenac 50mg,2,-0.41047,1.6087
+MED003,Amoxicillin 500mg,1,-0.09618,0.00592
+MED004,Azithromycin 500mg,1,-0.81419,-0.59636
+MED005,Paracetamol 650mg,0,3.95836,2.99041
+MED006,Paracetamol Suspension 250mg/5ml,2,-1.20025,0.57728
+MED007,Cetirizine 10mg,0,4.66158,3.46129
+MED008,Fexofenadine 120mg,1,-1.58645,-1.96026
+MED009,Pantoprazole 40mg,0,4.59835,0.47118
+MED010,Ondansetron 4mg,2,-1.53213,0.44559
+MED011,Amlodipine 5mg,0,6.57016,2.41197
+MED012,Atorvastatin 10mg,0,5.62523,-0.13578
+MED013,Metformin 500mg,0,4.63774,3.66907
+MED014,Glimepiride 2mg,0,3.69337,-1.12531
+MED015,Ambroxol + Levosalbutamol Syrup 100ml,0,2.4574,-1.07952
+MED016,Salbutamol Inhaler 100mcg,3,-1.97961,-1.78663
+MED017,Vitamin C Chewable 500mg,0,1.87253,1.59743
+MED018,Vitamin D3 60000IU,1,-0.23651,-0.88018
+MED019,Clotrimazole Cream 1%,1,0.59315,0.06306
+MED020,Mupirocin Ointment 2%,1,-0.11398,-1.36772
+MED021,Ibuprofen 400mg,2,-0.09546,1.37379
+MED022,Aceclofenac + Paracetamol 100mg/325mg,2,-0.45036,0.53617
+MED023,Naproxen 250mg,2,-2.04541,-0.03519
+MED024,Cefixime 200mg,1,1.45191,-0.40428
+MED025,Ciprofloxacin 500mg,2,-1.08244,0.61204
+MED026,Doxycycline 100mg,1,-1.10949,-0.2353
+MED027,Amoxicillin + Clavulanic Acid 625mg,1,0.63761,-1.42954
+MED028,Mefenamic Acid 250mg,2,-1.67139,0.57047
+MED029,Paracetamol Drops 100mg/ml,2,-2.23318,0.70488
+MED030,Levocetirizine 5mg,2,0.21102,0.79305
+MED031,Montelukast + Levocetirizine 10mg/5mg,0,2.56652,-0.97687
+MED032,Chlorpheniramine 4mg,2,-3.19986,2.39327
+MED033,Omeprazole 20mg,0,5.24997,1.38025
+MED034,Domperidone 10mg,0,3.12808,0.7584
+MED035,ORS Powder 21.8g,2,-0.92757,2.10579
+MED036,Loperamide 2mg,2,-2.39598,1.50692
+MED037,Telmisartan 40mg,0,7.14908,-0.66161
+MED038,Losartan 50mg,1,0.65683,0.37314
+MED039,Metoprolol 50mg,0,2.2384,0.53672
+MED040,Rosuvastatin 10mg,0,2.54151,-0.45152
+MED041,Clopidogrel 75mg,1,-0.95441,-0.02539
+MED042,Aspirin 75mg,2,1.07968,3.64836
+MED043,Glimepiride + Metformin 2mg/500mg,0,5.19496,-0.45783
+MED044,Sitagliptin 100mg,1,0.89578,-2.82929
+MED045,Gliclazide 80mg,2,-1.18189,-0.05693
+MED046,Montelukast 10mg,0,2.7162,-2.10551
+MED047,Budesonide Inhaler 200mcg,1,-0.65387,-1.8591
+MED048,Dextromethorphan Syrup 100ml,0,2.11003,-0.99187
+MED049,Multivitamin B-complex+C,0,1.96008,1.15999
+MED050,Calcium + Vitamin D3 500mg/250IU,1,-0.35862,-0.21065
+MED051,Iron + Folic Acid 100mg/500mcg,2,-1.3009,0.13837
+MED052,Hydrocortisone Cream 1%,2,-2.32008,-0.18739
+MED053,Fusidic Acid Cream 2%,1,-1.49064,-1.66862
+MED054,Calamine Lotion 100ml,2,-2.26068,-0.46581
+MED055,Ketoconazole Shampoo 2%,1,-0.83619,-2.16308
+MED056,Aceclofenac + Paracetamol 100mg/325mg (HealthAxis Pharma),2,-1.7864,-0.39347
+MED057,Aceclofenac + Paracetamol 100mg/325mg (LifeSpring Pharma),3,-2.25974,-0.39864
+MED058,Aceclofenac + Paracetamol 100mg/325mg (VitaCure Remedies),1,-0.02681,-0.33109
+MED059,Diclofenac 50mg (Aarogya Formulations),3,-2.96171,0.32032
+MED060,Diclofenac 50mg (CarePlus Laboratories),0,1.26915,0.33215
+MED061,Diclofenac 50mg (Stellar Formulations),2,-1.92677,0.61404
+MED062,Diclofenac 50mg (TrueLife Remedies),2,-2.1931,0.37642
+MED063,Diclofenac 50mg (VitaCure Remedies),2,-0.45751,1.23067
+MED064,Diclofenac 100mg,2,-0.87746,1.29163
+MED065,Diclofenac 100mg (CureLine Healthcare),2,-1.75594,0.60731
+MED066,Diclofenac 100mg (VitaCure Remedies),2,-1.1917,0.69722
+MED067,Ibuprofen 400mg (Aarogya Formulations),2,-2.5588,0.83599
+MED068,Ibuprofen 400mg (CureLine Healthcare),2,-2.1809,1.35925
+MED069,Ibuprofen 400mg (HealthAxis Pharma),2,-0.15062,1.54574
+MED070,Ibuprofen 400mg (NovaMed Laboratories),2,0.58912,1.34837
+MED071,Ibuprofen 400mg (Stellar Formulations),2,-1.01489,1.58715
+MED072,Ibuprofen 400mg (VitaCure Remedies),2,-1.91051,1.42435
+MED073,Ibuprofen 200mg,2,0.52573,1.25298
+MED074,Ibuprofen 200mg (LifeSpring Pharma),2,-2.94033,0.46238
+MED075,Ibuprofen 200mg (Summit Lifesciences),2,-0.68428,1.02923
+MED076,Ibuprofen 200mg (TrueLife Remedies),2,-0.21589,1.45978
+MED077,Ibuprofen 200mg (VitaCure Remedies),3,-2.45813,0.22732
+MED078,Ibuprofen 600mg,2,0.45365,1.21173
+MED079,Ibuprofen 600mg (BlueCrest Pharma),2,0.71265,1.2927
+MED080,Ibuprofen 600mg (HealthAxis Pharma),2,-1.31158,0.39408
+MED081,Ibuprofen 600mg (NovaMed Laboratories),1,0.25417,0.21409
+MED082,Naproxen 250mg (CureLine Healthcare),0,2.59387,0.28158
+MED083,Naproxen 250mg (HealthAxis Pharma),1,-1.00754,-0.09842
+MED084,Naproxen 250mg (VitaCure Remedies),0,1.5734,0.3254
+MED085,Naproxen 500mg,2,-1.28549,0.15184
+MED086,Naproxen 500mg (CarePlus Laboratories),0,6.71104,0.70775
+MED087,Naproxen 500mg (LifeSpring Pharma),1,-1.85516,-0.73745
+MED088,Naproxen 500mg (NovaMed Laboratories),2,-1.55797,-0.2034
+MED089,Paracetamol 500mg (Aarogya Formulations),2,-2.46142,1.51704
+MED090,Paracetamol 500mg (CarePlus Laboratories),2,-1.90034,1.91511
+MED091,Paracetamol 500mg (HealthAxis Pharma),0,1.96066,2.33708
+MED092,Paracetamol 500mg (LifeSpring Pharma),2,-2.17891,1.29175
+MED093,Paracetamol 250mg,2,-2.75846,0.95768
+MED094,Paracetamol 250mg (Stellar Formulations),2,-1.86625,1.46094
+MED095,Amoxicillin 250mg,1,-0.07849,-0.58921
+MED096,Amoxicillin 250mg (CureLine Healthcare),1,0.6776,-0.27278
+MED097,Amoxicillin 250mg (LifeSpring Pharma),1,1.29127,-0.45732
+MED098,Amoxicillin 250mg (NovaMed Laboratories),1,-0.00291,-0.46999
+MED099,Amoxicillin 250mg (Stellar Formulations),1,-1.62615,-0.38506
+MED100,Amoxicillin 250mg (TrueLife Remedies),1,-1.52278,-1.14567
+MED101,Amoxicillin + Clavulanic Acid 625mg (CureLine Healthcare),1,-1.03336,-1.53133
+MED102,Amoxicillin + Clavulanic Acid 625mg (HealthAxis Pharma),1,0.05678,-1.45174
+MED103,Amoxicillin + Clavulanic Acid 625mg (Stellar Formulations),1,-0.6333,-1.43075
+MED104,Amoxicillin + Clavulanic Acid 375mg,0,3.85534,-1.0974
+MED105,Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories),0,4.68746,-0.34454
+MED106,Amoxicillin + Clavulanic Acid 375mg (Summit Lifesciences),1,-0.11644,-1.39417
+MED107,Amoxicillin + Clavulanic Acid 375mg (TrueLife Remedies),1,-0.26194,-2.13104
+MED108,Azithromycin 500mg (Aarogya Formulations),1,0.89939,-0.99746
+MED109,Azithromycin 500mg (ApexLife Pharma),1,0.04704,-0.60999
+MED110,Azithromycin 500mg (VitaCure Remedies),3,-2.63522,-1.57702
+MED111,Azithromycin 250mg,1,-1.14309,-1.55536
+MED112,Azithromycin 250mg (ApexLife Pharma),1,0.03828,-0.72568
+MED113,Azithromycin 250mg (BlueCrest Pharma),0,5.33552,-0.29325
+MED114,Azithromycin 250mg (CarePlus Laboratories),1,-0.19284,-1.1802
+MED115,Azithromycin 250mg (CureLine Healthcare),1,0.01608,-0.93561
+MED116,Azithromycin 250mg (HealthAxis Pharma),1,-0.32632,-0.97852
+MED117,Azithromycin 250mg (LifeSpring Pharma),0,5.4808,-0.61766
+MED118,Azithromycin 250mg (NovaMed Laboratories),1,-1.03189,-1.09797
+MED119,Azithromycin 250mg (TrueLife Remedies),1,-0.56035,-0.66674
+MED120,Cefixime 200mg (ApexLife Pharma),1,-0.95047,-0.74171
+MED121,Cefixime 200mg (CureLine Healthcare),3,-1.48182,-0.92584
+MED122,Cefixime 200mg (NovaMed Laboratories),1,0.15017,-0.21782
+MED123,Cefixime 200mg (Stellar Formulations),3,-2.73859,-1.44747
+MED124,Cefixime 100mg,3,-2.00871,-1.63159
+MED125,Cefixime 100mg (HealthAxis Pharma),1,-1.51429,-1.10584
+MED126,Cefixime 100mg (NovaMed Laboratories),1,-1.29078,-0.55146
+MED127,Cefixime 100mg (VitaCure Remedies),0,3.20131,-0.26084
+MED128,Ciprofloxacin 500mg (BlueCrest Pharma),2,-2.02381,0.38877
+MED129,Ciprofloxacin 250mg,2,-1.13867,0.20167
+MED130,Ciprofloxacin 250mg (LifeSpring Pharma),1,1.2486,0.24772
+MED131,Doxycycline 100mg (Aarogya Formulations),1,0.15372,-0.31815
+MED132,Doxycycline 100mg (ApexLife Pharma),2,-0.82227,0.13075
+MED133,Doxycycline 100mg (HealthAxis Pharma),2,-2.74801,-0.23277
+MED134,Doxycycline 100mg (Summit Lifesciences),2,-0.91077,0.16855
+MED135,Mefenamic Acid 250mg (ApexLife Pharma),2,0.13997,0.81428
+MED136,Mefenamic Acid 250mg (HealthAxis Pharma),2,-1.78768,1.14634
+MED137,Mefenamic Acid 250mg (LifeSpring Pharma),3,-1.53709,0.58172
+MED138,Mefenamic Acid 250mg (NovaMed Laboratories),2,0.0558,0.96098
+MED139,Mefenamic Acid 500mg,0,5.92184,2.45891
+MED140,Mefenamic Acid 500mg (CureLine Healthcare),2,-0.69861,0.93501
+MED141,Mefenamic Acid 500mg (HealthAxis Pharma),3,-1.79289,0.55892
+MED142,Mefenamic Acid 500mg (Kavach Healthcare),0,2.57155,1.56534
+MED143,Mefenamic Acid 500mg (LifeSpring Pharma),2,-2.60805,0.49463
+MED144,Mefenamic Acid 500mg (NovaMed Laboratories),0,3.00326,1.75489
+MED145,Mefenamic Acid 500mg (Stellar Formulations),2,-2.1452,0.70962
+MED146,Mefenamic Acid 500mg (Summit Lifesciences),2,-1.90053,0.21612
+MED147,Mefenamic Acid 500mg (TrueLife Remedies),3,-2.63684,0.22002
+MED148,Mefenamic Acid 500mg (VitaCure Remedies),2,-0.74836,0.38726
+MED149,Paracetamol 650mg (Aarogya Formulations),2,-1.83091,1.59
+MED150,Paracetamol 650mg (CarePlus Laboratories),2,-1.31875,1.81526
+MED151,Paracetamol Drops 100mg/ml (Aarogya Formulations),2,-1.6036,1.55133
+MED152,Paracetamol Suspension 250mg/5ml (Aarogya Formulations),2,0.33971,0.87202
+MED153,Paracetamol Suspension 250mg/5ml (BlueCrest Pharma),3,-3.32017,-0.32842
+MED154,Paracetamol Suspension 250mg/5ml (CarePlus Laboratories),2,-1.1402,1.21894
+MED155,Paracetamol Suspension 250mg/5ml (CureLine Healthcare),2,1.16395,1.82425
+MED156,Paracetamol Suspension 250mg/5ml (TrueLife Remedies),2,-1.58542,0.80424
+MED157,Paracetamol Suspension 125mg/5ml,3,-2.39051,-0.36153
+MED158,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),0,2.62482,1.509
+MED159,Paracetamol Suspension 125mg/5ml (NovaMed Laboratories),2,0.3485,1.1334
+MED160,Paracetamol Suspension 125mg/5ml (TrueLife Remedies),3,-1.51574,-0.22291
+MED161,Paracetamol Suspension 125mg/5ml (VitaCure Remedies),3,-2.30572,-0.51069
+MED162,Cetirizine 10mg (ApexLife Pharma),2,-2.19191,2.24958
+MED163,Cetirizine 10mg (CureLine Healthcare),0,1.47932,2.34578
+MED164,Cetirizine 10mg (LifeSpring Pharma),2,-2.29564,1.79444
+MED165,Cetirizine 10mg (Stellar Formulations),2,0.07004,1.94354
+MED166,Cetirizine 10mg (Summit Lifesciences),2,-1.79029,2.16585
+MED167,Cetirizine 10mg (TrueLife Remedies),2,0.72632,2.50522
+MED168,Cetirizine 5mg,2,-1.88764,1.6126
+MED169,Cetirizine 5mg (CarePlus Laboratories),0,3.51953,2.82249
+MED170,Cetirizine 5mg (CureLine Healthcare),2,-3.66486,1.34512
+MED171,Cetirizine 5mg (Stellar Formulations),2,-1.28254,1.86961
+MED172,Cetirizine 5mg (Summit Lifesciences),3,-2.24273,1.52297
+MED173,Cetirizine 5mg (TrueLife Remedies),0,5.31641,2.94306
+MED174,Cetirizine 5mg (VitaCure Remedies),2,-2.62579,1.32691
+MED175,Chlorpheniramine 4mg (ApexLife Pharma),2,-3.55038,2.68291
+MED176,Chlorpheniramine 4mg (BlueCrest Pharma),2,-2.00321,2.95908
+MED177,Chlorpheniramine 4mg (CarePlus Laboratories),2,-3.00841,2.57464
+MED178,Chlorpheniramine 4mg (HealthAxis Pharma),2,-2.04684,3.34091
+MED179,Chlorpheniramine 4mg (LifeSpring Pharma),2,-2.33784,2.42371
+MED180,Chlorpheniramine 4mg (VitaCure Remedies),2,-3.265,2.78483
+MED181,Fexofenadine 120mg (ApexLife Pharma),1,-0.61069,-1.34909
+MED182,Fexofenadine 120mg (BlueCrest Pharma),1,1.77367,-1.65355
+MED183,Fexofenadine 120mg (CureLine Healthcare),1,-0.19242,-1.92466
+MED184,Fexofenadine 120mg (LifeSpring Pharma),1,-0.69028,-1.82178
+MED185,Fexofenadine 120mg (TrueLife Remedies),1,-1.08792,-1.09281
+MED186,Fexofenadine 180mg,1,0.88541,-1.87622
+MED187,Fexofenadine 180mg (CureLine Healthcare),1,-1.2277,-1.87591
+MED188,Fexofenadine 180mg (HealthAxis Pharma),1,-1.56002,-2.17879
+MED189,Fexofenadine 180mg (TrueLife Remedies),1,-0.46773,-2.16635
+MED190,Levocetirizine 5mg (Aarogya Formulations),2,-0.4525,0.54655
+MED191,Levocetirizine 5mg (BlueCrest Pharma),1,0.24617,0.70892
+MED192,Levocetirizine 5mg (CureLine Healthcare),2,-1.53205,-0.1856
+MED193,Levocetirizine 5mg (LifeSpring Pharma),2,-1.47676,-0.25131
+MED194,Levocetirizine 5mg (NovaMed Laboratories),2,-0.97453,0.39918
+MED195,Levocetirizine 5mg (VitaCure Remedies),2,-0.91297,0.65446
+MED196,Levocetirizine 2.5mg,2,-2.09664,-0.36206
+MED197,Levocetirizine 2.5mg (LifeSpring Pharma),1,1.04118,0.04922
+MED198,Levocetirizine 2.5mg (Stellar Formulations),2,-2.52261,-0.36446
+MED199,Montelukast + Levocetirizine 10mg/5mg (Aarogya Formulations),1,-0.92377,-1.89052
+MED200,Montelukast + Levocetirizine 10mg/5mg (HealthAxis Pharma),1,0.27457,-1.2702
+MED201,Montelukast + Levocetirizine 10mg/5mg (NovaMed Laboratories),1,-0.04954,-1.36594
+MED202,Montelukast + Levocetirizine 10mg/5mg (Stellar Formulations),1,1.03024,-1.56215
+MED203,Montelukast + Levocetirizine 10mg/5mg (TrueLife Remedies),1,-0.59828,-1.33171
+MED204,Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),3,-0.80094,-1.99943
+MED205,Domperidone 10mg (BlueCrest Pharma),2,0.1288,0.76257
+MED206,Domperidone 10mg (CarePlus Laboratories),0,1.72924,0.99954
+MED207,Domperidone 10mg (CureLine Healthcare),2,-0.81254,0.66617
+MED208,Domperidone 10mg (HealthAxis Pharma),2,-2.35659,0.64827
+MED209,Domperidone 10mg (LifeSpring Pharma),2,-2.21803,0.38774
+MED210,Domperidone 10mg (NovaMed Laboratories),2,-1.04658,0.95916
+MED211,Loperamide 2mg (Aarogya Formulations),2,-2.62808,0.99615
+MED212,Loperamide 2mg (BlueCrest Pharma),2,-2.02943,1.46712
+MED213,Loperamide 2mg (LifeSpring Pharma),2,-2.2462,1.74309
+MED214,Omeprazole 20mg (Aarogya Formulations),2,-1.86003,0.46826
+MED215,Omeprazole 20mg (CarePlus Laboratories),1,0.96262,0.88752
+MED216,Omeprazole 20mg (CureLine Healthcare),2,-2.17507,0.28268
+MED217,Omeprazole 20mg (HealthAxis Pharma),2,-2.45635,0.25309
+MED218,Omeprazole 20mg (LifeSpring Pharma),2,-1.58674,0.26839
+MED219,Omeprazole 20mg (TrueLife Remedies),1,1.16301,0.90631
+MED220,Omeprazole 20mg (VitaCure Remedies),2,-1.36168,0.4936
+MED221,Omeprazole 40mg,2,-1.93876,0.48954
+MED222,Omeprazole 40mg (ApexLife Pharma),2,0.05437,0.62805
+MED223,Omeprazole 40mg (LifeSpring Pharma),1,0.77165,0.67553
+MED224,Omeprazole 40mg (Summit Lifesciences),1,0.33503,0.12245
+MED225,Omeprazole 40mg (TrueLife Remedies),2,-2.09099,-0.04292
+MED226,Ondansetron 4mg (Aarogya Formulations),2,-0.63066,0.60624
+MED227,Ondansetron 4mg (BlueCrest Pharma),2,-2.2531,0.69319
+MED228,Ondansetron 4mg (CarePlus Laboratories),2,-1.19948,0.74139
+MED229,Ondansetron 4mg (CureLine Healthcare),2,-1.70044,0.59229
+MED230,Ondansetron 4mg (LifeSpring Pharma),2,-2.5427,-0.0101
+MED231,Ondansetron 4mg (NovaMed Laboratories),2,-1.56431,0.59933
+MED232,Ondansetron 4mg (Stellar Formulations),2,-1.43348,-0.01376
+MED233,Ondansetron 4mg (Summit Lifesciences),2,-1.35768,0.7433
+MED234,Ondansetron 4mg (VitaCure Remedies),1,0.85185,0.48183
+MED235,Ondansetron 8mg,3,-1.49822,-0.06906
+MED236,Ondansetron 8mg (LifeSpring Pharma),0,5.5562,0.50691
+MED237,Ondansetron 8mg (TrueLife Remedies),2,-1.93267,-0.03851
+MED238,Ondansetron 8mg (VitaCure Remedies),2,-1.24036,0.48785
+MED239,ORS Powder 21.8g (HealthAxis Pharma),0,4.74299,2.65771
+MED240,ORS Powder 21.8g (LifeSpring Pharma),2,-2.13027,2.19763
+MED241,ORS Powder 21.8g (Stellar Formulations),2,1.13093,1.99589
+MED242,ORS Powder 21.8g (Summit Lifesciences),2,-3.51228,1.63186
+MED243,ORS Powder 21.8g (TrueLife Remedies),3,-3.13177,1.31518
+MED244,ORS Powder 21.8g (VitaCure Remedies),2,-2.05396,1.8181
+MED245,Pantoprazole 40mg (BlueCrest Pharma),1,0.64494,0.36214
+MED246,Pantoprazole 40mg (CarePlus Laboratories),1,-0.6878,-0.11293
+MED247,Pantoprazole 40mg (NovaMed Laboratories),1,1.08484,-0.09352
+MED248,Pantoprazole 40mg (TrueLife Remedies),2,-2.23468,-0.42465
+MED249,Pantoprazole 20mg,1,1.49309,0.35076
+MED250,Pantoprazole 20mg (ApexLife Pharma),1,-0.65494,0.00964
+MED251,Pantoprazole 20mg (BlueCrest Pharma),1,-1.19164,-0.06165
+MED252,Pantoprazole 20mg (CarePlus Laboratories),1,-1.87591,-0.80859
+MED253,Pantoprazole 20mg (Stellar Formulations),1,-1.38978,-0.61006
+MED254,Pantoprazole 20mg (Summit Lifesciences),1,-0.66049,-0.60958
+MED255,Pantoprazole 20mg (VitaCure Remedies),1,-1.12358,-0.65071
+MED256,Amlodipine 5mg (BlueCrest Pharma),0,1.47725,1.43182
+MED257,Amlodipine 5mg (LifeSpring Pharma),0,1.29937,1.53723
+MED258,Amlodipine 5mg (NovaMed Laboratories),2,-0.65794,1.54696
+MED259,Amlodipine 5mg (Stellar Formulations),2,-0.88654,1.43473
+MED260,Amlodipine 5mg (VitaCure Remedies),2,-1.97284,1.05108
+MED261,Amlodipine 2.5mg,2,-1.09327,0.80826
+MED262,Amlodipine 2.5mg (LifeSpring Pharma),2,0.3133,1.21711
+MED263,Amlodipine 2.5mg (Stellar Formulations),2,-0.21907,0.86608
+MED264,Amlodipine 2.5mg (Summit Lifesciences),0,1.73392,1.48607
+MED265,Amlodipine 2.5mg (TrueLife Remedies),0,3.35846,0.87769
+MED266,Amlodipine 2.5mg (VitaCure Remedies),2,-1.47448,0.96373
+MED267,Amlodipine 10mg,2,-0.77973,0.93353
+MED268,Amlodipine 10mg (LifeSpring Pharma),2,-1.45249,0.91623
+MED269,Amlodipine 10mg (Stellar Formulations),0,5.02586,1.19167
+MED270,Aspirin 75mg (Aarogya Formulations),2,0.27914,3.19113
+MED271,Aspirin 75mg (ApexLife Pharma),2,-2.96726,3.64257
+MED272,Aspirin 75mg (BlueCrest Pharma),0,3.56177,4.01903
+MED273,Aspirin 75mg (CureLine Healthcare),2,-0.80064,4.02126
+MED274,Aspirin 75mg (LifeSpring Pharma),2,-3.25606,3.11641
+MED275,Aspirin 75mg (NovaMed Laboratories),2,-2.65217,3.4541
+MED276,Aspirin 75mg (Stellar Formulations),2,1.24731,3.61455
+MED277,Aspirin 150mg,2,-2.87525,3.49161
+MED278,Aspirin 150mg (CarePlus Laboratories),2,0.05492,4.27024
+MED279,Aspirin 150mg (Summit Lifesciences),2,-1.88814,3.37034
+MED280,Aspirin 150mg (TrueLife Remedies),2,-0.24291,3.13596
+MED281,Atorvastatin 10mg (Aarogya Formulations),1,-0.59198,0.07646
+MED282,Atorvastatin 10mg (ApexLife Pharma),1,0.41058,-0.23782
+MED283,Atorvastatin 10mg (LifeSpring Pharma),0,2.33983,0.25036
+MED284,Atorvastatin 10mg (Summit Lifesciences),0,2.5009,-0.40211
+MED285,Atorvastatin 20mg,1,1.46476,-0.57218
+MED286,Atorvastatin 20mg (BlueCrest Pharma),1,1.20056,-0.59128
+MED287,Atorvastatin 20mg (CarePlus Laboratories),1,0.36179,-0.71306
+MED288,Atorvastatin 40mg,0,1.83398,-0.07485
+MED289,Atorvastatin 40mg (CureLine Healthcare),1,-0.73397,-0.97422
+MED290,Atorvastatin 40mg (LifeSpring Pharma),1,-1.02146,-1.09732
+MED291,Atorvastatin 40mg (VitaCure Remedies),1,-0.12732,-0.56786
+MED292,Clopidogrel 75mg (Aarogya Formulations),0,1.72356,-0.2098
+MED293,Clopidogrel 75mg (BlueCrest Pharma),1,0.52861,-0.69012
+MED294,Clopidogrel 75mg (CureLine Healthcare),1,0.5767,-0.47638
+MED295,Clopidogrel 75mg (NovaMed Laboratories),1,-0.23542,-0.31145
+MED296,Clopidogrel 75mg (Stellar Formulations),1,0.30206,-0.53858
+MED297,Losartan 50mg (Aarogya Formulations),1,-0.57933,-0.2592
+MED298,Losartan 50mg (CarePlus Laboratories),1,-1.09026,-0.32886
+MED299,Losartan 50mg (NovaMed Laboratories),0,5.3002,0.2714
+MED300,Losartan 25mg,1,-0.9474,-0.06223
+MED301,Losartan 25mg (CarePlus Laboratories),0,6.18938,-0.34313
+MED302,Losartan 25mg (HealthAxis Pharma),1,1.60958,-0.08001
+MED303,Losartan 25mg (NovaMed Laboratories),3,-1.09012,-1.00038
+MED304,Losartan 25mg (Summit Lifesciences),1,-1.1431,-0.57743
+MED305,Losartan 25mg (TrueLife Remedies),0,2.94051,-0.16119
+MED306,Metoprolol 50mg (Aarogya Formulations),1,1.02144,0.46412
+MED307,Metoprolol 50mg (BlueCrest Pharma),0,4.58058,0.98441
+MED308,Metoprolol 50mg (CureLine Healthcare),1,0.06833,-0.03001
+MED309,Metoprolol 50mg (NovaMed Laboratories),2,-1.03627,-0.12
+MED310,Metoprolol 25mg,0,1.95598,0.22849
+MED311,Metoprolol 25mg (CureLine Healthcare),0,2.05942,0.26675
+MED312,Metoprolol 25mg (HealthAxis Pharma),1,-0.05842,0.42261
+MED313,Metoprolol 25mg (LifeSpring Pharma),1,-0.79728,-0.05634
+MED314,Rosuvastatin 10mg (BlueCrest Pharma),0,2.45847,-0.99674
+MED315,Rosuvastatin 10mg (NovaMed Laboratories),1,-0.14286,-0.79776
+MED316,Rosuvastatin 10mg (Summit Lifesciences),0,2.59959,-0.91127
+MED317,Rosuvastatin 5mg,1,0.75281,-1.07076
+MED318,Rosuvastatin 5mg (BlueCrest Pharma),1,-0.36415,-1.69695
+MED319,Rosuvastatin 5mg (NovaMed Laboratories),0,6.28615,-0.59142
+MED320,Rosuvastatin 5mg (Stellar Formulations),0,2.32487,-1.49735
+MED321,Rosuvastatin 5mg (VitaCure Remedies),1,0.44146,-1.09021
+MED322,Rosuvastatin 20mg,1,2.03348,-1.50244
+MED323,Rosuvastatin 20mg (NovaMed Laboratories),1,1.18756,-1.59845
+MED324,Rosuvastatin 20mg (Stellar Formulations),0,2.76134,-1.33448
+MED325,Rosuvastatin 20mg (Summit Lifesciences),3,-0.68911,-2.04667
+MED326,Rosuvastatin 20mg (VitaCure Remedies),0,6.08919,-1.01712
+MED327,Telmisartan 40mg (Aarogya Formulations),0,8.22166,1.61427
+MED328,Telmisartan 40mg (CureLine Healthcare),1,0.26387,-0.14521
+MED329,Telmisartan 40mg (NovaMed Laboratories),0,4.09946,-0.44235
+MED330,Telmisartan 40mg (Stellar Formulations),1,-0.71689,-0.74073
+MED331,Telmisartan 40mg (VitaCure Remedies),1,0.04767,-0.16172
+MED332,Telmisartan 20mg,0,2.34494,-0.54723
+MED333,Telmisartan 20mg (HealthAxis Pharma),1,0.02989,-1.48073
+MED334,Telmisartan 20mg (LifeSpring Pharma),1,-0.17684,-0.79492
+MED335,Telmisartan 20mg (Summit Lifesciences),1,-0.78872,-0.73848
+MED336,Telmisartan 80mg,1,1.00605,-0.56868
+MED337,Telmisartan 80mg (ApexLife Pharma),1,0.95509,-1.10947
+MED338,Telmisartan 80mg (BlueCrest Pharma),0,3.50257,-0.85153
+MED339,Telmisartan 80mg (CureLine Healthcare),1,0.10693,-0.84974
+MED340,Telmisartan 80mg (NovaMed Laboratories),1,-0.03635,-1.66077
+MED341,Telmisartan 80mg (Stellar Formulations),1,0.97584,-0.67694
+MED342,Telmisartan 80mg (Summit Lifesciences),1,1.09695,-0.52306
+MED343,Telmisartan 80mg (TrueLife Remedies),0,2.03848,-1.03685
+MED344,Gliclazide 80mg (Aarogya Formulations),0,3.06772,0.29189
+MED345,Gliclazide 80mg (BlueCrest Pharma),1,-0.25764,0.34433
+MED346,Gliclazide 80mg (CarePlus Laboratories),1,1.1,0.45594
+MED347,Gliclazide 80mg (LifeSpring Pharma),1,0.24795,0.53239
+MED348,Gliclazide 80mg (TrueLife Remedies),2,-1.18586,0.11598
+MED349,Gliclazide 40mg,1,0.65773,0.22757
+MED350,Gliclazide 40mg (BlueCrest Pharma),2,-1.12536,-0.01025
+MED351,Gliclazide 40mg (Lumina Pharma),1,0.49966,0.15637
+MED352,Gliclazide 40mg (NovaMed Laboratories),3,-2.344,-0.94195
+MED353,Gliclazide 40mg (Stellar Formulations),3,-1.48534,-0.70084
+MED354,Gliclazide 40mg (Summit Lifesciences),0,3.43818,0.24902
+MED355,Glimepiride 2mg (BlueCrest Pharma),1,-0.50909,-0.99263
+MED356,Glimepiride 2mg (CarePlus Laboratories),1,0.9899,-1.0893
+MED357,Glimepiride 2mg (Stellar Formulations),0,2.15098,-1.22732
+MED358,Glimepiride 2mg (VitaCure Remedies),0,2.06285,-0.57969
+MED359,Glimepiride 1mg,1,-0.56536,-0.80237
+MED360,Glimepiride 1mg (CarePlus Laboratories),0,3.245,-1.0401
+MED361,Glimepiride 1mg (CureLine Healthcare),0,2.26774,-0.93163
+MED362,Glimepiride 1mg (HealthAxis Pharma),0,2.37062,-1.10438
+MED363,Glimepiride 1mg (Summit Lifesciences),1,0.26236,-1.6933
+MED364,Glimepiride 1mg (TrueLife Remedies),0,3.05557,-0.63911
+MED365,Glimepiride 3mg,3,-0.34632,-1.63378
+MED366,Glimepiride 3mg (ApexLife Pharma),0,2.92542,-1.80399
+MED367,Glimepiride 3mg (CureLine Healthcare),1,0.75528,-1.10097
+MED368,Glimepiride 3mg (NovaMed Laboratories),1,-0.12335,-1.62171
+MED369,Glimepiride 3mg (Stellar Formulations),1,0.22917,-1.64408
+MED370,Glimepiride 3mg (Summit Lifesciences),1,0.13859,-1.51553
+MED371,Glimepiride 3mg (TrueLife Remedies),1,-0.70864,-1.35363
+MED372,Glimepiride 3mg (VitaCure Remedies),1,0.62196,-1.16434
+MED373,Glimepiride + Metformin 2mg/500mg (Aarogya Formulations),1,0.32032,-0.5028
+MED374,Glimepiride + Metformin 2mg/500mg (Stellar Formulations),1,0.63763,-0.76168
+MED375,Glimepiride + Metformin 2mg/500mg (Summit Lifesciences),1,-0.98996,-1.03836
+MED376,Glimepiride + Metformin 1mg/500mg,1,0.3325,-1.59685
+MED377,Glimepiride + Metformin 1mg/500mg (CarePlus Laboratories),1,0.00532,-1.57597
+MED378,Glimepiride + Metformin 1mg/500mg (Stellar Formulations),1,0.3285,-1.71869
+MED379,Glimepiride + Metformin 1mg/500mg (Summit Lifesciences),1,0.27408,-1.64118
+MED380,Glimepiride + Metformin 1mg/500mg (VitaCure Remedies),0,2.41963,-1.70562
+MED381,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),0,6.91147,0.28501
+MED382,Metformin 500mg (CureLine Healthcare),2,-0.92298,1.65844
+MED383,Metformin 500mg (Stellar Formulations),0,4.5553,1.72313
+MED384,Metformin 500mg (TrueLife Remedies),2,-1.0684,1.77686
+MED385,Metformin 850mg,0,5.115,1.66166
+MED386,Metformin 850mg (CureLine Healthcare),2,0.24346,1.67899
+MED387,Metformin 850mg (Stellar Formulations),2,-1.28445,1.02161
+MED388,Metformin 850mg (VitaCure Remedies),2,-1.34365,0.96198
+MED389,Metformin 1000mg,3,-0.99565,0.67997
+MED390,Metformin 1000mg (BlueCrest Pharma),2,-0.45647,1.08253
+MED391,Metformin 1000mg (HealthAxis Pharma),2,1.06693,1.43225
+MED392,Metformin 1000mg (LifeSpring Pharma),0,3.62313,0.7094
+MED393,Metformin 1000mg (TrueLife Remedies),2,-0.22253,1.25775
+MED394,Sitagliptin 100mg (BlueCrest Pharma),1,0.29305,-2.15553
+MED395,Sitagliptin 100mg (CarePlus Laboratories),0,3.64108,-2.62554
+MED396,Sitagliptin 100mg (HealthAxis Pharma),0,7.25462,-2.30482
+MED397,Sitagliptin 50mg,0,2.63144,-2.53854
+MED398,Sitagliptin 50mg (ApexLife Pharma),1,1.52728,-3.02714
+MED399,Sitagliptin 50mg (BlueCrest Pharma),0,4.74331,-2.66444
+MED400,Sitagliptin 50mg (Crestview Pharma),1,1.55143,-2.50443
+MED401,Sitagliptin 50mg (HealthAxis Pharma),1,0.8609,-2.2378
+MED402,Sitagliptin 50mg (NovaMed Laboratories),1,2.58435,-2.84215
+MED403,Sitagliptin 50mg (Stellar Formulations),1,1.0333,-2.69078
+MED404,Sitagliptin 50mg (Summit Lifesciences),1,0.92153,-2.19855
+MED405,Sitagliptin 50mg (TrueLife Remedies),1,0.28671,-3.05405
+MED406,Ambroxol + Levosalbutamol Syrup 100ml (Aarogya Formulations),1,-1.72207,-1.01837
+MED407,Ambroxol + Levosalbutamol Syrup 100ml (NovaMed Laboratories),1,1.31012,-0.80133
+MED408,Ambroxol + Levosalbutamol Syrup 100ml (Summit Lifesciences),1,-1.45076,-1.38213
+MED409,Ambroxol + Levosalbutamol Syrup 100ml (VitaCure Remedies),1,-1.73923,-0.95725
+MED410,Ambroxol + Levosalbutamol Syrup 60ml,1,-0.82531,-1.27511
+MED411,Ambroxol + Levosalbutamol Syrup 60ml (NovaMed Laboratories),1,0.61729,-0.50425
+MED412,Budesonide Inhaler 200mcg (ApexLife Pharma),1,-0.11973,-1.84749
+MED413,Budesonide Inhaler 200mcg (BlueCrest Pharma),1,-1.46333,-2.63541
+MED414,Budesonide Inhaler 200mcg (VitaCure Remedies),1,0.3093,-1.93632
+MED415,Budesonide Inhaler 100mcg,1,-0.22362,-1.92175
+MED416,Dextromethorphan Syrup 100ml (HealthAxis Pharma),0,1.6718,-0.08204
+MED417,Dextromethorphan Syrup 100ml (LifeSpring Pharma),1,-0.89236,-0.44829
+MED418,Dextromethorphan Syrup 100ml (Summit Lifesciences),1,-1.05492,-0.30317
+MED419,Dextromethorphan Syrup 100ml (TrueLife Remedies),3,-2.75789,-1.39592
+MED420,Montelukast 10mg (CureLine Healthcare),1,0.15331,-1.86237
+MED421,Montelukast 10mg (LifeSpring Pharma),1,-0.5232,-1.98643
+MED422,Montelukast 10mg (NovaMed Laboratories),1,-1.0847,-1.79414
+MED423,Montelukast 10mg (Summit Lifesciences),3,-1.95684,-2.42273
+MED424,Montelukast 10mg (TrueLife Remedies),1,-0.78673,-1.76296
+MED425,Montelukast 5mg,1,-0.48806,-1.57902
+MED426,Montelukast 5mg (CarePlus Laboratories),1,-1.82351,-1.66982
+MED427,Montelukast 5mg (NovaMed Laboratories),1,-1.21514,-2.09664
+MED428,Montelukast 5mg (Summit Lifesciences),1,-1.19818,-1.4712
+MED429,Montelukast 5mg (TrueLife Remedies),1,1.55929,-1.42257
+MED430,Salbutamol Inhaler 100mcg (Aarogya Formulations),1,-2.3326,-1.32874
+MED431,Salbutamol Inhaler 100mcg (ApexLife Pharma),1,0.67779,-0.6428
+MED432,Salbutamol Inhaler 100mcg (Stellar Formulations),0,4.66617,-0.16585
+MED433,Salbutamol Inhaler 100mcg (Summit Lifesciences),1,-1.19869,-1.66422
+MED434,Salbutamol Inhaler 100mcg (TrueLife Remedies),3,-2.60049,-2.19424
+MED435,Salbutamol Inhaler 100mcg (VitaCure Remedies),1,-0.25954,-1.09137
+MED436,Salbutamol Inhaler 200mcg,1,0.1937,-1.05947
+MED437,Salbutamol Inhaler 200mcg (BlueCrest Pharma),3,-2.07887,-2.425
+MED438,Salbutamol Inhaler 200mcg (CarePlus Laboratories),3,-3.01723,-2.67368
+MED439,Salbutamol Inhaler 200mcg (HealthAxis Pharma),1,-0.90714,-1.96818
+MED440,Salbutamol Inhaler 200mcg (Stellar Formulations),1,-0.51314,-1.80758
+MED441,Salbutamol Inhaler 200mcg (Summit Lifesciences),1,-0.95831,-1.22247
+MED442,Calcium + Vitamin D3 500mg/250IU (Aarogya Formulations),1,-0.55049,-0.90371
+MED443,Calcium + Vitamin D3 500mg/250IU (ApexLife Pharma),0,1.86956,-0.04508
+MED444,Calcium + Vitamin D3 500mg/250IU (CureLine Healthcare),1,0.56208,-0.84078
+MED445,Calcium + Vitamin D3 500mg/250IU (HealthAxis Pharma),1,1.5348,-0.45171
+MED446,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),0,2.67337,-0.28283
+MED447,Calcium + Vitamin D3 500mg/250IU (Summit Lifesciences),1,-0.41617,-0.64461
+MED448,Calcium + Vitamin D3 500mg/250IU (TrueLife Remedies),0,2.44388,-0.40928
+MED449,Iron + Folic Acid 100mg/500mcg (BlueCrest Pharma),1,-1.28437,-0.41468
+MED450,Iron + Folic Acid 100mg/500mcg (CarePlus Laboratories),1,-0.31052,-0.23347
+MED451,Iron + Folic Acid 100mg/500mcg (CureLine Healthcare),2,-1.75471,-0.28077
+MED452,Iron + Folic Acid 100mg/500mcg (HealthAxis Pharma),1,-0.65664,-0.5016
+MED453,Iron + Folic Acid 100mg/500mcg (LifeSpring Pharma),1,-0.75129,-0.32243
+MED454,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),0,3.35798,0.20086
+MED455,Iron + Folic Acid 100mg/500mcg (Summit Lifesciences),2,-1.25866,0.0445
+MED456,Iron + Folic Acid 100mg/500mcg (VitaCure Remedies),1,-0.52981,-0.00222
+MED457,Multivitamin B-complex+C (BlueCrest Pharma),2,-1.53901,0.80986
+MED458,Multivitamin B-complex+C (HealthAxis Pharma),2,-1.79068,0.5571
+MED459,Multivitamin B-complex+C (Summit Lifesciences),0,4.48895,0.97908
+MED460,Multivitamin B-complex+C (TrueLife Remedies),2,0.8308,1.16605
+MED461,Vitamin C Chewable 500mg (Aarogya Formulations),0,2.00973,1.78296
+MED462,Vitamin C Chewable 500mg (ApexLife Pharma),2,-1.10161,1.96567
+MED463,Vitamin C Chewable 500mg (HealthAxis Pharma),2,-1.42408,1.9723
+MED464,Vitamin C Chewable 500mg (TrueLife Remedies),2,-1.90052,1.68804
+MED465,Vitamin C Chewable 1000mg,2,0.81888,1.47059
+MED466,Vitamin C Chewable 1000mg (ApexLife Pharma),0,3.79344,2.23986
+MED467,Vitamin C Chewable 1000mg (BlueCrest Pharma),2,-0.74098,1.38084
+MED468,Vitamin C Chewable 1000mg (CarePlus Laboratories),2,1.22667,1.56232
+MED469,Vitamin C Chewable 1000mg (CureLine Healthcare),2,-0.81172,1.026
+MED470,Vitamin C Chewable 1000mg (NovaMed Laboratories),2,0.75,1.77731
+MED471,Vitamin C Chewable 1000mg (Summit Lifesciences),2,-1.34027,1.28109
+MED472,Vitamin C Chewable 1000mg (TrueLife Remedies),2,-1.72196,1.57982
+MED473,Vitamin C Chewable 1000mg (VitaCure Remedies),2,-0.45961,1.69086
+MED474,Vitamin D3 60000IU (TrueLife Remedies),1,-0.71932,-0.70401
+MED475,Vitamin D3 60000IU (VitaCure Remedies),3,-0.63429,-1.16651
+MED476,Vitamin D3 1000IU,1,0.24251,-1.15917
+MED477,Vitamin D3 1000IU (Summit Lifesciences),1,-0.14504,-1.15713
+MED478,Calamine Lotion 100ml (CureLine Healthcare),2,-1.89592,-0.34353
+MED479,Calamine Lotion 100ml (LifeSpring Pharma),2,-2.21318,-0.19708
+MED480,Calamine Lotion 100ml (Stellar Formulations),2,-0.52172,0.75085
+MED481,Calamine Lotion 100ml (TrueLife Remedies),2,-1.67936,-0.06651
+MED482,Clotrimazole Cream 1% (ApexLife Pharma),1,-0.95992,-0.37788
+MED483,Clotrimazole Cream 1% (CureLine Healthcare),1,-1.59515,-0.47324
+MED484,Clotrimazole Cream 2%,1,-1.43954,-0.51483
+MED485,Clotrimazole Cream 2% (Stellar Formulations),3,-3.47063,-1.52921
+MED486,Clotrimazole Cream 2% (TrueLife Remedies),2,-2.90144,-0.90421
+MED487,Fusidic Acid Cream 2% (ApexLife Pharma),1,-2.05494,-1.77347
+MED488,Fusidic Acid Cream 2% (BlueCrest Pharma),1,-2.07338,-1.6233
+MED489,Fusidic Acid Cream 2% (VitaCure Remedies),3,-2.12725,-2.04699
+MED490,Hydrocortisone Cream 1% (CarePlus Laboratories),2,-0.87159,0.728
+MED491,Hydrocortisone Cream 1% (CureLine Healthcare),1,-0.61065,0.08084
+MED492,Hydrocortisone Cream 1% (Summit Lifesciences),3,-3.33546,-0.16841
+MED493,Ketoconazole Shampoo 2% (Aarogya Formulations),1,-1.23444,-1.61331
+MED494,Ketoconazole Shampoo 2% (LifeSpring Pharma),1,-0.95275,-1.66197
+MED495,Ketoconazole Shampoo 2% (VitaCure Remedies),1,-1.73142,-2.31163
+MED496,Mupirocin Ointment 2% (ApexLife Pharma),1,-0.91868,-0.84432
+MED497,Mupirocin Ointment 2% (CarePlus Laboratories),1,-0.78909,-0.61077
+MED498,Mupirocin Ointment 2% (NovaMed Laboratories),3,-2.2262,-1.95906
+MED499,Mupirocin Ointment 2% (Summit Lifesciences),1,-1.30105,-1.12038
+MED500,Mupirocin Ointment 2% (VitaCure Remedies),1,-1.89763,-1.37073

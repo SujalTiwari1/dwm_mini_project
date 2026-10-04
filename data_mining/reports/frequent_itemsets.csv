@@ -1,0 +1,441 @@
+itemset,itemset_size,support,support_count
+Telmisartan 40mg [MED037],1,0.029896,18327
+Azithromycin 250mg (LifeSpring Pharma) [MED117],1,0.029718,18218
+Naproxen 500mg (CarePlus Laboratories) [MED086],1,0.027979,17152
+Ondansetron 8mg (LifeSpring Pharma) [MED236],1,0.027067,16593
+ORS Powder 21.8g (HealthAxis Pharma) [MED239],1,0.026462,16222
+Cetirizine 5mg (TrueLife Remedies) [MED173],1,0.026343,16149
+Omeprazole 20mg [MED033],1,0.026126,16016
+Telmisartan 40mg (Aarogya Formulations) [MED327],1,0.026051,15970
+Amlodipine 10mg (Stellar Formulations) [MED269],1,0.025996,15936
+Sitagliptin 100mg (HealthAxis Pharma) [MED396],1,0.025433,15591
+Metformin 850mg [MED385],1,0.023342,14309
+Azithromycin 250mg (BlueCrest Pharma) [MED113],1,0.022999,14099
+Rosuvastatin 20mg (VitaCure Remedies) [MED326],1,0.02281,13983
+Losartan 25mg (CarePlus Laboratories) [MED301],1,0.021984,13477
+Amlodipine 5mg [MED011],1,0.021873,13409
+Multivitamin B-complex+C (Summit Lifesciences) [MED459],1,0.020767,12731
+Mefenamic Acid 500mg [MED139],1,0.020472,12550
+Metformin 500mg (Stellar Formulations) [MED383],1,0.020203,12385
+Cetirizine 10mg [MED007],1,0.019743,12103
+Rosuvastatin 5mg (NovaMed Laboratories) [MED319],1,0.019593,12011
+Glimepiride + Metformin 1mg/500mg (Zenith BioPharma) [MED381],1,0.019391,11887
+Paracetamol 650mg [MED005],1,0.018355,11252
+Pantoprazole 40mg [MED009],1,0.017825,10927
+Paracetamol 500mg [MED001],1,0.017803,10914
+Losartan 50mg (NovaMed Laboratories) [MED299],1,0.016724,10252
+Aspirin 75mg (BlueCrest Pharma) [MED272],1,0.01668,10225
+Salbutamol Inhaler 100mcg (Stellar Formulations) [MED432],1,0.015295,9376
+Cetirizine 5mg (CarePlus Laboratories) [MED169],1,0.013737,8421
+Atorvastatin 10mg [MED012],1,0.013207,8096
+Mefenamic Acid 500mg (Kavach Healthcare) [MED142],1,0.012683,7775
+Amoxicillin + Clavulanic Acid 375mg [MED104],1,0.01268,7773
+Glimepiride + Metformin 2mg/500mg [MED043],1,0.012593,7720
+Vitamin C Chewable 1000mg (ApexLife Pharma) [MED466],1,0.012486,7654
+Domperidone 10mg [MED034],1,0.012334,7561
+Iron + Folic Acid 100mg/500mcg (Stellar Formulations) [MED454],1,0.012115,7427
+Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories) [MED105],1,0.011913,7303
+Metformin 1000mg (LifeSpring Pharma) [MED392],1,0.011424,7003
+Metoprolol 50mg (BlueCrest Pharma) [MED307],1,0.011334,6948
+Cefixime 100mg (VitaCure Remedies) [MED127],1,0.011181,6854
+Paracetamol Suspension 125mg/5ml (LifeSpring Pharma) [MED158],1,0.010973,6727
+Telmisartan 40mg (NovaMed Laboratories) [MED329],1,0.010905,6685
+Ambroxol + Levosalbutamol Syrup 100ml [MED015],1,0.010528,6454
+Metformin 500mg [MED013],1,0.010207,6257
+Mefenamic Acid 500mg (NovaMed Laboratories) [MED144],1,0.009822,6021
+Amlodipine 2.5mg (TrueLife Remedies) [MED265],1,0.009637,5908
+Naproxen 250mg (CureLine Healthcare) [MED082],1,0.008832,5414
+Cetirizine 10mg (CureLine Healthcare) [MED163],1,0.008822,5408
+Paracetamol 500mg (HealthAxis Pharma) [MED091],1,0.008655,5306
+Gliclazide 40mg (Summit Lifesciences) [MED354],1,0.008336,5110
+Glimepiride 2mg [MED014],1,0.007559,4634
+Paracetamol Suspension 250mg/5ml (CureLine Healthcare) [MED155],1,0.007305,4478
+Montelukast + Levocetirizine 10mg/5mg [MED031],1,0.006753,4140
+Vitamin C Chewable 500mg (Aarogya Formulations) [MED461],1,0.006195,3798
+Sitagliptin 50mg (BlueCrest Pharma) [MED399],1,0.006148,3769
+Gliclazide 80mg (Aarogya Formulations) [MED344],1,0.006137,3762
+Dextromethorphan Syrup 100ml [MED048],1,0.006008,3683
+Domperidone 10mg (CarePlus Laboratories) [MED206],1,0.00599,3672
+Diclofenac 50mg (CarePlus Laboratories) [MED060],1,0.005892,3612
+Vitamin C Chewable 500mg [MED017],1,0.005842,3581
+Montelukast 10mg [MED046],1,0.005832,3575
+Aspirin 75mg [MED042],1,0.005638,3456
+Multivitamin B-complex+C [MED049],1,0.005496,3369
+ORS Powder 21.8g (Stellar Formulations) [MED241],1,0.005455,3344
+Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma) [MED446],1,0.005447,3339
+Cetirizine 10mg (TrueLife Remedies) [MED167],1,0.005331,3268
+Ciprofloxacin 250mg (LifeSpring Pharma) [MED130],1,0.005275,3234
+Omeprazole 20mg (TrueLife Remedies) [MED219],1,0.005258,3223
+Naproxen 250mg (VitaCure Remedies) [MED084],1,0.005186,3179
+Pantoprazole 20mg [MED249],1,0.005083,3116
+Telmisartan 80mg (BlueCrest Pharma) [MED338],1,0.005049,3095
+Losartan 25mg (TrueLife Remedies) [MED305],1,0.004975,3050
+Glimepiride 1mg (CarePlus Laboratories) [MED360],1,0.004904,3006
+Ibuprofen 200mg [MED073],1,0.004817,2953
+Clotrimazole Cream 1% [MED019],1,0.004815,2952
+Calcium + Vitamin D3 500mg/250IU (TrueLife Remedies) [MED448],1,0.004799,2942
+Aspirin 75mg (Stellar Formulations) [MED276],1,0.004784,2933
+Omeprazole 40mg (LifeSpring Pharma) [MED223],1,0.004732,2901
+Dextromethorphan Syrup 100ml (HealthAxis Pharma) [MED416],1,0.00466,2857
+Glimepiride 3mg (ApexLife Pharma) [MED366],1,0.004631,2839
+Ibuprofen 600mg (NovaMed Laboratories) [MED081],1,0.004623,2834
+Ibuprofen 400mg (HealthAxis Pharma) [MED069],1,0.004574,2804
+Cefixime 200mg [MED024],1,0.004541,2784
+Omeprazole 20mg (CarePlus Laboratories) [MED215],1,0.004532,2778
+Sitagliptin 100mg (CarePlus Laboratories) [MED395],1,0.004515,2768
+Amoxicillin 250mg (LifeSpring Pharma) [MED097],1,0.004512,2766
+Ibuprofen 600mg (BlueCrest Pharma) [MED079],1,0.004501,2759
+Rosuvastatin 20mg (Stellar Formulations) [MED324],1,0.004475,2743
+Levocetirizine 2.5mg (LifeSpring Pharma) [MED197],1,0.004406,2701
+Ibuprofen 600mg [MED078],1,0.004395,2694
+Aspirin 75mg (Aarogya Formulations) [MED270],1,0.004365,2676
+Amlodipine 5mg (BlueCrest Pharma) [MED256],1,0.004318,2647
+Fexofenadine 120mg (BlueCrest Pharma) [MED182],1,0.004269,2617
+Azithromycin 500mg (Aarogya Formulations) [MED108],1,0.004202,2576
+Metoprolol 50mg [MED039],1,0.004165,2553
+Ondansetron 4mg (VitaCure Remedies) [MED234],1,0.00416,2550
+Calcium + Vitamin D3 500mg/250IU (HealthAxis Pharma) [MED445],1,0.004143,2540
+Glimepiride + Metformin 1mg/500mg (VitaCure Remedies) [MED380],1,0.004143,2540
+Doxycycline 100mg (Aarogya Formulations) [MED131],1,0.004109,2519
+Pantoprazole 40mg (BlueCrest Pharma) [MED245],1,0.004094,2510
+Omeprazole 40mg (Summit Lifesciences) [MED224],1,0.004091,2508
+Ibuprofen 400mg (NovaMed Laboratories) [MED070],1,0.004055,2486
+Cetirizine 10mg (Stellar Formulations) [MED165],1,0.004036,2474
+Multivitamin B-complex+C (TrueLife Remedies) [MED460],1,0.004026,2468
+Rosuvastatin 10mg [MED040],1,0.004021,2465
+Rosuvastatin 5mg (Stellar Formulations) [MED320],1,0.004019,2464
+Hydrocortisone Cream 1% (CureLine Healthcare) [MED491],1,0.003931,2410
+Glimepiride 1mg (TrueLife Remedies) [MED364],1,0.00393,2409
+Mefenamic Acid 250mg (ApexLife Pharma) [MED135],1,0.003889,2384
+Rosuvastatin 10mg (Summit Lifesciences) [MED316],1,0.003881,2379
+Glimepiride 2mg (Stellar Formulations) [MED357],1,0.003846,2358
+Domperidone 10mg (BlueCrest Pharma) [MED205],1,0.003833,2350
+Glimepiride 1mg (CureLine Healthcare) [MED361],1,0.00383,2348
+Amlodipine 2.5mg (Summit Lifesciences) [MED264],1,0.003804,2332
+Amlodipine 5mg (LifeSpring Pharma) [MED257],1,0.003789,2323
+Fexofenadine 180mg [MED186],1,0.003765,2308
+Pantoprazole 40mg (NovaMed Laboratories) [MED247],1,0.003765,2308
+Metoprolol 25mg [MED310],1,0.003727,2285
+Ambroxol + Levosalbutamol Syrup 100ml (NovaMed Laboratories) [MED407],1,0.003695,2265
+Amoxicillin 250mg (CureLine Healthcare) [MED096],1,0.003657,2242
+Vitamin C Chewable 1000mg [MED465],1,0.003657,2242
+Aspirin 150mg (TrueLife Remedies) [MED280],1,0.003654,2240
+Atorvastatin 10mg (LifeSpring Pharma) [MED283],1,0.003649,2237
+Levocetirizine 5mg (BlueCrest Pharma) [MED191],1,0.003636,2229
+Ambroxol + Levosalbutamol Syrup 60ml (NovaMed Laboratories) [MED411],1,0.00363,2225
+Atorvastatin 10mg (Summit Lifesciences) [MED284],1,0.00361,2213
+Amoxicillin + Clavulanic Acid 625mg [MED027],1,0.003579,2194
+Montelukast + Levocetirizine 10mg/5mg (Stellar Formulations) [MED202],1,0.003543,2172
+Vitamin C Chewable 1000mg (CarePlus Laboratories) [MED468],1,0.003533,2166
+Rosuvastatin 10mg (BlueCrest Pharma) [MED314],1,0.00353,2164
+Vitamin C Chewable 1000mg (NovaMed Laboratories) [MED470],1,0.003522,2159
+Mefenamic Acid 250mg (NovaMed Laboratories) [MED138],1,0.003471,2128
+Calcium + Vitamin D3 500mg/250IU (ApexLife Pharma) [MED443],1,0.003445,2112
+Montelukast 5mg (TrueLife Remedies) [MED429],1,0.003426,2100
+Ibuprofen 400mg [MED021],1,0.003393,2080
+Paracetamol Suspension 125mg/5ml (NovaMed Laboratories) [MED159],1,0.003375,2069
+Glimepiride 2mg (VitaCure Remedies) [MED358],1,0.003329,2041
+Ibuprofen 200mg (TrueLife Remedies) [MED076],1,0.003323,2037
+Telmisartan 20mg [MED332],1,0.003321,2036
+Calamine Lotion 100ml (Stellar Formulations) [MED480],1,0.00331,2029
+Paracetamol Suspension 250mg/5ml (Aarogya Formulations) [MED152],1,0.00331,2029
+Metformin 1000mg (HealthAxis Pharma) [MED391],1,0.003251,1993
+Aceclofenac + Paracetamol 100mg/325mg (VitaCure Remedies) [MED058],1,0.003238,1985
+Metoprolol 50mg (Aarogya Formulations) [MED306],1,0.003236,1984
+Losartan 25mg (HealthAxis Pharma) [MED302],1,0.00323,1980
+Amoxicillin 250mg [MED095],1,0.003223,1976
+Metoprolol 25mg (CureLine Healthcare) [MED311],1,0.003204,1964
+Clopidogrel 75mg (Aarogya Formulations) [MED292],1,0.003196,1959
+Atorvastatin 40mg [MED288],1,0.003187,1954
+Omeprazole 40mg (ApexLife Pharma) [MED222],1,0.003161,1938
+Cefixime 200mg (NovaMed Laboratories) [MED122],1,0.003143,1927
+Cetirizine 5mg (Stellar Formulations) [MED171],1,0.003091,1895
+Sitagliptin 50mg (NovaMed Laboratories) [MED402],1,0.003091,1895
+Diclofenac 50mg (VitaCure Remedies) [MED063],1,0.003062,1877
+Salbutamol Inhaler 100mcg (ApexLife Pharma) [MED431],1,0.002988,1832
+Levocetirizine 5mg [MED030],1,0.002971,1821
+Aspirin 150mg (CarePlus Laboratories) [MED278],1,0.002966,1818
+ORS Powder 21.8g [MED035],1,0.002879,1765
+Amoxicillin 500mg [MED003],1,0.002763,1694
+Atorvastatin 20mg [MED285],1,0.002742,1681
+Rosuvastatin 20mg [MED322],1,0.002714,1664
+Calcium + Vitamin D3 500mg/250IU (CureLine Healthcare) [MED444],1,0.002698,1654
+Ibuprofen 200mg (Summit Lifesciences) [MED075],1,0.002664,1633
+Gliclazide 80mg (CarePlus Laboratories) [MED346],1,0.002648,1623
+Glimepiride 1mg (HealthAxis Pharma) [MED362],1,0.002639,1618
+Montelukast 10mg (CureLine Healthcare) [MED420],1,0.002612,1601
+Mefenamic Acid 500mg (CureLine Healthcare) [MED140],1,0.002608,1599
+Telmisartan 80mg (TrueLife Remedies) [MED343],1,0.002546,1561
+Vitamin C Chewable 1000mg (VitaCure Remedies) [MED473],1,0.002514,1541
+Sitagliptin 50mg [MED397],1,0.002493,1528
+Hydrocortisone Cream 1% (CarePlus Laboratories) [MED490],1,0.002468,1513
+Atorvastatin 20mg (BlueCrest Pharma) [MED286],1,0.002427,1488
+Metformin 850mg (CureLine Healthcare) [MED386],1,0.002387,1463
+Mupirocin Ointment 2% (CarePlus Laboratories) [MED497],1,0.002356,1444
+Azithromycin 250mg (HealthAxis Pharma) [MED116],1,0.002349,1440
+Gliclazide 40mg [MED349],1,0.002294,1406
+Clotrimazole Cream 1% (CureLine Healthcare) [MED483],1,0.002246,1377
+Aceclofenac + Paracetamol 100mg/325mg [MED022],1,0.002243,1375
+Amoxicillin 250mg (NovaMed Laboratories) [MED098],1,0.002238,1372
+Telmisartan 80mg (Summit Lifesciences) [MED342],1,0.002236,1371
+Montelukast + Levocetirizine 10mg/5mg (HealthAxis Pharma) [MED200],1,0.002227,1365
+Ciprofloxacin 500mg [MED025],1,0.002217,1359
+Naproxen 250mg (HealthAxis Pharma) [MED083],1,0.002202,1350
+Ondansetron 4mg (Aarogya Formulations) [MED226],1,0.002202,1350
+Amoxicillin + Clavulanic Acid 375mg (TrueLife Remedies) [MED107],1,0.002183,1338
+Aspirin 75mg (CureLine Healthcare) [MED273],1,0.002111,1294
+Azithromycin 500mg (ApexLife Pharma) [MED109],1,0.002072,1270
+Telmisartan 80mg (Stellar Formulations) [MED341],1,0.002026,1242
+Glimepiride 2mg (CarePlus Laboratories) [MED356],1,0.002002,1227
+Levocetirizine 5mg (NovaMed Laboratories) [MED194],1,0.002002,1227
+Diclofenac 100mg [MED064],1,0.001972,1209
+Vitamin D3 1000IU [MED476],1,0.001971,1208
+Paracetamol Suspension 250mg/5ml (CarePlus Laboratories) [MED154],1,0.001957,1200
+Diclofenac 50mg [MED002],1,0.001944,1192
+Domperidone 10mg (NovaMed Laboratories) [MED210],1,0.001936,1187
+Salbutamol Inhaler 200mcg [MED436],1,0.001931,1184
+Losartan 50mg [MED038],1,0.001925,1180
+Doxycycline 100mg (Summit Lifesciences) [MED134],1,0.001917,1175
+Calcium + Vitamin D3 500mg/250IU (Summit Lifesciences) [MED447],1,0.001889,1158
+Glimepiride + Metformin 2mg/500mg (Stellar Formulations) [MED374],1,0.001842,1129
+Paracetamol 500mg (CarePlus Laboratories) [MED090],1,0.001825,1119
+Pantoprazole 20mg (ApexLife Pharma) [MED250],1,0.001796,1101
+Vitamin C Chewable 500mg (ApexLife Pharma) [MED462],1,0.001785,1094
+Gliclazide 40mg (Lumina Pharma) [MED351],1,0.001783,1093
+Paracetamol Drops 100mg/ml (Aarogya Formulations) [MED151],1,0.00177,1085
+Mupirocin Ointment 2% [MED020],1,0.001757,1077
+Vitamin C Chewable 500mg (HealthAxis Pharma) [MED463],1,0.001742,1068
+Calcium + Vitamin D3 500mg/250IU [MED050],1,0.001718,1053
+Amoxicillin + Clavulanic Acid 375mg (Summit Lifesciences) [MED106],1,0.001654,1014
+Clotrimazole Cream 2% [MED484],1,0.001651,1012
+Azithromycin 500mg [MED004],1,0.001648,1010
+Budesonide Inhaler 100mcg [MED415],1,0.001638,1004
+Ondansetron 4mg (NovaMed Laboratories) [MED231],1,0.001579,968
+Cetirizine 10mg (ApexLife Pharma) [MED162],1,0.001525,935
+Amlodipine 2.5mg (LifeSpring Pharma) [MED262],1,0.001506,923
+Montelukast 10mg (LifeSpring Pharma) [MED421],1,0.001471,902
+Paracetamol 650mg (Aarogya Formulations) [MED149],1,0.001429,876
+Azithromycin 250mg (ApexLife Pharma) [MED112],1,0.001422,872
+Clotrimazole Cream 1% (ApexLife Pharma) [MED482],1,0.001405,861
+Sitagliptin 50mg (ApexLife Pharma) [MED398],1,0.001403,860
+Azithromycin 250mg (CarePlus Laboratories) [MED114],1,0.001396,856
+Ibuprofen 600mg (HealthAxis Pharma) [MED080],1,0.001308,802
+Clopidogrel 75mg (BlueCrest Pharma) [MED293],1,0.0013,797
+Amlodipine 2.5mg (Stellar Formulations) [MED263],1,0.001294,793
+Metformin 1000mg (TrueLife Remedies) [MED393],1,0.001289,790
+Chlorpheniramine 4mg (LifeSpring Pharma) [MED179],1,0.001271,779
+Clopidogrel 75mg (Stellar Formulations) [MED296],1,0.001271,779
+Gliclazide 80mg (LifeSpring Pharma) [MED347],1,0.001266,776
+Fexofenadine 120mg (CureLine Healthcare) [MED183],1,0.001261,773
+Ketoconazole Shampoo 2% [MED055],1,0.001261,773
+Levocetirizine 5mg (Aarogya Formulations) [MED190],1,0.00125,766
+Atorvastatin 20mg (CarePlus Laboratories) [MED287],1,0.001248,765
+Domperidone 10mg (CureLine Healthcare) [MED207],1,0.001245,763
+Vitamin C Chewable 1000mg (BlueCrest Pharma) [MED467],1,0.001241,761
+Pantoprazole 20mg (Summit Lifesciences) [MED254],1,0.001219,747
+Mefenamic Acid 500mg (VitaCure Remedies) [MED148],1,0.001214,744
+Ambroxol + Levosalbutamol Syrup 100ml (Summit Lifesciences) [MED408],1,0.001212,743
+Paracetamol Suspension 250mg/5ml [MED006],1,0.00121,742
+Pantoprazole 40mg (CarePlus Laboratories) [MED246],1,0.001207,740
+Salbutamol Inhaler 200mcg (Stellar Formulations) [MED440],1,0.001196,733
+Paracetamol 500mg (LifeSpring Pharma) [MED092],1,0.001191,730
+Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies) [MED204],1,0.001176,721
+Telmisartan 80mg (ApexLife Pharma) [MED337],1,0.001174,720
+Salbutamol Inhaler 200mcg (HealthAxis Pharma) [MED439],1,0.001166,715
+Iron + Folic Acid 100mg/500mcg (HealthAxis Pharma) [MED452],1,0.001163,713
+Ketoconazole Shampoo 2% (Aarogya Formulations) [MED493],1,0.001157,709
+Metoprolol 50mg (CureLine Healthcare) [MED308],1,0.00115,705
+Dextromethorphan Syrup 100ml (LifeSpring Pharma) [MED417],1,0.001132,694
+ORS Powder 21.8g (LifeSpring Pharma) [MED240],1,0.001132,694
+Mefenamic Acid 250mg (LifeSpring Pharma) [MED137],1,0.001122,688
+Ondansetron 4mg (Stellar Formulations) [MED232],1,0.001121,687
+Vitamin C Chewable 1000mg (Summit Lifesciences) [MED471],1,0.001117,685
+Glimepiride + Metformin 1mg/500mg [MED376],1,0.001116,684
+Atorvastatin 10mg (ApexLife Pharma) [MED282],1,0.001114,683
+Iron + Folic Acid 100mg/500mcg (CarePlus Laboratories) [MED450],1,0.001106,678
+Paracetamol 650mg (CarePlus Laboratories) [MED150],1,0.001101,675
+Doxycycline 100mg [MED026],1,0.001098,673
+Montelukast + Levocetirizine 10mg/5mg (NovaMed Laboratories) [MED201],1,0.001091,669
+Diclofenac 50mg (Stellar Formulations) [MED061],1,0.00109,668
+Cetirizine 10mg (Summit Lifesciences) [MED166],1,0.00108,662
+Cefixime 200mg (ApexLife Pharma) [MED120],1,0.001065,653
+Amoxicillin + Clavulanic Acid 625mg (Stellar Formulations) [MED103],1,0.001064,652
+Glimepiride + Metformin 1mg/500mg (Stellar Formulations) [MED378],1,0.001057,648
+Cetirizine 5mg [MED168],1,0.001054,646
+Iron + Folic Acid 100mg/500mcg (VitaCure Remedies) [MED456],1,0.001052,645
+Salbutamol Inhaler 100mcg (VitaCure Remedies) [MED435],1,0.001047,642
+Glimepiride 1mg (Summit Lifesciences) [MED363],1,0.001046,641
+Mefenamic Acid 500mg (HealthAxis Pharma) [MED141],1,0.001044,640
+Chlorpheniramine 4mg (HealthAxis Pharma) [MED178],1,0.001042,639
+Vitamin C Chewable 1000mg (CureLine Healthcare) [MED469],1,0.001042,639
+Paracetamol 250mg (Stellar Formulations) [MED094],1,0.001034,634
+Azithromycin 250mg (CureLine Healthcare) [MED115],1,0.001031,632
+Doxycycline 100mg (ApexLife Pharma) [MED132],1,0.001031,632
+Gliclazide 80mg (BlueCrest Pharma) [MED345],1,0.001018,624
+Mupirocin Ointment 2% (Summit Lifesciences) [MED499],1,0.001011,620
+Vitamin D3 60000IU (VitaCure Remedies) [MED475],1,0.001008,618
+Ciprofloxacin 250mg [MED129],1,0.001005,616
+Glimepiride 3mg (Stellar Formulations) [MED369],1,0.000995,610
+Sitagliptin 50mg (Crestview Pharma) [MED400],1,0.000982,602
+Fusidic Acid Cream 2% (BlueCrest Pharma) [MED488],1,0.00098,601
+Amoxicillin + Clavulanic Acid 625mg (HealthAxis Pharma) [MED102],1,0.000972,596
+Azithromycin 250mg (TrueLife Remedies) [MED119],1,0.000967,593
+Vitamin D3 1000IU (Summit Lifesciences) [MED477],1,0.000967,593
+Vitamin D3 60000IU [MED018],1,0.000961,589
+Paracetamol Suspension 125mg/5ml (TrueLife Remedies) [MED160],1,0.000959,588
+Ambroxol + Levosalbutamol Syrup 60ml [MED410],1,0.000944,579
+Ondansetron 8mg (VitaCure Remedies) [MED238],1,0.000938,575
+Budesonide Inhaler 200mcg (ApexLife Pharma) [MED412],1,0.000936,574
+Ibuprofen 400mg (Stellar Formulations) [MED071],1,0.000928,569
+Ambroxol + Levosalbutamol Syrup 100ml (Aarogya Formulations) [MED406],1,0.000923,566
+Montelukast + Levocetirizine 10mg/5mg (TrueLife Remedies) [MED203],1,0.000923,566
+Glimepiride 3mg (CureLine Healthcare) [MED367],1,0.000918,563
+Mupirocin Ointment 2% (ApexLife Pharma) [MED496],1,0.000917,562
+Telmisartan 20mg (HealthAxis Pharma) [MED333],1,0.000917,562
+Metformin 1000mg (BlueCrest Pharma) [MED390],1,0.000909,557
+Levocetirizine 5mg (LifeSpring Pharma) [MED193],1,0.000907,556
+Calamine Lotion 100ml (TrueLife Remedies) [MED481],1,0.000905,555
+Omeprazole 20mg (LifeSpring Pharma) [MED218],1,0.000904,554
+Ketoconazole Shampoo 2% (LifeSpring Pharma) [MED494],1,0.0009,552
+Sitagliptin 50mg (Stellar Formulations) [MED403],1,0.000889,545
+Glimepiride + Metformin 1mg/500mg (Summit Lifesciences) [MED379],1,0.000886,543
+Budesonide Inhaler 200mcg (VitaCure Remedies) [MED414],1,0.000879,539
+Metformin 500mg (CureLine Healthcare) [MED382],1,0.000879,539
+Sitagliptin 100mg [MED044],1,0.000879,539
+Paracetamol Suspension 125mg/5ml (VitaCure Remedies) [MED161],1,0.000869,533
+Vitamin C Chewable 500mg (TrueLife Remedies) [MED464],1,0.000861,528
+Azithromycin 250mg [MED111],1,0.00085,521
+Telmisartan 80mg (NovaMed Laboratories) [MED340],1,0.00085,521
+Calamine Lotion 100ml [MED054],1,0.000843,517
+Glimepiride 3mg (VitaCure Remedies) [MED372],1,0.000843,517
+Pantoprazole 20mg (BlueCrest Pharma) [MED251],1,0.000843,517
+Diclofenac 100mg (VitaCure Remedies) [MED066],1,0.00084,515
+Paracetamol Drops 100mg/ml [MED029],1,0.000834,511
+Telmisartan 80mg [MED336],1,0.00083,509
+Levocetirizine 5mg (CureLine Healthcare) [MED192],1,0.000824,505
+Fusidic Acid Cream 2% [MED053],1,0.000822,504
+Amlodipine 5mg (Stellar Formulations) [MED259],1,0.000812,498
+Montelukast 10mg (TrueLife Remedies) [MED424],1,0.000812,498
+Ondansetron 4mg (Summit Lifesciences) [MED233],1,0.000812,498
+Rosuvastatin 20mg (NovaMed Laboratories) [MED323],1,0.000812,498
+Ondansetron 4mg [MED010],1,0.000811,497
+Fexofenadine 120mg (LifeSpring Pharma) [MED184],1,0.000806,494
+Clopidogrel 75mg (CureLine Healthcare) [MED294],1,0.000803,492
+Fexofenadine 120mg (ApexLife Pharma) [MED181],1,0.000798,489
+ORS Powder 21.8g (VitaCure Remedies) [MED244],1,0.000793,486
+Ibuprofen 400mg (CureLine Healthcare) [MED068],1,0.000788,483
+Diclofenac 100mg (CureLine Healthcare) [MED065],1,0.000786,482
+Glimepiride + Metformin 1mg/500mg (CarePlus Laboratories) [MED377],1,0.000781,479
+Paracetamol Suspension 250mg/5ml (TrueLife Remedies) [MED156],1,0.000775,475
+Montelukast 5mg (NovaMed Laboratories) [MED427],1,0.000773,474
+Amlodipine 5mg (NovaMed Laboratories) [MED258],1,0.00076,466
+Fusidic Acid Cream 2% (ApexLife Pharma) [MED487],1,0.000747,458
+Rosuvastatin 5mg [MED317],1,0.000745,457
+Ondansetron 8mg [MED235],1,0.000737,452
+Metformin 500mg (TrueLife Remedies) [MED384],1,0.000732,449
+Rosuvastatin 5mg (VitaCure Remedies) [MED321],1,0.000731,448
+Telmisartan 20mg (LifeSpring Pharma) [MED334],1,0.000731,448
+Glimepiride 3mg (Summit Lifesciences) [MED370],1,0.000729,447
+Ibuprofen 400mg (VitaCure Remedies) [MED072],1,0.000729,447
+Iron + Folic Acid 100mg/500mcg (BlueCrest Pharma) [MED449],1,0.000728,446
+Metoprolol 25mg (LifeSpring Pharma) [MED313],1,0.000728,446
+Telmisartan 40mg (VitaCure Remedies) [MED331],1,0.000726,445
+Pantoprazole 20mg (Stellar Formulations) [MED253],1,0.000724,444
+Levocetirizine 5mg (VitaCure Remedies) [MED195],1,0.000723,443
+Iron + Folic Acid 100mg/500mcg (LifeSpring Pharma) [MED453],1,0.000719,441
+Ambroxol + Levosalbutamol Syrup 100ml (VitaCure Remedies) [MED409],1,0.000716,439
+Ondansetron 4mg (CarePlus Laboratories) [MED228],1,0.000711,436
+Paracetamol 500mg (Aarogya Formulations) [MED089],1,0.000711,436
+Chlorpheniramine 4mg (BlueCrest Pharma) [MED176],1,0.000706,433
+Salbutamol Inhaler 100mcg (Summit Lifesciences) [MED433],1,0.000706,433
+Cetirizine 5mg (Summit Lifesciences) [MED172],1,0.000703,431
+Metformin 1000mg [MED389],1,0.000698,428
+Telmisartan 80mg (CureLine Healthcare) [MED339],1,0.000693,425
+Omeprazole 40mg [MED221],1,0.000688,422
+Omeprazole 20mg (Aarogya Formulations) [MED214],1,0.000672,412
+Metoprolol 25mg (HealthAxis Pharma) [MED312],1,0.00067,411
+Ketoconazole Shampoo 2% (VitaCure Remedies) [MED495],1,0.000662,406
+Mefenamic Acid 250mg (HealthAxis Pharma) [MED136],1,0.000662,406
+Calamine Lotion 100ml (CureLine Healthcare) [MED478],1,0.000661,405
+Fexofenadine 180mg (CureLine Healthcare) [MED187],1,0.000657,403
+Azithromycin 250mg (NovaMed Laboratories) [MED118],1,0.000654,401
+ORS Powder 21.8g (TrueLife Remedies) [MED243],1,0.000654,401
+Montelukast 5mg [MED425],1,0.000652,400
+Cetirizine 10mg (LifeSpring Pharma) [MED164],1,0.000651,399
+Metoprolol 50mg (NovaMed Laboratories) [MED309],1,0.000648,397
+Glimepiride 2mg (BlueCrest Pharma) [MED355],1,0.000639,392
+Aspirin 150mg (Summit Lifesciences) [MED279],1,0.000636,390
+Clopidogrel 75mg (NovaMed Laboratories) [MED295],1,0.000635,389
+Cefixime 200mg (CureLine Healthcare) [MED121],1,0.000631,387
+Ibuprofen 200mg (VitaCure Remedies) [MED077],1,0.00063,386
+Pantoprazole 20mg (CarePlus Laboratories) [MED252],1,0.00063,386
+Mefenamic Acid 500mg (Summit Lifesciences) [MED146],1,0.000628,385
+Aceclofenac + Paracetamol 100mg/325mg (HealthAxis Pharma) [MED056],1,0.000623,382
+Amoxicillin 250mg (TrueLife Remedies) [MED100],1,0.00062,380
+Diclofenac 50mg (TrueLife Remedies) [MED062],1,0.00062,380
+Mupirocin Ointment 2% (VitaCure Remedies) [MED500],1,0.00062,380
+Omeprazole 40mg (TrueLife Remedies) [MED225],1,0.00062,380
+Dextromethorphan Syrup 100ml (Summit Lifesciences) [MED418],1,0.000617,378
+Cefixime 100mg (HealthAxis Pharma) [MED125],1,0.000612,375
+Loperamide 2mg (BlueCrest Pharma) [MED212],1,0.00061,374
+Sitagliptin 50mg (TrueLife Remedies) [MED405],1,0.000607,372
+Ondansetron 4mg (CureLine Healthcare) [MED229],1,0.000602,369
+Sitagliptin 50mg (Summit Lifesciences) [MED404],1,0.0006,368
+Metformin 850mg (Stellar Formulations) [MED387],1,0.000595,365
+Amlodipine 10mg [MED267],1,0.000594,364
+Chlorpheniramine 4mg (CarePlus Laboratories) [MED177],1,0.000592,363
+Budesonide Inhaler 200mcg (BlueCrest Pharma) [MED413],1,0.000584,358
+Mefenamic Acid 250mg [MED028],1,0.000582,357
+Sitagliptin 50mg (HealthAxis Pharma) [MED401],1,0.000582,357
+Amoxicillin 250mg (Stellar Formulations) [MED099],1,0.000581,356
+Hydrocortisone Cream 1% [MED052],1,0.000579,355
+Loperamide 2mg [MED036],1,0.000571,350
+Multivitamin B-complex+C (BlueCrest Pharma) [MED457],1,0.000571,350
+Atorvastatin 40mg (VitaCure Remedies) [MED291],1,0.000569,349
+Paracetamol Suspension 125mg/5ml [MED157],1,0.000569,349
+Glimepiride + Metformin 2mg/500mg (Aarogya Formulations) [MED373],1,0.000568,348
+Cefixime 100mg (NovaMed Laboratories) [MED126],1,0.000566,347
+Omeprazole 20mg (CureLine Healthcare) [MED216],1,0.000563,345
+Losartan 25mg (NovaMed Laboratories) [MED303],1,0.000561,344
+Fexofenadine 180mg (TrueLife Remedies) [MED189],1,0.00056,343
+Naproxen 500mg [MED085],1,0.000553,339
+Vitamin C Chewable 1000mg (TrueLife Remedies) [MED472],1,0.00055,337
+Salbutamol Inhaler 200mcg (BlueCrest Pharma) [MED437],1,0.000548,336
+Dextromethorphan Syrup 100ml (TrueLife Remedies) [MED419],1,0.000543,333
+Chlorpheniramine 4mg [MED032],1,0.000542,332
+Ondansetron 8mg (TrueLife Remedies) [MED237],1,0.000542,332
+Omeprazole 20mg (VitaCure Remedies) [MED220],1,0.000538,330
+Montelukast 10mg (NovaMed Laboratories) [MED422],1,0.000532,326
+Budesonide Inhaler 200mcg [MED047],1,0.00053,325
+Ibuprofen 400mg (Aarogya Formulations) [MED067],1,0.000527,323
+Telmisartan 20mg (Summit Lifesciences) [MED335],1,0.000525,322
+Glimepiride 3mg [MED365],1,0.00052,319
+Loperamide 2mg (LifeSpring Pharma) [MED213],1,0.00052,319
+Domperidone 10mg (LifeSpring Pharma) [MED209],1,0.000519,318
+Montelukast + Levocetirizine 10mg/5mg (Aarogya Formulations) [MED199],1,0.000512,314
+Pantoprazole 20mg (VitaCure Remedies) [MED255],1,0.000511,313
+Losartan 50mg (CarePlus Laboratories) [MED298],1,0.000509,312
+Domperidone 10mg [MED034] + Omeprazole 20mg [MED033],2,0.009217,5650
+Amlodipine 5mg [MED011] + Atorvastatin 10mg [MED012],2,0.008711,5340
+Ambroxol + Levosalbutamol Syrup 100ml [MED015] + Cetirizine 10mg [MED007],2,0.004954,3037
+Glimepiride 2mg [MED014] + Metformin 500mg [MED013],2,0.004168,2555
+Ambroxol + Levosalbutamol Syrup 100ml [MED015] + Vitamin C Chewable 500mg [MED017],2,0.001568,961
+Clotrimazole Cream 1% [MED019] + Mupirocin Ointment 2% [MED020],2,0.001427,875
+Diclofenac 50mg [MED002] + Pantoprazole 40mg [MED009],2,0.000744,456
+Azithromycin 500mg [MED004] + Paracetamol 650mg [MED005],2,0.000726,445
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Telmisartan 40mg [MED037],2,0.000586,359
+Naproxen 500mg (CarePlus Laboratories) [MED086] + Telmisartan 40mg [MED037],2,0.000586,359
+Ondansetron 8mg (LifeSpring Pharma) [MED236] + Telmisartan 40mg [MED037],2,0.000558,342
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Omeprazole 20mg [MED033],2,0.000551,338
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Ondansetron 8mg (LifeSpring Pharma) [MED236],2,0.000537,329
+Naproxen 500mg (CarePlus Laboratories) [MED086] + Omeprazole 20mg [MED033],2,0.00053,325
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Naproxen 500mg (CarePlus Laboratories) [MED086],2,0.000529,324
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Sitagliptin 100mg (HealthAxis Pharma) [MED396],2,0.000525,322
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + Cetirizine 5mg (TrueLife Remedies) [MED173],2,0.000524,321
+Azithromycin 250mg (LifeSpring Pharma) [MED117] + ORS Powder 21.8g (HealthAxis Pharma) [MED239],2,0.000524,321
+Cetirizine 5mg (TrueLife Remedies) [MED173] + Naproxen 500mg (CarePlus Laboratories) [MED086],2,0.00052,319
+Amlodipine 10mg (Stellar Formulations) [MED269] + Azithromycin 250mg (LifeSpring Pharma) [MED117],2,0.000519,318
+Amlodipine 10mg (Stellar Formulations) [MED269] + Ondansetron 8mg (LifeSpring Pharma) [MED236],2,0.000519,318
+Omeprazole 20mg [MED033] + Telmisartan 40mg [MED037],2,0.000512,314
+Naproxen 500mg (CarePlus Laboratories) [MED086] + Sitagliptin 100mg (HealthAxis Pharma) [MED396],2,0.000506,310
+ORS Powder 21.8g (HealthAxis Pharma) [MED239] + Ondansetron 8mg (LifeSpring Pharma) [MED236],2,0.000502,308

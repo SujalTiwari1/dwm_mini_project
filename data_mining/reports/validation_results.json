@@ -1,0 +1,216 @@
+{
+  "checks": 35,
+  "failures": 0,
+  "results": [
+    {
+      "area": "association",
+      "check": "transaction count equals the warehouse distinct transactions",
+      "passed": true,
+      "detail": "mined 613027, warehouse 613027"
+    },
+    {
+      "area": "association",
+      "check": "unique medicines equal the warehouse medicine count",
+      "passed": true,
+      "detail": "500 vs 500"
+    },
+    {
+      "area": "association",
+      "check": "no rule has lift <= 0 (all above the configured minimum)",
+      "passed": true,
+      "detail": "min lift 21.46"
+    },
+    {
+      "area": "association",
+      "check": "no self-rules (antecedent and consequent share a medicine)",
+      "passed": true,
+      "detail": "0 found"
+    },
+    {
+      "area": "association",
+      "check": "no duplicated (antecedent, consequent) rule",
+      "passed": true,
+      "detail": "0 duplicates"
+    },
+    {
+      "area": "association",
+      "check": "support counts valid (0 < count <= each side's count)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "association",
+      "check": "support = support_count / transactions",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "association",
+      "check": "confidence = support_count / antecedent count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "association",
+      "check": "lift = confidence / consequent support",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "association",
+      "check": "metrics finite (conviction may be missing only when confidence = 1)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "association",
+      "check": "all 14 rules' counts re-counted in the warehouse with SQL",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "association",
+      "check": "frequent itemsets respect the minimum support count",
+      "passed": true,
+      "detail": "min count 308"
+    },
+    {
+      "area": "clustering",
+      "check": "500 medicines represented",
+      "passed": true,
+      "detail": "500"
+    },
+    {
+      "area": "clustering",
+      "check": "every medicine assigned exactly once",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "clustering",
+      "check": "cluster counts sum to the medicine count",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "clustering",
+      "check": "no NaN in the final feature matrix",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "clustering",
+      "check": "feature matrix finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "clustering",
+      "check": "projection covers every medicine with finite coordinates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "dates within the warehouse date range",
+      "passed": true,
+      "detail": "2025-01-01..2026-12-31"
+    },
+    {
+      "area": "anomaly",
+      "check": "medicine ids are valid warehouse ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "branch ids are valid (or ALL for medicine-level and purchase-lot rows)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "isolation scores finite wherever defined; none infinite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "robust z-scores finite (no inf)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "every sales-grain row has finite units, inventory and isolation score",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "combined flag = statistical AND isolation",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "every row is flagged by at least one detector",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "anomaly",
+      "check": "sales-grain flags only after the burn-in period (no baseline = no flag)",
+      "passed": true,
+      "detail": "first flag allowed 2025-03-12"
+    },
+    {
+      "area": "anomaly",
+      "check": "no future leakage in sales features (72 feature values recomputed from data truncated at day D)",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "anomaly",
+      "check": "no future leakage in purchase-lot features (90 values recomputed without later lots)",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "leakage",
+      "check": "feature, association, clustering and anomaly code neither references the ground-truth path nor imports the evaluation module",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "area": "leakage",
+      "check": "GROUND_TRUTH_PRIVATE appears only in config, evaluation/evaluate.py and this checker",
+      "passed": true,
+      "detail": "['data_mining/config.py', 'data_mining/evaluation/evaluate.py', 'data_mining/validation.py']"
+    },
+    {
+      "area": "evaluation",
+      "check": "TP + FN = ground-truth events and TP + FP = episodes for every detector set",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "evaluation",
+      "check": "precision, recall and F1 between 0 and 1",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "evaluation",
+      "check": "ground truth was read only after anomalies.csv was written",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "evaluation",
+      "check": "per-type event counts sum to the total for every detector set",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

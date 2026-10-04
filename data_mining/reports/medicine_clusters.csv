@@ -1,0 +1,501 @@
+medicine_id,medicine_name,category,cluster_id,cluster_label,total_units_sold,avg_selling_price,demand_dispersion,stockout_rate,total_revenue,expired_value,expiry_risk_value,avg_inventory_value,avg_inventory_units,current_inventory_units
+MED001,Paracetamol 500mg,Analgesics,0,"high-volume, high-revenue, frequent stockouts",14763,24.64,1.5134,0.0167,363827.92,0.0,0.0,4423.3229,230.9438,235
+MED002,Diclofenac 50mg,Analgesics,2,"low-price, low-revenue",1602,41.63,1.3858,0.0482,66698.77,351.81,0.0,1410.3013,46.6904,61
+MED003,Amoxicillin 500mg,Antibiotics,1,high-price,2216,90.92,1.2861,0.0134,201476.66,0.0,0.0,3626.4863,52.2849,56
+MED004,Azithromycin 500mg,Antibiotics,1,high-price,1317,118.55,1.4259,0.0238,156127.03,673.65,0.0,3407.9139,38.4123,31
+MED005,Paracetamol 650mg,Antipyretics,0,"high-volume, high-revenue, frequent stockouts",14621,29.8,2.0208,0.0668,435670.64,0.0,0.0,3800.0663,177.5452,108
+MED006,Paracetamol Suspension 250mg/5ml,Antipyretics,2,"low-price, low-revenue",942,47.4,1.2617,0.0096,44654.83,156.65,0.0,2098.3511,57.6466,71
+MED007,Cetirizine 10mg,Antihistamines,0,"high-volume, high-revenue, frequent stockouts",15752,21.76,2.3271,0.051,342777.31,0.0,0.0,3623.7595,218.5836,293
+MED008,Fexofenadine 120mg,Antihistamines,1,high-price,198,189.67,1.1552,0.0,37555.57,1840.2,0.0,8226.7925,58.0808,71
+MED009,Pantoprazole 40mg,Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",14627,76.84,1.8412,0.0123,1123878.08,0.0,0.0,15890.1532,271.0918,304
+MED010,Ondansetron 4mg,Gastrointestinal,2,"low-price, low-revenue",646,55.34,1.3113,0.0016,35748.1,0.0,0.0,2575.3412,61.6082,39
+MED011,Amlodipine 5mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",26907,35.56,2.5844,0.0315,956725.73,0.0,0.0,12435.6731,463.8904,617
+MED012,Atorvastatin 10mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",16131,97.61,1.9706,0.0011,1574546.04,0.0,0.0,35614.3221,479.7658,428
+MED013,Metformin 500mg,Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",12447,31.6,1.8754,0.1008,393330.55,0.0,0.0,3408.1553,141.4137,234
+MED014,Glimepiride 2mg,Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",9283,140.02,1.7173,0.0022,1299784.18,223.24,0.0,22492.0058,218.9055,202
+MED015,Ambroxol + Levosalbutamol Syrup 100ml,Respiratory,0,"high-volume, high-revenue, frequent stockouts",7440,116.53,1.4749,0.003,866973.8,892.0,0.0,13682.5586,154.8493,139
+MED016,Salbutamol Inhaler 100mcg,Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",216,163.17,1.2862,0.0022,35244.43,126.73,262.96,5818.245,45.8205,69
+MED017,Vitamin C Chewable 500mg,Vitamins,0,"high-volume, high-revenue, frequent stockouts",5336,27.48,1.7812,0.0093,146640.64,499.79,0.0,3136.462,152.037,206
+MED018,Vitamin D3 60000IU,Vitamins,1,high-price,892,137.58,1.4432,0.0025,122721.28,0.0,0.0,7410.8734,68.3548,43
+MED019,Clotrimazole Cream 1%,Dermatological,1,high-price,3256,83.41,1.3243,0.0164,271573.69,0.0,0.0,5071.6133,81.6712,48
+MED020,Mupirocin Ointment 2%,Dermatological,1,high-price,1198,133.3,1.2429,0.0008,159696.87,1373.85,0.0,7411.6192,71.6562,93
+MED021,Ibuprofen 400mg,Analgesics,2,"low-price, low-revenue",2793,33.62,1.4384,0.0178,93902.36,146.46,0.0,1690.1642,69.6425,79
+MED022,Aceclofenac + Paracetamol 100mg/325mg,Analgesics,2,"low-price, low-revenue",1868,67.12,1.37,0.0132,125378.0,0.0,0.0,2500.9778,47.0356,55
+MED023,Naproxen 250mg,Analgesics,2,"low-price, low-revenue",386,73.13,1.2289,0.0005,28229.28,0.0,0.0,2913.8918,50.5562,36
+MED024,Cefixime 200mg,Antibiotics,1,high-price,3624,108.05,1.4133,0.0052,391557.22,0.0,0.0,8235.4338,100.7603,98
+MED025,Ciprofloxacin 500mg,Antibiotics,2,"low-price, low-revenue",1729,57.37,1.1506,0.0123,99196.12,0.0,0.0,1951.5287,44.9575,49
+MED026,Doxycycline 100mg,Antibiotics,1,high-price,873,71.07,1.236,0.0016,62044.33,161.52,0.0,3253.6931,59.3452,70
+MED027,Amoxicillin + Clavulanic Acid 625mg,Antibiotics,1,high-price,2857,202.49,1.2969,0.0066,578521.41,0.0,0.0,9270.2795,60.2616,49
+MED028,Mefenamic Acid 250mg,Antipyretics,2,"low-price, low-revenue",477,44.39,1.2057,0.0041,21174.23,105.06,0.0,2166.6114,63.1068,82
+MED029,Paracetamol Drops 100mg/ml,Antipyretics,2,"low-price, low-revenue",666,37.33,1.153,0.0036,24860.47,419.68,0.0,1346.4444,47.9397,61
+MED030,Levocetirizine 5mg,Antihistamines,2,"low-price, low-revenue",2387,61.42,1.5029,0.0186,146614.1,0.0,0.0,2939.2608,63.0849,53
+MED031,Montelukast + Levocetirizine 10mg/5mg,Antihistamines,0,"high-volume, high-revenue, frequent stockouts",5378,193.62,1.5474,0.0192,1041272.21,0.0,0.0,15164.0918,106.0548,85
+MED032,Chlorpheniramine 4mg,Antihistamines,2,"low-price, low-revenue",421,11.91,1.3019,0.0104,5015.08,408.6,28.92,467.0635,51.2589,63
+MED033,Omeprazole 20mg,Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",21689,51.38,1.9953,0.0244,1114299.65,0.0,0.0,12901.7752,314.1548,365
+MED034,Domperidone 10mg,Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",10148,47.39,1.4149,0.0038,480961.45,0.0,0.0,9187.6918,260.6863,250
+MED035,ORS Powder 21.8g,Gastrointestinal,2,"low-price, low-revenue",2362,20.8,1.3675,0.0063,49135.2,0.0,0.0,1053.2131,66.8425,58
+MED036,Loperamide 2mg,Gastrointestinal,2,"low-price, low-revenue",471,28.52,1.1793,0.0008,13433.01,0.0,0.0,1090.4542,47.9973,64
+MED037,Telmisartan 40mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",36582,121.09,1.4959,0.0049,4429712.78,0.0,0.0,82196.4231,891.5274,1073
+MED038,Losartan 50mg,Cardiovascular,1,high-price,2393,82.98,1.614,0.0145,198561.51,0.0,0.0,4015.2122,61.9603,69
+MED039,Metoprolol 50mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",5059,66.97,1.742,0.0088,338796.23,0.0,0.0,7163.9024,139.1658,114
+MED040,Rosuvastatin 10mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4872,163.4,1.5145,0.0315,796102.03,0.0,0.0,11938.9245,91.1795,101
+MED041,Clopidogrel 75mg,Cardiovascular,1,high-price,360,94.87,1.5513,0.0052,34154.31,0.0,0.0,4112.7193,55.7671,59
+MED042,Aspirin 75mg,Cardiovascular,2,"low-price, low-revenue",6964,7.91,1.6494,0.0077,55111.4,0.0,0.0,1059.0785,173.4918,144
+MED043,Glimepiride + Metformin 2mg/500mg,Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",15327,148.12,2.2003,0.0052,2270279.47,0.0,0.0,27084.1443,235.7082,295
+MED044,Sitagliptin 100mg,Antidiabetic,1,high-price,1051,377.89,1.5909,0.003,397162.39,11223.42,0.0,19307.469,68.8233,84
+MED045,Gliclazide 80mg,Antidiabetic,2,"low-price, low-revenue",441,74.04,1.3885,0.0085,32651.78,447.2,0.0,3175.9276,57.8329,79
+MED046,Montelukast 10mg,Respiratory,0,"high-volume, high-revenue, frequent stockouts",4068,187.0,1.2752,0.0036,760707.81,1618.36,0.0,35668.7425,253.8384,141
+MED047,Budesonide Inhaler 200mcg,Respiratory,1,high-price,369,269.34,1.2104,0.0044,99387.58,0.0,0.0,10938.0657,52.8068,60
+MED048,Dextromethorphan Syrup 100ml,Respiratory,0,"high-volume, high-revenue, frequent stockouts",4251,94.45,1.652,0.017,401519.28,1446.69,363.65,14445.0653,204.4438,104
+MED049,Multivitamin B-complex+C,Vitamins,0,"high-volume, high-revenue, frequent stockouts",5054,44.41,1.8184,0.0049,224448.62,0.0,0.0,4651.5018,133.5027,127
+MED050,Calcium + Vitamin D3 500mg/250IU,Vitamins,1,high-price,1616,115.98,1.3977,0.0392,187428.67,270.9,0.0,3361.2992,38.3178,33
+MED051,Iron + Folic Acid 100mg/500mcg,Vitamins,2,"low-price, low-revenue",402,80.97,1.4474,0.0027,32549.66,0.0,0.0,3110.6568,51.363,58
+MED052,Hydrocortisone Cream 1%,Dermatological,2,"low-price, low-revenue",392,61.67,1.107,0.0003,24173.32,422.96,0.0,2339.581,50.6795,56
+MED053,Fusidic Acid Cream 2%,Dermatological,1,high-price,549,153.66,1.0689,0.0014,84358.94,771.89,0.0,5911.7418,50.3452,53
+MED054,Calamine Lotion 100ml,Dermatological,2,"low-price, low-revenue",564,69.12,1.0979,0.0022,38983.81,1374.92,0.0,2461.3787,46.2986,44
+MED055,Ketoconazole Shampoo 2%,Dermatological,1,high-price,851,207.32,1.168,0.0003,176426.37,2205.77,0.0,8209.8954,54.9849,51
+MED056,Aceclofenac + Paracetamol 100mg/325mg (HealthAxis Pharma),Analgesics,2,"low-price, low-revenue",505,73.67,1.2273,0.0036,37202.61,589.56,0.0,3062.4515,55.5068,48
+MED057,Aceclofenac + Paracetamol 100mg/325mg (LifeSpring Pharma),Analgesics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",285,61.16,1.357,0.0016,17430.02,709.66,460.44,2503.265,54.7877,85
+MED058,Aceclofenac + Paracetamol 100mg/325mg (VitaCure Remedies),Analgesics,1,high-price,2683,73.56,1.2759,0.0066,197362.08,172.17,0.0,4533.4366,79.2041,55
+MED059,Diclofenac 50mg (Aarogya Formulations),Analgesics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",352,37.79,1.1892,0.0047,13302.09,613.44,58.7,1462.9788,49.4603,49
+MED060,Diclofenac 50mg (CarePlus Laboratories),Analgesics,0,"high-volume, high-revenue, frequent stockouts",4851,45.28,1.2591,0.0022,219644.96,404.52,0.0,5075.656,149.1397,172
+MED061,Diclofenac 50mg (Stellar Formulations),Analgesics,2,"low-price, low-revenue",896,39.49,1.16,0.0044,35385.34,58.4,0.0,1772.0025,58.9164,40
+MED062,Diclofenac 50mg (TrueLife Remedies),Analgesics,2,"low-price, low-revenue",525,43.36,1.2133,0.0,22763.33,754.53,0.0,1722.281,52.8699,59
+MED063,Diclofenac 50mg (VitaCure Remedies),Analgesics,2,"low-price, low-revenue",2547,38.55,1.32,0.0279,98186.84,248.56,0.0,1591.1211,55.4425,59
+MED064,Diclofenac 100mg,Analgesics,2,"low-price, low-revenue",1647,44.03,1.4569,0.0148,72512.91,0.0,0.0,1466.2188,43.8205,49
+MED065,Diclofenac 100mg (CureLine Healthcare),Analgesics,2,"low-price, low-revenue",657,49.69,1.133,0.0027,32647.45,0.0,0.0,2066.2769,54.1082,55
+MED066,Diclofenac 100mg (VitaCure Remedies),Analgesics,2,"low-price, low-revenue",688,52.01,1.5126,0.0238,35779.5,1037.15,0.0,2048.5709,51.7945,46
+MED067,Ibuprofen 400mg (Aarogya Formulations),Analgesics,2,"low-price, low-revenue",448,33.78,1.4295,0.0011,15131.53,443.52,0.0,1326.6192,51.8096,32
+MED068,Ibuprofen 400mg (CureLine Healthcare),Analgesics,2,"low-price, low-revenue",635,31.1,1.1715,0.0047,19751.61,0.0,0.0,1253.1526,55.1534,44
+MED069,Ibuprofen 400mg (HealthAxis Pharma),Analgesics,2,"low-price, low-revenue",3772,31.48,1.3008,0.0101,118733.5,0.0,0.0,1622.0615,71.3164,69
+MED070,Ibuprofen 400mg (NovaMed Laboratories),Analgesics,2,"low-price, low-revenue",3339,35.46,1.2343,0.0104,118411.82,0.0,0.0,2697.4276,98.5,135
+MED071,Ibuprofen 400mg (Stellar Formulations),Analgesics,2,"low-price, low-revenue",769,30.73,1.3743,0.0027,23633.45,0.0,0.0,1622.4535,70.2041,101
+MED072,Ibuprofen 400mg (VitaCure Remedies),Analgesics,2,"low-price, low-revenue",612,31.8,1.2866,0.0008,19461.89,0.0,0.0,1249.3296,51.2986,66
+MED073,Ibuprofen 200mg,Analgesics,2,"low-price, low-revenue",3974,38.2,1.5312,0.0068,151804.05,0.0,0.0,2568.9094,87.5178,70
+MED074,Ibuprofen 200mg (LifeSpring Pharma),Analgesics,2,"low-price, low-revenue",307,39.68,1.1808,0.0052,12182.34,1378.02,0.0,1492.2041,51.7753,35
+MED075,Ibuprofen 200mg (Summit Lifesciences),Analgesics,2,"low-price, low-revenue",2133,37.68,1.4212,0.0068,80378.44,86.64,0.0,1606.9148,57.6562,70
+MED076,Ibuprofen 200mg (TrueLife Remedies),Analgesics,2,"low-price, low-revenue",2802,37.86,1.3707,0.0118,106090.72,0.0,0.0,1560.8945,55.8671,84
+MED077,Ibuprofen 200mg (VitaCure Remedies),Analgesics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",532,43.03,1.2566,0.0063,22890.14,154.1,466.71,1542.5507,46.1781,65
+MED078,Ibuprofen 600mg,Analgesics,2,"low-price, low-revenue",3606,46.28,1.3987,0.0203,166875.13,0.0,0.0,2467.6975,68.2534,72
+MED079,Ibuprofen 600mg (BlueCrest Pharma),Analgesics,2,"low-price, low-revenue",3702,46.53,1.4248,0.0225,172247.99,0.0,0.0,2573.857,75.6795,80
+MED080,Ibuprofen 600mg (HealthAxis Pharma),Analgesics,2,"low-price, low-revenue",1086,49.91,1.2786,0.011,54202.18,313.34,0.0,2187.5895,58.5068,46
+MED081,Ibuprofen 600mg (NovaMed Laboratories),Analgesics,1,high-price,3835,44.19,1.1343,0.0025,169462.19,279.68,0.0,4014.8014,117.0055,89
+MED082,Naproxen 250mg (CureLine Healthcare),Analgesics,0,"high-volume, high-revenue, frequent stockouts",7243,77.28,1.3433,0.0148,559759.91,0.0,0.0,8602.0025,145.763,192
+MED083,Naproxen 250mg (HealthAxis Pharma),Analgesics,1,high-price,1829,70.47,1.1788,0.0063,128886.77,50.87,0.0,2569.2268,48.0877,52
+MED084,Naproxen 250mg (VitaCure Remedies),Analgesics,0,"high-volume, high-revenue, frequent stockouts",4253,69.95,1.5616,0.0027,297489.65,0.0,0.0,5833.2932,106.5781,122
+MED085,Naproxen 500mg,Analgesics,2,"low-price, low-revenue",456,82.18,1.3509,0.014,37476.02,0.0,0.0,3421.1922,54.5808,39
+MED086,Naproxen 500mg (CarePlus Laboratories),Analgesics,0,"high-volume, high-revenue, frequent stockouts",23031,86.64,2.6346,0.034,1995433.13,656.2,0.0,24119.4688,376.6027,579
+MED087,Naproxen 500mg (LifeSpring Pharma),Analgesics,1,high-price,409,88.69,1.1611,0.0049,36273.44,1940.53,0.0,3521.5946,53.2795,55
+MED088,Naproxen 500mg (NovaMed Laboratories),Analgesics,2,"low-price, low-revenue",199,94.57,1.305,0.0,18819.96,0.0,0.0,4080.1082,55.7616,82
+MED089,Paracetamol 500mg (Aarogya Formulations),Analgesics,2,"low-price, low-revenue",589,22.22,1.1963,0.0025,13088.1,287.32,0.0,905.5724,53.4397,68
+MED090,Paracetamol 500mg (CarePlus Laboratories),Analgesics,2,"low-price, low-revenue",1498,26.21,1.2274,0.0181,39269.54,0.0,0.0,818.4304,40.1671,34
+MED091,Paracetamol 500mg (HealthAxis Pharma),Analgesics,0,"high-volume, high-revenue, frequent stockouts",7157,25.99,1.5759,0.0271,186036.1,0.0,0.0,2462.8989,124.6123,152
+MED092,Paracetamol 500mg (LifeSpring Pharma),Analgesics,2,"low-price, low-revenue",979,25.37,1.2244,0.0008,24838.16,41.7,0.0,1128.4307,56.6219,42
+MED093,Paracetamol 250mg,Analgesics,2,"low-price, low-revenue",215,30.44,1.1835,0.0003,6544.72,526.84,0.0,1387.1778,59.0342,78
+MED094,Paracetamol 250mg (Stellar Formulations),Analgesics,2,"low-price, low-revenue",876,26.84,1.3568,0.0088,23514.99,199.6,0.0,1047.178,52.8192,54
+MED095,Amoxicillin 250mg,Antibiotics,1,high-price,2547,97.82,1.3011,0.0137,249136.95,265.28,0.0,4566.4657,62.063,46
+MED096,Amoxicillin 250mg (CureLine Healthcare),Antibiotics,1,high-price,2894,115.8,1.4603,0.0153,335135.26,0.0,0.0,5433.9595,61.3329,53
+MED097,Amoxicillin 250mg (LifeSpring Pharma),Antibiotics,1,high-price,3600,117.78,1.4669,0.0058,424011.51,0.0,0.0,7333.6325,83.1247,86
+MED098,Amoxicillin 250mg (NovaMed Laboratories),Antibiotics,1,high-price,1755,117.96,1.3599,0.0074,207026.59,0.0,0.0,4956.049,54.7699,57
+MED099,Amoxicillin 250mg (Stellar Formulations),Antibiotics,1,high-price,454,101.94,1.2346,0.0033,46279.74,0.0,0.0,3481.1,45.6096,44
+MED100,Amoxicillin 250mg (TrueLife Remedies),Antibiotics,1,high-price,508,113.73,1.2461,0.0041,57776.43,1640.1,0.0,4794.514,55.9986,42
+MED101,Amoxicillin + Clavulanic Acid 625mg (CureLine Healthcare),Antibiotics,1,high-price,328,220.83,1.5256,0.0,72431.39,0.0,0.0,8194.2898,50.6575,31
+MED102,Amoxicillin + Clavulanic Acid 625mg (HealthAxis Pharma),Antibiotics,1,high-price,765,217.41,1.2757,0.003,166322.14,0.0,0.0,9485.6324,58.2685,87
+MED103,Amoxicillin + Clavulanic Acid 625mg (Stellar Formulations),Antibiotics,1,high-price,849,182.78,1.1559,0.0036,155179.1,0.0,0.0,7961.6556,57.0521,43
+MED104,Amoxicillin + Clavulanic Acid 375mg,Antibiotics,0,"high-volume, high-revenue, frequent stockouts",10190,243.33,1.8885,0.0258,2479509.18,0.0,0.0,23833.7975,129.7849,77
+MED105,Amoxicillin + Clavulanic Acid 375mg (NovaMed Laboratories),Antibiotics,0,"high-volume, high-revenue, frequent stockouts",9429,227.34,1.6686,0.0518,2143591.27,0.0,0.0,21352.7073,127.2397,232
+MED106,Amoxicillin + Clavulanic Acid 375mg (Summit Lifesciences),Antibiotics,1,high-price,1308,231.15,1.3215,0.014,302341.21,0.0,0.0,7389.439,42.9603,39
+MED107,Amoxicillin + Clavulanic Acid 375mg (TrueLife Remedies),Antibiotics,1,high-price,1743,227.32,1.136,0.0142,396222.76,2423.84,0.0,8924.329,51.3904,41
+MED108,Azithromycin 500mg (Aarogya Formulations),Antibiotics,1,high-price,3351,123.91,1.2385,0.0181,415214.57,510.4,0.0,8451.7892,89.237,66
+MED109,Azithromycin 500mg (ApexLife Pharma),Antibiotics,1,high-price,1677,125.07,1.386,0.0099,209736.96,0.0,0.0,6041.9188,65.826,39
+MED110,Azithromycin 500mg (VitaCure Remedies),Antibiotics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",301,106.66,1.2546,0.0003,32105.45,1874.07,367.46,3988.1175,48.6534,37
+MED111,Azithromycin 250mg,Antibiotics,1,high-price,692,142.37,1.3463,0.0025,98519.35,5611.63,0.0,5905.7064,56.0945,39
+MED112,Azithromycin 250mg (ApexLife Pharma),Antibiotics,1,high-price,1144,136.06,1.4417,0.0044,155650.49,0.0,0.0,6579.1281,63.5192,57
+MED113,Azithromycin 250mg (BlueCrest Pharma),Antibiotics,0,"high-volume, high-revenue, frequent stockouts",18323,128.78,2.0196,0.0104,2359579.5,0.0,0.0,28338.5582,289.837,288
+MED114,Azithromycin 250mg (CarePlus Laboratories),Antibiotics,1,high-price,1125,138.47,1.4958,0.0033,155778.84,1316.16,0.0,5939.1088,57.8877,68
+MED115,Azithromycin 250mg (CureLine Healthcare),Antibiotics,1,high-price,832,152.89,1.5984,0.0033,127207.11,0.0,0.0,8402.2005,71.0027,41
+MED116,Azithromycin 250mg (HealthAxis Pharma),Antibiotics,1,high-price,1892,136.09,1.2062,0.0184,257482.21,92.79,0.0,5313.8244,51.5041,39
+MED117,Azithromycin 250mg (LifeSpring Pharma),Antibiotics,0,"high-volume, high-revenue, frequent stockouts",23698,148.75,1.8657,0.0118,3525156.51,0.0,0.0,34686.4863,302.9507,266
+MED118,Azithromycin 250mg (NovaMed Laboratories),Antibiotics,1,high-price,530,139.16,1.3172,0.0156,73753.7,1903.99,0.0,5138.1952,48.1712,53
+MED119,Azithromycin 250mg (TrueLife Remedies),Antibiotics,1,high-price,779,132.36,1.4751,0.0033,103105.56,0.0,0.0,5297.5291,50.7521,48
+MED120,Cefixime 200mg (ApexLife Pharma),Antibiotics,1,high-price,844,115.08,1.1095,0.0022,97125.56,0.0,0.0,5080.9091,58.1534,52
+MED121,Cefixime 200mg (CureLine Healthcare),Antibiotics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",494,115.97,1.4344,0.0044,57289.11,0.0,272.54,4583.9677,52.5534,40
+MED122,Cefixime 200mg (NovaMed Laboratories),Antibiotics,1,high-price,2471,108.52,1.0855,0.0222,268144.14,0.0,0.0,4495.5363,54.7671,66
+MED123,Cefixime 200mg (Stellar Formulations),Antibiotics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",205,101.18,1.2079,0.0,20742.45,1811.71,434.06,3812.1822,48.911,56
+MED124,Cefixime 100mg,Antibiotics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",308,124.06,1.2934,0.0052,38211.03,1595.16,901.62,4880.1656,50.9274,64
+MED125,Cefixime 100mg (HealthAxis Pharma),Antibiotics,1,high-price,477,118.49,1.2415,0.0022,56517.43,584.34,0.0,4588.0025,51.0959,51
+MED126,Cefixime 100mg (NovaMed Laboratories),Antibiotics,1,high-price,449,121.81,1.3731,0.0027,54694.03,0.0,0.0,4095.9245,46.6986,45
+MED127,Cefixime 100mg (VitaCure Remedies),Antibiotics,0,"high-volume, high-revenue, frequent stockouts",8903,136.73,1.6175,0.0345,1217292.31,0.0,0.0,14753.4044,142.2918,67
+MED128,Ciprofloxacin 500mg (BlueCrest Pharma),Antibiotics,2,"low-price, low-revenue",271,62.07,1.3261,0.0,16821.02,0.0,0.0,2410.3806,52.6397,52
+MED129,Ciprofloxacin 250mg,Antibiotics,2,"low-price, low-revenue",781,74.05,1.5377,0.0016,57833.18,0.0,0.0,2817.6165,51.0274,37
+MED130,Ciprofloxacin 250mg (LifeSpring Pharma),Antibiotics,1,high-price,4154,66.44,1.5638,0.014,275995.01,229.1,0.0,4670.2324,93.774,100
+MED131,Doxycycline 100mg (Aarogya Formulations),Antibiotics,1,high-price,3247,72.49,1.2431,0.0066,235369.3,306.84,0.0,4389.3161,79.8808,68
+MED132,Doxycycline 100mg (ApexLife Pharma),Antibiotics,2,"low-price, low-revenue",817,75.05,1.3774,0.0058,61316.85,0.0,0.0,3631.6694,64.3041,46
+MED133,Doxycycline 100mg (HealthAxis Pharma),Antibiotics,2,"low-price, low-revenue",271,70.81,1.2143,0.0178,19189.42,3321.58,0.0,2197.9025,43.3808,24
+MED134,Doxycycline 100mg (Summit Lifesciences),Antibiotics,2,"low-price, low-revenue",1507,67.07,1.3202,0.0186,101081.92,218.4,0.0,2484.0205,48.2945,42
+MED135,Mefenamic Acid 250mg (ApexLife Pharma),Antipyretics,2,"low-price, low-revenue",3079,45.77,1.3928,0.0266,140924.56,1155.62,0.0,2456.1677,70.8041,64
+MED136,Mefenamic Acid 250mg (HealthAxis Pharma),Antipyretics,2,"low-price, low-revenue",541,42.18,1.328,0.0058,22821.63,0.0,0.0,1470.4822,46.9534,60
+MED137,Mefenamic Acid 250mg (LifeSpring Pharma),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",874,44.09,1.6602,0.0016,38534.68,0.0,203.05,2025.0954,60.3479,35
+MED138,Mefenamic Acid 250mg (NovaMed Laboratories),Antipyretics,2,"low-price, low-revenue",2717,41.91,1.3697,0.0115,113876.22,28.34,0.0,2365.1943,74.3616,87
+MED139,Mefenamic Acid 500mg,Antipyretics,0,"high-volume, high-revenue, frequent stockouts",16297,51.81,3.2526,0.0523,844326.12,0.0,0.0,9047.0587,233.9658,185
+MED140,Mefenamic Acid 500mg (CureLine Healthcare),Antipyretics,2,"low-price, low-revenue",2065,50.06,1.3069,0.0162,103369.27,0.0,0.0,1972.4959,50.789,44
+MED141,Mefenamic Acid 500mg (HealthAxis Pharma),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",828,47.85,1.3713,0.0088,39616.54,0.0,353.71,1648.7782,45.811,55
+MED142,Mefenamic Acid 500mg (Kavach Healthcare),Antipyretics,0,"high-volume, high-revenue, frequent stockouts",10087,53.97,1.2709,0.06,544442.94,0.0,0.0,4623.9021,113.537,94
+MED143,Mefenamic Acid 500mg (LifeSpring Pharma),Antipyretics,2,"low-price, low-revenue",203,52.69,1.2086,0.0,10696.55,0.0,0.0,2125.3596,53.6534,42
+MED144,Mefenamic Acid 500mg (NovaMed Laboratories),Antipyretics,0,"high-volume, high-revenue, frequent stockouts",7845,48.1,1.6952,0.0652,377334.9,342.18,0.0,4405.4686,118.5973,132
+MED145,Mefenamic Acid 500mg (Stellar Formulations),Antipyretics,2,"low-price, low-revenue",217,54.14,1.4003,0.0,11749.16,0.0,0.0,1978.6848,47.3836,64
+MED146,Mefenamic Acid 500mg (Summit Lifesciences),Antipyretics,2,"low-price, low-revenue",520,56.74,1.3202,0.0066,29507.28,114.99,0.0,2264.4486,51.6986,40
+MED147,Mefenamic Acid 500mg (TrueLife Remedies),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",384,49.81,1.2391,0.0044,19126.06,0.0,435.48,1866.5119,50.8644,40
+MED148,Mefenamic Acid 500mg (VitaCure Remedies),Antipyretics,2,"low-price, low-revenue",947,57.29,1.3815,0.0126,54255.3,821.2,0.0,2433.6951,62.1644,83
+MED149,Paracetamol 650mg (Aarogya Formulations),Antipyretics,2,"low-price, low-revenue",1151,28.17,1.2518,0.0118,32426.89,0.0,0.0,1191.3239,55.6205,30
+MED150,Paracetamol 650mg (CarePlus Laboratories),Antipyretics,2,"low-price, low-revenue",852,26.84,1.4458,0.0011,22870.79,0.0,0.0,1181.3412,59.2945,82
+MED151,Paracetamol Drops 100mg/ml (Aarogya Formulations),Antipyretics,2,"low-price, low-revenue",1405,36.09,1.1928,0.0205,50709.62,0.0,0.0,1028.6152,36.8493,46
+MED152,Paracetamol Suspension 250mg/5ml (Aarogya Formulations),Antipyretics,2,"low-price, low-revenue",2631,46.39,1.522,0.0167,122053.01,307.12,0.0,2532.0352,71.311,96
+MED153,Paracetamol Suspension 250mg/5ml (BlueCrest Pharma),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",307,50.92,1.2219,0.0058,15632.26,722.58,348.37,1795.3971,46.2973,28
+MED154,Paracetamol Suspension 250mg/5ml (CarePlus Laboratories),Antipyretics,2,"low-price, low-revenue",1566,47.05,1.1998,0.0425,73684.33,179.18,0.0,1268.077,36.1164,45
+MED155,Paracetamol Suspension 250mg/5ml (CureLine Healthcare),Antipyretics,2,"low-price, low-revenue",5766,45.27,1.5084,0.0471,261043.85,0.0,0.0,2147.9527,64.4877,56
+MED156,Paracetamol Suspension 250mg/5ml (TrueLife Remedies),Antipyretics,2,"low-price, low-revenue",625,49.55,1.3863,0.0011,30967.79,0.0,0.0,1836.7338,48.3986,56
+MED157,Paracetamol Suspension 125mg/5ml,Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",455,58.83,1.2414,0.0016,26767.16,651.03,86.7,2190.6046,49.2836,57
+MED158,Paracetamol Suspension 125mg/5ml (LifeSpring Pharma),Antipyretics,0,"high-volume, high-revenue, frequent stockouts",8737,53.35,1.6988,0.0414,466150.24,0.0,0.0,4540.3062,111.774,92
+MED159,Paracetamol Suspension 125mg/5ml (NovaMed Laboratories),Antipyretics,2,"low-price, low-revenue",2681,61.1,1.4017,0.0392,163810.97,0.0,0.0,2627.8762,55.7945,47
+MED160,Paracetamol Suspension 125mg/5ml (TrueLife Remedies),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",760,53.28,1.2163,0.0036,40490.35,176.1,232.25,2909.4172,75.1247,75
+MED161,Paracetamol Suspension 125mg/5ml (VitaCure Remedies),Antipyretics,3,"expiry risk, low-volume, low-revenue, expiry write-offs",701,59.89,1.3839,0.0016,41986.38,1542.44,291.59,2092.1201,46.9041,40
+MED162,Cetirizine 10mg (ApexLife Pharma),Antihistamines,2,"low-price, low-revenue",1212,21.4,1.2654,0.0145,25942.05,0.0,0.0,611.3201,38.3055,39
+MED163,Cetirizine 10mg (CureLine Healthcare),Antihistamines,0,"high-volume, high-revenue, frequent stockouts",7029,23.41,1.5626,0.0373,164519.36,78.3,0.0,1853.949,105.2274,110
+MED164,Cetirizine 10mg (LifeSpring Pharma),Antihistamines,2,"low-price, low-revenue",521,21.31,1.4566,0.0074,11104.05,816.56,0.0,805.2562,50.2137,62
+MED165,Cetirizine 10mg (Stellar Formulations),Antihistamines,2,"low-price, low-revenue",3269,22.77,1.7803,0.0205,74439.53,263.2,7.9,1324.0357,80.3137,69
+MED166,Cetirizine 10mg (Summit Lifesciences),Antihistamines,2,"low-price, low-revenue",852,20.84,1.3223,0.0085,17753.69,0.0,0.0,917.3667,57.7562,56
+MED167,Cetirizine 10mg (TrueLife Remedies),Antihistamines,2,"low-price, low-revenue",4261,21.8,1.5187,0.0225,92878.65,0.0,0.0,1473.8502,86.8671,111
+MED168,Cetirizine 5mg,Antihistamines,2,"low-price, low-revenue",862,23.4,1.5031,0.0088,20170.43,555.6,0.0,996.8641,57.0082,43
+MED169,Cetirizine 5mg (CarePlus Laboratories),Antihistamines,0,"high-volume, high-revenue, frequent stockouts",10920,24.43,2.5847,0.0425,266737.6,70.0,0.0,3038.1645,165.7247,119
+MED170,Cetirizine 5mg (CureLine Healthcare),Antihistamines,2,"low-price, low-revenue",162,25.33,1.3333,0.0014,4103.56,255.97,0.0,839.3731,43.2425,36
+MED171,Cetirizine 5mg (Stellar Formulations),Antihistamines,2,"low-price, low-revenue",2458,23.27,1.3383,0.0205,57190.81,0.0,57.19,964.8418,54.126,43
+MED172,Cetirizine 5mg (Summit Lifesciences),Antihistamines,3,"expiry risk, low-volume, low-revenue, expiry write-offs",562,25.72,1.2603,0.0096,14457.35,0.0,235.84,1016.0322,51.0589,82
+MED173,Cetirizine 5mg (TrueLife Remedies),Antihistamines,0,"high-volume, high-revenue, frequent stockouts",21058,23.22,3.1291,0.02,488893.22,0.0,0.0,5872.5227,331.4014,240
+MED174,Cetirizine 5mg (VitaCure Remedies),Antihistamines,2,"low-price, low-revenue",302,27.19,1.274,0.0008,8210.74,159.74,0.0,1063.8878,50.7178,76
+MED175,Chlorpheniramine 4mg (ApexLife Pharma),Antihistamines,2,"low-price, low-revenue",286,10.88,1.3671,0.0,3111.53,131.24,0.0,405.6117,50.0425,49
+MED176,Chlorpheniramine 4mg (BlueCrest Pharma),Antihistamines,2,"low-price, low-revenue",567,10.8,1.2752,0.0049,6121.96,132.2,0.0,509.2484,63.0959,192
+MED177,Chlorpheniramine 4mg (CarePlus Laboratories),Antihistamines,2,"low-price, low-revenue",477,11.3,1.4254,0.0044,5388.33,440.76,5.89,425.8645,48.1589,70
+MED178,Chlorpheniramine 4mg (HealthAxis Pharma),Antihistamines,2,"low-price, low-revenue",868,10.67,1.3258,0.014,9265.55,0.0,0.0,456.3494,55.5178,73
+MED179,Chlorpheniramine 4mg (LifeSpring Pharma),Antihistamines,2,"low-price, low-revenue",1008,11.96,1.3208,0.0041,12059.65,348.51,0.0,591.7155,65.0658,52
+MED180,Chlorpheniramine 4mg (VitaCure Remedies),Antihistamines,2,"low-price, low-revenue",294,12.84,1.2967,0.0,3775.31,0.0,0.0,462.8285,48.3055,56
+MED181,Fexofenadine 120mg (ApexLife Pharma),Antihistamines,1,high-price,643,189.23,1.2097,0.0022,121676.14,0.0,0.0,7478.3315,49.4027,66
+MED182,Fexofenadine 120mg (BlueCrest Pharma),Antihistamines,1,high-price,3366,198.13,1.4296,0.0101,666901.89,968.1,0.0,13915.8766,94.2479,120
+MED183,Fexofenadine 120mg (CureLine Healthcare),Antihistamines,1,high-price,1009,195.99,1.343,0.0005,197751.71,1551.6,0.0,9216.0091,61.8055,66
+MED184,Fexofenadine 120mg (LifeSpring Pharma),Antihistamines,1,high-price,646,171.26,1.2323,0.0005,110631.76,3158.88,0.0,8154.8726,62.4247,73
+MED185,Fexofenadine 120mg (TrueLife Remedies),Antihistamines,1,high-price,332,176.98,1.3576,0.0027,58756.37,0.0,0.0,6034.4717,46.6726,55
+MED186,Fexofenadine 180mg,Antihistamines,1,high-price,2943,219.31,1.2661,0.0258,645428.1,2998.77,0.0,12349.1602,76.1082,41
+MED187,Fexofenadine 180mg (CureLine Healthcare),Antihistamines,1,high-price,515,199.44,1.3963,0.0052,102712.34,2112.05,0.0,6745.4995,44.7959,35
+MED188,Fexofenadine 180mg (HealthAxis Pharma),Antihistamines,1,high-price,322,207.63,1.3511,0.0011,66858.07,5722.83,0.0,8177.8142,52.8301,32
+MED189,Fexofenadine 180mg (TrueLife Remedies),Antihistamines,1,high-price,454,243.79,1.3931,0.0052,110679.24,2324.56,0.0,11373.1212,61.3836,60
+MED190,Levocetirizine 5mg (Aarogya Formulations),Antihistamines,2,"low-price, low-revenue",1015,65.42,1.451,0.0085,66406.32,0.0,0.0,3006.7932,59.1137,70
+MED191,Levocetirizine 5mg (BlueCrest Pharma),Antihistamines,1,high-price,2905,55.78,1.5704,0.0241,162039.72,137.61,0.0,2716.542,65.1699,49
+MED192,Levocetirizine 5mg (CureLine Healthcare),Antihistamines,2,"low-price, low-revenue",649,63.37,1.2661,0.003,41124.59,1546.48,0.0,2788.2481,56.9356,62
+MED193,Levocetirizine 5mg (LifeSpring Pharma),Antihistamines,2,"low-price, low-revenue",714,66.88,1.1514,0.0011,47749.84,427.32,0.0,2898.5741,54.8192,77
+MED194,Levocetirizine 5mg (NovaMed Laboratories),Antihistamines,2,"low-price, low-revenue",1588,56.74,1.3789,0.0164,90105.38,212.4,0.0,2172.4286,49.2068,40
+MED195,Levocetirizine 5mg (VitaCure Remedies),Antihistamines,2,"low-price, low-revenue",576,56.1,1.5449,0.0025,32311.94,0.0,0.0,2932.6542,66.763,59
+MED196,Levocetirizine 2.5mg,Antihistamines,2,"low-price, low-revenue",271,78.52,1.2766,0.0027,21278.87,878.34,0.0,2729.5888,47.9753,64
+MED197,Levocetirizine 2.5mg (LifeSpring Pharma),Antihistamines,1,high-price,3531,71.7,1.5718,0.0123,253182.89,868.61,0.0,4552.6505,85.7603,103
+MED198,Levocetirizine 2.5mg (Stellar Formulations),Antihistamines,2,"low-price, low-revenue",185,70.48,1.1307,0.0005,13038.0,270.56,0.0,3033.8892,57.1301,55
+MED199,Montelukast + Levocetirizine 10mg/5mg (Aarogya Formulations),Antihistamines,1,high-price,414,184.67,1.3706,0.0022,76454.69,3787.28,0.0,8830.0206,61.2411,53
+MED200,Montelukast + Levocetirizine 10mg/5mg (HealthAxis Pharma),Antihistamines,1,high-price,1746,175.31,1.3685,0.0208,306093.5,1427.47,0.0,6619.4945,49.5411,66
+MED201,Montelukast + Levocetirizine 10mg/5mg (NovaMed Laboratories),Antihistamines,1,high-price,867,196.76,1.2711,0.0011,170588.59,0.0,0.0,8625.3865,55.0055,84
+MED202,Montelukast + Levocetirizine 10mg/5mg (Stellar Formulations),Antihistamines,1,high-price,2821,188.06,1.4632,0.0153,530506.66,1336.2,0.0,10452.8459,71.9795,61
+MED203,Montelukast + Levocetirizine 10mg/5mg (TrueLife Remedies),Antihistamines,1,high-price,758,187.22,1.3156,0.0049,141909.31,0.0,0.0,7637.5969,52.711,38
+MED204,Montelukast + Levocetirizine 10mg/5mg (VitaCure Remedies),Antihistamines,3,"expiry risk, low-volume, low-revenue, expiry write-offs",933,175.49,1.2925,0.0118,163733.28,2276.26,486.74,6751.937,52.7438,68
+MED205,Domperidone 10mg (BlueCrest Pharma),Gastrointestinal,2,"low-price, low-revenue",3186,50.58,1.3189,0.0066,161148.96,0.0,0.0,2741.2518,69.8863,77
+MED206,Domperidone 10mg (CarePlus Laboratories),Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",4941,49.38,1.6926,0.0329,244004.24,394.13,0.0,4280.193,110.7438,84
+MED207,Domperidone 10mg (CureLine Healthcare),Gastrointestinal,2,"low-price, low-revenue",1049,50.18,1.2411,0.0014,52639.02,0.0,0.0,2596.1577,67.7438,82
+MED208,Domperidone 10mg (HealthAxis Pharma),Gastrointestinal,2,"low-price, low-revenue",270,49.11,1.2178,0.0,13260.64,0.0,0.0,1970.8979,51.0753,53
+MED209,Domperidone 10mg (LifeSpring Pharma),Gastrointestinal,2,"low-price, low-revenue",424,45.36,1.2334,0.0027,19232.33,491.4,0.0,1857.4864,50.7795,59
+MED210,Domperidone 10mg (NovaMed Laboratories),Gastrointestinal,2,"low-price, low-revenue",1647,43.06,1.4066,0.0159,70913.46,99.51,0.0,1528.1487,45.1918,51
+MED211,Loperamide 2mg (Aarogya Formulations),Gastrointestinal,2,"low-price, low-revenue",386,30.01,1.0759,0.0033,11585.57,210.51,0.0,1277.6318,54.8808,67
+MED212,Loperamide 2mg (BlueCrest Pharma),Gastrointestinal,2,"low-price, low-revenue",515,27.21,1.5053,0.0014,14012.86,38.8,0.0,1192.0052,55.4904,53
+MED213,Loperamide 2mg (LifeSpring Pharma),Gastrointestinal,2,"low-price, low-revenue",432,25.66,1.297,0.0005,11087.26,0.0,0.0,1057.2288,52.0808,68
+MED214,Omeprazole 20mg (Aarogya Formulations),Gastrointestinal,2,"low-price, low-revenue",549,47.82,1.5905,0.0,26253.2,508.06,0.0,1761.4719,47.4589,45
+MED215,Omeprazole 20mg (CarePlus Laboratories),Gastrointestinal,1,high-price,3703,50.59,1.4973,0.0121,187322.31,0.0,0.0,3894.9742,98.1548,78
+MED216,Omeprazole 20mg (CureLine Healthcare),Gastrointestinal,2,"low-price, low-revenue",464,52.99,1.4061,0.0008,24587.84,38.65,0.0,2105.3021,49.9849,31
+MED217,Omeprazole 20mg (HealthAxis Pharma),Gastrointestinal,2,"low-price, low-revenue",228,50.19,1.2176,0.0016,11444.15,726.39,0.0,1990.5068,54.0658,70
+MED218,Omeprazole 20mg (LifeSpring Pharma),Gastrointestinal,2,"low-price, low-revenue",738,54.64,1.3747,0.011,40320.94,1227.87,0.0,2078.7897,51.8507,44
+MED219,Omeprazole 20mg (TrueLife Remedies),Gastrointestinal,1,high-price,4352,46.88,1.5221,0.0049,204034.8,0.0,0.0,3958.3278,107.1822,101
+MED220,Omeprazole 20mg (VitaCure Remedies),Gastrointestinal,2,"low-price, low-revenue",452,51.97,1.1757,0.0,23490.46,0.0,0.0,3075.9348,73.3986,80
+MED221,Omeprazole 40mg,Gastrointestinal,2,"low-price, low-revenue",580,54.81,1.3586,0.006,31790.51,0.0,0.0,2289.6955,51.4301,24
+MED222,Omeprazole 40mg (ApexLife Pharma),Gastrointestinal,2,"low-price, low-revenue",2570,56.05,1.3817,0.006,144058.83,0.0,0.0,2969.7027,67.4973,71
+MED223,Omeprazole 40mg (LifeSpring Pharma),Gastrointestinal,1,high-price,3895,58.03,1.4066,0.011,226013.68,0.0,0.0,3594.152,81.9096,81
+MED224,Omeprazole 40mg (Summit Lifesciences),Gastrointestinal,1,high-price,3331,58.49,1.1502,0.0115,194837.83,206.6,0.0,3901.7957,92.6479,93
+MED225,Omeprazole 40mg (TrueLife Remedies),Gastrointestinal,2,"low-price, low-revenue",515,57.67,1.3706,0.0008,29699.52,848.36,0.0,2247.0904,50.8041,37
+MED226,Ondansetron 4mg (Aarogya Formulations),Gastrointestinal,2,"low-price, low-revenue",1828,59.08,1.3093,0.0099,107990.66,0.0,0.0,2351.7682,49.874,56
+MED227,Ondansetron 4mg (BlueCrest Pharma),Gastrointestinal,2,"low-price, low-revenue",235,52.16,1.4034,0.0,12256.64,0.0,0.0,1977.3118,48.7589,49
+MED228,Ondansetron 4mg (CarePlus Laboratories),Gastrointestinal,2,"low-price, low-revenue",608,52.06,1.4117,0.0014,31653.21,0.0,0.0,2317.4569,58.7616,67
+MED229,Ondansetron 4mg (CureLine Healthcare),Gastrointestinal,2,"low-price, low-revenue",494,55.49,1.1966,0.0016,27411.87,0.0,0.0,2021.9424,49.1151,76
+MED230,Ondansetron 4mg (LifeSpring Pharma),Gastrointestinal,2,"low-price, low-revenue",282,56.01,1.1878,0.0008,15794.27,756.72,0.0,2107.927,48.2425,56
+MED231,Ondansetron 4mg (NovaMed Laboratories),Gastrointestinal,2,"low-price, low-revenue",1318,60.11,1.3413,0.0334,79226.94,210.4,0.0,1567.0147,36.3055,20
+MED232,Ondansetron 4mg (Stellar Formulations),Gastrointestinal,2,"low-price, low-revenue",939,58.51,1.2796,0.0058,54939.74,2233.22,0.0,2320.7516,54.8877,55
+MED233,Ondansetron 4mg (Summit Lifesciences),Gastrointestinal,2,"low-price, low-revenue",668,53.67,1.2497,0.0058,35848.73,0.0,0.0,2026.3157,47.7178,79
+MED234,Ondansetron 4mg (VitaCure Remedies),Gastrointestinal,1,high-price,3467,55.64,1.2682,0.0025,192899.8,0.0,0.0,4516.753,105.9466,120
+MED235,Ondansetron 8mg,Gastrointestinal,3,"expiry risk, low-volume, low-revenue, expiry write-offs",595,66.89,1.2136,0.0014,39797.56,0.0,71.88,2919.7744,57.5205,81
+MED236,Ondansetron 8mg (LifeSpring Pharma),Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",22440,66.67,2.1429,0.0005,1496174.77,0.0,0.0,23072.5733,445.7877,378
+MED237,Ondansetron 8mg (TrueLife Remedies),Gastrointestinal,2,"low-price, low-revenue",433,59.19,1.2447,0.0005,25627.8,246.14,0.0,2629.1151,56.6658,55
+MED238,Ondansetron 8mg (VitaCure Remedies),Gastrointestinal,2,"low-price, low-revenue",770,59.39,1.3665,0.0055,45728.52,0.0,0.0,2585.7568,56.5082,43
+MED239,ORS Powder 21.8g (HealthAxis Pharma),Gastrointestinal,0,"high-volume, high-revenue, frequent stockouts",21931,18.84,2.2617,0.0173,413158.78,0.0,0.0,7102.7976,522.8616,193
+MED240,ORS Powder 21.8g (LifeSpring Pharma),Gastrointestinal,2,"low-price, low-revenue",962,19.18,1.4175,0.0041,18448.81,0.0,0.0,757.9182,54.7356,34
+MED241,ORS Powder 21.8g (Stellar Formulations),Gastrointestinal,2,"low-price, low-revenue",4582,22.44,1.5421,0.0019,102839.4,0.0,0.0,2420.3975,142.9137,144
+MED242,ORS Powder 21.8g (Summit Lifesciences),Gastrointestinal,2,"low-price, low-revenue",258,19.39,1.3105,0.0,5001.43,405.12,0.0,718.2218,47.7342,37
+MED243,ORS Powder 21.8g (TrueLife Remedies),Gastrointestinal,3,"expiry risk, low-volume, low-revenue, expiry write-offs",530,20.34,1.1157,0.0027,10781.61,166.21,51.85,776.2839,48.9274,61
+MED244,ORS Powder 21.8g (VitaCure Remedies),Gastrointestinal,2,"low-price, low-revenue",652,22.68,1.4975,0.0044,14790.5,0.0,54.39,921.8078,54.0562,62
+MED245,Pantoprazole 40mg (BlueCrest Pharma),Gastrointestinal,1,high-price,3374,82.21,1.2762,0.0279,277361.22,0.0,0.0,4173.0606,64.8014,58
+MED246,Pantoprazole 40mg (CarePlus Laboratories),Gastrointestinal,1,high-price,974,78.26,1.3431,0.0137,76226.77,110.58,0.0,3728.9038,61.2205,54
+MED247,Pantoprazole 40mg (NovaMed Laboratories),Gastrointestinal,1,high-price,3129,71.68,1.5984,0.0041,224276.97,475.76,0.0,5458.6119,99.4781,112
+MED248,Pantoprazole 40mg (TrueLife Remedies),Gastrointestinal,2,"low-price, low-revenue",242,77.35,1.279,0.0016,18718.91,1163.61,0.0,2844.2499,49.9575,57
+MED249,Pantoprazole 20mg,Gastrointestinal,1,high-price,4189,83.5,1.5741,0.0156,349800.87,0.0,0.0,5199.1089,79.726,96
+MED250,Pantoprazole 20mg (ApexLife Pharma),Gastrointestinal,1,high-price,1470,89.6,1.2012,0.0145,131706.41,0.0,0.0,3192.6165,45.3795,53
+MED251,Pantoprazole 20mg (BlueCrest Pharma),Gastrointestinal,1,high-price,717,85.05,1.4214,0.009,60982.45,0.0,0.0,3670.2972,54.3671,27
+MED252,Pantoprazole 20mg (CarePlus Laboratories),Gastrointestinal,1,high-price,496,91.37,1.0818,0.0025,45320.93,892.72,0.0,3415.7072,48.211,61
+MED253,Pantoprazole 20mg (Stellar Formulations),Gastrointestinal,1,high-price,615,95.14,1.3798,0.0052,58510.58,639.9,0.0,3404.9504,49.4986,46
+MED254,Pantoprazole 20mg (Summit Lifesciences),Gastrointestinal,1,high-price,995,95.08,1.5572,0.0066,94607.57,561.12,0.0,4586.0192,60.889,39
+MED255,Pantoprazole 20mg (VitaCure Remedies),Gastrointestinal,1,high-price,416,90.18,1.2853,0.0011,37513.09,1250.82,0.0,4432.8606,64.7274,98
+MED256,Amlodipine 5mg (BlueCrest Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",5270,35.39,1.6577,0.0044,186501.75,0.0,0.0,3274.2578,121.8068,122
+MED257,Amlodipine 5mg (LifeSpring Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4625,36.68,1.5442,0.0156,169663.28,0.0,0.0,3026.4318,107.6562,109
+MED258,Amlodipine 5mg (NovaMed Laboratories),Cardiovascular,2,"low-price, low-revenue",940,34.51,1.644,0.0049,32437.21,0.0,0.0,1809.3095,67.8699,72
+MED259,Amlodipine 5mg (Stellar Formulations),Cardiovascular,2,"low-price, low-revenue",1010,32.16,1.6418,0.0074,32483.94,48.96,0.0,1546.2517,61.4562,71
+MED260,Amlodipine 5mg (VitaCure Remedies),Cardiovascular,2,"low-price, low-revenue",228,36.58,1.735,0.0022,8340.18,602.88,0.0,1617.9488,56.9712,67
+MED261,Amlodipine 2.5mg,Cardiovascular,2,"low-price, low-revenue",550,45.43,1.846,0.0079,24983.96,275.92,0.0,2271.2741,65.5301,43
+MED262,Amlodipine 2.5mg (LifeSpring Pharma),Cardiovascular,2,"low-price, low-revenue",1828,43.45,1.6584,0.0036,79427.82,0.0,0.0,2568.0154,74.3945,108
+MED263,Amlodipine 2.5mg (Stellar Formulations),Cardiovascular,2,"low-price, low-revenue",1586,42.73,1.6816,0.0085,67768.81,250.32,0.0,2399.534,73.8096,66
+MED264,Amlodipine 2.5mg (Summit Lifesciences),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4658,39.95,1.5154,0.0184,186084.7,0.0,0.0,3701.7757,120.5329,153
+MED265,Amlodipine 2.5mg (TrueLife Remedies),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",11822,46.03,1.5086,0.003,544140.5,0.0,0.0,8784.2258,247.8397,290
+MED266,Amlodipine 2.5mg (VitaCure Remedies),Cardiovascular,2,"low-price, low-revenue",563,40.52,1.6829,0.0033,22812.26,183.84,0.0,1619.0145,50.6096,62
+MED267,Amlodipine 10mg,Cardiovascular,2,"low-price, low-revenue",684,53.09,1.6015,0.0077,36314.21,0.0,0.0,2416.1817,58.3808,63
+MED268,Amlodipine 10mg (LifeSpring Pharma),Cardiovascular,2,"low-price, low-revenue",560,47.02,1.4755,0.0047,26330.76,0.0,0.0,2080.1837,56.6507,46
+MED269,Amlodipine 10mg (Stellar Formulations),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",31777,44.19,1.6094,0.0175,1404160.49,0.0,0.0,13191.9386,399.4452,345
+MED270,Aspirin 75mg (Aarogya Formulations),Cardiovascular,2,"low-price, low-revenue",5266,7.92,1.4626,0.0066,41704.18,124.8,0.0,918.8044,152.1425,138
+MED271,Aspirin 75mg (ApexLife Pharma),Cardiovascular,2,"low-price, low-revenue",538,7.96,1.5713,0.006,4281.47,0.0,0.0,315.5786,50.7904,36
+MED272,Aspirin 75mg (BlueCrest Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",20391,8.34,1.9411,0.0238,170102.03,0.0,0.0,2032.5796,316.1849,275
+MED273,Aspirin 75mg (CureLine Healthcare),Cardiovascular,2,"low-price, low-revenue",2574,7.27,1.606,0.0241,18713.85,42.37,0.0,369.0881,68.6301,99
+MED274,Aspirin 75mg (LifeSpring Pharma),Cardiovascular,2,"low-price, low-revenue",225,8.34,1.4972,0.0,1876.23,183.04,0.0,416.5007,65.4247,66
+MED275,Aspirin 75mg (NovaMed Laboratories),Cardiovascular,2,"low-price, low-revenue",557,7.14,1.4901,0.0071,3975.26,238.51,0.0,352.2905,64.8384,68
+MED276,Aspirin 75mg (Stellar Formulations),Cardiovascular,2,"low-price, low-revenue",5834,8.15,1.5959,0.003,47576.25,0.0,0.0,1117.6746,180.7658,259
+MED277,Aspirin 150mg,Cardiovascular,2,"low-price, low-revenue",563,9.45,1.5385,0.0162,5322.65,0.0,0.0,373.494,50.7301,25
+MED278,Aspirin 150mg (CarePlus Laboratories),Cardiovascular,2,"low-price, low-revenue",3644,8.44,1.5666,0.0375,30757.71,0.0,0.0,493.6636,75.511,104
+MED279,Aspirin 150mg (Summit Lifesciences),Cardiovascular,2,"low-price, low-revenue",783,10.16,1.5881,0.003,7954.62,0.0,0.0,469.5021,61.4096,78
+MED280,Aspirin 150mg (TrueLife Remedies),Cardiovascular,2,"low-price, low-revenue",4470,9.34,1.4986,0.0058,41734.87,30.88,0.0,708.0122,98.8219,111
+MED281,Atorvastatin 10mg (Aarogya Formulations),Cardiovascular,1,high-price,579,87.93,1.6605,0.0052,50911.55,0.0,0.0,4198.4661,61.6699,48
+MED282,Atorvastatin 10mg (ApexLife Pharma),Cardiovascular,1,high-price,1376,106.13,1.6801,0.0033,146039.51,0.0,0.0,5804.2019,70.1904,62
+MED283,Atorvastatin 10mg (LifeSpring Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4382,100.64,1.7086,0.0274,441012.08,0.0,0.0,8690.7417,112.5274,82
+MED284,Atorvastatin 10mg (Summit Lifesciences),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4381,103.56,1.8373,0.0074,453706.23,518.21,0.0,9766.2119,123.3699,188
+MED285,Atorvastatin 20mg,Cardiovascular,1,high-price,3347,122.16,1.8167,0.0129,408884.78,171.34,0.0,7474.2924,78.3247,72
+MED286,Atorvastatin 20mg (BlueCrest Pharma),Cardiovascular,1,high-price,2979,114.74,1.7176,0.0145,341797.47,273.03,0.0,7446.1848,83.9164,60
+MED287,Atorvastatin 20mg (CarePlus Laboratories),Cardiovascular,1,high-price,1521,103.52,1.4642,0.006,157447.51,951.81,0.0,6202.4983,77.5493,95
+MED288,Atorvastatin 40mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",3915,121.51,1.6028,0.0233,475719.55,0.0,0.0,7439.9983,77.4411,87
+MED289,Atorvastatin 40mg (CureLine Healthcare),Cardiovascular,1,high-price,404,137.5,1.6323,0.0052,55549.01,1573.62,0.0,5192.6694,52.8959,73
+MED290,Atorvastatin 40mg (LifeSpring Pharma),Cardiovascular,1,high-price,347,136.41,1.6458,0.0036,47335.69,440.4,0.0,6237.1025,57.9521,42
+MED291,Atorvastatin 40mg (VitaCure Remedies),Cardiovascular,1,high-price,671,131.32,1.5899,0.0044,88117.27,0.0,0.0,6478.0881,63.1301,59
+MED292,Clopidogrel 75mg (Aarogya Formulations),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",3925,95.41,1.5561,0.0126,374467.82,71.97,0.0,7073.7762,97.2918,132
+MED293,Clopidogrel 75mg (BlueCrest Pharma),Cardiovascular,1,high-price,1550,100.52,1.6225,0.0019,155799.31,1417.31,0.0,6391.7716,82.9767,96
+MED294,Clopidogrel 75mg (CureLine Healthcare),Cardiovascular,1,high-price,992,95.2,1.7118,0.0003,94441.58,323.9,0.0,6974.437,94.1205,113
+MED295,Clopidogrel 75mg (NovaMed Laboratories),Cardiovascular,1,high-price,776,102.96,1.5396,0.0058,79894.48,0.0,0.0,6003.6697,73.6425,46
+MED296,Clopidogrel 75mg (Stellar Formulations),Cardiovascular,1,high-price,1522,98.15,1.6568,0.0047,149384.63,245.22,0.0,5888.5285,78.7466,60
+MED297,Losartan 50mg (Aarogya Formulations),Cardiovascular,1,high-price,587,90.83,1.7548,0.0077,53318.4,1265.07,0.0,3788.053,55.1767,69
+MED298,Losartan 50mg (CarePlus Laboratories),Cardiovascular,1,high-price,588,82.4,1.4901,0.0063,48452.01,1232.8,0.0,3407.267,53.6356,62
+MED299,Losartan 50mg (NovaMed Laboratories),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",20416,87.44,1.6725,0.0186,1785122.48,0.0,0.0,23497.4632,341.774,402
+MED300,Losartan 25mg,Cardiovascular,1,high-price,460,96.95,1.6201,0.0071,44597.05,0.0,0.0,4058.1058,54.5425,39
+MED301,Losartan 25mg (CarePlus Laboratories),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",26886,101.5,2.1431,0.0153,2728878.99,1417.8,0.0,36698.3833,473.9973,451
+MED302,Losartan 25mg (HealthAxis Pharma),Cardiovascular,1,high-price,3936,95.35,1.833,0.0241,375279.24,896.92,0.0,5967.0182,80.3616,75
+MED303,Losartan 25mg (NovaMed Laboratories),Cardiovascular,3,"expiry risk, low-volume, low-revenue, expiry write-offs",658,98.85,1.5225,0.0096,65040.65,1987.08,294.64,4289.1534,58.5548,64
+MED304,Losartan 25mg (Summit Lifesciences),Cardiovascular,1,high-price,339,101.35,1.6627,0.0025,34357.15,291.24,0.0,4598.6106,58.0356,50
+MED305,Losartan 25mg (TrueLife Remedies),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",6093,102.47,1.6334,0.0096,624367.95,0.0,0.0,13015.245,172.4685,141
+MED306,Metoprolol 50mg (Aarogya Formulations),Cardiovascular,1,high-price,3978,68.5,1.7309,0.0301,272504.32,503.6,0.0,3874.4232,74.3534,49
+MED307,Metoprolol 50mg (BlueCrest Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",13733,63.59,1.9987,0.0162,873267.3,0.0,0.0,11677.742,236.2562,340
+MED308,Metoprolol 50mg (CureLine Healthcare),Cardiovascular,1,high-price,1400,65.92,1.5695,0.0022,92287.57,354.04,0.0,4433.0456,86.6096,80
+MED309,Metoprolol 50mg (NovaMed Laboratories),Cardiovascular,2,"low-price, low-revenue",740,67.25,1.4407,0.0008,49764.5,456.62,0.0,3202.7092,60.8589,67
+MED310,Metoprolol 25mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4589,71.37,1.718,0.0173,327533.61,583.09,0.0,6073.2175,119.1247,121
+MED311,Metoprolol 25mg (CureLine Healthcare),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",3963,86.88,1.6837,0.0126,344288.1,0.0,0.0,7331.0481,109.6178,121
+MED312,Metoprolol 25mg (HealthAxis Pharma),Cardiovascular,1,high-price,820,73.06,1.6582,0.003,59908.89,0.0,0.0,3836.8358,66.3658,91
+MED313,Metoprolol 25mg (LifeSpring Pharma),Cardiovascular,1,high-price,875,71.67,1.6882,0.0058,62711.67,451.36,0.0,3302.7843,60.8781,41
+MED314,Rosuvastatin 10mg (BlueCrest Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4268,162.47,1.6668,0.0214,693420.43,1367.76,0.0,12449.869,102.5479,137
+MED315,Rosuvastatin 10mg (NovaMed Laboratories),Cardiovascular,1,high-price,300,165.61,1.5898,0.0058,49683.85,0.0,0.0,8457.4849,65.4192,89
+MED316,Rosuvastatin 10mg (Summit Lifesciences),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4804,162.25,1.693,0.006,779471.8,0.0,0.0,15982.1723,127.1945,101
+MED317,Rosuvastatin 5mg,Cardiovascular,1,high-price,906,188.82,1.6108,0.0033,171067.78,0.0,0.0,10394.6606,67.6041,96
+MED318,Rosuvastatin 5mg (BlueCrest Pharma),Cardiovascular,1,high-price,460,201.85,1.5571,0.0038,92850.46,817.85,0.0,9257.8389,58.6548,66
+MED319,Rosuvastatin 5mg (NovaMed Laboratories),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",24046,211.31,1.9117,0.0342,5081251.27,0.0,0.0,43468.9967,271.5068,341
+MED320,Rosuvastatin 5mg (Stellar Formulations),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4887,179.05,1.4904,0.0126,875020.2,1261.62,0.0,15866.6037,114.0603,128
+MED321,Rosuvastatin 5mg (VitaCure Remedies),Cardiovascular,1,high-price,896,187.85,1.615,0.0077,168315.37,0.0,0.0,9952.5419,68.5123,52
+MED322,Rosuvastatin 20mg,Cardiovascular,1,high-price,3231,232.26,1.6449,0.0049,750428.92,0.0,0.0,17488.6651,97.6466,73
+MED323,Rosuvastatin 20mg (NovaMed Laboratories),Cardiovascular,1,high-price,1000,228.2,1.7209,0.0249,228201.4,6704.85,0.0,14188.2606,84.663,69
+MED324,Rosuvastatin 20mg (Stellar Formulations),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",5536,204.84,1.6345,0.0063,1133971.28,0.0,0.0,20571.4499,130.4932,90
+MED325,Rosuvastatin 20mg (Summit Lifesciences),Cardiovascular,3,"expiry risk, low-volume, low-revenue, expiry write-offs",275,242.55,1.5927,0.0033,66701.61,0.0,2596.62,11364.05,57.8918,82
+MED326,Rosuvastatin 20mg (VitaCure Remedies),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",27834,236.12,1.6752,0.0353,6572301.3,0.0,0.0,54925.6856,299.9822,230
+MED327,Telmisartan 40mg (Aarogya Formulations),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",31895,109.19,3.1508,0.063,3482747.35,0.0,0.0,28197.6753,327.5137,603
+MED328,Telmisartan 40mg (CureLine Healthcare),Cardiovascular,1,high-price,293,123.72,2.0631,0.0019,36249.66,0.0,0.0,6952.5928,73.4151,100
+MED329,Telmisartan 40mg (NovaMed Laboratories),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",13443,123.06,1.4883,0.0115,1654325.54,0.0,0.0,19743.3766,208.563,268
+MED330,Telmisartan 40mg (Stellar Formulations),Cardiovascular,1,high-price,607,112.93,1.6076,0.0099,68550.66,1157.58,0.0,4940.9203,57.0082,47
+MED331,Telmisartan 40mg (VitaCure Remedies),Cardiovascular,1,high-price,888,110.9,1.581,0.0066,98475.6,0.0,0.0,4866.4515,57.5315,81
+MED332,Telmisartan 20mg,Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",4076,155.03,1.7041,0.0142,631915.17,0.0,0.0,11086.8444,92.1356,113
+MED333,Telmisartan 20mg (HealthAxis Pharma),Cardiovascular,1,high-price,1127,152.13,1.5541,0.0041,171448.07,3556.54,0.0,8371.9292,72.2096,53
+MED334,Telmisartan 20mg (LifeSpring Pharma),Cardiovascular,1,high-price,859,149.23,1.4915,0.0058,128191.86,0.0,0.0,6468.5633,58.0137,50
+MED335,Telmisartan 20mg (Summit Lifesciences),Cardiovascular,1,high-price,641,141.21,1.4343,0.0156,90513.16,0.0,0.0,6233.5507,56.4082,23
+MED336,Telmisartan 80mg,Cardiovascular,1,high-price,1019,161.84,1.968,0.0085,164911.43,0.0,0.0,8538.9234,67.9904,70
+MED337,Telmisartan 80mg (ApexLife Pharma),Cardiovascular,1,high-price,1414,172.25,1.5059,0.0008,243565.48,0.0,0.0,11093.2289,83.4233,88
+MED338,Telmisartan 80mg (BlueCrest Pharma),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",6136,150.46,1.5616,0.0047,923231.7,0.0,0.0,22649.2407,195.1658,222
+MED339,Telmisartan 80mg (CureLine Healthcare),Cardiovascular,1,high-price,866,157.68,1.5106,0.0093,136553.82,0.0,0.0,7965.5812,63.9589,51
+MED340,Telmisartan 80mg (NovaMed Laboratories),Cardiovascular,1,high-price,1011,172.52,1.4626,0.0036,174412.97,1033.68,0.0,9526.3332,71.8274,52
+MED341,Telmisartan 80mg (Stellar Formulations),Cardiovascular,1,high-price,2420,179.43,1.6617,0.0222,434223.89,0.0,0.0,7181.4646,52.5699,43
+MED342,Telmisartan 80mg (Summit Lifesciences),Cardiovascular,1,high-price,2705,160.03,1.5209,0.0241,432892.4,0.0,0.0,7042.221,56.7164,57
+MED343,Telmisartan 80mg (TrueLife Remedies),Cardiovascular,0,"high-volume, high-revenue, frequent stockouts",3145,177.21,1.6592,0.0027,557330.75,0.0,0.0,13544.4084,98.0493,108
+MED344,Gliclazide 80mg (Aarogya Formulations),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",7493,67.84,1.5662,0.0047,508336.4,0.0,0.0,11659.5506,230.2329,181
+MED345,Gliclazide 80mg (BlueCrest Pharma),Antidiabetic,1,high-price,1270,67.81,1.5043,0.0055,86121.3,0.0,0.0,3718.8542,69.9411,53
+MED346,Gliclazide 80mg (CarePlus Laboratories),Antidiabetic,1,high-price,3222,70.0,1.6591,0.0055,225535.19,0.0,0.0,4526.4846,83.463,91
+MED347,Gliclazide 80mg (LifeSpring Pharma),Antidiabetic,1,high-price,1567,68.61,1.6239,0.011,107517.89,0.0,0.0,3833.0294,72.5795,59
+MED348,Gliclazide 80mg (TrueLife Remedies),Antidiabetic,2,"low-price, low-revenue",319,71.0,1.6708,0.0036,22647.92,167.19,0.0,3216.2502,59.0863,69
+MED349,Gliclazide 40mg,Antidiabetic,1,high-price,2787,91.04,1.493,0.0178,253737.92,0.0,0.0,4123.7605,60.6986,64
+MED350,Gliclazide 40mg (BlueCrest Pharma),Antidiabetic,2,"low-price, low-revenue",417,85.5,1.5211,0.0019,35654.66,0.0,0.0,3844.6025,58.389,48
+MED351,Gliclazide 40mg (Lumina Pharma),Antidiabetic,1,high-price,2235,88.2,1.5349,0.0093,197128.92,0.0,0.0,4174.603,60.9055,76
+MED352,Gliclazide 40mg (NovaMed Laboratories),Antidiabetic,3,"expiry risk, low-volume, low-revenue, expiry write-offs",210,81.3,1.487,0.003,17073.15,2584.56,1185.48,3293.5795,56.2767,62
+MED353,Gliclazide 40mg (Stellar Formulations),Antidiabetic,3,"expiry risk, low-volume, low-revenue, expiry write-offs",519,81.4,1.5227,0.0101,42248.3,900.2,702.25,3431.0918,55.5411,62
+MED354,Gliclazide 40mg (Summit Lifesciences),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",10192,88.41,1.5578,0.0214,901081.44,0.0,0.0,11935.4305,175.9685,164
+MED355,Glimepiride 2mg (BlueCrest Pharma),Antidiabetic,1,high-price,768,134.66,1.4125,0.0101,103415.85,885.44,0.0,5301.0861,52.1082,70
+MED356,Glimepiride 2mg (CarePlus Laboratories),Antidiabetic,1,high-price,2331,149.08,1.5356,0.0099,347502.93,232.42,0.0,8655.3881,76.7712,77
+MED357,Glimepiride 2mg (Stellar Formulations),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",4693,140.49,1.4898,0.0121,659336.79,1437.54,0.0,14426.2794,132.1027,108
+MED358,Glimepiride 2mg (VitaCure Remedies),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",3997,140.17,1.4971,0.009,560269.52,0.0,0.0,10199.5923,92.2836,144
+MED359,Glimepiride 1mg,Antidiabetic,1,high-price,308,155.81,1.7049,0.0014,47990.92,0.0,0.0,7107.3005,60.5521,52
+MED360,Glimepiride 1mg (CarePlus Laboratories),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",5964,175.56,1.5941,0.0096,1047064.58,0.0,0.0,22584.2406,173.0918,129
+MED361,Glimepiride 1mg (CureLine Healthcare),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",4566,159.09,1.4233,0.0115,726387.3,0.0,0.0,14919.5758,118.1932,103
+MED362,Glimepiride 1mg (HealthAxis Pharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",3258,176.58,1.7747,0.0342,575296.4,1363.62,0.0,17419.196,124.8877,54
+MED363,Glimepiride 1mg (Summit Lifesciences),Antidiabetic,1,high-price,1264,160.93,1.284,0.0,203421.15,1438.8,0.0,10357.1331,81.526,94
+MED364,Glimepiride 1mg (TrueLife Remedies),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",4700,168.88,1.8709,0.0151,793758.25,0.0,0.0,16013.3005,122.5603,118
+MED365,Glimepiride 3mg,Antidiabetic,3,"expiry risk, low-volume, low-revenue, expiry write-offs",631,195.81,1.6285,0.0077,123556.65,0.0,1545.44,8873.8225,59.4534,59
+MED366,Glimepiride 3mg (ApexLife Pharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",5630,207.61,1.6996,0.0066,1168856.01,2929.88,0.0,22189.1591,143.8301,138
+MED367,Glimepiride 3mg (CureLine Healthcare),Antidiabetic,1,high-price,1121,197.98,1.5891,0.006,221938.89,0.0,0.0,9721.1297,62.4356,82
+MED368,Glimepiride 3mg (NovaMed Laboratories),Antidiabetic,1,high-price,479,200.89,1.5043,0.0077,96227.4,997.14,0.0,9696.5593,62.611,83
+MED369,Glimepiride 3mg (Stellar Formulations),Antidiabetic,1,high-price,1221,189.97,1.4263,0.0041,231951.47,282.48,0.0,9517.5559,65.2781,67
+MED370,Glimepiride 3mg (Summit Lifesciences),Antidiabetic,1,high-price,909,172.23,1.5433,0.0025,156554.47,375.93,0.0,9628.5629,74.8137,60
+MED371,Glimepiride 3mg (TrueLife Remedies),Antidiabetic,1,high-price,272,201.07,1.4312,0.0049,54691.48,0.0,0.0,9952.2866,66.0616,45
+MED372,Glimepiride 3mg (VitaCure Remedies),Antidiabetic,1,high-price,1030,190.03,1.7401,0.0027,195729.37,0.0,0.0,10723.0693,72.9904,49
+MED373,Glimepiride + Metformin 2mg/500mg (Aarogya Formulations),Antidiabetic,1,high-price,693,151.76,1.9771,0.0068,105167.98,0.0,0.0,6771.5628,56.8247,54
+MED374,Glimepiride + Metformin 2mg/500mg (Stellar Formulations),Antidiabetic,1,high-price,2270,135.01,1.7533,0.0192,306473.94,655.26,0.0,6182.281,58.5164,43
+MED375,Glimepiride + Metformin 2mg/500mg (Summit Lifesciences),Antidiabetic,1,high-price,439,147.02,1.4441,0.0016,64543.04,0.0,0.0,7215.9054,62.4918,30
+MED376,Glimepiride + Metformin 1mg/500mg,Antidiabetic,1,high-price,1332,175.8,1.4038,0.0058,234165.31,1873.49,0.0,8965.0437,68.1616,83
+MED377,Glimepiride + Metformin 1mg/500mg (CarePlus Laboratories),Antidiabetic,1,high-price,953,164.48,1.5589,0.0008,156750.51,2123.29,0.0,8738.4764,71.0425,61
+MED378,Glimepiride + Metformin 1mg/500mg (Stellar Formulations),Antidiabetic,1,high-price,1264,187.55,1.4537,0.0027,237060.09,268.18,0.0,11097.3695,76.4452,57
+MED379,Glimepiride + Metformin 1mg/500mg (Summit Lifesciences),Antidiabetic,1,high-price,1120,179.28,1.4749,0.0014,200797.25,265.24,0.0,10641.2179,77.9397,61
+MED380,Glimepiride + Metformin 1mg/500mg (VitaCure Remedies),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",5085,175.84,1.3708,0.0071,894151.02,2046.6,0.0,19081.4567,138.0438,161
+MED381,Glimepiride + Metformin 1mg/500mg (Zenith BioPharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",23871,165.45,2.1776,0.0523,3949570.79,0.0,0.0,37319.4598,293.5767,399
+MED382,Metformin 500mg (CureLine Healthcare),Antidiabetic,2,"low-price, low-revenue",1101,31.64,1.5791,0.0104,34837.88,0.0,0.0,1582.8008,62.8918,48
+MED383,Metformin 500mg (Stellar Formulations),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",24803,33.11,1.6657,0.0173,821132.47,0.0,0.0,8447.3951,335.8548,368
+MED384,Metformin 500mg (TrueLife Remedies),Antidiabetic,2,"low-price, low-revenue",877,30.61,1.6427,0.0096,26847.84,0.0,0.0,1418.6955,60.363,50
+MED385,Metformin 850mg,Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",28611,37.22,1.8533,0.0208,1064768.6,0.0,0.0,10909.194,383.0904,336
+MED386,Metformin 850mg (CureLine Healthcare),Antidiabetic,2,"low-price, low-revenue",2878,38.21,1.7014,0.0353,109957.62,61.24,0.0,1680.4142,57.037,51
+MED387,Metformin 850mg (Stellar Formulations),Antidiabetic,2,"low-price, low-revenue",707,37.48,1.6612,0.0074,26496.25,264.1,0.0,1777.1917,60.3795,50
+MED388,Metformin 850mg (VitaCure Remedies),Antidiabetic,2,"low-price, low-revenue",548,39.13,1.6594,0.0047,21445.08,105.68,0.0,1968.8821,66.4699,50
+MED389,Metformin 1000mg,Antidiabetic,3,"expiry risk, low-volume, low-revenue, expiry write-offs",888,39.09,1.658,0.0099,34712.98,875.51,99.94,1933.7995,64.9562,89
+MED390,Metformin 1000mg (BlueCrest Pharma),Antidiabetic,2,"low-price, low-revenue",1124,46.48,1.6641,0.0058,52244.48,0.0,0.0,2331.4704,66.0973,57
+MED391,Metformin 1000mg (HealthAxis Pharma),Antidiabetic,2,"low-price, low-revenue",3917,39.83,1.6958,0.0342,156017.54,339.34,0.0,2595.2759,85.3507,74
+MED392,Metformin 1000mg (LifeSpring Pharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",14198,46.22,1.7587,0.0129,656296.71,253.47,0.0,9595.3549,265.137,206
+MED393,Metformin 1000mg (TrueLife Remedies),Antidiabetic,2,"low-price, low-revenue",1563,44.59,1.3945,0.02,69699.02,0.0,0.0,2323.5152,67.4329,64
+MED394,Sitagliptin 100mg (BlueCrest Pharma),Antidiabetic,1,high-price,563,345.82,1.5784,0.0047,194696.34,0.0,0.0,17644.3287,65.6082,40
+MED395,Sitagliptin 100mg (CarePlus Laboratories),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",5467,389.82,1.8793,0.006,2131130.58,0.0,1410.26,45395.6133,151.8562,186
+MED396,Sitagliptin 100mg (HealthAxis Pharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",31486,361.99,1.5467,0.0041,11397510.79,0.0,0.0,166645.7855,608.9329,722
+MED397,Sitagliptin 50mg,Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",3018,471.52,1.5102,0.0068,1423061.92,0.0,0.0,34409.7615,93.9342,110
+MED398,Sitagliptin 50mg (ApexLife Pharma),Antidiabetic,1,high-price,1707,434.67,1.6218,0.0033,741984.12,2336.24,0.0,27563.5098,83.0329,70
+MED399,Sitagliptin 50mg (BlueCrest Pharma),Antidiabetic,0,"high-volume, high-revenue, frequent stockouts",7454,455.54,2.2932,0.0118,3395589.78,8248.68,0.0,58060.5707,171.5137,172
+MED400,Sitagliptin 50mg (Crestview Pharma),Antidiabetic,1,high-price,1228,461.35,1.7292,0.0027,566541.9,0.0,0.0,26580.1301,74.6438,59
+MED401,Sitagliptin 50mg (HealthAxis Pharma),Antidiabetic,1,high-price,704,406.95,1.6168,0.0047,286490.1,0.0,0.0,19104.2907,60.9055,68
+MED402,Sitagliptin 50mg (NovaMed Laboratories),Antidiabetic,1,high-price,3736,455.33,1.6945,0.0219,1701115.88,6388.02,0.0,33540.3823,95.411,63
+MED403,Sitagliptin 50mg (Stellar Formulations),Antidiabetic,1,high-price,1086,470.77,1.3779,0.0044,511251.45,0.0,0.0,24970.4799,70.2795,61
+MED404,Sitagliptin 50mg (Summit Lifesciences),Antidiabetic,1,high-price,749,419.15,1.5868,0.0096,313945.97,0.0,0.0,18809.7994,60.026,64
+MED405,Sitagliptin 50mg (TrueLife Remedies),Antidiabetic,1,high-price,749,448.39,1.5182,0.0096,335840.9,8627.3,0.0,18947.4413,53.8301,51
+MED406,Ambroxol + Levosalbutamol Syrup 100ml (Aarogya Formulations),Respiratory,1,high-price,653,107.9,1.014,0.0085,70460.83,1138.02,0.0,3694.6047,44.9795,54
+MED407,Ambroxol + Levosalbutamol Syrup 100ml (NovaMed Laboratories),Respiratory,1,high-price,2599,127.97,1.737,0.0055,332602.23,724.18,0.0,7366.9902,76.763,116
+MED408,Ambroxol + Levosalbutamol Syrup 100ml (Summit Lifesciences),Respiratory,1,high-price,859,119.42,1.2681,0.0011,102577.78,1526.96,0.0,5114.4207,57.1123,26
+MED409,Ambroxol + Levosalbutamol Syrup 100ml (VitaCure Remedies),Respiratory,1,high-price,511,106.22,1.1601,0.0049,54277.26,1152.23,0.0,3704.2665,46.4055,52
+MED410,Ambroxol + Levosalbutamol Syrup 60ml,Respiratory,1,high-price,637,140.32,1.3222,0.0003,89383.36,668.04,0.0,5621.629,52.5055,78
+MED411,Ambroxol + Levosalbutamol Syrup 60ml (NovaMed Laboratories),Respiratory,1,high-price,2525,135.24,1.2749,0.0186,341477.79,0.0,0.0,6023.9844,58.1315,67
+MED412,Budesonide Inhaler 200mcg (ApexLife Pharma),Respiratory,1,high-price,659,270.22,1.2882,0.0038,178075.58,0.0,0.0,11638.8267,53.8945,62
+MED413,Budesonide Inhaler 200mcg (BlueCrest Pharma),Respiratory,1,high-price,415,289.22,1.0645,0.0025,120025.36,863.64,0.0,9702.5415,43.6205,43
+MED414,Budesonide Inhaler 200mcg (VitaCure Remedies),Respiratory,1,high-price,612,246.81,1.2481,0.0003,151045.21,0.0,0.0,18088.3314,90.863,71
+MED415,Budesonide Inhaler 100mcg,Respiratory,1,high-price,1168,343.45,1.3288,0.0211,401155.31,0.0,0.0,9373.0966,36.1589,24
+MED416,Dextromethorphan Syrup 100ml (HealthAxis Pharma),Respiratory,0,"high-volume, high-revenue, frequent stockouts",3288,95.34,1.7025,0.0142,313466.09,144.94,0.0,6202.248,86.0603,137
+MED417,Dextromethorphan Syrup 100ml (LifeSpring Pharma),Respiratory,1,high-price,791,98.57,1.2967,0.0016,77971.3,0.0,0.0,4769.9517,61.0904,44
+MED418,Dextromethorphan Syrup 100ml (Summit Lifesciences),Respiratory,1,high-price,452,101.81,1.2265,0.0027,46017.43,0.0,0.0,4120.7558,53.8356,84
+MED419,Dextromethorphan Syrup 100ml (TrueLife Remedies),Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",383,99.98,1.1915,0.0047,38294.1,855.48,397.43,3303.4567,43.8836,30
+MED420,Montelukast 10mg (CureLine Healthcare),Respiratory,1,high-price,1826,203.11,1.3876,0.0058,370880.56,3908.6,0.0,7907.6323,52.8164,65
+MED421,Montelukast 10mg (LifeSpring Pharma),Respiratory,1,high-price,1045,189.88,1.2092,0.0016,198420.86,1198.48,0.0,8795.8628,61.2014,51
+MED422,Montelukast 10mg (NovaMed Laboratories),Respiratory,1,high-price,385,172.0,1.2815,0.0011,66220.25,8572.91,0.0,7224.1057,55.9849,76
+MED423,Montelukast 10mg (Summit Lifesciences),Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",303,189.91,1.1578,0.0005,57543.61,291.52,1146.7,7841.1373,55.9836,53
+MED424,Montelukast 10mg (TrueLife Remedies),Respiratory,1,high-price,570,190.66,1.2475,0.003,108673.55,658.65,0.0,7530.2449,53.4219,68
+MED425,Montelukast 5mg,Respiratory,1,high-price,466,225.66,1.1806,0.0058,105159.12,0.0,0.0,9882.0351,57.0795,68
+MED426,Montelukast 5mg (CarePlus Laboratories),Respiratory,1,high-price,182,227.34,1.2567,0.0027,41376.74,0.0,0.0,7607.9192,44.7397,31
+MED427,Montelukast 5mg (NovaMed Laboratories),Respiratory,1,high-price,549,208.52,1.3239,0.0038,114478.1,4578.24,0.0,7567.8846,47.7178,36
+MED428,Montelukast 5mg (Summit Lifesciences),Respiratory,1,high-price,326,202.78,1.1315,0.0025,66105.24,0.0,0.0,7352.4961,46.7685,64
+MED429,Montelukast 5mg (TrueLife Remedies),Respiratory,1,high-price,2424,228.05,1.8538,0.0263,552791.53,4391.28,0.0,10719.8583,61.8973,63
+MED430,Salbutamol Inhaler 100mcg (Aarogya Formulations),Respiratory,1,high-price,178,170.6,1.1301,0.0011,30366.67,0.0,0.0,5343.1892,40.6014,33
+MED431,Salbutamol Inhaler 100mcg (ApexLife Pharma),Respiratory,1,high-price,2093,165.08,1.3717,0.0501,345519.12,1368.89,0.0,5780.7742,46.7849,50
+MED432,Salbutamol Inhaler 100mcg (Stellar Formulations),Respiratory,0,"high-volume, high-revenue, frequent stockouts",10781,155.81,2.3605,0.0145,1679767.1,0.0,0.0,17498.2308,145.9589,239
+MED433,Salbutamol Inhaler 100mcg (Summit Lifesciences),Respiratory,1,high-price,506,172.51,1.3262,0.003,87291.81,2255.39,0.0,5986.432,47.5329,51
+MED434,Salbutamol Inhaler 100mcg (TrueLife Remedies),Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",220,149.61,1.2668,0.0011,32914.12,9471.05,1653.91,5090.1796,44.5164,52
+MED435,Salbutamol Inhaler 100mcg (VitaCure Remedies),Respiratory,1,high-price,733,166.07,1.2606,0.0008,121731.13,0.0,0.0,7189.1244,57.8699,86
+MED436,Salbutamol Inhaler 200mcg,Respiratory,1,high-price,1369,208.08,1.387,0.0173,284858.83,0.0,0.0,6798.6509,42.0781,55
+MED437,Salbutamol Inhaler 200mcg (BlueCrest Pharma),Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",383,186.31,1.1577,0.0,71358.58,9209.87,112.76,6163.9597,44.4288,51
+MED438,Salbutamol Inhaler 200mcg (CarePlus Laboratories),Respiratory,3,"expiry risk, low-volume, low-revenue, expiry write-offs",155,200.67,1.0735,0.0008,31104.31,1527.02,2617.6,6063.5351,40.2603,48
+MED439,Salbutamol Inhaler 200mcg (HealthAxis Pharma),Respiratory,1,high-price,805,185.17,1.2603,0.0014,149060.26,3150.19,0.0,7501.6673,53.9178,45
+MED440,Salbutamol Inhaler 200mcg (Stellar Formulations),Respiratory,1,high-price,845,176.94,1.1827,0.0014,149511.32,2670.7,0.0,7625.6565,57.7356,88
+MED441,Salbutamol Inhaler 200mcg (Summit Lifesciences),Respiratory,1,high-price,298,189.23,1.322,0.0038,56390.04,0.0,0.0,7343.5943,50.6973,61
+MED442,Calcium + Vitamin D3 500mg/250IU (Aarogya Formulations),Vitamins,1,high-price,419,127.89,1.5952,0.0008,53585.81,210.64,0.0,6189.0882,66.4397,74
+MED443,Calcium + Vitamin D3 500mg/250IU (ApexLife Pharma),Vitamins,0,"high-volume, high-revenue, frequent stockouts",3131,128.28,1.4775,0.029,401636.34,0.0,0.0,7689.7467,79.5329,113
+MED444,Calcium + Vitamin D3 500mg/250IU (CureLine Healthcare),Vitamins,1,high-price,2491,120.47,1.4214,0.0044,300079.41,95.18,0.0,6314.2079,66.2795,85
+MED445,Calcium + Vitamin D3 500mg/250IU (HealthAxis Pharma),Vitamins,1,high-price,3769,117.74,1.6505,0.0014,443774.84,0.0,0.0,7919.2616,87.0082,88
+MED446,Calcium + Vitamin D3 500mg/250IU (LifeSpring Pharma),Vitamins,0,"high-volume, high-revenue, frequent stockouts",5017,112.57,1.5608,0.0112,564766.86,0.0,0.0,12627.1191,145.4808,145
+MED447,Calcium + Vitamin D3 500mg/250IU (Summit Lifesciences),Vitamins,1,high-price,1704,106.0,1.3594,0.0118,180617.29,511.74,0.0,3942.5222,48.6836,55
+MED448,Calcium + Vitamin D3 500mg/250IU (TrueLife Remedies),Vitamins,0,"high-volume, high-revenue, frequent stockouts",4399,109.29,1.5888,0.0247,480750.46,2556.18,0.0,9774.9814,120.3767,172
+MED449,Iron + Folic Acid 100mg/500mcg (BlueCrest Pharma),Vitamins,1,high-price,672,82.75,1.3919,0.0088,55604.75,1676.06,0.0,3250.6899,53.4863,47
+MED450,Iron + Folic Acid 100mg/500mcg (CarePlus Laboratories),Vitamins,1,high-price,1030,86.28,1.6965,0.011,88863.28,992.12,0.0,3970.8398,58.4781,55
+MED451,Iron + Folic Acid 100mg/500mcg (CureLine Healthcare),Vitamins,2,"low-price, low-revenue",379,76.51,1.2476,0.0041,28997.29,455.49,0.0,2880.3844,49.7959,72
+MED452,Iron + Folic Acid 100mg/500mcg (HealthAxis Pharma),Vitamins,1,high-price,1051,82.75,1.3629,0.0049,86972.07,1011.9,0.0,4184.6152,65.7329,63
+MED453,Iron + Folic Acid 100mg/500mcg (LifeSpring Pharma),Vitamins,1,high-price,667,87.01,1.4165,0.009,58034.64,830.78,0.0,3740.7552,56.4466,83
+MED454,Iron + Folic Acid 100mg/500mcg (Stellar Formulations),Vitamins,0,"high-volume, high-revenue, frequent stockouts",11167,80.91,1.6055,0.0104,903502.55,0.0,0.0,11366.7923,182.7329,176
+MED455,Iron + Folic Acid 100mg/500mcg (Summit Lifesciences),Vitamins,2,"low-price, low-revenue",368,81.84,1.4248,0.0027,30116.64,0.0,0.0,3679.7251,56.8041,57
+MED456,Iron + Folic Acid 100mg/500mcg (VitaCure Remedies),Vitamins,1,high-price,976,86.0,1.3948,0.0041,83934.34,0.0,0.0,3766.3823,57.7411,63
+MED457,Multivitamin B-complex+C (BlueCrest Pharma),Vitamins,2,"low-price, low-revenue",540,43.36,1.4617,0.0088,23413.12,667.83,0.0,1646.0048,52.3,74
+MED458,Multivitamin B-complex+C (HealthAxis Pharma),Vitamins,2,"low-price, low-revenue",405,40.94,1.4403,0.0016,16581.31,991.15,0.0,2136.9756,66.8479,60
+MED459,Multivitamin B-complex+C (Summit Lifesciences),Vitamins,0,"high-volume, high-revenue, frequent stockouts",19119,44.16,1.5491,0.0132,844219.53,0.0,0.0,14781.9348,453.9521,259
+MED460,Multivitamin B-complex+C (TrueLife Remedies),Vitamins,2,"low-price, low-revenue",3752,47.68,1.5162,0.0184,178885.56,0.0,0.0,3004.8936,82.7575,73
+MED461,Vitamin C Chewable 500mg (Aarogya Formulations),Vitamins,0,"high-volume, high-revenue, frequent stockouts",5670,28.78,1.7377,0.003,163170.24,0.0,0.0,3502.9758,157.8877,189
+MED462,Vitamin C Chewable 500mg (ApexLife Pharma),Vitamins,2,"low-price, low-revenue",1637,26.27,1.4528,0.0118,43003.65,0.0,0.0,1063.9197,51.5507,53
+MED463,Vitamin C Chewable 500mg (HealthAxis Pharma),Vitamins,2,"low-price, low-revenue",1631,25.56,1.4887,0.0104,41691.04,0.0,0.0,918.6295,46.3315,39
+MED464,Vitamin C Chewable 500mg (TrueLife Remedies),Vitamins,2,"low-price, low-revenue",806,25.69,1.3197,0.0003,20707.68,0.0,0.0,1087.8783,55.6068,54
+MED465,Vitamin C Chewable 1000mg,Vitamins,2,"low-price, low-revenue",3409,35.82,1.5176,0.0129,122104.97,0.0,0.0,2845.0934,103.1822,89
+MED466,Vitamin C Chewable 1000mg (ApexLife Pharma),Vitamins,0,"high-volume, high-revenue, frequent stockouts",11402,31.83,2.4878,0.0159,362951.14,0.0,0.0,4589.1832,186.0644,203
+MED467,Vitamin C Chewable 1000mg (BlueCrest Pharma),Vitamins,2,"low-price, low-revenue",1132,33.67,1.4676,0.0005,38115.92,0.0,0.0,1873.4538,71.5096,79
+MED468,Vitamin C Chewable 1000mg (CarePlus Laboratories),Vitamins,2,"low-price, low-revenue",3271,29.53,1.5316,0.0134,96591.15,0.0,0.0,4299.8154,179.063,78
+MED469,Vitamin C Chewable 1000mg (CureLine Healthcare),Vitamins,2,"low-price, low-revenue",965,34.23,1.4734,0.0047,33033.56,285.01,0.0,2074.4748,78.6959,85
+MED470,Vitamin C Chewable 1000mg (NovaMed Laboratories),Vitamins,2,"low-price, low-revenue",3288,34.91,2.1824,0.0074,114784.28,0.0,0.0,2013.8928,75.137,56
+MED471,Vitamin C Chewable 1000mg (Summit Lifesciences),Vitamins,2,"low-price, low-revenue",1047,31.3,1.2986,0.0129,32773.83,494.69,0.0,1281.1448,56.8342,80
+MED472,Vitamin C Chewable 1000mg (TrueLife Remedies),Vitamins,2,"low-price, low-revenue",492,34.42,1.3887,0.0082,16937.06,0.0,0.0,1246.2922,47.3849,74
+MED473,Vitamin C Chewable 1000mg (VitaCure Remedies),Vitamins,2,"low-price, low-revenue",2307,31.39,1.4842,0.0085,72412.11,0.0,0.0,1391.3923,58.6315,70
+MED474,Vitamin D3 60000IU (TrueLife Remedies),Vitamins,1,high-price,304,136.8,1.4503,0.0,41586.32,0.0,0.0,6410.2066,60.1,82
+MED475,Vitamin D3 60000IU (VitaCure Remedies),Vitamins,3,"expiry risk, low-volume, low-revenue, expiry write-offs",908,125.66,1.3529,0.0074,114103.28,203.7,98.0,5029.8512,51.4548,100
+MED476,Vitamin D3 1000IU,Vitamins,1,high-price,1840,158.64,1.4631,0.014,291903.32,999.83,0.0,6001.8482,48.9315,68
+MED477,Vitamin D3 1000IU (Summit Lifesciences),Vitamins,1,high-price,923,179.11,1.4588,0.0058,165316.3,0.0,0.0,7952.3834,59.4137,40
+MED478,Calamine Lotion 100ml (CureLine Healthcare),Dermatological,2,"low-price, low-revenue",448,73.99,1.1701,0.0016,33148.91,478.0,0.0,2699.7673,47.6726,70
+MED479,Calamine Lotion 100ml (LifeSpring Pharma),Dermatological,2,"low-price, low-revenue",339,70.03,1.2031,0.003,23741.29,99.16,0.0,2652.463,50.089,45
+MED480,Calamine Lotion 100ml (Stellar Formulations),Dermatological,2,"low-price, low-revenue",2222,71.0,1.2223,0.0362,157769.22,0.0,0.0,2181.2834,41.8027,33
+MED481,Calamine Lotion 100ml (TrueLife Remedies),Dermatological,2,"low-price, low-revenue",609,75.83,1.0016,0.0025,46177.56,0.0,0.0,2810.4493,48.7575,67
+MED482,Clotrimazole Cream 1% (ApexLife Pharma),Dermatological,1,high-price,941,89.02,1.1169,0.0,83763.57,0.0,0.0,4204.0858,59.3986,62
+MED483,Clotrimazole Cream 1% (CureLine Healthcare),Dermatological,1,high-price,1526,76.68,1.0501,0.0107,117012.51,709.9,0.0,2512.5166,43.4795,37
+MED484,Clotrimazole Cream 2%,Dermatological,1,high-price,1104,97.21,1.1978,0.0126,107321.35,75.6,0.0,2935.2252,39.2384,34
+MED485,Clotrimazole Cream 2% (Stellar Formulations),Dermatological,3,"expiry risk, low-volume, low-revenue, expiry write-offs",154,93.77,1.007,0.0,14440.89,3082.97,585.11,3191.9902,46.4781,50
+MED486,Clotrimazole Cream 2% (TrueLife Remedies),Dermatological,2,"low-price, low-revenue",240,89.53,1.0202,0.0003,21487.76,419.64,0.0,3094.3335,46.2452,34
+MED487,Fusidic Acid Cream 2% (ApexLife Pharma),Dermatological,1,high-price,500,152.15,0.9657,0.0033,76072.94,5528.43,0.0,4537.4932,41.6014,48
+MED488,Fusidic Acid Cream 2% (BlueCrest Pharma),Dermatological,1,high-price,663,147.42,1.0726,0.009,97736.98,468.7,0.0,4907.9847,44.6288,17
+MED489,Fusidic Acid Cream 2% (VitaCure Remedies),Dermatological,3,"expiry risk, low-volume, low-revenue, expiry write-offs",277,145.12,1.1002,0.0003,40196.94,524.0,1140.7,6192.3752,57.474,70
+MED490,Hydrocortisone Cream 1% (CarePlus Laboratories),Dermatological,2,"low-price, low-revenue",1667,60.59,1.3514,0.0326,101010.55,181.64,0.0,1693.8751,38.4123,42
+MED491,Hydrocortisone Cream 1% (CureLine Healthcare),Dermatological,1,high-price,2641,67.04,1.1966,0.0041,177044.89,0.0,0.0,3125.0753,59.0247,39
+MED492,Hydrocortisone Cream 1% (Summit Lifesciences),Dermatological,3,"expiry risk, low-volume, low-revenue, expiry write-offs",154,62.24,1.0987,0.0,9584.23,0.0,342.62,1998.9661,40.6548,57
+MED493,Ketoconazole Shampoo 2% (Aarogya Formulations),Dermatological,1,high-price,777,195.09,0.9824,0.0055,151581.99,0.0,0.0,6853.018,47.1699,34
+MED494,Ketoconazole Shampoo 2% (LifeSpring Pharma),Dermatological,1,high-price,596,210.96,1.1321,0.0003,125732.74,0.0,0.0,7925.9847,49.8603,47
+MED495,Ketoconazole Shampoo 2% (VitaCure Remedies),Dermatological,1,high-price,443,211.81,1.0864,0.0011,93833.41,2422.56,0.0,7730.7661,45.389,37
+MED496,Mupirocin Ointment 2% (ApexLife Pharma),Dermatological,1,high-price,616,129.85,1.1677,0.0008,79984.81,0.0,0.0,5526.6968,52.9863,68
+MED497,Mupirocin Ointment 2% (CarePlus Laboratories),Dermatological,1,high-price,1572,130.27,1.183,0.0167,204779.97,0.0,0.0,4013.2136,40.0603,31
+MED498,Mupirocin Ointment 2% (NovaMed Laboratories),Dermatological,3,"expiry risk, low-volume, low-revenue, expiry write-offs",278,138.55,1.1232,0.0019,38517.29,1741.27,2640.6,4926.5194,47.6411,93
+MED499,Mupirocin Ointment 2% (Summit Lifesciences),Dermatological,1,high-price,685,120.96,1.0443,0.0033,82858.66,80.55,0.0,4986.6506,55.2247,57
+MED500,Mupirocin Ointment 2% (VitaCure Remedies),Dermatological,1,high-price,428,124.84,1.2039,0.0005,53432.68,2152.32,0.0,4518.4407,47.5945,41

@@ -1,0 +1,67 @@
+{
+  "run_timestamp": "2026-10-04T17:03:23+00:00",
+  "dataset_version": "1.0 (frozen 2026-10-04, seed 42)",
+  "warehouse_reference": {
+    "schema": "warehouse",
+    "transactions": 613027,
+    "medicines": 500,
+    "branches": 5,
+    "date_range": [
+      "2025-01-01",
+      "2026-12-31"
+    ]
+  },
+  "association_rule_count": 14,
+  "frequent_itemset_count": 440,
+  "selected_cluster_count": 4,
+  "medicine_count_clustered": 500,
+  "anomaly_count": 8159,
+  "statistical_anomaly_count": 2698,
+  "isolation_anomaly_count": 6255,
+  "combined_anomaly_count": 794,
+  "anomaly_episode_counts": {
+    "statistical": 1808,
+    "isolation_forest": 3659,
+    "combined_both_methods": 578,
+    "either_method": 4744
+  },
+  "evaluation_metrics": {
+    "label": "post-hoc evaluation against synthetic ground truth (NOT model input)",
+    "statistical": {
+      "precision_episode_level": 0.0874,
+      "recall_event_level_strict": 0.5133,
+      "recall_event_level_any_flag": 0.5533,
+      "f1": 0.1494
+    },
+    "isolation_forest": {
+      "precision_episode_level": 0.0798,
+      "recall_event_level_strict": 0.68,
+      "recall_event_level_any_flag": 0.7,
+      "f1": 0.1428
+    },
+    "combined_both_methods": {
+      "precision_episode_level": 0.199,
+      "recall_event_level_strict": 0.42,
+      "recall_event_level_any_flag": 0.44,
+      "f1": 0.27
+    },
+    "either_method": {
+      "precision_episode_level": 0.0677,
+      "recall_event_level_strict": 0.72,
+      "recall_event_level_any_flag": 0.74,
+      "f1": 0.1237
+    }
+  },
+  "validation": {
+    "checks": 35,
+    "failures": 0
+  },
+  "random_state": 42,
+  "libraries": {
+    "scikit-learn": "1.4.2",
+    "mlxtend": "0.23.4",
+    "pandas": "2.2.2",
+    "numpy": "1.26.4"
+  },
+  "runtime_seconds": 243.7
+}

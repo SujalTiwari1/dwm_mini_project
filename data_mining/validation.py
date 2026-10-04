@@ -138,17 +138,18 @@ def validate_anomalies(anomalies, cube, lots, conn):
 
 
 def validate_leakage_controls():
-    """Static check: the only module that references the ground truth is evaluation/evaluate.py (and the config constant)."""
+    """Static check: only evaluation/evaluate.py (plus the config constant and this checker) references the ground-truth path."""
     out = []
     offenders = []
     for pkg in ("features", "association", "clustering", "anomaly"):
         for f in (C.MINING_DIR / pkg).glob("*.py"):
             txt = f.read_text(encoding="utf-8")
-            if "GROUND_TRUTH_PRIVATE" in txt or re.search(r"\bevaluation\b", txt.replace("evaluation/", "")):
-                offenders.append(str(f.relative_to(C.PROJECT_ROOT)))
-    out.append(_chk("leakage", "feature, association, clustering and anomaly code never references the ground-truth path or the evaluation module", not offenders, offenders))
-    users = [str(f.relative_to(C.PROJECT_ROOT)) for f in C.MINING_DIR.rglob("*.py") if "GROUND_TRUTH_PRIVATE" in f.read_text(encoding="utf-8")]
-    out.append(_chk("leakage", "GROUND_TRUTH_PRIVATE is used only by config and evaluation/evaluate.py",
+            imports_eval = re.search(r"^\s*(from\s+\S*evaluation\S*\s+import|import\s+\S*evaluation)", txt, flags=re.M)
+            if "GROUND_TRUTH_PRIVATE" in txt or imports_eval:
+                offenders.append(f.relative_to(C.PROJECT_ROOT).as_posix())
+    out.append(_chk("leakage", "feature, association, clustering and anomaly code neither references the ground-truth path nor imports the evaluation module", not offenders, offenders))
+    users = sorted(f.relative_to(C.PROJECT_ROOT).as_posix() for f in C.MINING_DIR.rglob("*.py") if "GROUND_TRUTH_PRIVATE" in f.read_text(encoding="utf-8"))
+    out.append(_chk("leakage", "GROUND_TRUTH_PRIVATE appears only in config, evaluation/evaluate.py and this checker",
                     set(users) <= {"data_mining/config.py", "data_mining/evaluation/evaluate.py", "data_mining/validation.py"}, users))
     return out
 

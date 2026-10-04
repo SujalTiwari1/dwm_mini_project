@@ -54,14 +54,13 @@ def itemset_count_at(X, supports, max_len):
     rows = []
     n_tx = X.shape[0]
     for s in sorted(supports, reverse=True):
-        t = time.time()
         fi, thr = frequent_itemsets(X, s, max_len)
         sizes = fi["itemsets"].map(len).value_counts().to_dict()
         rr = association_rules(fi, metric="confidence", min_threshold=C.ASSOCIATION["min_confidence"])
         strong = rr[rr["lift"] > C.ASSOCIATION["min_lift"]]
         rows.append({"min_support": s, "min_transactions": thr, "frequent_itemsets": len(fi), "size_1": int(sizes.get(1, 0)),
                      "size_2": int(sizes.get(2, 0)), "size_3": int(sizes.get(3, 0)), "useful_rules": int(len(strong)),
-                     "rules_with_lift_over_5": int((strong["lift"] > 5).sum()), "seconds": round(time.time() - t, 1)})
+                     "rules_with_lift_over_5": int((strong["lift"] > 5).sum())})
     return rows
 
 

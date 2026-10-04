@@ -1,0 +1,252 @@
+{
+  "candidates": [
+    "total_units_sold",
+    "avg_selling_price",
+    "demand_dispersion",
+    "weekly_demand_cv",
+    "inventory_turnover",
+    "stockout_rate",
+    "days_of_inventory",
+    "total_revenue",
+    "avg_purchase_cost",
+    "expired_value",
+    "expiry_risk_value",
+    "sales_days",
+    "avg_inventory_value",
+    "stockout_event_count",
+    "purchase_cost",
+    "avg_daily_revenue",
+    "avg_weekly_units",
+    "avg_daily_units",
+    "purchase_units",
+    "avg_inventory_units",
+    "current_inventory_value",
+    "expired_units",
+    "zero_sales_days",
+    "weekly_demand_std",
+    "current_inventory_units",
+    "stockout_days"
+  ],
+  "missing_values_filled": {},
+  "log1p": [
+    {
+      "feature": "total_units_sold",
+      "skewness_before": 3.33,
+      "skewness_after": 0.6
+    },
+    {
+      "feature": "avg_selling_price",
+      "skewness_before": 1.81,
+      "skewness_after": -0.39
+    },
+    {
+      "feature": "demand_dispersion",
+      "skewness_before": 2.07,
+      "skewness_after": 1.29
+    },
+    {
+      "feature": "inventory_turnover",
+      "skewness_before": 1.06,
+      "skewness_after": 0.05
+    },
+    {
+      "feature": "stockout_rate",
+      "skewness_before": 2.69,
+      "skewness_after": 2.6
+    },
+    {
+      "feature": "days_of_inventory",
+      "skewness_before": 2.44,
+      "skewness_after": 0.36
+    },
+    {
+      "feature": "total_revenue",
+      "skewness_before": 7.8,
+      "skewness_after": 0.24
+    },
+    {
+      "feature": "avg_purchase_cost",
+      "skewness_before": 1.82,
+      "skewness_after": -0.38
+    },
+    {
+      "feature": "expired_value",
+      "skewness_before": 4.42,
+      "skewness_after": 0.25
+    },
+    {
+      "feature": "expiry_risk_value",
+      "skewness_before": 7.35,
+      "skewness_after": 3.29
+    },
+    {
+      "feature": "avg_inventory_value",
+      "skewness_before": 8.02,
+      "skewness_after": 0.09
+    },
+    {
+      "feature": "stockout_event_count",
+      "skewness_before": 2.97,
+      "skewness_after": 0.08
+    },
+    {
+      "feature": "purchase_cost",
+      "skewness_before": 7.72,
+      "skewness_after": 0.29
+    },
+    {
+      "feature": "avg_daily_revenue",
+      "skewness_before": 7.8,
+      "skewness_after": 0.29
+    },
+    {
+      "feature": "avg_weekly_units",
+      "skewness_before": 3.33,
+      "skewness_after": 0.75
+    },
+    {
+      "feature": "avg_daily_units",
+      "skewness_before": 3.33,
+      "skewness_after": 1.19
+    },
+    {
+      "feature": "purchase_units",
+      "skewness_before": 3.34,
+      "skewness_after": 0.71
+    },
+    {
+      "feature": "avg_inventory_units",
+      "skewness_before": 4.23,
+      "skewness_after": 1.8
+    },
+    {
+      "feature": "current_inventory_value",
+      "skewness_before": 9.3,
+      "skewness_after": 0.18
+    },
+    {
+      "feature": "expired_units",
+      "skewness_before": 2.55,
+      "skewness_after": 0.55
+    },
+    {
+      "feature": "weekly_demand_std",
+      "skewness_before": 2.87,
+      "skewness_after": 0.95
+    },
+    {
+      "feature": "current_inventory_units",
+      "skewness_before": 4.86,
+      "skewness_after": 1.26
+    },
+    {
+      "feature": "stockout_days",
+      "skewness_before": 2.69,
+      "skewness_after": -0.54
+    }
+  ],
+  "dropped": [
+    {
+      "feature": "weekly_demand_cv",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.961
+    },
+    {
+      "feature": "inventory_turnover",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.958
+    },
+    {
+      "feature": "days_of_inventory",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.901
+    },
+    {
+      "feature": "avg_purchase_cost",
+      "reason": "redundant with avg_selling_price",
+      "abs_spearman": 0.999
+    },
+    {
+      "feature": "sales_days",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.978
+    },
+    {
+      "feature": "stockout_event_count",
+      "reason": "redundant with stockout_rate",
+      "abs_spearman": 0.962
+    },
+    {
+      "feature": "purchase_cost",
+      "reason": "redundant with total_revenue",
+      "abs_spearman": 0.999
+    },
+    {
+      "feature": "avg_daily_revenue",
+      "reason": "redundant with total_revenue",
+      "abs_spearman": 1.0
+    },
+    {
+      "feature": "avg_weekly_units",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 1.0
+    },
+    {
+      "feature": "avg_daily_units",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 1.0
+    },
+    {
+      "feature": "purchase_units",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.999
+    },
+    {
+      "feature": "current_inventory_value",
+      "reason": "redundant with avg_inventory_value",
+      "abs_spearman": 0.95
+    },
+    {
+      "feature": "expired_units",
+      "reason": "redundant with expired_value",
+      "abs_spearman": 0.965
+    },
+    {
+      "feature": "zero_sales_days",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.978
+    },
+    {
+      "feature": "weekly_demand_std",
+      "reason": "redundant with total_units_sold",
+      "abs_spearman": 0.977
+    },
+    {
+      "feature": "stockout_days",
+      "reason": "redundant with stockout_rate",
+      "abs_spearman": 1.0
+    }
+  ],
+  "selected": [
+    "total_units_sold",
+    "avg_selling_price",
+    "demand_dispersion",
+    "stockout_rate",
+    "total_revenue",
+    "expired_value",
+    "expiry_risk_value",
+    "avg_inventory_value",
+    "avg_inventory_units",
+    "current_inventory_units"
+  ],
+  "max_abs_correlation_among_selected": 0.832,
+  "scaler": "StandardScaler",
+  "explained_variance_pc1_pc2": [
+    0.4533,
+    0.193
+  ],
+  "selected_k": 4,
+  "k_selection_rule": "smallest K >= 3 with silhouette within 0.02 of the best",
+  "random_state": 42,
+  "n_init": 20
+}

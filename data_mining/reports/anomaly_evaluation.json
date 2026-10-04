@@ -1,0 +1,78 @@
+{
+  "label": "post-hoc evaluation against synthetic ground truth (NOT model input)",
+  "ground_truth_events": 150,
+  "ground_truth_events_by_type": {
+    "spike": 38,
+    "supply_disruption": 30,
+    "drop": 30,
+    "branch_surge": 30,
+    "bulk_purchase": 22
+  },
+  "ground_truth_read_after_detection_files_written": true,
+  "matching": {
+    "demand_event_window": "start .. end + 6 days",
+    "supply_disruption_window": "start .. end + extra_lead_days + 14 days",
+    "bulk_purchase_window": "receipt date +/- 1 day",
+    "episode_gap_days": 3
+  },
+  "detector_sets": {
+    "statistical": {
+      "flagged_rows": 2698,
+      "episodes": 1808,
+      "true_positive_episodes": 158,
+      "false_positive_episodes": 1650,
+      "events_detected_strict": 77,
+      "events_missed_strict": 73,
+      "events_total": 150,
+      "precision_episode_level": 0.0874,
+      "recall_event_level_strict": 0.5133,
+      "recall_event_level_any_flag": 0.5533,
+      "f1": 0.1494
+    },
+    "isolation_forest": {
+      "flagged_rows": 6255,
+      "episodes": 3659,
+      "true_positive_episodes": 292,
+      "false_positive_episodes": 3367,
+      "events_detected_strict": 102,
+      "events_missed_strict": 48,
+      "events_total": 150,
+      "precision_episode_level": 0.0798,
+      "recall_event_level_strict": 0.68,
+      "recall_event_level_any_flag": 0.7,
+      "f1": 0.1428
+    },
+    "combined_both_methods": {
+      "flagged_rows": 794,
+      "episodes": 578,
+      "true_positive_episodes": 115,
+      "false_positive_episodes": 463,
+      "events_detected_strict": 63,
+      "events_missed_strict": 87,
+      "events_total": 150,
+      "precision_episode_level": 0.199,
+      "recall_event_level_strict": 0.42,
+      "recall_event_level_any_flag": 0.44,
+      "f1": 0.27
+    },
+    "either_method": {
+      "flagged_rows": 8159,
+      "episodes": 4744,
+      "true_positive_episodes": 321,
+      "false_positive_episodes": 4423,
+      "events_detected_strict": 108,
+      "events_missed_strict": 42,
+      "events_total": 150,
+      "precision_episode_level": 0.0677,
+      "recall_event_level_strict": 0.72,
+      "recall_event_level_any_flag": 0.74,
+      "f1": 0.1237
+    }
+  },
+  "notes": [
+    "Thresholds were fixed before this step and not tuned on the ground truth.",
+    "Precision is conservative: a flag on a medicine whose demand moved because another (planted) medicine moved (a rule-driven knock-on), or a long natural stockout, is real behaviour in the data but not a labelled event, so it counts as a false positive here.",
+    "Detected 'unclassified' episodes are compatible with every event type; they cannot be credited to a specific type.",
+    "Ground truth covers 5 event types; the detectors also report types (stockout_pattern, purchase_price_anomaly) that have no labelled counterpart except through supply disruption."
+  ]
+}

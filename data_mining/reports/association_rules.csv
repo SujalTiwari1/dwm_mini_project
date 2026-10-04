@@ -1,0 +1,15 @@
+antecedent,consequent,support,support_count,confidence,lift,leverage,conviction,antecedent_support_count,consequent_support_count,reverse_rule_present,antecedent_size,consequent_size
+Mupirocin Ointment 2% [MED020],Clotrimazole Cream 1% [MED019],0.001427,875,0.812442,168.715739,0.001419,5.306009,1077,2952,True,1,1
+Clotrimazole Cream 1% [MED019],Mupirocin Ointment 2% [MED020],0.001427,875,0.296409,168.715739,0.001419,1.418784,2952,1077,True,1,1
+Glimepiride 2mg [MED014],Metformin 500mg [MED013],0.004168,2555,0.55136,54.019222,0.004091,2.206206,4634,6257,True,1,1
+Metformin 500mg [MED013],Glimepiride 2mg [MED014],0.004168,2555,0.408343,54.019222,0.004091,1.677391,6257,4634,True,1,1
+Atorvastatin 10mg [MED012],Amlodipine 5mg [MED011],0.008711,5340,0.659585,30.154628,0.008422,2.873336,8096,13409,True,1,1
+Amlodipine 5mg [MED011],Atorvastatin 10mg [MED012],0.008711,5340,0.39824,30.154628,0.008422,1.639845,13409,8096,True,1,1
+Domperidone 10mg [MED034],Omeprazole 20mg [MED033],0.009217,5650,0.747256,28.601891,0.008894,3.853198,7561,16016,True,1,1
+Omeprazole 20mg [MED033],Domperidone 10mg [MED034],0.009217,5650,0.352772,28.601891,0.008894,1.525995,16016,7561,True,1,1
+Vitamin C Chewable 500mg [MED017],Ambroxol + Levosalbutamol Syrup 100ml [MED015],0.001568,961,0.268361,25.489993,0.001506,1.352404,3581,6454,True,1,1
+Ambroxol + Levosalbutamol Syrup 100ml [MED015],Vitamin C Chewable 500mg [MED017],0.001568,961,0.1489,25.489993,0.001506,1.168086,6454,3581,True,1,1
+Azithromycin 500mg [MED004],Paracetamol 650mg [MED005],0.000726,445,0.440594,24.004271,0.000696,1.754799,1010,11252,False,1,1
+Ambroxol + Levosalbutamol Syrup 100ml [MED015],Cetirizine 10mg [MED007],0.004954,3037,0.470561,23.8343,0.004746,1.851501,6454,12103,True,1,1
+Cetirizine 10mg [MED007],Ambroxol + Levosalbutamol Syrup 100ml [MED015],0.004954,3037,0.25093,23.8343,0.004746,1.320933,12103,6454,True,1,1
+Diclofenac 50mg [MED002],Pantoprazole 40mg [MED009],0.000744,456,0.38255,21.461855,0.000709,1.590697,1192,10927,False,1,1

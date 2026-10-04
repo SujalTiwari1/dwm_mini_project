@@ -1,0 +1,189 @@
+{
+  "grains": [
+    {
+      "grain": "branch_medicine",
+      "series": 2500,
+      "scored_rows": 1650000,
+      "isolation_threshold": 0.66809,
+      "statistical_rows": 1184,
+      "isolation_rows": 4950,
+      "statistical_by_rule": {
+        "spike": 469,
+        "drop": 284,
+        "stockout_pattern": 431
+      }
+    },
+    {
+      "grain": "medicine",
+      "series": 500,
+      "scored_rows": 330000,
+      "isolation_threshold": 0.58946,
+      "statistical_rows": 399,
+      "isolation_rows": 990,
+      "statistical_by_rule": {
+        "spike": 133,
+        "drop": 266,
+        "stockout_pattern": 0
+      }
+    },
+    {
+      "grain": "purchase_lot",
+      "lots": 35477,
+      "scored_lots": 31490,
+      "isolation_threshold": 0.5722,
+      "statistical_rows": 1115,
+      "isolation_rows": 315,
+      "statistical_by_rule": {
+        "large_lot": 969,
+        "long_receipt_gap": 149,
+        "unit_cost_deviation": 0
+      }
+    }
+  ],
+  "definitions": {
+    "statistical": "robust (median/MAD) z-score on sqrt-transformed 7-day and daily demand, a stockout-run rule, and prior-history purchase checks",
+    "isolation_forest": "top 0.3% most isolated rows at each sales grain (1% of purchase lots)",
+    "combined": "flagged by BOTH methods",
+    "either": "flagged by at least one method (the rows of anomalies.csv)",
+    "robust_z_score": "7-day level z for sales rows, per-branch lot-size z for purchase-lot rows",
+    "episode": "flags of one series within 3 days"
+  },
+  "parameters": {
+    "short_window": 7,
+    "baseline_window": 56,
+    "burn_in_days": 70,
+    "robust_z_threshold": 5.0,
+    "daily_z_threshold": 6.0,
+    "mad_to_sigma": 1.4826,
+    "min_scale": 0.5,
+    "stockout_run_days": 7,
+    "purchase_baseline_lots": 8,
+    "purchase_qty_z_threshold": 5.0,
+    "purchase_qty_min_ratio": 2.5,
+    "purchase_gap_z_threshold": 5.0,
+    "purchase_gap_min_ratio": 2.0,
+    "purchase_cost_z_threshold": 5.0,
+    "purchase_cost_min_rel_dev": 0.25,
+    "isolation_contamination": 0.003,
+    "purchase_isolation_contamination": 0.01,
+    "isolation_estimators": 200,
+    "isolation_max_samples": 4096,
+    "episode_gap_days": 3,
+    "min_abs_units_7d_for_demand_flag": 5
+  },
+  "random_state": 42,
+  "detector_sets": {
+    "statistical": {
+      "flagged_rows": 2698,
+      "episodes": 1808,
+      "distinct_medicines": 344,
+      "rows_by_grain_and_type": {
+        "branch_medicine/demand_drop": 284,
+        "branch_medicine/demand_spike": 456,
+        "branch_medicine/stockout_pattern": 431,
+        "branch_medicine/unclassified": 13,
+        "medicine/demand_drop": 266,
+        "medicine/demand_spike": 128,
+        "medicine/unclassified": 5,
+        "purchase_lot/inventory_anomaly": 969,
+        "purchase_lot/supply_delay": 146
+      },
+      "episodes_by_grain_and_type": {
+        "branch_medicine/demand_drop": 105,
+        "branch_medicine/demand_spike": 182,
+        "branch_medicine/stockout_pattern": 431,
+        "branch_medicine/unclassified": 13,
+        "medicine/demand_drop": 71,
+        "medicine/demand_spike": 38,
+        "medicine/unclassified": 5,
+        "purchase_lot/inventory_anomaly": 817,
+        "purchase_lot/supply_delay": 146
+      }
+    },
+    "isolation_forest": {
+      "flagged_rows": 6255,
+      "episodes": 3659,
+      "distinct_medicines": 450,
+      "rows_by_grain_and_type": {
+        "branch_medicine/demand_drop": 46,
+        "branch_medicine/demand_spike": 659,
+        "branch_medicine/stockout_pattern": 1061,
+        "branch_medicine/unclassified": 3184,
+        "medicine/demand_drop": 296,
+        "medicine/demand_spike": 243,
+        "medicine/unclassified": 451,
+        "purchase_lot/inventory_anomaly": 162,
+        "purchase_lot/supply_delay": 48,
+        "purchase_lot/unclassified": 105
+      },
+      "episodes_by_grain_and_type": {
+        "branch_medicine/demand_drop": 19,
+        "branch_medicine/demand_spike": 550,
+        "branch_medicine/stockout_pattern": 366,
+        "branch_medicine/unclassified": 1720,
+        "medicine/demand_drop": 123,
+        "medicine/demand_spike": 161,
+        "medicine/unclassified": 411,
+        "purchase_lot/inventory_anomaly": 157,
+        "purchase_lot/supply_delay": 48,
+        "purchase_lot/unclassified": 104
+      }
+    },
+    "combined_both_methods": {
+      "flagged_rows": 794,
+      "episodes": 578,
+      "distinct_medicines": 211,
+      "rows_by_grain_and_type": {
+        "branch_medicine/demand_drop": 39,
+        "branch_medicine/demand_spike": 82,
+        "branch_medicine/stockout_pattern": 247,
+        "branch_medicine/unclassified": 4,
+        "medicine/demand_drop": 161,
+        "medicine/demand_spike": 67,
+        "medicine/unclassified": 5,
+        "purchase_lot/inventory_anomaly": 160,
+        "purchase_lot/supply_delay": 29
+      },
+      "episodes_by_grain_and_type": {
+        "branch_medicine/demand_drop": 17,
+        "branch_medicine/demand_spike": 53,
+        "branch_medicine/stockout_pattern": 247,
+        "branch_medicine/unclassified": 4,
+        "medicine/demand_drop": 45,
+        "medicine/demand_spike": 23,
+        "medicine/unclassified": 5,
+        "purchase_lot/inventory_anomaly": 155,
+        "purchase_lot/supply_delay": 29
+      }
+    },
+    "either_method": {
+      "flagged_rows": 8159,
+      "episodes": 4744,
+      "distinct_medicines": 459,
+      "rows_by_grain_and_type": {
+        "branch_medicine/demand_drop": 291,
+        "branch_medicine/demand_spike": 1033,
+        "branch_medicine/stockout_pattern": 1245,
+        "branch_medicine/unclassified": 3193,
+        "medicine/demand_drop": 401,
+        "medicine/demand_spike": 304,
+        "medicine/unclassified": 451,
+        "purchase_lot/inventory_anomaly": 971,
+        "purchase_lot/supply_delay": 165,
+        "purchase_lot/unclassified": 105
+      },
+      "episodes_by_grain_and_type": {
+        "branch_medicine/demand_drop": 107,
+        "branch_medicine/demand_spike": 663,
+        "branch_medicine/stockout_pattern": 433,
+        "branch_medicine/unclassified": 1726,
+        "medicine/demand_drop": 143,
+        "medicine/demand_spike": 174,
+        "medicine/unclassified": 411,
+        "purchase_lot/inventory_anomaly": 818,
+        "purchase_lot/supply_delay": 165,
+        "purchase_lot/unclassified": 104
+      }
+    }
+  }
+}
