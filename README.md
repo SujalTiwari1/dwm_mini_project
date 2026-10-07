@@ -9,7 +9,7 @@ MedStock is a Data Warehousing & Data Mining (DWM) project. This repository curr
 pharmacy operational data (sales, purchases, batches, inventory movements) that a later warehouse / mining
 pipeline (star schema, OLAP, association rules, anomaly detection, expiry-risk analysis) will consume.
 
-The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. The analytics and OLAP layer on the warehouse is described in section 14. The data-mining layer is described in section 15. Not included yet (comes later): ML forecasting, API, frontend, dashboards.
+The dataset is frozen (v1.0). The PostgreSQL warehouse and ETL built on top of it are described in section 13. The analytics and OLAP layer on the warehouse is described in section 14. The data-mining layer is described in section 15 and demand forecasting in section 16. Decision support is described in section 17. Not included yet (comes later): API, frontend, dashboards.
 
 ## 2. Scope (final dataset, v1.0)
 
@@ -257,3 +257,62 @@ pip install -r requirements.txt        # adds scikit-learn, scipy, mlxtend
 python -m data_mining.run              # about 5 minutes, deterministic (random_state 42), validates its own output
 ```
 Other outputs: `run_summary.json`, `validation_results.json`, `mining_summary.md`. Data-leakage controls and interpretation rules are in the module README.
+
+## 16. Machine Learning: Demand Forecasting
+
+Forecasts of future demand per **branch x medicine** (2,500 series) at **7, 14 and 30 days** (7 is the primary horizon), in `ml_forecasting/`. Design: [docs/ml_forecasting_design.md](docs/ml_forecasting_design.md); results:
+[ml_forecasting/reports/forecasting_summary.md](ml_forecasting/reports/forecasting_summary.md); module guide: [ml_forecasting/README.md](ml_forecasting/README.md).
+
+* **Objective:** forecast demand so inventory decisions can be made before stockouts occur. Forecasts only: reorder quantities and supplier recommendations come in the later Decision Support phase.
+* **Baselines:** naive, moving average (7 and 28 days), seasonal naive (weekly, and yearly where the 24-month history allows it).
+* **ML model:** scikit-learn `HistGradientBoostingRegressor`, one direct model per horizon from one pipeline, with a validated choice of loss and target transform.
+* **Stockout-aware:** observed sales are not true demand while stock is zero, so censored target windows are identified explicitly and never filled in. Two strategies (train on observed targets, or exclude censored windows) are compared on validation.
+* **Evaluation:** strictly chronological train / validation / test split, MAE / RMSE / WAPE / MASE, segment results (volume class, stockout rate, variability), permutation feature importance, an approximate empirical prediction interval, and explicit leakage tests.
+* **Limitations:** synthetic data, no external demand drivers (so no causal claims), sparse demand for many pairs, censoring by stockouts, approximate uncertainty.
+
+```bash
+python -m ml_forecasting.run       # reports in ml_forecasting/reports/
+```
+
+## 17. Decision Support
+
+Turns warehouse state, analytics definitions and ML demand forecasts into explainable inventory recommendations, in `decision_support/`. Design: [docs/decision_support_design.md](docs/decision_support_design.md);
+results: [decision_support/reports/decision_support_summary.md](decision_support/reports/decision_support_summary.md); module guide: [decision_support/README.md](decision_support/README.md).
+
+* **Stockout risk** (branch x medicine): days of cover at a conservative expected demand (the larger of the 7-day forecast rate and recent demand), levels CRITICAL / HIGH / MEDIUM / LOW (HIGH = the analytics under-7-day line), a separate NO_DEMAND_DATA class, and one-step escalation for stockout history or forecast uncertainty.
+* **Reorder recommendations:** lead-time demand + safety stock (z x daily std x sqrt(lead time), weekly std converted to daily) = reorder point; ORDER_NOW / REORDER_SOON / NO_REORDER / NO_DEMAND_DATA with a whole-unit order quantity.
+* **Overstock detection:** the analytics definition (no sales in 30 days or more than 90 days of cover) with excess units and value estimates.
+* **Expiry actions** (branch x medicine x batch): the analytics FEFO-aware expiry-risk method with PRIORITIZE_SALE / MONITOR / NO_ACTION. Inventory actions only.
+* **Action queue:** one deterministic row per branch x medicine; explicit rules set CRITICAL / HIGH / MEDIUM / LOW and the primary action, every other active issue stays visible in `secondary_reasons`; exposures are potential exposure or estimates, not losses.
+* **Explainability:** every row carries its evidence (stock, demand, forecasts, history, batch) and a plain-language reason; the numeric priority score only orders rows inside a priority.
+* **Planning assumptions** that the data does not contain (supplier lead time 7 days, 95% service level, 14-day order cover, no minimum order quantities, no open orders) are explicit in `decision_support/config.py`.
+
+```bash
+python -m decision_support.run      # reports in decision_support/reports/ (needs the warehouse and ml_forecasting/reports/forecasts.csv)
+```
+
+## 18. FastAPI API
+
+A small read-only API (`api/`) for the future React frontend. It serves warehouse queries and the stored Data Mining, ML and Decision Support reports; it never recalculates analytics, trains models or applies decision rules.
+
+```bash
+docker start medstock-postgres                      # PostgreSQL on localhost:5433 (DATABASE_URL in .env)
+pip install -r requirements.txt
+uvicorn api.main:app --reload                       # http://127.0.0.1:8000
+python -m pytest api/tests -q                       # API tests (need PostgreSQL and the generated reports)
+```
+
+* API: `http://127.0.0.1:8000/api/...`  Swagger UI: `http://127.0.0.1:8000/docs`  (also `/redoc`, `/openapi.json`)
+* CORS allows `http://localhost:5173`; set `FRONTEND_ORIGINS` (comma-separated) to change it. No authentication (local academic project).
+* List endpoints return `{"data": [...], "count": rows returned, "total": rows matching}` and accept `limit` (default 100, max 1000) and `offset`.
+
+| Endpoint | Source |
+|---|---|
+| `GET /health`, `GET /ready` | liveness; PostgreSQL reachable |
+| `GET /api/dashboard/summary` | warehouse + `decision_summary.json` |
+| `GET /api/analytics/sales?start_date=&end_date=`, `/inventory?status=`, `/branches`, `/medicines?limit=20&sort_by=` | warehouse and analytics views |
+| `GET /api/mining/association-rules`, `/clusters`, `/anomalies` | `data_mining/reports/` |
+| `GET /api/forecasts?branch_id=&medicine_id=&horizon=&date=` | `ml_forecasting/reports/forecasts.csv` (model `ml_selected`) |
+| `GET /api/decisions/action-queue?priority=CRITICAL`, `/stockout-risk`, `/reorder`, `/overstock`, `/expiry` | `decision_support/reports/` |
+
+Example: `curl "http://127.0.0.1:8000/api/decisions/action-queue?priority=CRITICAL&limit=5"`. Regenerate the reports with the earlier pipelines; the API re-reads a report automatically when its file changes.

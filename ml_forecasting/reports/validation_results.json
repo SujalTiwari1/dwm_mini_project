@@ -1,0 +1,150 @@
+{
+  "checks": 24,
+  "failures": 0,
+  "results": [
+    {
+      "area": "leakage",
+      "check": "features at 11 origins equal when rebuilt from data truncated at the origin (36 features: lags, rolling, stockout, calendar, static)",
+      "passed": true,
+      "detail": "0 mismatches []"
+    },
+    {
+      "area": "leakage",
+      "check": "features at 11 origins unchanged when ALL data after the origin is replaced by random values",
+      "passed": true,
+      "detail": "0 mismatches []"
+    },
+    {
+      "area": "leakage",
+      "check": "targets equal the sum of the h days strictly after the origin (independent recount) and are undefined without those days",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "leakage",
+      "check": "lag_1 is the origin day and rolling_mean_7 covers origin-6..origin (never origin+1)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "leakage",
+      "check": "baseline forecasts at an origin are identical when computed from data truncated at the origin (all horizons, all baselines)",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "leakage",
+      "check": "no normalisation or scaling is fitted on any data (trees are scale-invariant); the log1p transform applies to the TRAINING target only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "split",
+      "check": "chronological order: training < validation < test, no overlap",
+      "passed": true,
+      "detail": "{'train': ('2025-01-01', '2026-06-30'), 'validation': ('2026-07-01', '2026-09-30'), 'test': ('2026-10-01', '2026-12-31')}"
+    },
+    {
+      "area": "split",
+      "check": "split dates exist in the warehouse calendar and the test period ends on the last date",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "split",
+      "check": "horizon 7d: every target window lies inside its own split (no target period shared between splits)",
+      "passed": true,
+      "detail": "{'train': (29, 545), 'validation': (546, 637), 'test': (638, 729)}"
+    },
+    {
+      "area": "split",
+      "check": "horizon 14d: every target window lies inside its own split (no target period shared between splits)",
+      "passed": true,
+      "detail": "{'train': (29, 545), 'validation': (546, 637), 'test': (638, 729)}"
+    },
+    {
+      "area": "split",
+      "check": "horizon 30d: every target window lies inside its own split (no target period shared between splits)",
+      "passed": true,
+      "detail": "{'train': (29, 545), 'validation': (546, 637), 'test': (638, 729)}"
+    },
+    {
+      "area": "stockout",
+      "check": "inventory rows and stockout rows equal the warehouse",
+      "passed": true,
+      "detail": "1825000 rows, 18290 stockout rows"
+    },
+    {
+      "area": "stockout",
+      "check": "units sold in the dataset equal the warehouse total",
+      "passed": true,
+      "detail": "1582353"
+    },
+    {
+      "area": "stockout",
+      "check": "was_stockout feature equals (inventory_units == 0) everywhere",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "24 random target windows: units, stockout (censored) days and window length equal an independent warehouse SQL recount",
+      "passed": true,
+      "detail": "0 mismatches"
+    },
+    {
+      "area": "stockout",
+      "check": "censored-target counts per horizon recomputed independently (rolling sum over the inventory table) match the dataset",
+      "passed": true,
+      "detail": "{7: (55463, 55463), 14: (97387, 97387), 30: (180354, 180354)}"
+    },
+    {
+      "area": "ground_truth",
+      "check": "no module or SQL file in ml_forecasting references the hidden ground-truth file",
+      "passed": true,
+      "detail": "[]"
+    },
+    {
+      "area": "outputs",
+      "check": "forecasts finite and non-negative; wherever an interval exists, lower <= upper",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "no duplicated (forecast_date, branch, medicine, horizon, model, split) forecast",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "actual_units is NULL only for future forecasts",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "test forecast dates lie inside the test period and future forecasts are after the last date",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "metrics finite",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "every model is evaluated on exactly the same rows within a (horizon, split, subset)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "outputs",
+      "check": "temporal split recorded in the summary with training < validation < test",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}

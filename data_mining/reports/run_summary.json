@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-10-04T17:03:23+00:00",
+  "run_timestamp": "2026-10-06T17:15:34+00:00",
   "dataset_version": "1.0 (frozen 2026-10-04, seed 42)",
   "warehouse_reference": {
     "schema": "warehouse",
@@ -63,5 +63,5 @@
     "pandas": "2.2.2",
     "numpy": "1.26.4"
   },
-  "runtime_seconds": 243.7
+  "runtime_seconds": 321.8
 }

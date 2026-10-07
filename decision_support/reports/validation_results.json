@@ -1,0 +1,456 @@
+{
+  "checks": 75,
+  "failures": 0,
+  "results": [
+    {
+      "area": "stockout",
+      "check": "every branch x medicine pair is represented exactly once",
+      "passed": true,
+      "detail": "2500 of 2500"
+    },
+    {
+      "area": "stockout",
+      "check": "risk levels valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "days_of_cover = stock / expected daily demand, NULL when demand is zero (never a division by zero)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "NO_DEMAND_DATA exactly when expected demand is zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "no negative inventory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "CRITICAL base level exactly when stock is zero or cover is under the critical threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "stockout",
+      "check": "escalation never reaches CRITICAL and moves at most one level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "recommended quantity >= 0 and a whole number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "reorder point >= 0 and safety stock >= 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "no recommendation and no quantity when demand is unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "reorder point = expected lead-time demand + safety stock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "quantity = ceil(max(0, order-up-to level - stock)) when a reorder is recommended, else 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reorder",
+      "check": "ORDER_NOW exactly when stock <= expected lead-time demand (and demand exists)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "overstock",
+      "check": "classification equals the documented threshold (stock > 0 and (no 30-day sales or cover over 90 days))",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "overstock",
+      "check": "excess units >= 0 and excess value >= 0; NORMAL rows have no excess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "overstock",
+      "check": "excess units never exceed stock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "expiry",
+      "check": "only live (non-expired) batches are assessed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "expiry",
+      "check": "projected unsold units and value are >= 0 and never exceed the batch quantity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "expiry",
+      "check": "CRITICAL / HIGH levels always have projected unsold units",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "expiry",
+      "check": "actions follow the level mapping and are inventory actions only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "queue",
+      "check": "one decision row per branch x medicine, no duplicates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "queue",
+      "check": "priority values valid and exactly one primary action per row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "queue",
+      "check": "deterministic ordering: priority, then priority score, then ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "queue",
+      "check": "secondary risks are preserved when more than one issue is active",
+      "passed": true,
+      "detail": "5 multi-issue rows"
+    },
+    {
+      "area": "queue",
+      "check": "queue exposures equal their components",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reconciliation",
+      "check": "decision pairs match the analytics current-inventory pairs one to one",
+      "passed": true,
+      "detail": "2500 pairs"
+    },
+    {
+      "area": "reconciliation",
+      "check": "current inventory units equal fact_inventory (analytics v_current_inventory) for every pair",
+      "passed": true,
+      "detail": "total 45473 units"
+    },
+    {
+      "area": "reconciliation",
+      "check": "current inventory value equals the analytics value for every pair",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reconciliation",
+      "check": "30-day demand equals the analytics view (units sold in the last 30 days)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reconciliation",
+      "check": "stockout days (all history to the decision date) equal analytics v_stockout_summary for every pair",
+      "passed": true,
+      "detail": "total 18290"
+    },
+    {
+      "area": "reconciliation",
+      "check": "overstock classification equals analytics stock_status = OVERSTOCK for every pair, except pairs with EXACTLY 90.0 days of cover (the analytics view's decimal arithmetic rounds 4/30 up and labels them OVERSTOCK; reported as an upstream boundary finding, not changed)",
+      "passed": true,
+      "detail": "593 overstock pairs here; 14 boundary pairs at exactly 90.0 days differ from the view"
+    },
+    {
+      "area": "reconciliation",
+      "check": "live batch lots match analytics v_expiry_risk one to one",
+      "passed": true,
+      "detail": "5500 lots"
+    },
+    {
+      "area": "reconciliation",
+      "check": "batch quantity and days to expiry equal analytics",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reconciliation",
+      "check": "expiry risk level equals analytics (SAFE = LOW) for every lot",
+      "passed": true,
+      "detail": "0 differences"
+    },
+    {
+      "area": "reconciliation",
+      "check": "projected unsold units equal analytics (to its 0.1 rounding)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "reconciliation",
+      "check": "7/14/30-day forecasts equal ml_forecasting/reports/forecasts.csv for every pair",
+      "passed": true,
+      "detail": "0 differences"
+    },
+    {
+      "area": "leakage",
+      "check": "every input row of the 2026-09-30 decision is dated on or before 2026-09-30 (max date used in the inventory state)",
+      "passed": true,
+      "detail": "2026-09-30"
+    },
+    {
+      "area": "leakage",
+      "check": "SQL as-of inputs for 2026-09-30 equal an independent pandas recomputation from data truncated at 2026-09-30 (all 2,500 pairs, 12 measures)",
+      "passed": true,
+      "detail": "differing: []"
+    },
+    {
+      "area": "leakage",
+      "check": "scrambling every sales, inventory and stockout value after the decision date leaves the as-of inputs unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "leakage",
+      "check": "live batch units at 2026-09-30 equal the inventory snapshot of 2026-09-30 for every pair (lots use only purchases and sales up to the date)",
+      "passed": true,
+      "detail": "45803 units"
+    },
+    {
+      "area": "leakage",
+      "check": "no live lot has already expired on the decision date",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "leakage",
+      "check": "forecasts used for 2026-09-30 have that date as forecast origin",
+      "passed": true,
+      "detail": "split test"
+    },
+    {
+      "area": "leakage",
+      "check": "the forecasting model behind them was trained on targets up to 2026-09-30 only, not after the decision date 2026-09-30",
+      "passed": true,
+      "detail": "training+validation end 2026-09-30"
+    },
+    {
+      "area": "historical:stockout",
+      "check": "every branch x medicine pair is represented exactly once",
+      "passed": true,
+      "detail": "2500 of 2500"
+    },
+    {
+      "area": "historical:stockout",
+      "check": "risk levels valid",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:stockout",
+      "check": "days_of_cover = stock / expected daily demand, NULL when demand is zero (never a division by zero)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:stockout",
+      "check": "NO_DEMAND_DATA exactly when expected demand is zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:stockout",
+      "check": "no negative inventory",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:stockout",
+      "check": "CRITICAL base level exactly when stock is zero or cover is under the critical threshold",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:stockout",
+      "check": "escalation never reaches CRITICAL and moves at most one level",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "recommended quantity >= 0 and a whole number",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "reorder point >= 0 and safety stock >= 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "no recommendation and no quantity when demand is unavailable",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "reorder point = expected lead-time demand + safety stock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "quantity = ceil(max(0, order-up-to level - stock)) when a reorder is recommended, else 0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:reorder",
+      "check": "ORDER_NOW exactly when stock <= expected lead-time demand (and demand exists)",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:overstock",
+      "check": "classification equals the documented threshold (stock > 0 and (no 30-day sales or cover over 90 days))",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:overstock",
+      "check": "excess units >= 0 and excess value >= 0; NORMAL rows have no excess",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:overstock",
+      "check": "excess units never exceed stock",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:expiry",
+      "check": "only live (non-expired) batches are assessed",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:expiry",
+      "check": "projected unsold units and value are >= 0 and never exceed the batch quantity",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:expiry",
+      "check": "CRITICAL / HIGH levels always have projected unsold units",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:expiry",
+      "check": "actions follow the level mapping and are inventory actions only",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:queue",
+      "check": "one decision row per branch x medicine, no duplicates",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:queue",
+      "check": "priority values valid and exactly one primary action per row",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:queue",
+      "check": "deterministic ordering: priority, then priority score, then ids",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "historical:queue",
+      "check": "secondary risks are preserved when more than one issue is active",
+      "passed": true,
+      "detail": "8 multi-issue rows"
+    },
+    {
+      "area": "historical:queue",
+      "check": "queue exposures equal their components",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "area": "scenarios",
+      "check": "case 1 zero inventory with forecast demand -> CRITICAL stockout risk, ORDER_NOW, a positive order quantity, CRITICAL priority",
+      "passed": true,
+      "detail": "CRITICAL, ORDER_NOW, qty 51, CRITICAL/ORDER_NOW"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 2 large inventory and no demand -> OVERSTOCK (documented threshold), no reorder, stockout risk NO_DEMAND_DATA, excess value = stock value",
+      "passed": true,
+      "detail": "OVERSTOCK, excess 500, MEDIUM/REVIEW_OVERSTOCK"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 3 batch of 100 units expiring in 10 days at 0.5 units/day -> CRITICAL expiry risk, PRIORITIZE_SALE, 95 units projected unsold",
+      "passed": true,
+      "detail": "CRITICAL, unsold 95.0, CRITICAL/PRIORITIZE_SALE_EXPIRING_STOCK"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 3b the same expiry date with 5 units and high demand is NOT a loss risk (demand-aware, not date-only)",
+      "passed": true,
+      "detail": "MEDIUM, unsold 0.0"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 4 healthy inventory (40 days of cover) -> LOW stockout risk, NO_REORDER, NORMAL, LOW priority, MONITOR",
+      "passed": true,
+      "detail": "LOW, NO_REORDER, NORMAL, LOW/MONITOR"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 5 no reliable demand (no sales, no forecast) -> NO_DEMAND_DATA with no fabricated quantity",
+      "passed": true,
+      "detail": "NO_DEMAND_DATA, NO_DEMAND_DATA, qty 0, NO_DEMAND_DATA"
+    },
+    {
+      "area": "scenarios",
+      "check": "case 6 12 days of cover with recent stockouts -> MEDIUM base level escalated to HIGH (one step) and the history is stated in the reason",
+      "passed": true,
+      "detail": "MEDIUM -> HIGH; escalated from MEDIUM because of stockout history (5 days in the last 28; out of stock on 4.9% of all days observed) and only 6.0 days of cover at the upper forecast"
+    }
+  ]
+}

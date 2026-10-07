@@ -1,0 +1,98 @@
+{
+  "decision_date": "2026-12-31",
+  "forecast_origin_split": "future",
+  "total_branch_medicine_pairs": 2500,
+  "critical_count": 79,
+  "high_count": 352,
+  "medium_count": 367,
+  "low_count": 1702,
+  "stockout_risk_counts": {
+    "CRITICAL": 47,
+    "HIGH": 330,
+    "MEDIUM": 298,
+    "LOW": 1825,
+    "NO_DEMAND_DATA": 0
+  },
+  "order_now_count": 171,
+  "reorder_soon_count": 280,
+  "no_reorder_count": 2049,
+  "no_demand_data_count": 0,
+  "recommended_units_to_order": 14431,
+  "overstock_count": 593,
+  "estimated_excess_units": 2867,
+  "expiry_lots_assessed": 5500,
+  "expiry_critical_count": 40,
+  "expiry_high_count": 19,
+  "expiry_medium_count": 205,
+  "expiry_low_count": 5236,
+  "potential_stockout_exposure": {
+    "value_inr": 111695.96,
+    "units": 1110.1,
+    "label": "potential revenue exposure: demand expected during the lead time that current stock does not cover, at recent average selling price (not an actual loss)"
+  },
+  "estimated_overstock_value": {
+    "value_inr": 211770.46,
+    "label": "estimated cost value of units above 90 days of cover (not an actual loss)"
+  },
+  "projected_expiry_exposure": {
+    "value_inr": 25109.94,
+    "label": "projected at-risk cost value of batch units expected to remain unsold at expiry (not an actual loss)"
+  },
+  "historical_simulation": {
+    "decision_date": "2026-09-30",
+    "priority_counts": {
+      "LOW": 1640,
+      "HIGH": 394,
+      "MEDIUM": 360,
+      "CRITICAL": 106
+    },
+    "forecast_split": "test"
+  },
+  "validation": {
+    "checks": 75,
+    "failures": 0
+  },
+  "run_timestamp": "2026-10-06T20:49:25+00:00",
+  "runtime_seconds": 20.7,
+  "python": "3.11.0",
+  "configuration": {
+    "planning_assumptions_not_in_dataset": {
+      "planning_lead_time_days": 7,
+      "service_level": 0.95,
+      "order_cover_days": 14,
+      "minimum_order_quantity": "none modelled",
+      "open_orders": "assumed zero",
+      "supplier_availability": "not modelled"
+    },
+    "stockout_levels_days_of_cover": {
+      "critical_days": 3.0,
+      "high_days": 7.0,
+      "medium_days": 14.0
+    },
+    "stockout_escalation": {
+      "stockout_days_28d": 3,
+      "historical_rate": 0.025
+    },
+    "overstock": {
+      "window_days": 30,
+      "max_cover_days": 90
+    },
+    "overstock_medium_excess_value_inr": 2500.0,
+    "expiry": {
+      "demand_window_days": 90,
+      "projection_horizon_days": 365,
+      "critical_days": 30,
+      "high_days": 90
+    },
+    "expiry_actions": {
+      "CRITICAL": "PRIORITIZE_SALE",
+      "HIGH": "PRIORITIZE_SALE",
+      "MEDIUM": "MONITOR",
+      "LOW": "NO_ACTION"
+    },
+    "recent_demand_days": 28,
+    "variability_weeks": 26,
+    "expected_daily_demand": "max(forecast_7d / 7, recent 28-day daily demand)",
+    "forecast_model": "ml_selected"
+  }
+}
