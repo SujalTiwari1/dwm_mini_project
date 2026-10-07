@@ -6,6 +6,8 @@ import Sidebar  from './components/Sidebar';
 import Dashboard from './pages/Dashboard';
 import Sales from './pages/Sales';
 import Inventory from './pages/Inventory';
+import Risk from './pages/Risk';
+import Insights from './pages/Insights';
 import PlaceholderPage from './pages/PlaceholderPage';
 import { fetchDashboardSummary } from './api/client';
 import { fmtDate } from './utils/format';
@@ -43,8 +45,8 @@ export default function App() {
             <Route path="/sales"      element={<Sales />} />
             <Route path="/inventory"  element={<Inventory />} />
             <Route path="/forecast"   element={<PlaceholderPage title="Demand & Forecast"  description="ML demand forecasts (7/14/30-day horizons) for each branch and medicine." />} />
-            <Route path="/risk"       element={<PlaceholderPage title="Risk & Expiry"      description="Batch-level expiry risk, near-dated stock, prioritize-sale actions." />} />
-            <Route path="/insights"   element={<PlaceholderPage title="Insights"           description="Association rules, medicine clusters and anomaly detection results." />} />
+            <Route path="/risk"       element={<Risk />} />
+            <Route path="/insights"   element={<Insights />} />
             <Route path="/decisions"  element={<PlaceholderPage title="Decisions"          description="Full decision support action queue — reorder, overstock, expiry and stockout risk." />} />
             <Route path="*"           element={<Navigate to="/dashboard" replace />} />
           </Routes>
