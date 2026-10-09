@@ -111,3 +111,81 @@ def medicines(sort_by: Literal["revenue", "units", "days_of_cover", "turnover"] 
         WHERE (CAST(:mc AS text) IS NULL OR p.mover_class = CAST(:mc AS text))
         ORDER BY """ + _MED_SORT[sort_by] + ", p.medicine_id"      # sort column comes from a fixed whitelist, never from the client
     return _page(sql, {"mc": mover_class}, limit, offset)
+
+
+# ── OLAP cube over fact_sales ─────────────────────────────────────────────
+# Dimension labels are fixed SQL expressions chosen from this whitelist; client input only ever becomes bind parameters.
+_OLAP_FROM = ("FROM warehouse.fact_sales s JOIN warehouse.dim_date d ON d.date_key = s.date_key "
+              "JOIN warehouse.dim_medicine m ON m.medicine_key = s.medicine_key "
+              "JOIN warehouse.dim_category c ON c.category_key = m.category_key "
+              "JOIN warehouse.dim_branch b ON b.branch_key = s.branch_key ")
+_OLAP_DIMS = {
+    "year": "CAST(d.year AS text)",
+    "quarter": "d.year || '-Q' || d.quarter",
+    "month": "to_char(d.full_date, 'YYYY-MM')",
+    "day": "to_char(d.full_date, 'YYYY-MM-DD')",
+    "weekday": "d.day_name",
+    "city": "b.city",
+    "branch": "b.branch_name",
+    "category": "c.category_name",
+    "medicine": "m.medicine_name",
+    "dosage_form": "m.dosage_form",
+    "manufacturer": "m.manufacturer",
+}
+_OLAP_TIME = {"year", "quarter", "month", "day"}
+_OLAP_MEASURES = {"revenue": "SUM(s.total_amount)", "units": "SUM(s.quantity)", "transactions": "COUNT(DISTINCT s.transaction_id)"}
+_OLAP_MAX_COLS = 24
+_OLAP_MAX_ROWS = 200
+
+
+@router.get("/olap", summary="OLAP cube query over sales: slice, dice, roll-up, drill-down, pivot",
+            description="Aggregates `fact_sales` by one row dimension and an optional column dimension (pivot). "
+                        "`filter` is repeatable and written `dimension:value[,value...]`; one value is a slice, several values a dice. "
+                        "Roll-up / drill-down are done by choosing a coarser / finer level of the same hierarchy "
+                        "(time: year > quarter > month > day, location: city > branch, product: category > medicine).")
+def olap(row: Literal[tuple(_OLAP_DIMS)] = Query(..., description="Row dimension"),
+         col: Literal[tuple(_OLAP_DIMS)] | None = Query(None, description="Optional column dimension (pivot)"),
+         measure: Literal[tuple(_OLAP_MEASURES)] = "revenue",
+         filter: list[str] = Query([], description="dimension:value[,value...]")):
+    if col == row:
+        raise HTTPException(422, "row and col must be different dimensions")
+    where, params = [], {}
+    for i, f in enumerate(filter):
+        dim, _, vals = f.partition(":")
+        if dim not in _OLAP_DIMS or not vals:
+            raise HTTPException(422, f"invalid filter '{f}'")
+        names = []
+        for j, v in enumerate(vals.split("|")):
+            params[f"f{i}_{j}"] = v
+            names.append(f":f{i}_{j}")
+        where.append(f"{_OLAP_DIMS[dim]} IN ({', '.join(names)})")
+    sel_col = f", {_OLAP_DIMS[col]} AS col_label" if col else ""
+    grp_col = ", 2" if col else ""
+    sql = (f"SELECT {_OLAP_DIMS[row]} AS row_label{sel_col}, {_OLAP_MEASURES[measure]} AS value "
+           + _OLAP_FROM + ("WHERE " + " AND ".join(where) if where else "") + f" GROUP BY 1{grp_col}")
+    flat = query(sql, params)
+
+    row_tot, col_tot = {}, {}
+    for r in flat:
+        row_tot[r["row_label"]] = row_tot.get(r["row_label"], 0) + r["value"]
+        if col:
+            col_tot[r["col_label"]] = col_tot.get(r["col_label"], 0) + r["value"]
+    # measure sums are additive across members for revenue/units only; distinct-count totals come from a separate query
+    grand = query(f"SELECT {_OLAP_MEASURES[measure]} AS value " + _OLAP_FROM + ("WHERE " + " AND ".join(where) if where else ""), params)[0]["value"]
+
+    rows = sorted(row_tot, key=(lambda k: k) if row in _OLAP_TIME else (lambda k: -row_tot[k]))
+    truncated_rows = len(rows) > _OLAP_MAX_ROWS
+    rows = rows[:_OLAP_MAX_ROWS]
+    cols = []
+    if col:
+        cols = sorted(col_tot, key=(lambda k: k) if col in _OLAP_TIME else (lambda k: -col_tot[k]))
+        truncated_cols = len(cols) > _OLAP_MAX_COLS
+        if truncated_cols:
+            keep = set(sorted(col_tot, key=lambda k: -col_tot[k])[:_OLAP_MAX_COLS])
+            cols = [c for c in cols if c in keep]
+    else:
+        truncated_cols = False
+    cells = {(r["row_label"], r.get("col_label")): r["value"] for r in flat}
+    data = [{"label": r, "total": row_tot[r], "cells": [cells.get((r, c)) for c in cols] if col else []} for r in rows]
+    return {"row": row, "col": col, "measure": measure, "columns": cols, "data": data, "grand_total": grand,
+            "truncated_rows": truncated_rows, "truncated_cols": truncated_cols}

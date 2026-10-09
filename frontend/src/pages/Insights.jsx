@@ -48,7 +48,7 @@ function AssociationTooltip({ active, payload }) {
       <div style={{ padding: '0.45rem 0.7rem', display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
           <span style={{ color: '#818cf8' }}>Lift:</span>
-          <span style={{ fontWeight: 700, color: '#fbbf24' }}>{d.lift.toFixed(2)}x</span>
+          <span style={{ fontWeight: 700, color: '#fbbf24' }}>{d.lift}x</span>
         </div>
         <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem' }}>
           <span style={{ color: '#8b90a8' }}>Confidence:</span>

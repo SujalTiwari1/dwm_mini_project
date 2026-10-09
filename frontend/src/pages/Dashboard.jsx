@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import { Fragment, useMemo, useState, useEffect } from 'react';
 import {
   AreaChart, Area, BarChart, Bar, XAxis, YAxis,
   CartesianGrid, Tooltip, ResponsiveContainer,
@@ -94,7 +94,7 @@ export default function Dashboard() {
   const salesData = useFetch(fetchSales);
   const invData   = useFetch(fetchInventory);
   const branches  = useFetch(fetchBranches);
-  const actions   = useFetch(() => fetchActionQueue({ priority: 'CRITICAL', limit: 8 }));
+  const actions   = useFetch(() => fetchActionQueue({ priority: 'CRITICAL', limit: 100 }));
 
   // ── Derived: KPI values from summary.data.data ──────────
   const s = summary.data?.data;
@@ -136,7 +136,22 @@ export default function Dashboard() {
   }, [branches.data]);
 
   // ── Derived: action queue rows ───────────────────────────
-  const actionRows = actions.data?.data ?? [];
+  const rowKey = (r) => `${r.branch_id}|${r.medicine_id}|${r.primary_action}`;
+  const [completed, setCompleted] = useState(() => {
+    try { return JSON.parse(localStorage.getItem('completedActions') || '[]'); } catch { return []; }
+  });
+  useEffect(() => {
+    try { localStorage.setItem('completedActions', JSON.stringify(completed)); } catch { /* ignore */ }
+  }, [completed]);
+  const [openReasons, setOpenReasons] = useState([]);
+  const toggleReason = (k) => setOpenReasons((o) => (o.includes(k) ? o.filter((x) => x !== k) : [...o, k]));
+  const reasonOf = (r) => r.primary_reason ?? r.reason;
+  const actionRows = useMemo(
+    () => (actions.data?.data ?? []).filter((r) => !completed.includes(rowKey(r))).slice(0, 8),
+    [actions.data, completed],
+  );
+
+  const showReason = actionRows.some((r) => reasonOf(r));
 
   // ── Data-through badge ────────────────────────────────────
   // Use inventory snapshot_date from summary if available, else fall back to invData
@@ -419,37 +434,65 @@ export default function Dashboard() {
                 <th>Priority</th>
                 <th>Branch</th>
                 <th>Medicine</th>
+                <th>Recommended</th>
+                {showReason && <th>Reason</th>}
                 <th>Action</th>
-                <th>Reason</th>
               </tr>
             </thead>
             <tbody>
               {actionRows.map((row, i) => (
-                <tr key={row.medicine_id + row.branch_id + i}>
+                <Fragment key={row.medicine_id + row.branch_id + i}>
+                <tr>
                   <td><PriorityBadge level={row.priority} /></td>
                   <td>{row.branch_name ?? row.branch_id}</td>
-                  <td style={{ fontWeight: 500 }}>
-                    <span title={row.medicine_name}>
-                      {row.medicine_name?.length > 28
-                        ? row.medicine_name.slice(0, 26) + '…'
-                        : row.medicine_name ?? row.medicine_id}
-                    </span>
+                  <td style={{ fontWeight: 500, whiteSpace: 'normal', minWidth: 180 }}>
+                    {row.medicine_name ?? row.medicine_id}
                   </td>
                   <td>
                     <span style={{ fontSize: '0.72rem', color: 'var(--color-warning)', fontWeight: 500 }}>
                       {prettyAction(row.primary_action)}
                     </span>
                   </td>
+                  {showReason && (
+                    <td>
+                      <button
+                        type="button"
+                        onClick={() => toggleReason(rowKey(row))}
+                        aria-expanded={openReasons.includes(rowKey(row))}
+                        style={{
+                          whiteSpace: 'nowrap', fontSize: '0.72rem', padding: '0.3rem 0.7rem', cursor: 'pointer',
+                          borderRadius: 6, border: '1px solid var(--color-border)', background: 'transparent',
+                          color: 'var(--color-muted)',
+                        }}
+                      >
+                        {openReasons.includes(rowKey(row)) ? 'Hide ▲' : 'Show ▼'}
+                      </button>
+                    </td>
+                  )}
                   <td>
-                    <span
-                      className="truncate-text"
-                      title={row.reason}
-                      style={{ color: 'var(--color-muted)', fontSize: '0.72rem' }}
+                    <button
+                      type="button"
+                      onClick={() => setCompleted((c) => [...c, rowKey(row)])}
+                      title="Mark as completed and remove from queue"
+                      style={{
+                        whiteSpace: 'nowrap', fontSize: '0.75rem', fontWeight: 600, padding: '0.35rem 0.8rem',
+                        cursor: 'pointer', borderRadius: 6, border: '1px solid var(--color-success)',
+                        background: 'transparent', color: 'var(--color-success)',
+                      }}
                     >
-                      {row.reason}
-                    </span>
+                      ✓ Complete
+                    </button>
                   </td>
                 </tr>
+                {showReason && openReasons.includes(rowKey(row)) && (
+                  <tr>
+                    <td colSpan={6} style={{ whiteSpace: 'normal', color: 'var(--color-muted)', fontSize: '0.75rem', lineHeight: 1.5 }}>
+                      <strong style={{ color: 'var(--color-text, inherit)' }}>Reason: </strong>
+                      {reasonOf(row) || 'Not available'}
+                    </td>
+                  </tr>
+                )}
+                </Fragment>
               ))}
             </tbody>
           </table>

@@ -6,6 +6,7 @@ import {
 
 import KpiCard from '../components/KpiCard';
 import ChartCard from '../components/ChartCard';
+import OlapExplorer from '../components/OlapExplorer';
 import { useFetch } from '../hooks/useFetch';
 import { fetchSales, fetchBranches, fetchMedicines } from '../api/client';
 import { fmtINR_SI, fmtNum, fmtUnits, fmtPct } from '../utils/format';
@@ -693,6 +694,8 @@ export default function Sales() {
           </div>
         </div>
       </div>
+
+      <OlapExplorer />
 
     </div>
   );

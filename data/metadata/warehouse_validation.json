@@ -10,17 +10,17 @@
     "fact_purchase": 80363,
     "fact_inventory": 1825000
   },
-  "etl_seconds": 81.0,
+  "etl_seconds": 29.2,
   "step_seconds": {
-    "extract (7 CSVs)": 9.3,
-    "transform dimensions + facts": 2.9,
-    "reconstruct inventory": 2.7,
+    "extract (7 CSVs)": 2.0,
+    "transform dimensions + facts": 0.7,
+    "reconstruct inventory": 0.6,
     "create schema + truncate": 0.1,
-    "load dimensions": 1.0,
-    "load facts (COPY)": 32.2,
-    "restore FKs + rebuild indexes": 4.7,
-    "analyze": 0.5,
-    "validate warehouse": 24.8
+    "load dimensions": 0.5,
+    "load facts (COPY)": 11.3,
+    "restore FKs + rebuild indexes": 2.9,
+    "analyze": 0.4,
+    "validate warehouse": 10.3
   },
   "inventory_totals": {
     "purchased": 1631425,
@@ -205,20 +205,6 @@
     },
     {
       "source": "sql",
-      "check": "11 orphan fact_inventory.date_key",
-      "actual": "0",
-      "expected": "0",
-      "status": "PASS"
-    },
-    {
-      "source": "sql",
-      "check": "11 orphan fact_inventory.branch_key",
-      "actual": "0",
-      "expected": "0",
-      "status": "PASS"
-    },
-    {
-      "source": "sql",
       "check": "11 orphan fact_inventory.medicine_key",
       "actual": "0",
       "expected": "0",
@@ -227,6 +213,20 @@
     {
       "source": "sql",
       "check": "11 orphan fact_sales.batch_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_inventory.date_key",
+      "actual": "0",
+      "expected": "0",
+      "status": "PASS"
+    },
+    {
+      "source": "sql",
+      "check": "11 orphan fact_inventory.branch_key",
       "actual": "0",
       "expected": "0",
       "status": "PASS"

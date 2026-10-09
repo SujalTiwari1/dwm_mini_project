@@ -27,7 +27,8 @@ export function setActiveDataset(id) {
 async function request(path, { params = {}, method = 'GET', body, scoped = true } = {}) {
   const url = new URL(BASE + path);
   Object.entries(params).forEach(([k, v]) => {
-    if (v !== null && v !== undefined && v !== '') url.searchParams.set(k, v);
+    if (Array.isArray(v)) v.forEach((x) => url.searchParams.append(k, x));
+    else if (v !== null && v !== undefined && v !== '') url.searchParams.set(k, v);
   });
   const headers = scoped && activeDataset !== DEMO_DATASET ? { 'X-Dataset-Id': activeDataset } : {};
   const res = await fetch(url.toString(), { method, headers, body });
@@ -76,6 +77,7 @@ export const fetchDashboardSummary = () => get('/api/dashboard/summary');
 
 // ── Analytics ────────────────────────────────────────────
 export const fetchSales = (params = {}) => get('/api/analytics/sales', params);
+export const fetchOlap = (params = {}) => get('/api/analytics/olap', params);
 export const fetchInventory = (params = {}) => get('/api/analytics/inventory', params);
 export const fetchBranches = (params = {}) => get('/api/analytics/branches', params);
 export const fetchMedicines = (params = {}) => get('/api/analytics/medicines', params);
