@@ -8,6 +8,7 @@ const NAV = [
   { to: '/risk',       icon: '⚠', label: 'Risk & Expiry'      },
   { to: '/insights',   icon: '◉', label: 'Insights'           },
   { to: '/decisions',  icon: '✦', label: 'Decisions'          },
+  { to: '/upload',     icon: '⇪', label: 'Upload Data'        },
 ];
 
 export default function Sidebar() {

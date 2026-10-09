@@ -103,8 +103,8 @@ def test_invalid_filters_are_rejected(url):
 
 
 def test_missing_report_gives_clear_500(monkeypatch):
-    from api import database
-    monkeypatch.setitem(database.REPORT_DIRS, "decision", "decision_support/no_such_dir")
+    from datasets import paths
+    monkeypatch.setitem(paths._DEMO_REPORTS, "decision", "decision_support/no_such_dir")
     r = client.get("/api/decisions/expiry")
     assert r.status_code == 500 and "not been generated" in r.json()["detail"]
     assert "decision_support" not in r.text and "Users" not in r.text      # no filesystem paths leak
@@ -113,3 +113,23 @@ def test_missing_report_gives_clear_500(monkeypatch):
 def test_openapi_and_swagger_available():
     assert client.get("/docs").status_code == 200 and client.get("/redoc").status_code == 200
     assert "/api/decisions/action-queue" in get("/openapi.json")["paths"]
+
+
+# ── datasets (upload) ────────────────────────────────────────────────────────
+def test_demo_dataset_is_listed_first():
+    d = get("/api/datasets")["data"]
+    assert d[0]["id"] == "demo" and d[0]["built_in"] is True
+
+
+def test_unknown_dataset_header_is_rejected():
+    assert client.get("/api/dashboard/summary", headers={"X-Dataset-Id": "ds_does_not_exist"}).status_code == 404
+    assert client.get("/api/dashboard/summary", headers={"X-Dataset-Id": "../etc"}).status_code == 404
+
+
+def test_upload_with_missing_columns_is_rejected_with_messages():
+    r = client.post("/api/datasets", files={"file": ("x.csv", "a,b\n" + "1,2\n" * 200, "text/csv")})
+    assert r.status_code == 422 and "Missing required column" in r.json()["detail"]["messages"][0]
+
+
+def test_demo_dataset_cannot_be_deleted():
+    assert client.delete("/api/datasets/demo").status_code == 400

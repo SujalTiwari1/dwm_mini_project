@@ -10,9 +10,10 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DS_DIR = Path(__file__).resolve().parent
 SQL_DIR = DS_DIR / "sql"
-REPORT_DIR = DS_DIR / "reports"
-FORECASTS_CSV = PROJECT_ROOT / "ml_forecasting" / "reports" / "forecasts.csv"
-FORECAST_SUMMARY = PROJECT_ROOT / "ml_forecasting" / "reports" / "forecast_summary.json"
+from datasets import paths as _ds
+REPORT_DIR = _ds.report_dir("decision")
+FORECASTS_CSV = _ds.report_dir("forecast") / "forecasts.csv"
+FORECAST_SUMMARY = _ds.report_dir("forecast") / "forecast_summary.json"
 FORECAST_MODEL = "ml_selected"
 RANDOM_SEED = 42                  # only used to scramble post-decision data in the leakage test; the engine itself is deterministic
 

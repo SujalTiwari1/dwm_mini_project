@@ -1,7 +1,7 @@
 """Dashboard KPIs: warehouse figures from SQL, decision figures from decision_support/reports/decision_summary.json."""
 from fastapi import APIRouter, HTTPException
 
-from ..database import load_report, query
+from ..database import current_dataset, load_report, query
 from ..schemas import ObjectResponse
 
 router = APIRouter(prefix="/api/dashboard", tags=["Dashboard"])
@@ -21,11 +21,16 @@ def summary():
                   "FROM warehouse.fact_inventory")[0]
     exp = query("SELECT COALESCE(SUM(value_at_risk) FILTER (WHERE NOT is_expired), 0) AS expiry_risk_value "
                 "FROM warehouse.v_expiry_risk")[0]
-    ds = load_report("decision", "decision_summary.json")
     try:
-        decisions = {"decision_date": ds["decision_date"], "overstock_count": ds["overstock_count"],
-                     "recommended_order_units": ds["recommended_units_to_order"], "critical_actions": ds["critical_count"],
-                     "high_actions": ds["high_count"], "medium_actions": ds["medium_count"], "low_actions": ds["low_count"]}
+        ds = load_report("decision", "decision_summary.json")
+    except HTTPException:
+        if current_dataset.get() == "demo":
+            raise
+        ds = None                                    # uploaded dataset without inventory data: no decision support
+    keys = {"decision_date": "decision_date", "overstock_count": "overstock_count", "recommended_order_units": "recommended_units_to_order",
+            "critical_actions": "critical_count", "high_actions": "high_count", "medium_actions": "medium_count", "low_actions": "low_count"}
+    try:
+        decisions = {k: (ds[v] if ds is not None else None) for k, v in keys.items()}
     except KeyError:
         raise HTTPException(500, "Report 'decision_summary.json' could not be read")
     return {"data": {**sales, **inv, **flows, **exp, **decisions,

@@ -25,14 +25,14 @@ CREATE TABLE IF NOT EXISTS warehouse.dim_date (
 -- Grain: one medicine category.
 CREATE TABLE IF NOT EXISTS warehouse.dim_category (
     category_key   INTEGER      PRIMARY KEY,
-    category_id    VARCHAR(10)  NOT NULL UNIQUE,          -- source/natural key
+    category_id    VARCHAR(40)  NOT NULL UNIQUE,          -- source/natural key
     category_name  VARCHAR(60)  NOT NULL
 );
 
 -- Grain: one medicine (product). demand_profile is generation metadata and is intentionally NOT loaded.
 CREATE TABLE IF NOT EXISTS warehouse.dim_medicine (
     medicine_key   INTEGER       PRIMARY KEY,
-    medicine_id    VARCHAR(10)   NOT NULL UNIQUE,         -- source/natural key
+    medicine_id    VARCHAR(40)   NOT NULL UNIQUE,         -- source/natural key
     medicine_name  VARCHAR(120)  NOT NULL,
     category_key   INTEGER       NOT NULL REFERENCES warehouse.dim_category (category_key),
     manufacturer   VARCHAR(80)   NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS warehouse.dim_medicine (
 -- Grain: one pharmacy branch.
 CREATE TABLE IF NOT EXISTS warehouse.dim_branch (
     branch_key   INTEGER      PRIMARY KEY,
-    branch_id    VARCHAR(10)  NOT NULL UNIQUE,            -- source/natural key
+    branch_id    VARCHAR(40)  NOT NULL UNIQUE,            -- source/natural key
     branch_name  VARCHAR(80)  NOT NULL,
     city         VARCHAR(60)  NOT NULL,
     area         VARCHAR(60)  NOT NULL
@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS warehouse.dim_branch (
 -- Grain: one supplier.
 CREATE TABLE IF NOT EXISTS warehouse.dim_supplier (
     supplier_key   INTEGER      PRIMARY KEY,
-    supplier_id    VARCHAR(10)  NOT NULL UNIQUE,          -- source/natural key
+    supplier_id    VARCHAR(40)  NOT NULL UNIQUE,          -- source/natural key
     supplier_name  VARCHAR(120) NOT NULL,
     city           VARCHAR(60)  NOT NULL
 );
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS warehouse.dim_supplier (
 -- Grain: one manufacturing lot (batch) of one medicine from one supplier.
 CREATE TABLE IF NOT EXISTS warehouse.dim_batch (
     batch_key         INTEGER       PRIMARY KEY,
-    batch_id          VARCHAR(12)   NOT NULL UNIQUE,      -- source/natural key
+    batch_id          VARCHAR(60)   NOT NULL UNIQUE,      -- source/natural key
     medicine_key      INTEGER       NOT NULL REFERENCES warehouse.dim_medicine (medicine_key),
     supplier_key      INTEGER       NOT NULL REFERENCES warehouse.dim_supplier (supplier_key),
     manufacture_date  DATE          NOT NULL,
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_sales (
     medicine_key        INTEGER       NOT NULL REFERENCES warehouse.dim_medicine (medicine_key),
     branch_key          INTEGER       NOT NULL REFERENCES warehouse.dim_branch (branch_key),
     batch_key           INTEGER       NOT NULL REFERENCES warehouse.dim_batch (batch_key),
-    transaction_id      VARCHAR(12)   NOT NULL,
+    transaction_id      VARCHAR(40)   NOT NULL,
     quantity            INTEGER       NOT NULL CHECK (quantity > 0),
     unit_selling_price  NUMERIC(10,2) NOT NULL CHECK (unit_selling_price > 0),
     discount            NUMERIC(10,2) NOT NULL CHECK (discount >= 0),
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS warehouse.fact_purchase (
     branch_key           INTEGER       NOT NULL REFERENCES warehouse.dim_branch (branch_key),
     supplier_key         INTEGER       NOT NULL REFERENCES warehouse.dim_supplier (supplier_key),
     batch_key            INTEGER       NOT NULL REFERENCES warehouse.dim_batch (batch_key),
-    purchase_id          VARCHAR(12)   NOT NULL UNIQUE,   -- degenerate dimension / source key
+    purchase_id          VARCHAR(40)   NOT NULL UNIQUE,   -- degenerate dimension / source key
     quantity             INTEGER       NOT NULL CHECK (quantity > 0),
     unit_purchase_price  NUMERIC(10,2) NOT NULL CHECK (unit_purchase_price > 0),
     total_cost           NUMERIC(14,2) NOT NULL CHECK (total_cost >= 0),

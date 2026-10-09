@@ -7,7 +7,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 ML_DIR = Path(__file__).resolve().parent
 SQL_DIR = ML_DIR / "sql"
-REPORT_DIR = ML_DIR / "reports"
+from datasets import paths as _ds
+REPORT_DIR = _ds.report_dir("forecast")
 GENERATION_METADATA = PROJECT_ROOT / "data" / "metadata" / "generation_metadata.json"   # public dataset descriptor only
 
 RANDOM_STATE = 42

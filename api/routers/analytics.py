@@ -11,7 +11,7 @@ router = APIRouter(prefix="/api/analytics", tags=["Analytics"])
 
 Limit = Query(100, ge=1, le=1000, description="Maximum rows to return")
 Offset = Query(0, ge=0, description="Rows to skip (pagination)")
-Branch = Query(None, min_length=1, max_length=10, pattern=r"^[A-Za-z0-9_-]+$", description="Branch id, e.g. BR001")
+Branch = Query(None, min_length=1, max_length=40, pattern=r"^[A-Za-z0-9_-]+$", description="Branch id, e.g. BR001")
 
 
 def _page(sql: str, params: dict, limit: int, offset: int) -> dict:

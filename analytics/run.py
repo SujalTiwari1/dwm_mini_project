@@ -19,7 +19,8 @@ from etl.load.postgres import get_engine
 
 ROOT = Path(__file__).resolve().parent
 SQL_DIR = ROOT / "sql"
-REPORT_DIR = ROOT / "reports"
+from datasets import paths as _ds
+REPORT_DIR = _ds.report_dir("analytics")
 RESULT_DIR = REPORT_DIR / "results"
 QUERY_FILES = ["sales", "branches", "inventory", "expiry", "purchases", "demand", "stockouts", "olap"]
 
@@ -84,6 +85,8 @@ def main(argv=None) -> int:
     files = QUERY_FILES
     if "--file" in argv:
         files = [argv[argv.index("--file") + 1]]
+    if "--files" in argv:                               # comma-separated subset (uploaded datasets without inventory data)
+        files = argv[argv.index("--files") + 1].split(",")
     REPORT_DIR.mkdir(parents=True, exist_ok=True)
     engine = get_engine()
     t0 = time.time()

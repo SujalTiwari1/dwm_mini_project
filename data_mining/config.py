@@ -8,7 +8,8 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 MINING_DIR = Path(__file__).resolve().parent
 SQL_DIR = MINING_DIR / "sql"
-REPORT_DIR = MINING_DIR / "reports"
+from datasets import paths as _ds
+REPORT_DIR = _ds.report_dir("mining")
 METADATA_DIR = PROJECT_ROOT / "data" / "metadata"
 GENERATION_METADATA = METADATA_DIR / "generation_metadata.json"      # public dataset descriptor (no hidden truth)
 GROUND_TRUTH_PRIVATE = METADATA_DIR / "ground_truth_private.json"    # evaluation ONLY (data_mining/evaluation/evaluate.py)

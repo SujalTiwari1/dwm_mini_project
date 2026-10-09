@@ -316,3 +316,18 @@ python -m pytest api/tests -q                       # API tests (need PostgreSQL
 | `GET /api/decisions/action-queue?priority=CRITICAL`, `/stockout-risk`, `/reorder`, `/overstock`, `/expiry` | `decision_support/reports/` |
 
 Example: `curl "http://127.0.0.1:8000/api/decisions/action-queue?priority=CRITICAL&limit=5"`. Regenerate the reports with the earlier pipelines; the API re-reads a report automatically when its file changes.
+
+## 19. Upload your own data
+
+Besides the built-in synthetic **demo** dataset, a user can upload a sales file (and optionally a purchases file) on the **Upload Data** page. Each upload becomes its own dataset (own PostgreSQL database `medstock_<id>` + folder `data/datasets/<id>/`, no login) and runs the same pipeline in the background: warehouse -> analytics/OLAP -> association rules -> clustering -> anomalies -> demand forecast -> decision support. The header dropdown switches every page between datasets (the API receives it as the `X-Dataset-Id` header; default `demo`).
+
+| Uploaded | Unlocks |
+|---|---|
+| `sales.csv` only (date, medicine id, quantity, unit price; bill id / branch / name optional) | Dashboard, Sales, association rules (needs a bill id), demand forecast (needs 180+ days) |
+| + `purchases.csv` (date, medicine, quantity, unit cost; batch, expiry, branch, supplier optional) | Inventory, Risk & Expiry, clustering, anomalies, Decision Support (also needs 180+ days of sales) |
+
+How stock is rebuilt: a sales file does not say which batch a sale used, so sales are replayed per branch and medicine and filled from received, non-expired lots earliest-expiry-first (FEFO). Sales that exceed everything received are covered by an **estimated opening stock**, reported as a warning (above 20% of units sold the decisions are only indicative). Money rule: line total = quantity x unit price - discount is recomputed for every line.
+
+Settings (environment variables, optional): `MEDSTOCK_RETENTION_DAYS` (uploads are deleted automatically after this many days, default 14, 0 = never), `MEDSTOCK_MAX_DATASETS` (default 10), `MEDSTOCK_MAX_QUEUE` (default 3), `MEDSTOCK_UPLOADS_PER_HOUR` (per client address, default 6). Limits: CSV only, 250 MB, 3 million sales rows, 1 million purchase rows, 5,000 medicines, 200 branches, 20 million date x branch x medicine stock rows.
+
+Endpoints: `POST /api/datasets/preview?kind=sales|purchases`, `POST /api/datasets` (multipart: `file`, optional `purchases`, `name`, `mapping`, `purchases_mapping`), `GET /api/datasets`, `GET /api/datasets/{id}` (progress), `DELETE /api/datasets/{id}`, `GET /api/datasets/template/{sales|purchases}`. Design and status: [docs/UPLOAD_ARCHITECTURE_PLAN.md](docs/UPLOAD_ARCHITECTURE_PLAN.md).

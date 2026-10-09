@@ -2,6 +2,7 @@
 import json
 import logging
 import os
+from contextvars import ContextVar
 from functools import lru_cache
 from pathlib import Path
 
@@ -9,6 +10,8 @@ import pandas as pd
 from fastapi import HTTPException
 from sqlalchemy import create_engine, text
 from sqlalchemy.exc import SQLAlchemyError
+
+from datasets import paths as ds_paths
 
 try:
     from dotenv import load_dotenv
@@ -26,23 +29,28 @@ if not os.environ.get("DATABASE_URL") and (PROJECT_ROOT / ".env").is_file():
             os.environ.setdefault(k.strip(), v.strip())
 
 log = logging.getLogger("medstock.api")
-REPORT_DIRS = {"mining": "data_mining/reports", "forecast": "ml_forecasting/reports", "decision": "decision_support/reports"}
+# Active dataset for the current request (set from the X-Dataset-Id header by the middleware in main.py; default: demo).
+current_dataset: ContextVar[str] = ContextVar("current_dataset", default=ds_paths.DEMO)
 
-_engine = None
+_engines: dict = {}
 
 
 def get_engine():
-    global _engine
-    if _engine is None:
-        url = os.environ.get("DATABASE_URL", "").strip()
+    dataset_id = current_dataset.get()
+    if dataset_id not in _engines:
+        url = ds_paths.db_url(dataset_id)
         if not url:
             log.error("DATABASE_URL is not set")
             raise HTTPException(503, "Database is not configured")
-        for plain in ("postgresql://", "postgres://"):
-            if url.startswith(plain):
-                url = "postgresql+psycopg://" + url[len(plain):]
-        _engine = create_engine(url, pool_pre_ping=True)
-    return _engine
+        _engines[dataset_id] = create_engine(url, pool_pre_ping=True)
+    return _engines[dataset_id]
+
+
+def dispose_engine(dataset_id: str) -> None:
+    """Close the pooled connections of a dataset (before its database is dropped)."""
+    engine = _engines.pop(dataset_id, None)
+    if engine is not None:
+        engine.dispose()
 
 
 def query(sql: str, params: dict | None = None) -> list[dict]:
@@ -63,12 +71,14 @@ def _read_csv(path: Path, _mtime: int) -> pd.DataFrame:
 
 def load_report(area: str, filename: str) -> pd.DataFrame | dict:
     """Read an existing CSV/JSON report. `area` and `filename` are chosen by the code, never by the client."""
-    path = PROJECT_ROOT / REPORT_DIRS[area] / filename
+    path = ds_paths.report_dir(area, current_dataset.get()) / filename
     try:
         if filename.endswith(".json"):
             return json.loads(path.read_text(encoding="utf-8"))
         return _read_csv(path, path.stat().st_mtime_ns)      # re-read automatically if the report is regenerated
     except FileNotFoundError:
+        if current_dataset.get() != ds_paths.DEMO:           # e.g. decision support for an upload without inventory data
+            raise HTTPException(404, "This analysis is not available for the selected dataset")
         log.error("report missing: %s", path)
         raise HTTPException(500, f"Report '{filename}' has not been generated yet")
     except Exception as exc:  # malformed CSV/JSON

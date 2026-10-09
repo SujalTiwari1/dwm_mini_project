@@ -10,8 +10,8 @@ router = APIRouter(prefix="/api/decisions", tags=["Decision support"])
 
 Limit = Query(100, ge=1, le=1000, description="Maximum rows to return")
 Offset = Query(0, ge=0, description="Rows to skip (pagination)")
-Branch = Query(None, min_length=1, max_length=10, pattern=r"^[A-Za-z0-9_-]+$", description="Branch id, e.g. BR001")
-Medicine = Query(None, min_length=1, max_length=10, pattern=r"^[A-Za-z0-9_-]+$", description="Medicine id, e.g. MED001")
+Branch = Query(None, min_length=1, max_length=40, pattern=r"^[A-Za-z0-9_-]+$", description="Branch id, e.g. BR001")
+Medicine = Query(None, min_length=1, max_length=40, pattern=r"^[A-Za-z0-9_-]+$", description="Medicine id, e.g. MED001")
 Level = Literal["CRITICAL", "HIGH", "MEDIUM", "LOW"]
 
 

@@ -11,7 +11,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 if load_dotenv:
     load_dotenv(PROJECT_ROOT / ".env")
 
-RAW_DIR = PROJECT_ROOT / "data" / "raw"          # frozen source data (read-only for the ETL)
+from datasets import paths as _ds
+
+RAW_DIR = _ds.raw_dir()                          # frozen source data (read-only); per-dataset when MEDSTOCK_DATASET is set
 METADATA_DIR = PROJECT_ROOT / "data" / "metadata"
 SQL_DIR = PROJECT_ROOT / "sql"
 SCHEMA = "warehouse"
