@@ -7,7 +7,7 @@ import {
 } from '../api/client';
 import { fmtNum, fmtINR, fmtDate } from '../utils/format';
 
-const C_DANGER = '#ef4444';
+const C_DANGER = '#dc2626';
 
 const FIELD_INFO = {
   transaction_date:   { label: 'Date',                required: true,  hint: 'Sale date, e.g. 2025-03-31' },
@@ -51,7 +51,7 @@ function MappingTable({ info, preview, mapping, onChange }) {
                   {preview.headers.map((h) => <option key={h} value={h}>{h}</option>)}
                 </select>
               </td>
-              <td style={{ color: '#8b90a8', fontSize: '0.74rem' }}>{info[k].hint}</td>
+              <td style={{ color: '#64748b', fontSize: '0.74rem' }}>{info[k].hint}</td>
             </tr>
           ))}
         </tbody>
@@ -61,11 +61,11 @@ function MappingTable({ info, preview, mapping, onChange }) {
 }
 
 const STATUS_STYLE = {
-  ok:      { icon: '✔', color: '#86efac' },
-  failed:  { icon: '✖', color: '#f87171' },
-  running: { icon: '◔', color: '#7dd3fc' },
-  pending: { icon: '○', color: '#8b90a8' },
-  skipped: { icon: '–', color: '#8b90a8' },
+  ok:      { icon: '✔', color: '#15803d' },
+  failed:  { icon: '✖', color: '#dc2626' },
+  running: { icon: '◔', color: '#0369a1' },
+  pending: { icon: '○', color: '#64748b' },
+  skipped: { icon: '–', color: '#64748b' },
 };
 
 function StatusBadge({ status }) {
@@ -76,7 +76,7 @@ function StatusBadge({ status }) {
 function Problems({ messages }) {
   if (!messages?.length) return null;
   return (
-    <div style={{ background: 'rgba(239,68,68,0.08)', border: '1px solid rgba(239,68,68,0.3)', borderRadius: 'var(--radius)', padding: '0.7rem 1rem', fontSize: '0.78rem', color: '#fca5a5' }}>
+    <div style={{ background: 'rgba(220,38,38,0.06)', border: '1px solid rgba(220,38,38,0.3)', borderRadius: 'var(--radius)', padding: '0.7rem 1rem', fontSize: '0.78rem', color: '#b91c1c' }}>
       <strong>This file cannot be used yet:</strong>
       <ul style={{ margin: '0.35rem 0 0', paddingLeft: '1.1rem' }}>{messages.map((m, i) => <li key={i}>{m}</li>)}</ul>
     </div>
@@ -119,7 +119,7 @@ function Progress({ datasetId, onFinished }) {
       <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center', flexWrap: 'wrap' }}>
         <StatusBadge status={meta.status} />
         <strong>{meta.name}</strong>
-        {!done && <span style={{ fontSize: '0.75rem', color: '#8b90a8' }}>Working… this page updates automatically.</span>}
+        {!done && <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Working… this page updates automatically.</span>}
       </div>
       {meta.error && <Problems messages={[meta.error]} />}
 
@@ -138,7 +138,7 @@ function Progress({ datasetId, onFinished }) {
       </div>
 
       {v.warnings?.length > 0 && (
-        <ul style={{ margin: 0, paddingLeft: '1.1rem', fontSize: '0.76rem', color: '#fbbf24' }}>{v.warnings.map((w, i) => <li key={i}>{w}</li>)}</ul>
+        <ul style={{ margin: 0, paddingLeft: '1.1rem', fontSize: '0.76rem', color: '#b45309' }}>{v.warnings.map((w, i) => <li key={i}>{w}</li>)}</ul>
       )}
 
       <div className="card" style={{ background: 'var(--color-surface-2)' }}>
@@ -149,9 +149,9 @@ function Progress({ datasetId, onFinished }) {
               <span style={{ color: st.color, width: '1rem', textAlign: 'center' }}>{st.icon}</span>
               <div style={{ flex: 1 }}>
                 <div style={{ fontSize: '0.82rem', fontWeight: 600 }}>{s.title}</div>
-                {s.message && <div style={{ fontSize: '0.72rem', color: s.status === 'failed' ? '#f87171' : '#8b90a8' }}>{s.message}</div>}
+                {s.message && <div style={{ fontSize: '0.72rem', color: s.status === 'failed' ? '#dc2626' : '#64748b' }}>{s.message}</div>}
               </div>
-              <span style={{ fontSize: '0.72rem', color: '#8b90a8', textTransform: 'capitalize' }}>
+              <span style={{ fontSize: '0.72rem', color: '#64748b', textTransform: 'capitalize' }}>
                 {s.status}{s.seconds != null ? ` · ${s.seconds}s` : ''}
               </span>
             </div>
@@ -280,13 +280,13 @@ export default function Upload() {
                 onDrop={(e) => { e.preventDefault(); setDragging(false); choose(e.dataTransfer.files?.[0]); }}
                 onClick={() => fileInput.current?.click()}
                 style={{
-                  border: `2px dashed ${dragging ? '#6366f1' : 'var(--color-border)'}`, borderRadius: 'var(--radius)', padding: '2.5rem 1rem',
-                  textAlign: 'center', cursor: 'pointer', background: dragging ? 'rgba(99,102,241,0.08)' : 'transparent',
+                  border: `2px dashed ${dragging ? '#0d9488' : 'var(--color-border)'}`, borderRadius: 'var(--radius)', padding: '2.5rem 1rem',
+                  textAlign: 'center', cursor: 'pointer', background: dragging ? 'rgba(13,148,136,0.08)' : 'transparent',
                 }}
               >
-                <div style={{ fontSize: '1.8rem', color: '#6366f1' }}>⇪</div>
+                <div style={{ fontSize: '1.8rem', color: '#0d9488' }}>⇪</div>
                 <div style={{ fontWeight: 600 }}>{busy ? 'Reading file…' : 'Drop your sales CSV here, or click to choose'}</div>
-                <div style={{ fontSize: '0.74rem', color: '#8b90a8', marginTop: '0.3rem' }}>
+                <div style={{ fontSize: '0.74rem', color: '#64748b', marginTop: '0.3rem' }}>
                   Needs date, medicine ID, quantity and unit price. Bill ID and branch are optional.
                 </div>
                 <input ref={fileInput} type="file" accept=".csv,text/csv" hidden onChange={(e) => choose(e.target.files?.[0])} />
@@ -295,7 +295,7 @@ export default function Upload() {
             </>
           ) : (
             <>
-              <div style={{ fontSize: '0.78rem', color: '#a0a5bd' }}>
+              <div style={{ fontSize: '0.78rem', color: '#475569' }}>
                 File: <strong>{file?.name}</strong> — match your columns to MedStock fields. We guessed where we could.
               </div>
               <MappingTable info={FIELD_INFO} preview={preview} mapping={mapping} onChange={setField} />
@@ -317,8 +317,8 @@ export default function Upload() {
               <div style={{ border: '1px solid var(--color-border)', borderRadius: 'var(--radius)', padding: '0.9rem 1rem', display: 'flex', flexDirection: 'column', gap: '0.7rem' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
                   <div>
-                    <div style={{ fontWeight: 600, fontSize: '0.85rem' }}>Purchases file <span style={{ color: '#8b90a8', fontWeight: 400 }}>(optional)</span></div>
-                    <div style={{ fontSize: '0.74rem', color: '#8b90a8', maxWidth: '640px' }}>
+                    <div style={{ fontWeight: 600, fontSize: '0.85rem' }}>Purchases file <span style={{ color: '#64748b', fontWeight: 400 }}>(optional)</span></div>
+                    <div style={{ fontSize: '0.74rem', color: '#64748b', maxWidth: '640px' }}>
                       Add your stock receipts (date, medicine, quantity, unit cost; batch and expiry if you have them) to unlock inventory, expiry risk,
                       reorder and overstock decisions. Stock is rebuilt from purchases minus sales, selling the earliest-expiring lots first.
                     </div>
@@ -341,7 +341,7 @@ export default function Upload() {
                   {busy ? 'Uploading…' : 'Upload & analyze'}
                 </button>
                 <button className="pagination-btn" onClick={reset} disabled={busy}>Cancel</button>
-                {(missing.length > 0 || pMissing.length > 0) && <span style={{ fontSize: '0.74rem', color: '#f87171' }}>Map: {[...missing.map((k) => FIELD_INFO[k].label), ...pMissing.map((k) => `${PURCHASE_INFO[k].label} (purchases)`)].join(', ')}</span>}
+                {(missing.length > 0 || pMissing.length > 0) && <span style={{ fontSize: '0.74rem', color: '#dc2626' }}>Map: {[...missing.map((k) => FIELD_INFO[k].label), ...pMissing.map((k) => `${PURCHASE_INFO[k].label} (purchases)`)].join(', ')}</span>}
               </div>
               <Problems messages={problems} />
             </>
@@ -362,13 +362,13 @@ export default function Upload() {
             <thead><tr><th>Name</th><th>Status</th><th>Period</th><th>Rows</th><th>Created</th><th>Auto-delete</th><th /></tr></thead>
             <tbody>
               {datasets.map((d) => (
-                <tr key={d.id} style={{ background: d.id === activeId ? 'rgba(99,102,241,0.12)' : undefined }}>
-                  <td style={{ fontWeight: 600 }}>{d.name}{d.id === activeId && <span style={{ color: '#818cf8', fontSize: '0.7rem' }}> · selected</span>}</td>
+                <tr key={d.id} style={{ background: d.id === activeId ? 'rgba(13,148,136,0.1)' : undefined }}>
+                  <td style={{ fontWeight: 600 }}>{d.name}{d.id === activeId && <span style={{ color: '#0f766e', fontSize: '0.7rem' }}> · selected</span>}</td>
                   <td><StatusBadge status={d.status} /></td>
                   <td>{d.validation?.date_from ? `${fmtDate(d.validation.date_from)} – ${fmtDate(d.validation.date_to)}` : '—'}</td>
                   <td>{d.validation ? fmtNum(d.validation.rows_loaded) : '—'}</td>
                   <td>{d.created_at ? fmtDate(d.created_at.slice(0, 10)) : '—'}</td>
-                  <td style={{ color: '#8b90a8' }}>{d.expires_at ? fmtDate(d.expires_at.slice(0, 10)) : '—'}</td>
+                  <td style={{ color: '#64748b' }}>{d.expires_at ? fmtDate(d.expires_at.slice(0, 10)) : '—'}</td>
                   <td style={{ whiteSpace: 'nowrap', display: 'flex', gap: '0.4rem' }}>
                     <button className="pagination-btn" disabled={d.status === 'failed'} onClick={() => open(d.id)}>Use</button>
                     {!d.built_in && <button className="pagination-btn" onClick={() => remove(d)}>Delete</button>}
