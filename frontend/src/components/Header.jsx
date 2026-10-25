@@ -1,4 +1,5 @@
 import { useDataset } from '../context/DatasetContext';
+import { useAuth } from '../context/AuthContext';
 
 /**
  * Top application header bar.
@@ -7,12 +8,14 @@ import { useDataset } from '../context/DatasetContext';
  */
 export default function Header({ dataBadge }) {
   const { datasets, activeId, select } = useDataset();
+  const { role, logout } = useAuth();
   return (
     <header className="app-header">
-      <div className="app-header-brand">
-        <span className="brand-name">MedStock</span>
-        <span className="brand-sub">Pharmacy Inventory Intelligence</span>
-      </div>
+      <img
+        src="/MedStock%20Pharmacy%20Analytics%20Logo.png"
+        alt="MedStock — Pharmacy sales & demand analytics"
+        style={{ height: '48px', width: 'auto', display: 'block' }}
+      />
       <div className="header-spacer" />
       <select
         className="filter-select"
@@ -30,6 +33,8 @@ export default function Header({ dataBadge }) {
       {dataBadge && (
         <span className="header-badge">{dataBadge}</span>
       )}
+      <span className="header-badge" style={{ textTransform: 'capitalize' }}>{role}</span>
+      <button className="filter-select" onClick={logout} style={{ cursor: 'pointer' }}>Logout</button>
     </header>
   );
 }

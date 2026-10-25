@@ -4,7 +4,7 @@ from enum import IntEnum
 
 from fastapi import APIRouter, Query
 
-from ..database import list_response, load_report
+from ..database import list_response, load_report, to_records
 from ..schemas import ListResponse
 
 class Horizon(IntEnum):
@@ -80,3 +80,50 @@ def get_forecasts(branch_id: str | None = Branch, medicine_id: str | None = Medi
         if val is not None:
             df = df[df[col] == val]
     return list_response(df.sort_values(["branch_id", "medicine_id", "horizon"]), limit, offset)
+
+
+@forecasts.get("/model-comparison", summary="Compare forecasting models",
+               description="Test-period accuracy of every forecasting model (baselines and the selected ML model) per horizon, plus the "
+                           "selected model's configuration and feature importance. Read from the stored reports.")
+def model_comparison(top_features: int = Query(10, ge=1, le=50)):
+    df = load_report("forecast", "model_comparison.csv")
+    df = df[(df["split"] == "test") & (df["subset"] == "all")]
+    summary = load_report("forecast", "forecast_summary.json")
+    importance = load_report("forecast", "feature_importance.csv").head(top_features)
+    return {
+        "models": to_records(df[["model", "horizon", "sample_count", "MAE", "RMSE", "WAPE", "MASE", "bias_pct"]]),
+        "selected_model": summary.get("selected_model"),
+        "selected_model_config": summary.get("selected_model_config"),
+        "split_dates": summary.get("split_dates"),
+        "best_baseline_by_validation_wape": summary.get("best_baseline_by_validation_wape"),
+        "feature_importance": to_records(importance),
+    }
+
+
+@mining.get("/model-summary", summary="Summarise the data-mining algorithms",
+            description="Evaluation of K-Means clustering (candidate k), Apriori association rules and the two anomaly detectors, "
+                        "read from the stored reports.")
+def mining_model_summary():
+    evaluation = load_report("mining", "cluster_evaluation.csv")
+    clusters = load_report("mining", "cluster_summary.csv")
+    assoc = load_report("mining", "association_summary.json")
+    anomaly = load_report("mining", "anomaly_evaluation.json")
+    return {
+        "clustering": {
+            "evaluation": to_records(evaluation),
+            "clusters": to_records(clusters[["cluster_id", "medicine_count", "label", "share_of_units_pct"]]),
+        },
+        "association": {k: assoc.get(k) for k in (
+            "transactions", "unique_medicines", "multi_item_transactions", "min_support", "min_confidence", "min_lift",
+            "max_itemset_len", "frequent_itemsets", "useful_rules_after_filter")},
+        "anomaly": {
+            "ground_truth_events": anomaly.get("ground_truth_events"),
+            "detectors": anomaly.get("detector_sets"),
+        },
+    }
+
+
+@mining.get("/decision-summary", summary="Summarise the decision-support layer",
+            description="Counts of stockout, reorder, overstock and expiry decisions and the assumptions behind them.")
+def decision_summary():
+    return load_report("decision", "decision_summary.json")

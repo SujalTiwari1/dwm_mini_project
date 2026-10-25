@@ -23,6 +23,7 @@ export default function ChartCard({
   height = 280,
   children,
   headerRight,
+  bodyStyle,
 }) {
   return (
     <div className="card">
@@ -33,7 +34,7 @@ export default function ChartCard({
         </div>
         {headerRight && <div>{headerRight}</div>}
       </div>
-      <div className="card-body" style={{ padding: '1rem 1.25rem' }}>
+      <div className="card-body" style={{ padding: '1.25rem 1.5rem', ...bodyStyle }}>
         {loading ? (
           <div className="skeleton" style={{ height: `${height}px`, width: '100%', borderRadius: '6px' }} />
         ) : error ? (

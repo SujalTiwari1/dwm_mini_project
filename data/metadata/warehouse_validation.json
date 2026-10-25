@@ -10,17 +10,17 @@
     "fact_purchase": 80363,
     "fact_inventory": 1825000
   },
-  "etl_seconds": 29.2,
+  "etl_seconds": 24.0,
   "step_seconds": {
-    "extract (7 CSVs)": 2.0,
-    "transform dimensions + facts": 0.7,
-    "reconstruct inventory": 0.6,
+    "extract (7 CSVs)": 1.7,
+    "transform dimensions + facts": 0.6,
+    "reconstruct inventory": 0.5,
     "create schema + truncate": 0.1,
     "load dimensions": 0.5,
-    "load facts (COPY)": 11.3,
-    "restore FKs + rebuild indexes": 2.9,
-    "analyze": 0.4,
-    "validate warehouse": 10.3
+    "load facts (COPY)": 8.8,
+    "restore FKs + rebuild indexes": 2.2,
+    "analyze": 0.3,
+    "validate warehouse": 8.9
   },
   "inventory_totals": {
     "purchased": 1631425,

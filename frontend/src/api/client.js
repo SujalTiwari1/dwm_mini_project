@@ -96,3 +96,8 @@ export const fetchAnomalies = (params = {}) => get('/api/mining/anomalies', para
 
 // ── Forecasts ────────────────────────────────────────────
 export const fetchForecasts = (params = {}) => get('/api/forecasts', params);
+
+// ── Models overview ──────────────────────────────────────
+export const fetchModelComparison = () => get("/api/forecasts/model-comparison");
+export const fetchMiningModels = () => get("/api/mining/model-summary");
+export const fetchDecisionSummary = () => get("/api/mining/decision-summary");

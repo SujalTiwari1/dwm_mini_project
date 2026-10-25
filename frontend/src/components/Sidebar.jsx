@@ -1,21 +1,21 @@
 import { NavLink } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 
 const NAV = [
-  { to: '/dashboard',  icon: '⬡', label: 'Dashboard'         },
-  { to: '/sales',      icon: '↗', label: 'Sales'              },
-  { to: '/inventory',  icon: '▦', label: 'Inventory'          },
-  { to: '/forecast',   icon: '◬', label: 'Demand & Forecast'  },
-  { to: '/risk',       icon: '⚠', label: 'Risk & Expiry'      },
-  { to: '/insights',   icon: '◉', label: 'Insights'           },
-  { to: '/decisions',  icon: '✦', label: 'Decisions'          },
-  { to: '/upload',     icon: '⇪', label: 'Upload Data'        },
+  { to: '/overview', icon: '⌂', label: 'Overview'        },
+  { to: '/olap',     icon: '▦', label: 'Sales Explorer'  },
+  { to: '/forecast', icon: '◬', label: 'Demand Forecast' },
+  { to: '/mining',   icon: '⛏', label: 'Mining Insights', adminOnly: true },
+  { to: '/models',   icon: '◈', label: 'Models', adminOnly: true },
+  { to: '/upload',  icon: '⇪', label: 'Upload Data'     },
 ];
 
 export default function Sidebar() {
+  const { isAdmin } = useAuth();
   return (
     <aside className="app-sidebar">
-      <span className="sidebar-section-label">Navigation</span>
-      {NAV.map(({ to, icon, label }) => (
+      <span className="sidebar-section-label">Menu</span>
+      {NAV.filter((n) => isAdmin || !n.adminOnly).map(({ to, icon, label }) => (
         <NavLink
           key={to}
           to={to}
